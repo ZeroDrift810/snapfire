@@ -1,0 +1,30 @@
+{
+  "name": "imovechainz-bot",
+  "version": "1.0.0",
+  "description": "Keeper of Knowledge for iMoveChainz Lab - Premium Madden/Football IQ Discord Bot",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "dev": "tsx src/index.ts",
+  "deploy": "tsx src/deploy-commands.ts",
+  "export-playbook": "tsx tools/export_playbook_data.ts"
+},
+  "keywords": ["discord", "bot", "madden", "football", "snapfire", "shinobi"],
+  "author": "Himkage",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
