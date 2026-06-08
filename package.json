@@ -8,7 +8,11 @@
   "build": "tsc",
   "start": "node dist/index.js",
   "dev": "tsx src/index.ts",
-  "deploy": "tsx src/deploy-commands.ts",
+  "post-hub": "tsx scripts/post-hub.ts",
+  "post-operator-hub": "tsx scripts/post-operator-hub.ts",
+  "autopost": "tsx scripts/autopost.ts",
+  "setup-channels": "tsx scripts/setup-channels.ts",
+  "smoke": "tsx scripts/smoke-test.ts",
   "export-playbook": "tsx tools/export_playbook_data.ts"
 },
   "keywords": ["discord", "bot", "madden", "football", "snapfire", "shinobi"],

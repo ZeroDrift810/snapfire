@@ -95,6 +95,18 @@ export function searchSchemes(query: string): Array<{ name: string; value: strin
   })).slice(0, 25);
 }
 
+export function getAllConcepts(): ConceptKnowledge[] {
+  return concepts;
+}
+
+export function getAllCoverages(): CoverageKnowledge[] {
+  return coverages;
+}
+
+export function getAllSchemes(): SchemeKnowledge[] {
+  return schemes;
+}
+
 export function getKnowledgeStats() {
   return {
     concepts: concepts.length,

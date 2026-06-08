@@ -1,0 +1,132 @@
+[
+  {
+    "id": "philosophy",
+    "name": "The iMoveChainz Usering Philosophy",
+    "subtitle": "User the DBs. Let the AI play the middle.",
+    "tags": ["core"],
+    "sections": [
+      { "heading": "The idea", "body": "Most players user the middle linebacker and sit at 10 yards. That is not our approach. We user the defensive backs: corner, nickel, free safety, strong safety. We play on the ball, press routes, bait throws, and jump routes at the catch point." },
+      { "heading": "Why it works", "body": "The AI plays honest, assignment-based football. It drops to its hook zone, sits at its landmark, and makes its checks. When you user a hook or curl defender, you pull him out of his assignment and the AI loses those checks. When you user a DB, you add human anticipation where it creates turnovers, without breaking the AI's underneath structure." },
+      { "heading": "The rule", "body": "Never user a defender whose job is a zone check the AI executes correctly (hook, vert hook, curl-to-flat). User the DBs. Touch the linebackers only briefly, at the catch point." }
+    ],
+    "related": ["switch-stick", "why-db"]
+  },
+  {
+    "id": "why-db",
+    "name": "Why DB, Not MLB",
+    "subtitle": "How the Madden AI processes assignments",
+    "tags": ["core"],
+    "sections": [
+      { "heading": "What the AI does well", "body": "A hook-zone linebacker drops to depth, reads the QB, expands to the flat, and carries verticals, all automatically. A curl-to-flat defender transitions between curl and flat smoothly. You cannot be in two spots, the AI can." },
+      { "heading": "What the AI does poorly", "body": "Cornerbacks play technique but do not anticipate routes or bait throws. That is where a human is worth the most. Usering the corner adds a playmaker at the catch point while the AI zone structure stays intact underneath." },
+      { "heading": "The 90/10 rule", "body": "User a DB on 90 percent of plays. User the middle linebacker on 10 percent (only run shooting and QB spy). If you are on the MLB more than that, you are breaking the AI's zone checks and giving up easy completions underneath." }
+    ],
+    "related": ["philosophy", "user-matrix", "when-mlb"]
+  },
+  {
+    "id": "user-matrix",
+    "name": "Which DB to User (by Coverage)",
+    "subtitle": "Match the user to the coverage you called",
+    "tags": ["core"],
+    "sections": [
+      { "heading": "Man coverages", "body": "Cover 0: user the corner on their best receiver in press, you ARE the coverage on the top threat. Cover 1: user the corner on the best matchup, or the free safety deep middle to read the QB's eyes." },
+      { "heading": "Two-deep zones", "body": "Cover 2: user the corner in the flat/cloud and bait the flat throw, or a safety on the deep half for the post-wheel. Cover 6 / Cover 9: user the corner on the Cover 2 side, the vulnerable side." },
+      { "heading": "Single-high and quarters zones", "body": "Cover 3: user a corner in a deep third, read the QB, cheat to the most dangerous route in your third. Cover 4: user a corner or safety on a deep quarter and read number 2." },
+      { "heading": "Pressure", "body": "Fire Zone: user one of the three drop-zone DBs and break on the hot route. Man blitz: user the corner or nickel on the hot-route target, you must be there before the ball." }
+    ],
+    "related": ["philosophy", "cover-0", "cover-1", "cover-2", "cover-3", "cover-4"]
+  },
+  {
+    "id": "press",
+    "name": "Press Technique",
+    "subtitle": "CB usering · The jam, the drive, the trail",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "Alignment", "body": "Line up over the receiver with an inside shade (between him and the middle), feet staggered." },
+      { "heading": "The jam", "body": "Press the jam at the snap and redirect the receiver. If he releases inside (slant, drag), mirror inside and stay in his hip pocket, you have inside leverage. If he releases outside (out, corner, fade), open your hips and run on his outside hip, do not let him stack you vertically." },
+      { "heading": "The drive and trail", "body": "Stay within a yard, mirror his movements, do not overcommit. If you lose the jam, trail from inside leverage and stay in the passing lane. When the ball is thrown, break to the ball, not to the receiver." }
+    ],
+    "related": ["press", "trail", "route-jumping"]
+  },
+  {
+    "id": "trail",
+    "name": "Trail Technique",
+    "subtitle": "CB usering · Cover a route from behind",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "Position", "body": "Stay one yard behind the receiver, on his inside hip (between him and the QB). Split your eyes: feel the receiver while peeking the QB." },
+      { "heading": "Reading the break", "body": "Watch the hips. The hip turn telegraphs the break about 0.3 seconds early. On an inside break (slant, dig, post), you are already inside, jump it. On an outside break (out, corner, comeback), take the angle to the catch point, do not chase and do not run into the receiver." },
+      { "heading": "On a sit route", "body": "When the receiver's feet stop, the route is over. Drive through his hands at the catch point, swat or undercut for the pick." }
+    ],
+    "related": ["press", "playing-the-ball", "route-jumping"]
+  },
+  {
+    "id": "route-jumping",
+    "name": "Route Jumping",
+    "subtitle": "The playmaker skill",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "What it is", "body": "Reading the receiver's route and breaking on it before the ball arrives. The primary way iMoveChainz creates turnovers." },
+      { "heading": "Reads", "body": "Slant: when the outside foot plants, break inside. Curl/Hitch: when the feet chop, drive through the outside shoulder. Out/Comeback: when the hips snap, drive to the catch point. Corner/Post: do not bite the inside stem, stay on top and react to the break." },
+      { "heading": "The jump rule", "body": "Only jump when you can see two things at once: the receiver's break AND the QB's front shoulder pointing at your receiver. If only one is true, stay in trail and play the ball in the air. Beware the double move, do not bite the first move." }
+    ],
+    "related": ["trail", "playing-the-ball", "baiting"]
+  },
+  {
+    "id": "baiting",
+    "name": "Off-Ball Baiting",
+    "subtitle": "Zone CB · Show one thing, play another",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "What it is", "body": "When you user a zone corner, you can bait the QB into throwing to your zone by showing a different position than where you intend to be." },
+      { "heading": "The four baits", "body": "Cushion Bait: give 2 to 3 extra yards, then drive downhill on the short throw. Sideline Bait: shade toward the sideline to leave the inside looking open, then break across. Flat Bait (Cover 2): drop to the flat but peek number 1, then break back on the corner route. Bracket Bait: play over the top while the AI covers underneath, the QB sees single coverage and throws into a double." }
+    ],
+    "related": ["route-jumping", "playing-the-ball", "cover-2"]
+  },
+  {
+    "id": "playing-the-ball",
+    "name": "Playing the Ball in the Air",
+    "subtitle": "Contest at the catch point",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "Why it matters", "body": "This is why DB usering creates more turnovers than MLB usering: you are at the catch point, contesting at the receiver's hands." },
+      { "heading": "Inputs", "body": "In front of the receiver (route jump): face the QB and play the ball for the interception. Behind the receiver (trail): contest, pick if timed right, swat if late. Beside the receiver (bracket): the human wins 50/50 balls more often than the AI. Beaten by 3-plus yards: swat only, do not go for the pick or you get animated out of position." },
+      { "heading": "Discipline", "body": "If the ball goes to the other side of the field, stay in position. Do not chase. You are still responsible for your zone or man, and chasing invites the next throw back to your side." }
+    ],
+    "related": ["trail", "route-jumping", "baiting"]
+  },
+  {
+    "id": "disguise",
+    "name": "Pre-Snap Disguise",
+    "subtitle": "Change the QB's coverage read",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "What it is", "body": "Moving your user defender before the snap to show a different coverage than what is called. More subtle than MLB disguise, and more effective because it changes the shell read." },
+      { "heading": "The looks", "body": "Press then Bail: show man at the line, then run to your zone at the snap. Off then Jump: show soft, then drive on the short route. Shade Outside then Play Inside: show outside leverage, then take away the slant. Show Blitz then Drop: creep the nickel or safety up, then backpedal at the snap. Show 2-High then Rotate: align deep, then rotate to single high and let the other safety fill." }
+    ],
+    "related": ["philosophy", "baiting"]
+  },
+  {
+    "id": "switch-stick",
+    "name": "Switch Stick",
+    "subtitle": "Touch a zone LB without breaking it",
+    "tags": ["technique"],
+    "sections": [
+      { "heading": "What it is", "body": "How you make a play on the ball with a hook or curl defender without pulling him off his assignment. You briefly click onto him at the catch point, then release so the AI resumes control." },
+      { "heading": "The rules", "body": "Click on ONLY at the catch point, when the ball is in the air, to swat or pick. Never hold the stick on a zone linebacker before the throw, the AI stops making his checks the instant you take over. Flick, do not hold: switch, play the ball, switch right back. Total time on the linebacker under one second." },
+      { "heading": "The habit", "body": "After the play on the ball, flick back to your primary DB before the next snap. If you forget, you start the next play usering the hook zone and break the AI structure." }
+    ],
+    "related": ["philosophy", "playing-the-ball"]
+  },
+  {
+    "id": "when-mlb",
+    "name": "When to User the MLB",
+    "subtitle": "The two exceptions (10 percent of plays)",
+    "tags": ["core"],
+    "sections": [
+      { "heading": "Run shooting", "body": "Against heavy run formations (12, 21, 22 personnel), user the Mike, read the offensive line, and fill the gap before the back arrives. Switch back to a DB the moment they go to 11 personnel or a passing formation." },
+      { "heading": "QB spy", "body": "Against mobile QBs who scramble, user the Mike as a spy: mirror the QB laterally, attack downhill if he crosses the line, peel to cover if the back releases. Switch back to a DB once the scramble threat is neutralized." }
+    ],
+    "related": ["why-db", "philosophy"]
+  }
+]

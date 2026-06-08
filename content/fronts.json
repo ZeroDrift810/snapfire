@@ -1,0 +1,93 @@
+[
+  {
+    "id": "43-over",
+    "name": "4-3 Over",
+    "subtitle": "4 DL, 3 LB · 3-tech to the strong side",
+    "tags": ["base"],
+    "sections": [
+      { "heading": "What it is", "body": "The most common front in modern football. Four down linemen, three linebackers, with the strength shifted toward the offense's strong side. Balanced and versatile, it supports any coverage behind it." },
+      { "heading": "Key alignment", "body": "Weak DE 5-tech, 1-tech nose to the weak side, 3-tech tackle to the strong side B-gap (the most disruptive spot), strong DE 5-tech. Sam, Mike, and Will fill the gaps behind." },
+      { "heading": "Strengths", "body": "The 3-tech penetrates the B-gap fast and aggressive. Sam is a versatile chess piece. Every gap has a defender, so it stops the run without a blitz." },
+      { "heading": "What beats it", "body": "Weak-side Inside Zone cutback behind the 1-tech. Counter and Trap (let the aggressive 3-tech run upfield, then pull behind him). Zone Read the predictable contain end. Misdirection to hold the flowing linebackers." }
+    ],
+    "related": ["three-tech", "inside-zone", "counter", "zone-read"]
+  },
+  {
+    "id": "43-under",
+    "name": "4-3 Under",
+    "subtitle": "4 DL, 3 LB · 3-tech to the weak side",
+    "tags": ["base"],
+    "sections": [
+      { "heading": "What it is", "body": "Flips the line strength to the weak side. The 3-tech moves weak and a bigger closed-side end walks down inside the tight end strong. A different look with different run fits, strong against strong-side runs." },
+      { "heading": "Key alignment", "body": "Open-side DE 5-tech weak, 3-tech tackle to the weak B-gap, 1-tech nose shaded strong, a bigger closed-side DE on the tight end. Will is an aggressive run-through player, Sam walks out to coverage." },
+      { "heading": "Strengths", "body": "Loads the strong side with bigger bodies (closed DE plus nose plus Mike), so the offense cannot get movement on strong-side runs. The weak-side 3-tech still disrupts." },
+      { "heading": "What beats it", "body": "Weak-side runs and the Inside Zone cutback (if Will is late filling behind the 3-tech). Spread formations force it to sub. Counter or Power to the strong side can still work against the closed end." }
+    ],
+    "related": ["three-tech", "43-over", "inside-zone", "counter"]
+  },
+  {
+    "id": "34-base",
+    "name": "3-4 Base",
+    "subtitle": "3 DL, 4 LB · Two-gap, disguise",
+    "tags": ["base"],
+    "sections": [
+      { "heading": "What it is", "body": "Three big two-gap linemen control six gaps and free four linebackers to attack, cover, or blitz from anywhere. The 3-4 is about disguise and versatility, the offense cannot tell who is coming." },
+      { "heading": "Key alignment", "body": "Two 5-tech ends and a 0-tech nose, all two-gapping. Jack and Buck outside linebackers rush or drop, Sam and Mike inside linebackers fill and cover. The nose is the most important player." },
+      { "heading": "Strengths", "body": "Total pre-snap disguise: the same look produces a 3, 4, 5, or 6-man rush. The offense cannot ID the Mike for protection. Any linebacker can be the pressure." },
+      { "heading": "What beats it", "body": "Interior push: double-team the nose with Inside Zone, and if he moves, both A-gaps open. Zone-blocking combos displace two-gap linemen. Spread formations force the 3-4 to sub to Nickel. Attack slow inside linebackers with fast slot receivers." }
+    ],
+    "related": ["mike", "inside-zone", "zone-blocking", "nickel"]
+  },
+  {
+    "id": "nickel",
+    "name": "Nickel (4-2-5)",
+    "subtitle": "4 DL, 2 LB, 5 DB · The modern base",
+    "tags": ["base", "sub"],
+    "sections": [
+      { "heading": "What it is", "body": "No longer a sub-package, it is the base defense in modern football (60 to 70 percent of snaps). It replaces a linebacker with a fifth defensive back, the nickelback, to match 11 personnel." },
+      { "heading": "Key alignment", "body": "Four down linemen (1-tech, 3-tech, two ends), two linebackers (Mike and Will), and five DBs including the nickel over the slot. The strong and free safeties split deep or rotate." },
+      { "heading": "Strengths", "body": "Covers three receivers properly with the nickel on the slot. Adds nickel-blitz pressure from an unexpected angle. The right answer to spread 11-personnel offenses." },
+      { "heading": "What beats it", "body": "Heavy personnel (21, 22) forces it out of Nickel or out-blocks it. Run at the nickelback (a 190-pound DB) with Outside Zone or Pin and Pull. Trips formations stress the slot coverage. Motion to expose the assignment." }
+    ],
+    "related": ["nickel-position", "personnel", "slot", "outside-zone"]
+  },
+  {
+    "id": "33-stack",
+    "name": "3-3 Stack (3-3-5)",
+    "subtitle": "3 DL, 3 LB, 5 DB · The chaos defense",
+    "tags": ["base", "sub"],
+    "sections": [
+      { "heading": "What it is", "body": "Three linemen, three linebackers stacked directly behind them, five defensive backs. Every pre-snap look is identical and every post-snap action is different. The offense cannot read the linebackers because they are hidden." },
+      { "heading": "Key alignment", "body": "Two 4i or 5-tech ends, a 0-tech two-gap nose, three stacked linebackers 4 to 5 yards deep, the nickel over the slot, and a rotating secondary." },
+      { "heading": "Strengths", "body": "Total pre-snap disguise from one alignment: any number of rushers, zone blitz, fire zone. Forces the center to guess the Mike. Adapts to any personnel without subbing." },
+      { "heading": "What beats it", "body": "Only three linemen, so Inside Zone with double teams moves the interior. Quick plays (jet sweep, quick passes) beat the linebackers before they diagnose. Heavy sets create a numbers mismatch in a light box." }
+    ],
+    "related": ["mike", "inside-zone", "jet-motion", "fire-zone"]
+  },
+  {
+    "id": "bear",
+    "name": "Bear (46)",
+    "subtitle": "5 DL, 2 LB · Run-stuffing wall",
+    "tags": ["situational"],
+    "sections": [
+      { "heading": "What it is", "body": "Five defenders on the line, including a nose head-up on the center and tackles head-up on both guards. It clogs every interior gap so the two linebackers behind it run free. A short-yardage and goal-line call, not a base defense." },
+      { "heading": "Key alignment", "body": "Two 5-tech ends, two tackles on the guards, a 0-tech nose on the center, and two stacked linebackers." },
+      { "heading": "Strengths", "body": "Every offensive lineman has a man, so nobody can double-team or climb to the linebackers. Impossible to run inside. The linebackers are unblocked." },
+      { "heading": "What beats it", "body": "Outside Zone and perimeter runs (the Bear cannot chase sideline to sideline). Quick passing game (five linemen means fewer coverage defenders, bigger windows). Jet sweep and motion to the edge. Spread it out to 10 or 11 personnel to force it to sub." }
+    ],
+    "related": ["outside-zone", "jet-motion", "stick"]
+  },
+  {
+    "id": "dime",
+    "name": "Dime (4-1-6)",
+    "subtitle": "4 DL, 1 LB, 6 DB · Max coverage",
+    "tags": ["situational", "sub"],
+    "sections": [
+      { "heading": "What it is", "body": "Removes a second linebacker for a sixth defensive back. A pass-first defense for 3rd and long, 10 personnel (four receivers), and prevent situations." },
+      { "heading": "Key alignment", "body": "Four down linemen, a single linebacker (spy or fill), and six defensive backs covering the field." },
+      { "heading": "Strengths", "body": "Maximum coverage against four-plus receivers and obvious passing downs. Matches speed with speed against hurry-up." },
+      { "heading": "What beats it", "body": "Run the ball. With one linebacker there is almost no run support, so Inside Zone or Power against a Dime light box is often a big play. The Dime Dilemma: if they stay in it against a run they lose, if they sub out and you throw they lose." }
+    ],
+    "related": ["personnel", "inside-zone", "power"]
+  }
+]
