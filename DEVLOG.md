@@ -12,6 +12,13 @@ Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
 ---
 
+## 2026-06-12 — Run-play data audit: 87 of 94 pure-run scheme entries carry fabricated pass content  [data]
+**Symptom:** Power Read and 01 Trap both turned out to be invented RPO/pass-sell content; audited the rest of the playbook for the same disease.
+**Root cause:** The machine-generated scheme data systematically dressed run plays in pass clothing: clear-out verticals on handoffs, "checkdown/hot" template reads, "kill to pass" audibles, wrong front guidance.
+**Fix (partial):** Fixed from sourced transcripts so far: power read family (7 schemes, 3 concepts, commit 1e8470d) and 01 Trap (3 schemes, 2 concepts, commit e9f8bbc). Remaining ~84 run entries are listed by concept in the audit (biggest: Inside Zone 15, Duo 7, Read Option 6, HB Power 4, HB Stretch 3, QB Zone 3, HB Quick Base 3, plus ~40 singletons). Rewrite per concept family as transcripts land.
+**Files:** `data/Scheme_Knowledge.json`, `data/Concept_Knowledge.json`.
+**Gotcha:** Audit heuristic that found these: offense-only entries with pure-run display names whose routes/reads/usage_notes contain pass vocabulary. Shinobi (defense) "Trap/Slant" names are coverages and line stunts, not suspects.
+
 ## 2026-06-12 — Power Read family was fabricated RPO data; stale slash commands caused interaction failures  [data, discord]
 **Symptom:** Power Read rendered with a slant pass option ("if he stays in box, throw slant"); players also hit "This interaction failed" with zero errors in the bot logs.
 **Root cause:** Two separate issues. (1) All 7 power-read scheme entries (5x Power Read, Jet Power Read, Escort Power Read Toss) plus 3 Concept entries carried invented RPO content; Power Read is a run-run option (inverted veer): unblocked end man is the read key, crash = give the sweep/jet/toss, sit = QB power keep through the B gap. (2) The Jun 7 button-only rewrite removed all slash handling but never deregistered `/concept`, `/coverage`, `/scheme` from Discord, so they sat in the picker failing on every use.
