@@ -446,38 +446,38 @@
     "formation_family": "Shotgun Tight Y Off",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go/Clear Out",
-        "note": "Clear deep safety"
-      },
-      {
-        "receiver": "Z",
-        "route": "Go/Clear Out",
-        "note": "Clear deep safety"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Block/Stalk",
-        "note": "Stalk block cornerback"
-      },
-      {
-        "receiver": "TE",
-        "route": "Block",
-        "note": "Down block on DE/OLB"
-      },
-      {
         "receiver": "RB",
-        "route": "Trap Run",
-        "note": "Hit 1-hole gap"
+        "route": "Trap run",
+        "note": "Same-side downhill through the A gap; stay patient and cut off the trap block"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Trap block",
+        "note": "Backside guard pulls to kick out the first defensive lineman outside the play-side guard"
+      },
+      {
+        "receiver": "Play-side Guard",
+        "route": "Free release",
+        "note": "Leaves the trap target alone and climbs straight to the Mike"
+      },
+      {
+        "receiver": "Line",
+        "route": "Down blocks",
+        "note": "Backside gap rules; vs odd fronts expect a double team on the nose up to a backer"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter; nobody runs a route on this play"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Identify MLB and safety alignment, count the box defenders",
-      "**1️⃣ Primary:** RB mesh point - secure handoff",
-      "**2️⃣ Secondary:** RB reads the trap block and cuts accordingly",
-      "**3️⃣ Checkdown:** null - designed run play"
+      "**Pre-Snap:** Find the first defensive lineman outside the play-side guard; he is the trap target and the lane opens inside his vacated spot",
+      "**1️⃣ Mesh:** Straight handoff, same-side run; defenses expect shotgun runs to cross the formation, so users often fly the wrong way",
+      "**2️⃣ RB track:** Downhill through the A gap behind the down blocks; vs odd fronts the trap block on a wide 4i makes the hole huge",
+      "**🚨 Check out of it:** vs double mug or six-plus defenders stacked on the line, audible out; trap struggles vs a loaded line of scrimmage"
     ],
-    "usage_notes": "**Beats:** Light box, aggressive DEs, slanting defensive line\n**Coach's Key:** RB must be patient for trap block to develop, hit the designed gap\n",
+    "usage_notes": "**Beats:** Odd fronts (3-3-5, Mint, Penny, 3-2-6, dime 2-3 odd), pinched lines, users jumping the inside zone stereotype\n**Coach's Key:** Trap is an alternate way to run power; same gap rules, but the play-side guard free releases and the puller traps the first lineman outside him\n",
     "image_file": "play1_2025-12-01T08-44-31-405Z.png"
   },
   {
@@ -9596,39 +9596,38 @@
     "formation_family": "Shotgun Deuce Close",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Vertical",
-        "note": "Clear safety"
-      },
-      {
-        "receiver": "Z",
-        "route": "Vertical",
-        "note": "Clear safety"
-      },
-      {
-        "receiver": "TE",
-        "route": "Vertical",
-        "note": "Clear linebacker"
-      },
-      {
         "receiver": "RB",
-        "route": "Trap run through A gap",
-        "note": "Hit trap hole"
+        "route": "Trap run",
+        "note": "Same-side downhill through the A gap; stay patient and cut off the trap block"
       },
       {
-        "receiver": "FB",
-        "route": "Lead block",
-        "note": "Kick out defender"
+        "receiver": "Pulling Guard",
+        "route": "Trap block",
+        "note": "Backside guard pulls to kick out the first defensive lineman outside the play-side guard"
+      },
+      {
+        "receiver": "Play-side Guard",
+        "route": "Free release",
+        "note": "Leaves the trap target alone and climbs straight to the Mike"
+      },
+      {
+        "receiver": "Line",
+        "route": "Down blocks",
+        "note": "Backside gap rules; vs odd fronts expect a double team on the nose up to a backer"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter; nobody runs a route on this play"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Identify Mike linebacker, check for safety rotation, count box defenders",
-      "**1️⃣ Primary:** Mesh point handoff to RB - no read involved",
-      "**2️⃣ Secondary:** null - predetermined handoff",
-      "**3️⃣ Checkdown:** null - run play",
-      "**🚨 Hot:** Kill to pass if defense shows overload blitz"
+      "**Pre-Snap:** Find the first defensive lineman outside the play-side guard; he is the trap target and the lane opens inside his vacated spot",
+      "**1️⃣ Mesh:** Straight handoff, same-side run; defenses expect shotgun runs to cross the formation, so users often fly the wrong way",
+      "**2️⃣ RB track:** Downhill through the A gap behind the down blocks; vs odd fronts the trap block on a wide 4i makes the hole huge",
+      "**🚨 Check out of it:** vs double mug or six-plus defenders stacked on the line, audible out; trap struggles vs a loaded line of scrimmage"
     ],
-    "usage_notes": "**Beats:** Aggressive edge rushers, over-pursuing linebackers, light box\n**Coach's Key:** FB must kick out edge defender to create proper trap lane\n",
+    "usage_notes": "**Beats:** Odd fronts (3-3-5, Mint, Penny, 3-2-6, dime 2-3 odd), pinched lines, users jumping the inside zone stereotype\n**Coach's Key:** Trap is an alternate way to run power; same gap rules, but the play-side guard free releases and the puller traps the first lineman outside him\n",
     "image_file": "play2_2025-12-01T08-46-08-331Z.png"
   },
   {
@@ -11002,39 +11001,38 @@
     "formation_family": "Shotgun Tight Y Off Wk",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Deep Comeback",
-        "note": "Sell pass fake"
-      },
-      {
-        "receiver": "Z",
-        "route": "Deep Comeback",
-        "note": "Sell pass fake"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Slant",
-        "note": "Quick sell"
-      },
-      {
-        "receiver": "TE",
-        "route": "Seam",
-        "note": "Play action sell"
-      },
-      {
         "receiver": "RB",
-        "route": "Trap Run",
-        "note": "Hit gap hard"
+        "route": "Trap run",
+        "note": "Same-side downhill through the A gap; stay patient and cut off the trap block"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Trap block",
+        "note": "Backside guard pulls to kick out the first defensive lineman outside the play-side guard"
+      },
+      {
+        "receiver": "Play-side Guard",
+        "route": "Free release",
+        "note": "Leaves the trap target alone and climbs straight to the Mike"
+      },
+      {
+        "receiver": "Line",
+        "route": "Down blocks",
+        "note": "Backside gap rules; vs odd fronts expect a double team on the nose up to a backer"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter; nobody runs a route on this play"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Check safety alignment and LB depth - look for light box",
-      "**1️⃣ Primary:** RB reads pulling guard and kicks to daylight",
-      "**2️⃣ Secondary:** Follow lead blocker through A-Gap",
-      "**3️⃣ Checkdown:** Cut back if trap block creates seal",
-      "**🚨 Hot:** Audible to pass if safety rolls down"
+      "**Pre-Snap:** Find the first defensive lineman outside the play-side guard; he is the trap target and the lane opens inside his vacated spot",
+      "**1️⃣ Mesh:** Straight handoff, same-side run; defenses expect shotgun runs to cross the formation, so users often fly the wrong way",
+      "**2️⃣ RB track:** Downhill through the A gap behind the down blocks; vs odd fronts the trap block on a wide 4i makes the hole huge",
+      "**🚨 Check out of it:** vs double mug or six-plus defenders stacked on the line, audible out; trap struggles vs a loaded line of scrimmage"
     ],
-    "usage_notes": "**Beats:** Cover 2, 6-man box, aggressive edge rushers\n**Coach's Key:** RB must be patient and let trap develop - don't outrun your blocks\n",
+    "usage_notes": "**Beats:** Odd fronts (3-3-5, Mint, Penny, 3-2-6, dime 2-3 odd), pinched lines, users jumping the inside zone stereotype\n**Coach's Key:** Trap is an alternate way to run power; same gap rules, but the play-side guard free releases and the puller traps the first lineman outside him\n",
     "image_file": "play2_2025-12-01T08-46-39-418Z.png"
   },
   {

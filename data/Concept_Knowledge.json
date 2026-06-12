@@ -114,9 +114,15 @@
   {
     "name": "Trap",
     "family": "RUN",
-    "core_idea": "Pulls guard to trap the EMLOS (End Man on Line of Scrimmage), creates running lane. RB must be patient for trap block to develop, hit the designed gap",
-    "best_vs": [],
-    "weak_vs": []
+    "core_idea": "Gap run that traps the first defensive lineman outside the play-side guard: the play-side guard free releases to a linebacker and the backside guard pulls to kick the target out. Downhill through the A gap, usually same-side. RB stays patient and cuts off the trap block.",
+    "best_vs": [
+      "Odd fronts (3-3-5, Mint, Penny, 3-2-6)",
+      "Pinched lines"
+    ],
+    "weak_vs": [
+      "Double mug",
+      "Six-plus stacked on the line"
+    ]
   },
   {
     "name": "RPO Bubble Screen",
@@ -212,11 +218,15 @@
   {
     "name": "Inside Trap",
     "family": "RUN",
-    "core_idea": "Creates gap in interior line with trap block, selling pass with deep routes. Sell pass action with deep routes while executing inside trap run",
+    "core_idea": "Interior gap run behind a trap block: leave the first lineman outside the play-side guard unblocked, then kick him out with the pulling guard while the rest of the line blocks down. The lane opens in the A gap where he vacated.",
     "best_vs": [
-      "Cover 2"
+      "Odd fronts",
+      "Pinched lines"
     ],
-    "weak_vs": []
+    "weak_vs": [
+      "Double mug",
+      "Six-plus stacked on the line"
+    ]
   },
   {
     "name": "Draw",
