@@ -84,39 +84,38 @@
     "formation_family": "Shotgun Wing Slot Wk",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go",
-        "note": "Clear safety deep"
-      },
-      {
-        "receiver": "Z",
-        "route": "Go",
-        "note": "Clear safety deep"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Slant",
-        "note": "RPO quick read"
-      },
-      {
-        "receiver": "TE",
-        "route": "Block",
-        "note": "Down block"
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Read the end man on the line; keep through the B gap behind the wrap when he widens"
       },
       {
         "receiver": "RB",
-        "route": "Power gap",
-        "note": "Hit B gap behind pulling guard"
+        "route": "Sweep",
+        "note": "The give; hits the edge with blockers in front when the read key crashes"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull through the hole to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Backside gap rules with a double team up to the backside linebacker"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter for the sweep"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count the box - look for light box (6 or fewer defenders), identify Mike linebacker for power gap",
-      "**1️⃣ Primary:** Read the weak side linebacker - if he stays in box, throw slant; if he covers slot, hand off power",
-      "**2️⃣ Secondary:** Post-snap read of linebacker movement and leverage",
-      "**3️⃣ Checkdown:** RB power run if slant covered",
-      "**🚨 Hot:** Slant is the hot route vs blitz"
+      "**Pre-Snap:** A loaded box is fine here: the end man on the line goes unblocked and becomes the read key, so the extra defender is in conflict",
+      "**1️⃣ Read key crashes inside:** give the sweep, the back wins the edge with blockers in front",
+      "**2️⃣ Read key stays outside or upfield:** keep it, QB power downhill through the B gap behind the wrapping guard",
+      "**🚨 No pass option:** this is a run-run option (also called inverted veer), the only decision is give or keep"
     ],
-    "usage_notes": "**Beats:** Light box coverage, Cover 2, Cover 3, aggressive LB run support\n**Coach's Key:** QB must make pre-snap read of box count and post-snap read of weak LB\n",
+    "usage_notes": "**Beats:** Loaded boxes, conservative option defense (the read key plays the QB, crashes inside, and the sweep runs free)\n**Coach's Key:** Hold the keep button (X on PlayStation, A on Xbox) when the read key stands up; do nothing and the give happens on its own\n",
     "image_file": "play1_2025-12-01T08-44-17-495Z.png"
   },
   {
@@ -1074,39 +1073,38 @@
     "formation_family": "Shotgun Bunch TE",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Vertical",
-        "note": "Vertical stretch"
-      },
-      {
-        "receiver": "Z",
-        "route": "Slant",
-        "note": "Quick slant read"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Drag",
-        "note": "Underneath crosser"
-      },
-      {
-        "receiver": "TE",
-        "route": "Seam",
-        "note": "Middle seam"
-      },
-      {
         "receiver": "RB",
         "route": "Toss Sweep",
-        "note": "Power toss right"
+        "note": "The give; the toss widens the sweep track to the edge"
+      },
+      {
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Keep downhill through the B gap when the read key widens with the toss"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull to the play-side linebacker"
+      },
+      {
+        "receiver": "Bunch",
+        "route": "Block",
+        "note": "Bunch receivers block the perimeter for the toss"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Backside gap rules with a double team to the backside linebacker"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count the box - look for light box for run, identify linebacker coverage over bunch",
-      "**1️⃣ Primary:** Read linebacker over bunch formation - if he covers bunch, hand off toss",
-      "**2️⃣ Secondary:** If LB sits on run, throw quick slant to bunch receiver",
-      "**3️⃣ Checkdown:** Drag route underneath if coverage rolls",
-      "**🚨 Hot:** Quick slant vs aggressive coverage"
+      "**Pre-Snap:** Find the end man on the line; he is the read key and nobody blocks him",
+      "**1️⃣ Read key crashes inside:** toss it, the back gets the edge behind the bunch blocks",
+      "**2️⃣ Read key stays outside:** keep it, QB power through the B gap behind the wrap",
+      "**🚨 No pass option:** toss or keep, decided by the read key"
     ],
-    "usage_notes": "**Beats:** Cover 3, Base 4-3, Light box defenses\n**Coach's Key:** QB must make quick pre-snap read of linebacker alignment and commit to run or pass based on leverage\n",
+    "usage_notes": "**Beats:** Loaded boxes, conservative option defense, defenses that widen with the bunch\n**Coach's Key:** Same power read rules with a toss instead of a sweep; the pitch gets the back to the edge faster\n",
     "image_file": "play1_2025-12-01T08-44-55-675Z.png"
   },
   {
@@ -2976,39 +2974,38 @@
     "formation_family": "Shotgun Wing Slot Offset",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go",
-        "note": "Vertical stretch safety"
+        "receiver": "Jet WR",
+        "route": "Jet Sweep",
+        "note": "Full-speed motion; the give, and the handoff is automatic when the read key crashes"
       },
       {
-        "receiver": "Z",
-        "route": "Jet Motion to Handoff",
-        "note": "Primary ball carrier on sweep"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Slant",
-        "note": "RPO hot route vs inside leverage"
-      },
-      {
-        "receiver": "TE",
-        "route": "Drag",
-        "note": "Underneath crossing route"
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Keep through the B gap when the read key stays outside"
       },
       {
         "receiver": "RB",
-        "route": "Power Lead Block",
-        "note": "Lead blocker for jet sweep"
+        "route": "Lead block",
+        "note": "Leaks out to block the safety for the sweep"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Down blocks with a double team up to the backside linebacker"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count box defenders vs run fit, identify blitzer, check safety depth for RPO",
-      "**1️⃣ Primary:** Read end man on line of scrimmage - if he crashes down give jet sweep, if he stays wide pull ball",
-      "**2️⃣ Secondary:** If ball pulled, read slot defender - if he jumps run throw slant behind him",
-      "**3️⃣ Checkdown:** TE drag route underneath if slant covered",
-      "**🚨 Hot:** Slant to slot receiver is hot route vs blitz or inside shade coverage"
+      "**Pre-Snap:** Find the end man on the line of scrimmage; he is the read key and nobody blocks him",
+      "**1️⃣ Read key crashes inside:** the jet sweep handoff happens automatically, perimeter blockers are already out front",
+      "**2️⃣ Read key stays outside:** keep it, QB power through the B gap behind the wrap",
+      "**🚨 No pass option:** jet sweep or QB power, the read key decides"
     ],
-    "usage_notes": "**Beats:** Cover 1, Cover 3, Base 4-3 defense, overly aggressive run fits\n**Coach's Key:** QB must read end man on line of scrimmage first - mesh point timing with jet motion is critical\n",
+    "usage_notes": "**Beats:** Loaded boxes, edge defenders who chase jet motion, goal line fronts\n**Coach's Key:** Opponents who think the jet is a fake will crash inside and hand the sweep the edge; this play stays solid near the goal line\n",
     "image_file": "play1_2025-12-01T08-45-52-935Z.png"
   },
   {
@@ -6934,39 +6931,38 @@
     "formation_family": "Shotgun Y Off Trio Wk",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go/Streak",
-        "note": "Deep clear"
-      },
-      {
-        "receiver": "Z",
-        "route": "Go/Streak",
-        "note": "Deep clear"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Go/Streak",
-        "note": "Deep clear"
-      },
-      {
-        "receiver": "TE",
-        "route": "Slant",
-        "note": "Quick RPO read"
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Read the end man on the line; keep through the B gap behind the wrap when he widens"
       },
       {
         "receiver": "RB",
-        "route": "Power Gap",
-        "note": "Lead back through B gap"
+        "route": "Sweep",
+        "note": "The give; hits the edge with blockers in front when the read key crashes"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull through the hole to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Backside gap rules with a double team up to the backside linebacker"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter for the sweep"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count box defenders vs run fits, identify leverage on TE slant",
-      "**1️⃣ Primary:** Read MIKE linebacker or safety over TE - if crashes down give slant",
-      "**2️⃣ Secondary:** Hand off power if LB/Safety stays high or outside",
-      "**3️⃣ Checkdown:** RB swing route if both covered",
-      "**🚨 Hot:** TE slant is hot route vs aggressive run defense"
+      "**Pre-Snap:** A loaded box is fine here: the end man on the line goes unblocked and becomes the read key, so the extra defender is in conflict",
+      "**1️⃣ Read key crashes inside:** give the sweep, the back wins the edge with blockers in front",
+      "**2️⃣ Read key stays outside or upfield:** keep it, QB power downhill through the B gap behind the wrapping guard",
+      "**🚨 No pass option:** this is a run-run option (also called inverted veer), the only decision is give or keep"
     ],
-    "usage_notes": "**Beats:** Cover 1 Robber, 6-man box, aggressive run support\n**Coach's Key:** QB must make decisive run/pass read based on conflict defender\n",
+    "usage_notes": "**Beats:** Loaded boxes, conservative option defense (the read key plays the QB, crashes inside, and the sweep runs free)\n**Coach's Key:** Hold the keep button (X on PlayStation, A on Xbox) when the read key stands up; do nothing and the give happens on its own\n",
     "image_file": "play2_2025-12-01T08-44-59-181Z.png"
   },
   {
@@ -7639,39 +7635,38 @@
     "formation_family": "Shotgun Normal Y Off Close",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go",
-        "note": "Clear safety deep"
-      },
-      {
-        "receiver": "Z",
-        "route": "Go",
-        "note": "Clear safety deep"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Slant",
-        "note": "Quick slant vs inside leverage"
-      },
-      {
-        "receiver": "TE",
-        "route": "Go",
-        "note": "Clear safety/seam"
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Read the end man on the line; keep through the B gap behind the wrap when he widens"
       },
       {
         "receiver": "RB",
-        "route": "Power Gap",
-        "note": "Power run between tackles"
+        "route": "Sweep",
+        "note": "The give; hits the edge with blockers in front when the read key crashes"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull through the hole to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Backside gap rules with a double team up to the backside linebacker"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter for the sweep"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count box defenders - if 6 or less, hand off power. If 7+, throw slant",
-      "**1️⃣ Primary:** Slot defender leverage on WR3 - if inside leverage, throw slant",
-      "**2️⃣ Secondary:** Hand off to RB on power gap if slot defender plays pass",
-      "**3️⃣ Checkdown:** RB swing route if both reads covered",
-      "**🚨 Hot:** Slant is automatic vs blitz showing"
+      "**Pre-Snap:** A loaded box is fine here: the end man on the line goes unblocked and becomes the read key, so the extra defender is in conflict",
+      "**1️⃣ Read key crashes inside:** give the sweep, the back wins the edge with blockers in front",
+      "**2️⃣ Read key stays outside or upfield:** keep it, QB power downhill through the B gap behind the wrapping guard",
+      "**🚨 No pass option:** this is a run-run option (also called inverted veer), the only decision is give or keep"
     ],
-    "usage_notes": "**Beats:** Light box defenses, Cover 2 safety help, nickel packages\n**Coach's Key:** Read happens at mesh point - if slot defender sits on slant, hand off power. If he jumps run fit, throw slant\n",
+    "usage_notes": "**Beats:** Loaded boxes, conservative option defense (the read key plays the QB, crashes inside, and the sweep runs free)\n**Coach's Key:** Hold the keep button (X on PlayStation, A on Xbox) when the read key stands up; do nothing and the give happens on its own\n",
     "image_file": "play2_2025-12-01T08-45-19-435Z.png"
   },
   {
@@ -9224,34 +9219,38 @@
     "formation_family": "Shotgun Ace",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go",
-        "note": "Clear safety deep"
-      },
-      {
-        "receiver": "Z",
-        "route": "Go",
-        "note": "Clear safety deep"
-      },
-      {
-        "receiver": "TE",
-        "route": "Block",
-        "note": "Down block for power gap"
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Read the end man on the line; keep through the B gap behind the wrap when he widens"
       },
       {
         "receiver": "RB",
-        "route": "Power Gap",
-        "note": "Hit B gap hard off guard pull"
+        "route": "Sweep",
+        "note": "The give; hits the edge with blockers in front when the read key crashes"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull through the hole to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Backside gap rules with a double team up to the backside linebacker"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter for the sweep"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count box defenders - if 6 or less, hand off power. If 7+, consider pass to clear verticals",
-      "**1️⃣ Primary:** Read end man on line of scrimmage - if he sits for run, pull ball and throw vertical",
-      "**2️⃣ Secondary:** If EMLOS crashes down on RB, QB keeps and throws deep to prevent robber coverage",
-      "**3️⃣ Checkdown:** RB leak out if pass is pulled",
-      "**🚨 Hot:** Quick slant if safety rotates down pre-snap"
+      "**Pre-Snap:** A loaded box is fine here: the end man on the line goes unblocked and becomes the read key, so the extra defender is in conflict",
+      "**1️⃣ Read key crashes inside:** give the sweep, the back wins the edge with blockers in front",
+      "**2️⃣ Read key stays outside or upfield:** keep it, QB power downhill through the B gap behind the wrapping guard",
+      "**🚨 No pass option:** this is a run-run option (also called inverted veer), the only decision is give or keep"
     ],
-    "usage_notes": "**Beats:** Light box, Cover 2 robber, Over-aggressive run support\n**Coach's Key:** QB must make clean read on EMLOS defender - if he widens for pass, hand off. If he stays tight for run, pull and throw\n",
+    "usage_notes": "**Beats:** Loaded boxes, conservative option defense (the read key plays the QB, crashes inside, and the sweep runs free)\n**Coach's Key:** Hold the keep button (X on PlayStation, A on Xbox) when the read key stands up; do nothing and the give happens on its own\n",
     "image_file": "play2_2025-12-01T08-45-58-462Z.png"
   },
   {
@@ -10143,39 +10142,38 @@
     "formation_family": "Shotgun Trey Open",
     "routes": [
       {
-        "receiver": "X",
-        "route": "Go",
-        "note": "Backside clear"
-      },
-      {
-        "receiver": "Z",
-        "route": "Go",
-        "note": "Deep threat"
-      },
-      {
-        "receiver": "Slot",
-        "route": "Go",
-        "note": "Vertical stretch"
-      },
-      {
-        "receiver": "TE",
-        "route": "Go",
-        "note": "Seam threat"
+        "receiver": "QB",
+        "route": "Read, then Power",
+        "note": "Read the end man on the line; keep through the B gap behind the wrap when he widens"
       },
       {
         "receiver": "RB",
-        "route": "Power run",
-        "note": "Between tackles power"
+        "route": "Sweep",
+        "note": "The give; hits the edge with blockers in front when the read key crashes"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Wrap",
+        "note": "Pull through the hole to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Backside gap rules with a double team up to the backside linebacker"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk the perimeter for the sweep"
       }
     ],
     "reads": [
-      "**Pre-Snap:** Count the box - look for 6 or fewer defenders for run, identify safety depth for pass",
-      "**1️⃣ Primary:** Read the unblocked edge defender - if he crashes down, pull and throw",
-      "**2️⃣ Secondary:** Four vertical stretch - find the open receiver based on safety coverage",
-      "**3️⃣ Checkdown:** RB swing if protection breaks down",
-      "**🚨 Hot:** Quick slant conversion vs heavy blitz"
+      "**Pre-Snap:** A loaded box is fine here: the end man on the line goes unblocked and becomes the read key, so the extra defender is in conflict",
+      "**1️⃣ Read key crashes inside:** give the sweep, the back wins the edge with blockers in front",
+      "**2️⃣ Read key stays outside or upfield:** keep it, QB power downhill through the B gap behind the wrapping guard",
+      "**🚨 No pass option:** this is a run-run option (also called inverted veer), the only decision is give or keep"
     ],
-    "usage_notes": "**Beats:** Cover 2, Light box, Aggressive run fits\n**Coach's Key:** QB must read the edge defender cleanly - if he sits or comes upfield, hand off the power. If he crashes hard, pull and throw the four verticals\n",
+    "usage_notes": "**Beats:** Loaded boxes, conservative option defense (the read key plays the QB, crashes inside, and the sweep runs free)\n**Coach's Key:** Hold the keep button (X on PlayStation, A on Xbox) when the read key stands up; do nothing and the give happens on its own\n",
     "image_file": "play2_2025-12-01T08-46-19-789Z.png"
   },
   {

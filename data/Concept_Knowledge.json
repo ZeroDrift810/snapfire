@@ -18,12 +18,12 @@
     "weak_vs": []
   },
   {
-    "name": "Power Read RPO",
-    "family": "RPO",
-    "core_idea": "Forces defense to choose between stopping run or covering quick pass. QB must make pre-snap read of box count and post-snap read of weak LB",
+    "name": "Power Read (Inverted Veer)",
+    "family": "RUN",
+    "core_idea": "Option run that pairs a halfback sweep with QB power. The end man on the line goes unblocked as the read key: if he crashes inside the QB gives the sweep, if he stays outside the QB keeps on power through the B gap. No pass option, the only decision is give or keep.",
     "best_vs": [
-      "Cover 2",
-      "Cover 3"
+      "Loaded box",
+      "Conservative option defense"
     ],
     "weak_vs": []
   },
@@ -252,10 +252,11 @@
   },
   {
     "name": "Power Read Toss",
-    "family": "RPO",
-    "core_idea": "Numbers advantage - either in run fit or pass coverage, cannot defend both. QB must make quick pre-snap read of linebacker alignment and commit to run or pass based on leverage",
+    "family": "RUN",
+    "core_idea": "Power read with a toss instead of a sweep: the pitch gets the back to the edge faster. Same read, the unblocked end man decides toss or QB power keep. A run-run option with no pass.",
     "best_vs": [
-      "Cover 3"
+      "Loaded box",
+      "Conservative option defense"
     ],
     "weak_vs": []
   },
@@ -584,12 +585,13 @@
     "weak_vs": []
   },
   {
-    "name": "Jet Power Read RPO",
-    "family": "RPO",
-    "core_idea": "Edge defender conflict - can't cover both jet sweep and slant, uses motion to create numbers advantage. QB must read end man on line of scrimmage first - mesh point timing with jet motion is critical",
+    "name": "Jet Power Read",
+    "family": "RUN",
+    "core_idea": "Jet sweep paired with QB power. The end man on the line is the read key: crash gives the jet sweep (the handoff is automatic), stay outside keeps QB power through the B gap. No pass option.",
     "best_vs": [
-      "Cover 1",
-      "Cover 3"
+      "Loaded box",
+      "Aggressive edge defenders",
+      "Goal line fronts"
     ],
     "weak_vs": []
   },
