@@ -4,6 +4,11 @@
 > wrong (a run play described as a pass RPO, routes that don't match the play art).
 > It was stripped. This file is the source of truth for what remains and how the
 > rebuild works. Old fabricated data is preserved in git history (pre-strip commits).
+>
+> **Reading list / authority:** `C:\iMoveChainz\FOOTBALL-KNOWLEDGE-CANON.md` is the
+> canonical map of trustworthy football knowledge. The HimkageVision play engine is the
+> declared authority; when it and a bot card disagree, the engine wins. Read it before
+> regenerating any play data.
 
 ## The foundation that remains (trustworthy)
 
