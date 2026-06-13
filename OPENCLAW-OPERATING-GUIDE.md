@@ -30,24 +30,10 @@ the bot. Only the human operator talks to you.
 - Channels (Snap Fire): player hub + engagement `#the-lab` (1512630970371543160); ops
   `#openclaw-ops` (1512649603718058044). Use #the-lab for any test post, never a player channel.
 
-## Remote desktop (RDP over Tailscale)
+## Remote desktop / host access
 
-The host is headless. For a GUI, `xrdp` is installed and locked to the Tailscale interface.
-
-- **Server:** `xrdp` + a lightweight **XFCE** session on exe-host. The listener is bound to the
-  Tailscale IP **`100.122.152.51:3389` only** (not `0.0.0.0`), so the LAN IP and the public
-  internet cannot reach it. GNOME/gdm is left intact for the (unused) console seat.
-- **Connect:** Windows Remote Desktop (`mstsc`) or any RDP client to `100.122.152.51`, user
-  `himkage`, the host's Unix account password (the same one used for `sudo`). Works on-LAN and
-  remote as long as Tailscale is up on the client. Accept the one-time self-signed cert prompt.
-- **Security posture:** Tailscale is the only ingress; do **not** add a router port-forward for
-  3389. TLS at `crypt_level=high`, `xrdp-sesman` on localhost only. The `himkage` account has
-  passwordless sudo, so an RDP login is effectively root: keep that password strong and keep the
-  Tailscale account on MFA.
-- **Ops:** `systemctl status|restart xrdp`. A drop-in (`/etc/systemd/system/xrdp.service.d/override.conf`)
-  waits for `tailscaled` at boot and auto-restarts on failure. The bind address lives in
-  `/etc/xrdp/xrdp.ini` (`port=tcp://100.122.152.51:3389`); the session is set in `~himkage/.xsession`.
-- Installed 2026-06-07.
+Connection and remote-desktop details are kept out of this synced doc on purpose. They live in
+the operator's local access runbook (`ACCESS.md` on the workstation, gitignored), not here.
 
 ## The only commands you should run
 
