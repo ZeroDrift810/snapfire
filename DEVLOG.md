@@ -2,6 +2,14 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-12 — Stripped the fabricated playbook data down to its trustworthy foundation  [data]
+**Symptom:** The playbook's route/read/strategy text was machine-generated and wrong across ~880 of 890 plays (run plays described as pass RPOs, routes that don't match the play art). The bot has no active users, so wrong data is pure liability.
+**Decision (Himkage):** "Wrong data is of no use. Save what is of use, we will rebuild it right based on the foundation that remains."
+**Fix:** Stripped `routes`/`reads`/`usage_notes` from the 880 unverified schemes, keeping only the trustworthy foundation (`name`, `display_name`, `system`, `formation_family`, `image_file`). Kept the 10 transcript-verified entries whole and tagged them `verified: true` (power read x5, jet power read, escort power read toss, 01 trap x3). Cleared `Concept_Knowledge.json` (267) and `Coverage_Knowledge.json` (62) to `[]`: fabricated and never rendered (slash-era dead weight; real concept/coverage teaching is in `content/*.json`). No render change needed: `schemeDetail` only adds text sections when the fields exist, so stripped plays render as title + formation + play art automatically. New `data/REBUILD-STATUS.md` documents the foundation, the verified set, and the rebuild plan (art + engine + clinic transcripts).
+**Verification:** `npm run smoke` PASS: 248 routes, 983 detail pages, 890/890 play-art attachments, 0 dead buttons. Every play still navigates and shows its diagram.
+**Files:** data/Scheme_Knowledge.json, data/Concept_Knowledge.json, data/Coverage_Knowledge.json, data/REBUILD-STATUS.md.
+**Gotcha:** Old fabricated data is preserved in git history (pre-strip commits) as the backstop, nothing is truly lost. The play art is the ground truth for assignments; the rebuild reads it, cross-checks the HimkageVision engine, and sources the "why" from clinic transcripts. 122 duplicate scheme names must get unique slugs before per-play content lands.
+
 ## STANDING GOTCHAS
 
 - **Scheme lookup is by `name`, and names are NOT unique.** 122 of the 890 scheme names are duplicates (e.g. `snapfire_power_read` exists 5 times across formations). `schemeDetail` and `getSchemeByName` return the FIRST match, so duplicate-named entries beyond the first are unreachable in the detail view. Any future per-formation content needs unique slugs first.
