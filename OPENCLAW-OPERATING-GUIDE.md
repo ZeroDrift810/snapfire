@@ -7,9 +7,46 @@
 ## What this bot is
 
 A button-driven Discord teaching bot. There are NO slash commands. Players open a posted
-hub panel and tap through six tracks (Terms, Coverages, Concepts, Fronts, Usering,
-Playbook). Knowledge lives in `content/*.json` (authored) and `data/` + `assets/` (schemes
-+ play art).
+hub panel and tap through seven tracks: Terms 📖, Coverages 🛡️, Concepts 📘, Fronts 🧱,
+Usering 🎮, Playbook 🏈, and Situational 🎯 (Madden pressure & tactics, added 2026-06-13).
+Knowledge lives in `content/*.json` (authored cards, 100 across the 6 card tracks) and
+`data/` + `assets/` (schemes + play art, the Playbook track).
+
+The newest track, **Situational** 🎯, holds Madden scheme/tactics content (disguised manual
+rush, the Nickel 3-3 Odd blitz bucket, trap-2, Penny 3 High, the quarters-vs-trips checks).
+It was authored from the verified football knowledge, see the canon section below.
+
+## Football knowledge: what is trustworthy (the canon)
+
+The project keeps a single source of truth for football facts: `FOOTBALL-KNOWLEDGE-CANON.md`
+(in the parent iMoveChainz repo on the workstation, not on this host). Respect this trust
+order whenever you touch content or answer a football question:
+
+1. **The HimkageVision play engine is the declared authority** for everything it models:
+   coverages (the 7 base shells), fronts, formations, routes, pass concepts, run schemes, and
+   their geometry. It is executable and test-verified (5.77M checks, 0 failures). When a bot
+   card and the engine disagree on something the engine models, the engine wins.
+2. **Play art** (real in-game screenshots in `assets/play_art/`) is authoritative for a
+   specific play's actual assignments, it beats even the engine for that one instance.
+3. **Bot teaching cards** (`content/*.json`) are authoritative ONLY where the engine does not
+   reach: terminology (glossary), usering technique, the coverage/concept variants the engine
+   does not model, and **Madden situational tactics** (the `situational` track).
+4. **Raw research** (transcripts, CSVs, PDFs) is INPUT ONLY: a lead, never a fact, until a
+   human promotes it into a verified doc or a card. Never cite it as truth.
+
+Promoted, verified knowledge lives in the parent repo's `knowledge/verified/`: the Wide 9
+install and the **Xando Football system** (`xando-pressure-method.md`,
+`xando-coverage-vs-trips.md`, `xando-penny-3high.md`). The bot's `situational` cards were
+authored from those verified docs. If you are unsure whether a football claim is trustworthy,
+it must trace to the engine, play art, or a verified doc, if it only lives in a raw
+transcript, flag it for the human, do not post it.
+
+**Expected, not a bug:** `data/Concept_Knowledge.json` and `data/Coverage_Knowledge.json` are
+intentionally empty (the fabricated data was stripped, see `data/REBUILD-STATUS.md`); the real
+concept/coverage teaching is in `content/*.json`. The boot warning "Concepts: 0, Coverages: 0"
+is expected. Likewise most `data/Scheme_Knowledge.json` route/read text was stripped as
+machine-fabricated, only the 10 `verified: true` schemes carry trustworthy text. Do not try to
+"fix" the empty files or treat stripped scheme text as fact.
 
 ## Your role (read this first)
 
@@ -68,8 +105,9 @@ These are non-negotiable for this product:
   a bug the smoke test will catch.
 - User-facing copy: no em dashes, never the word "AI". Teach the football, do not talk
   about the tool. (This is the teaching product's voice. Marketing is separate, see below.)
-- Authored knowledge is sourced from the iMoveChainz V2 system. Do not invent football
-  facts. If a fact is not in the source material, flag it for the human, do not guess.
+- Authored knowledge follows the canon (see "Football knowledge: what is trustworthy"
+  above). Do not invent football facts. A claim must trace to the engine, play art, or a
+  verified doc, if it only lives in a raw transcript, flag it for the human, do not guess.
 
 ## Posting
 
