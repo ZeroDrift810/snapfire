@@ -1,0 +1,96 @@
+[
+  {
+    "id": "disguised-manual-rush",
+    "name": "Disguised Manual Rush (the Sike)",
+    "subtitle": "Beat Madden's protection AI · rush a coverage defender without a blitz call",
+    "tags": ["pressure", "mechanic"],
+    "sections": [
+      { "heading": "What it is", "body": "Take a defender whose play art is a coverage assignment (a vertical hook, a quarter flat, a man defender), do NOT change it to a blitz, and manually rush him yourself at the snap. Because the game still has him coded as dropping, the offensive line does not account for him and he comes free." },
+      { "heading": "Why it works", "body": "Madden pass protection is \"psychic\": the line reads your play art, not your presentation. A defender coded to drop is not honored as a rush threat even when you show pressure with him, the line slides toward whoever's art actually is a rush. The instant you flip his assignment to a real blitz, the whole offense \"knows\" and the free rusher disappears. Leaving the art untouched and rushing him by hand is reverse psychology on the computer." },
+      { "heading": "How to run it", "body": "Set your front and shifts, pick the coverage defender you will send, leave his assignment alone, and rush him manually at the snap. A slight delay at the snap lets you read the back before you commit." },
+      { "heading": "Reads & counters", "body": "If a guard slides over to pick you up, overtake to the next gap inside and beat him there. If the back stays in to block, eye him and bail back into your coverage, you have now forced the offense to 4 routes against 7 defenders, with tighter windows." },
+      { "heading": "Keep it sound", "body": "The rusher vacates his coverage job, so repair the back end before you call it: man up his receiver, or run a split-field shell so the other half stays intact. See Attack the Protection." }
+    ],
+    "related": ["attack-the-protection", "nickel-3-3-odd-bucket", "blitz", "fire-zone"]
+  },
+  {
+    "id": "attack-the-protection",
+    "name": "Attack the Protection, Not the QB",
+    "subtitle": "The method · induce the slide, rush the vacated side, stay sound behind it",
+    "tags": ["pressure", "method"],
+    "sections": [
+      { "heading": "The idea", "body": "Do not chase the quarterback, attack the protection scheme. Work out how the offense will slide its protection against your front, then bring a free rusher from the side they slid away from." },
+      { "heading": "Read the slide", "body": "Overload one side (more defenders left of center than right) and the offense four-man-slides to the overloaded side and goes big-on-big on the backside tackle, which makes them hot off the backside defender. That is the protection you are setting up to attack." },
+      { "heading": "Bring it from the vacated side", "body": "Show the pressure to induce the slide, then send your rusher from the side they slid away from. You bring five but one comes free. The disguised manual rush (the \"sike\") is what makes the line actually honor your fake instead of reading that you are not coming." },
+      { "heading": "Split-field back end", "body": "Every shell is one of 4 / 2 / 2 / 0 / 3 / 1. The split-safety shells let you run a different coverage on each half, so you can repair the rusher's vacated zone without breaking the defense. Cover 6 Willie (quarters one side, 2-man the other) is the textbook example. You cannot do this from Cover 3 or Cover 1." }
+    ],
+    "related": ["disguised-manual-rush", "cover-6-willie", "palms", "mofc-mofo"]
+  },
+  {
+    "id": "nickel-3-3-odd-bucket",
+    "name": "Nickel 3-3 Odd Blitz Bucket",
+    "subtitle": "MINT front · two complementary disguised A/C-gap blitzes",
+    "tags": ["pressure"],
+    "sections": [
+      { "heading": "The front & the rule", "body": "Nickel 3-3 Odd is a MINT front (D-line in 4i-0-4i) with Jack, Will, and Mike linebackers plus the Nickel. Alignment rule, get this right or the blitz misses: the Nickel always aligns to the passing strength, and the Jack always aligns opposite the Nickel. So you shift and slant toward or away from the JACK, not \"strong/weak\"." },
+      { "heading": "60 Delay Atlanta (TJ)", "body": "Toward the Jack. Shift and slant toward the Jack, QB contain, put a coverage defender in the \"60\" alignment, delay, then rush the A gap (city = gap by first letter, Atlanta = A). If the guard slides to you, overtake to the B gap. You cannot beat A-gap pressure." },
+      { "heading": "AJ 50 Chicago", "body": "Away from the Jack. Shift and slant away from the Jack (or pinch), QB contain, put a defender in the \"50\" alignment, rush straight down into the C gap (Chicago = C). This look throws frequent TE stunts and loops into the A gap. It complements TJ, one blitz comes from the Jack side, the other away from it." },
+      { "heading": "Picking the side & back end", "body": "Blitz INTO the gaps the offense is likely to run to (gap integrity), if the back can run away from TJ, call AJ instead and attack downhill. Behind it play Cover 1 Robber / Man / 2-Man and man a safety on the back. Creeper variant: man the rushing Jack on the back and bring a different second-level defender, still four rushers, but disguised." }
+    ],
+    "related": ["disguised-manual-rush", "33-stack", "c-gap", "a-gap"]
+  },
+  {
+    "id": "nickel-edge-blitz-2",
+    "name": "Nickel Edge Blitz 2 (Trap-2)",
+    "subtitle": "From 3-3-5 3 High · a safe, easy bunch & pressure answer",
+    "tags": ["pressure"],
+    "sections": [
+      { "heading": "What it is", "body": "A trap-2 (Cover 2 blitz) pressure run from 3-3-5 3 High. Easy to set up and \"safe\" because there is zone behind it. A go-to against Bunch TE and many other formations." },
+      { "heading": "The setup", "body": "Shift the linebacker toward the bunch/strong side. The front slants away, the offense four-man-slides away, and the B gap opens for a free second-level rusher with a clean split path. The blitzer's path runs to where the back is aligned to go, you play the run on the way to the quarterback." },
+      { "heading": "Joker vert hook from depth", "body": "The wrinkle that confuses opponents: the strong vert hook comes from the middle/Joker safety playing from depth (high ground, he reads the field better and plays downhill). He still plays in/out on #1 and #2 with the soft squat, just from depth, opponents are not used to a deep-middle safety buzzing into match." },
+      { "heading": "Peel for the back", "body": "If the offense releases five, the back is uncovered. Solution: user the backside DE and peel, if the back stays in to block, rush; if he leaks to the flat, flare out and take him." },
+      { "heading": "Best vs the boundary", "body": "Run it against formations into the boundary, both vert hooks come from the field side, fencing off the open space. A run to the boundary has nowhere to go." }
+    ],
+    "related": ["penny-3-high", "tampa-2", "cover-2", "b-gap"]
+  },
+  {
+    "id": "penny-3-high",
+    "name": "Penny 3-3-5 \"3 High\"",
+    "subtitle": "Three safeties · Tampa 2 base plus three adjustments",
+    "tags": ["formation"],
+    "sections": [
+      { "heading": "The formation", "body": "Three down linemen, three linebackers, five DBs with three safeties: a field safety, a boundary safety, and a Joker in the middle. Played as a Tampa 2 / Cover 2 base." },
+      { "heading": "Tampa 2 philosophy", "body": "Sound: it concedes underneath, then rallies and tackles (a 3-yard dump-off is not a loss, gang-tackle and rip at the ball). \"If you can get pressure with your front four, Cover 2 is king.\" User the corners/safeties, the AI plays the honey hole and outside releases poorly. Do not play it on 4th-and-short." },
+      { "heading": "Adjustment 1: flip the play", "body": "In Tampa 2 one end rushes and the other walls, but you cannot know which side the offense aligns to, so your best rusher may be the one dropping. The formation is symmetrical, so flip the play, only the safeties switch (fast), and your best rusher rushes." },
+      { "heading": "Adjustment 2: show-blitz 5-3", "body": "Show blitz and both safeties drop into a unique down alignment; add a D-line shift/pinch and you get a 5-3 look (under front with a wide-9 backer) plus a deep Joker. Use it as disguise, show-blitz from tucked sets to set up later hot blitzes. Do not run it behind real Cover 2 vs spread (4 verts beats the dropped safeties)." },
+      { "heading": "Adjustment 3: press to fix #2", "body": "3 High has no cover-down on #2 vs trips. The fix: press the defense and the Joker safety aligns to the passing strength (cover-down on 1, 2, and 3), playing from depth (~10 yards) and tracking motion automatically. Works vs trips / 3x0 / 2x2 / 4-strong, the one exception is Bunch." }
+    ],
+    "related": ["tampa-2", "nickel-edge-blitz-2", "33-stack", "press"]
+  },
+  {
+    "id": "stubby-seahawk",
+    "name": "Stubby & Seahawk vs Trips",
+    "subtitle": "Quarters checks vs 3x1/3x0 · and the Madden alignment bug",
+    "tags": ["coverage", "check"],
+    "sections": [
+      { "heading": "The checks", "body": "Madden auto-checks quarters vs trips: call Quarters and it checks to Solo; call Palms and it checks to Stubby. The real-football quarters-vs-trips variants are Solo, Stubby, Stress (not in Madden), Stump (a subtle variant, roughly simulatable), and Seahawk (not in Madden, the fix below)." },
+      { "heading": "How Stubby plays", "body": "Field corner = MEG (man #1 everywhere he goes, an X-out, stop thinking about him). Apex/nickel = 2-read, reading 3 to 2 (should be OUTSIDE #2). Field safety also reads 3 to 2. If #3 runs out, the apex drives on it with outside leverage and the safety takes #2 vertical; if #3 goes vertical, the safety takes #3 and the apex takes #2." },
+      { "heading": "The Madden bug", "body": "In-game the apex aligns INSIDE #2, but it should be outside. Two costs: it breaks RPO defense (#2 seals the apex off the #3 bubble), and it gets beat deep, eyes on #3 with #2 out of sight, so sending #2 vertical with #3 vertical \"palms it away\". Moving him outside pre-snap does not stick (he jumps back inside post-snap). The same bug bites Cover 6 invert's stubby side." },
+      { "heading": "Seahawk, the fix (not in Madden)", "body": "The apex plays outside leverage on #2; the #3-hook player carries #3 vertical man (high and inside); the field safety caps/brackets the deeper route. Now #2 is not alone deep. Weakness: the #3 carrier is often a linebacker on a receiver (some use a dime back), counter is to run. Its value here is diagnostic: when Madden's Stubby gets beat deep, you know the real answer." }
+    ],
+    "related": ["palms", "cover-4", "cover-6"]
+  },
+  {
+    "id": "cover-6-willie",
+    "name": "Cover 6 Willie vs Trips/Bunch TE",
+    "subtitle": "From 2-4 Load Mug · man under the TE drag, banjo, peel",
+    "tags": ["coverage"],
+    "sections": [
+      { "heading": "What it is", "body": "Cover 6 Willie from a 2-4 Load Mug front: the front side plays Stubby (a four-on-three), the backside plays a form of 2-man. A complete answer to the trips TE-flex problem (the TE shallow/drag plus the back's Texas route). Works against Bunch TE-flex too, it is the same backside set." },
+      { "heading": "Man under the TE (the key)", "body": "The DE on the LOS, when the TE releases inside, turns and runs underneath the drag. THE KEY: the outside DE must NOT disrupt the TE's release, if he jams it, the man coverage breaks and the TE wins inside. So slant outside/away to leave the timing clean. This only works from this front, you need the on-the-LOS defender under the route." },
+      { "heading": "Banjo the TE & back", "body": "If the TE goes inside and the back releases out, give the banjo call: overtake the TE inside and let the other defender take the outside back. Solves the leverage and the natural pick." },
+      { "heading": "Deep-half freedom", "body": "Because the corner plays outside leverage (top-down, not underneath trail), the backside safety does not have to cap him, so he can mug inside, play the box (fill the A gap, stop inside zone), and trigger down on the back's Texas route. Mix Cover 6 Willie with regular Cover 6 for an in/out bracket on the back and TE." }
+    ],
+    "related": ["cover-6", "palms", "stubby-seahawk"]
+  }
+]

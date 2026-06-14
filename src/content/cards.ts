@@ -24,9 +24,9 @@ export interface Card {
   tags?: string[];
 }
 
-export type CardTrack = 'glossary' | 'coverage' | 'concept' | 'front' | 'usering';
+export type CardTrack = 'glossary' | 'coverage' | 'concept' | 'front' | 'usering' | 'situational';
 
-export const CARD_TRACKS: CardTrack[] = ['glossary', 'coverage', 'concept', 'front', 'usering'];
+export const CARD_TRACKS: CardTrack[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'situational'];
 
 const PROJECT_ROOT = path.resolve(__dirname, '..', '..');
 
@@ -36,11 +36,12 @@ const FILES: Record<CardTrack, string> = {
   concept: 'concepts.json',
   front: 'fronts.json',
   usering: 'usering.json',
+  situational: 'situational.json',
 };
 
 // Resolution order for cross-track related links: prefer the fuller cards,
 // fall back to the glossary definition.
-const RESOLVE_ORDER: CardTrack[] = ['coverage', 'concept', 'front', 'usering', 'glossary'];
+const RESOLVE_ORDER: CardTrack[] = ['coverage', 'concept', 'front', 'usering', 'situational', 'glossary'];
 
 const cards: Record<CardTrack, Card[]> = {
   glossary: [],
@@ -48,6 +49,7 @@ const cards: Record<CardTrack, Card[]> = {
   concept: [],
   front: [],
   usering: [],
+  situational: [],
 };
 
 let loaded = false;
@@ -97,5 +99,6 @@ export function cardStats(): Record<CardTrack, number> {
     concept: cards.concept.length,
     front: cards.front.length,
     usering: cards.usering.length,
+    situational: cards.situational.length,
   };
 }

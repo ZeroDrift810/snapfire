@@ -2,6 +2,28 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-13 — New `situational` track: 7 Xando Madden-tactics teaching cards  [content, ui]
+**What:** Added the first new teaching track since the rebuild began, `situational` 🎯 (orange),
+for Madden pressure & tactics, so the advanced Xando Football content does not pollute the clean
+fundamentals tracks. Seven cards in `content/situational.json`: Disguised Manual Rush (the "sike"),
+Attack the Protection, Nickel 3-3 Odd Blitz Bucket, Nickel Edge Blitz 2 (trap-2), Penny 3-3-5 "3
+High", Stubby & Seahawk vs Trips, Cover 6 Willie vs Trips/Bunch TE. Authored from the parent repo's
+verified docs (`knowledge/verified/xando-*.md`), which were mined from the creator's video
+walkthroughs.
+**Wiring:** a new track touches three typed `Record<Track>` maps that the compiler enforces, plus
+runtime lists: `src/content/cards.ts` (CardTrack, CARD_TRACKS, FILES, RESOLVE_ORDER, cards init,
+cardStats), `src/ui/ids.ts` (Track, TRACKS, TRACK_LABEL/EMOJI/BLURB, FACETS, DEFAULT_FILTER,
+isTrack), `src/ui/views.ts` (TRACK_COLOR, HUB_ORDER). `isCardTrack` needed no change (it is
+`!== 'playbook'`, so a new card track is automatic).
+**Verification:** `npm run smoke` PASS (264 routes, 990 detail pages, 319 related links, **0 dead
+buttons**) and `tsc --noEmit` clean. All 7 cards' related links resolve to existing ids
+(coverages, fronts, glossary, and each other).
+**Files:** content/situational.json (new), src/content/cards.ts, src/ui/ids.ts, src/ui/views.ts.
+**Gotcha:** Related links silently drop if the target id does not exist, the smoke test is the
+only thing that flags them, so run it after any content edit. The 7 cards lifted the card total to
+100 (52 terms / 12 coverages / 11 concepts / 7 fronts / 11 usering / 7 situational). Data loads
+once at boot; a restart is needed for the new track to show live.
+
 ## 2026-06-12 — Stripped the fabricated playbook data down to its trustworthy foundation  [data]
 **Symptom:** The playbook's route/read/strategy text was machine-generated and wrong across ~880 of 890 plays (run plays described as pass RPOs, routes that don't match the play art). The bot has no active users, so wrong data is pure liability.
 **Decision (Himkage):** "Wrong data is of no use. Save what is of use, we will rebuild it right based on the foundation that remains."

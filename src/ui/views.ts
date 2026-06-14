@@ -59,6 +59,7 @@ const TRACK_COLOR: Record<Track, number> = {
   front: 0xed4245, // red
   usering: 0x9b59b6, // purple
   playbook: BRAND_CONFIGS.SNAPFIRE.color, // overridden per scheme
+  situational: 0xe67e22, // orange
 };
 
 function truncate(text: string, max: number): string {
@@ -115,7 +116,7 @@ function pageCount(total: number): number {
 // HUB
 // ---------------------------------------------------------------------------
 
-const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'playbook'];
+const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'playbook', 'situational'];
 
 function hubEmbed(): EmbedBuilder {
   return new EmbedBuilder()

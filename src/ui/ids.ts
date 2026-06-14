@@ -8,6 +8,7 @@
  *   front     🧱  defensive fronts (with what beats each)
  *   usering   🎮  the iMoveChainz DB-usering system
  *   playbook  🏈  SnapFire/Shinobi schemes with play art
+ *   situational 🎯  Madden pressure & tactics (disguised rush, the bucket, the checks)
  *
  * Grammar (colon-delimited, under the "imc" namespace, well under Discord's 100 char cap):
  *   imc:open:<track>                 public-hub button -> opens a private session
@@ -20,14 +21,14 @@
  * There are NO slash commands anywhere in this bot.
  */
 
-export type Track = 'glossary' | 'coverage' | 'concept' | 'front' | 'usering' | 'playbook';
+export type Track = 'glossary' | 'coverage' | 'concept' | 'front' | 'usering' | 'playbook' | 'situational';
 
 export interface Facet {
   token: string;
   label: string;
 }
 
-export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'playbook'];
+export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'playbook', 'situational'];
 
 export const TRACK_LABEL: Record<Track, string> = {
   glossary: 'Terms',
@@ -36,6 +37,7 @@ export const TRACK_LABEL: Record<Track, string> = {
   front: 'Fronts',
   usering: 'Usering',
   playbook: 'Playbook',
+  situational: 'Situational',
 };
 
 export const TRACK_EMOJI: Record<Track, string> = {
@@ -45,6 +47,7 @@ export const TRACK_EMOJI: Record<Track, string> = {
   front: '🧱',
   usering: '🎮',
   playbook: '🏈',
+  situational: '🎯',
 };
 
 export const TRACK_BLURB: Record<Track, string> = {
@@ -54,6 +57,7 @@ export const TRACK_BLURB: Record<Track, string> = {
   front: 'Defensive fronts and what beats them.',
   usering: 'The iMoveChainz way to user the sticks: play the DBs.',
   playbook: 'SnapFire offense and Shinobi defense, matched to the in-game art.',
+  situational: 'Madden pressure and tactics: disguised rushes, the bucket, the checks.',
 };
 
 /** Filter facets per track. Only the playbook splits by system; cards browse with a single list. */
@@ -63,6 +67,7 @@ export const FACETS: Record<Track, Facet[]> = {
   concept: [],
   front: [],
   usering: [],
+  situational: [],
   playbook: [
     { token: 'snapfire', label: '🔥 SnapFire' },
     { token: 'shinobi', label: '🥷 Shinobi' },
@@ -75,6 +80,7 @@ export const DEFAULT_FILTER: Record<Track, string> = {
   concept: 'all',
   front: 'all',
   usering: 'all',
+  situational: 'all',
   playbook: 'snapfire',
 };
 
@@ -101,7 +107,8 @@ export function isTrack(v: string): v is Track {
     v === 'concept' ||
     v === 'front' ||
     v === 'usering' ||
-    v === 'playbook'
+    v === 'playbook' ||
+    v === 'situational'
   );
 }
 
