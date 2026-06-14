@@ -46,10 +46,14 @@ export function loadKnowledgeBases(): void {
   coverages = loadJsonFile<CoverageKnowledge>(path.join(dataDir, 'Coverage_Knowledge.json'), 'Coverages');
   schemes = loadJsonFile<SchemeKnowledge>(path.join(dataDir, 'Scheme_Knowledge.json'), 'Schemes');
 
-  // Validate data loaded
-  if (concepts.length === 0 || coverages.length === 0 || schemes.length === 0) {
-    console.error('❌ WARNING: Some knowledge bases failed to load!');
-    console.error(`   Concepts: ${concepts.length}, Coverages: ${coverages.length}, Schemes: ${schemes.length}`);
+  // Concept_Knowledge.json and Coverage_Knowledge.json are intentionally empty: the
+  // fabricated data was stripped (see data/REBUILD-STATUS.md), and the real concept/
+  // coverage teaching now lives in content/*.json. So only an empty SCHEMES set is a
+  // real failure; the empty concepts/coverages are expected and must not raise an alarm.
+  if (schemes.length === 0) {
+    console.error('❌ ERROR: Scheme_Knowledge.json loaded 0 entries (playbook + play art will be empty)');
+  } else if (concepts.length === 0 || coverages.length === 0) {
+    console.log('   (Concepts/Coverages intentionally empty, stripped; teaching is in content/*.json)');
   }
 
   isLoaded = true;
