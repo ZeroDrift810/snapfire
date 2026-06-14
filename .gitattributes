@@ -1,0 +1,21 @@
+# Normalize line endings in the repo (LF), convert per-platform in the working tree.
+# Prevents the CRLF/LF churn that floods `git status` when a tool (e.g. `sed -i` on
+# Windows/git-bash) rewrites a file's line endings without changing content.
+* text=auto
+
+# Windows-native scripts must stay CRLF.
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary assets: never touch.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.bin  binary
+*.wav  binary
+*.mp3  binary
+*.mp4  binary
+*.zip  binary
