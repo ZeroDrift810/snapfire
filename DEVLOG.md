@@ -2,13 +2,13 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
-## 2026-06-13 — New `situational` track: 7 Xando Madden-tactics teaching cards  [content, ui]
+## 2026-06-13 — New `situational` track: 7 Madden-tactics teaching cards  [content, ui]
 **What:** Added the first new teaching track since the rebuild began, `situational` 🎯 (orange),
-for Madden pressure & tactics, so the advanced Xando Football content does not pollute the clean
+for Madden pressure & tactics, so the advanced Madden tactics content does not pollute the clean
 fundamentals tracks. Seven cards in `content/situational.json`: Disguised Manual Rush (the "sike"),
 Attack the Protection, Nickel 3-3 Odd Blitz Bucket, Nickel Edge Blitz 2 (trap-2), Penny 3-3-5 "3
 High", Stubby & Seahawk vs Trips, Cover 6 Willie vs Trips/Bunch TE. Authored from the parent repo's
-verified docs (`knowledge/verified/xando-*.md`), which were mined from the creator's video
+verified docs (`knowledge/verified/*.md`), which were mined from the creator's video
 walkthroughs.
 **Wiring:** a new track touches three typed `Record<Track>` maps that the compiler enforces, plus
 runtime lists: `src/content/cards.ts` (CardTrack, CARD_TRACKS, FILES, RESOLVE_ORDER, cards init,

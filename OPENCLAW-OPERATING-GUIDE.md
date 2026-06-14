@@ -35,8 +35,8 @@ order whenever you touch content or answer a football question:
    human promotes it into a verified doc or a card. Never cite it as truth.
 
 Promoted, verified knowledge lives in the parent repo's `knowledge/verified/`: the Wide 9
-install and the **Xando Football system** (`xando-pressure-method.md`,
-`xando-coverage-vs-trips.md`, `xando-penny-3high.md`). The bot's `situational` cards were
+install and the **Madden 3-High & pressure system** (`pressure-method.md`,
+`coverage-vs-trips.md`, `penny-3-high.md`). The bot's `situational` cards were
 authored from those verified docs. If you are unsure whether a football claim is trustworthy,
 it must trace to the engine, play art, or a verified doc, if it only lives in a raw
 transcript, flag it for the human, do not post it.
