@@ -60,6 +60,12 @@ export function loadKnowledgeBases(): void {
   console.log('✅ Knowledge base loading complete\n');
 }
 
+/** Re-read the data/*.json knowledge bases in place (for hot-reload without a restart). */
+export function reloadKnowledgeBases(): void {
+  isLoaded = false;
+  loadKnowledgeBases();
+}
+
 export function getConceptByName(name: string): ConceptKnowledge | null {
   const search = name.toLowerCase().trim();
   return concepts.find(c => c.name.toLowerCase() === search) || null;

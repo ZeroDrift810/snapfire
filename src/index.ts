@@ -8,8 +8,10 @@
 
 import { Client, Events, GatewayIntentBits, Interaction, MessageFlags } from 'discord.js';
 import * as dotenv from 'dotenv';
-import { getKnowledgeStats, loadKnowledgeBases } from './knowledge/loader';
-import { cardStats, loadCards } from './content/cards';
+import * as fs from 'fs';
+import * as path from 'path';
+import { getKnowledgeStats, loadKnowledgeBases, reloadKnowledgeBases } from './knowledge/loader';
+import { cardStats, loadCards, reloadCards } from './content/cards';
 import { handleInteraction } from './router';
 
 dotenv.config();
@@ -25,6 +27,34 @@ if (!DISCORD_BOT_TOKEN) {
 loadKnowledgeBases();
 loadCards();
 
+// Hot-reload: re-read content/ (teaching cards) and data/ (playbook) when their files
+// change, so a content edit or a content-only deploy takes effect with NO restart.
+// Debounced so a burst of file writes (e.g. a git checkout) triggers one reload.
+function watchKnowledge(): void {
+  const root = path.resolve(__dirname, '..');
+  let timer: NodeJS.Timeout | null = null;
+  const schedule = () => {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(() => {
+      try {
+        reloadCards();
+        reloadKnowledgeBases();
+        console.log('♻️  knowledge hot-reloaded (content/ + data/)');
+      } catch (e) {
+        console.error('hot-reload failed (keeping previous in-memory data):', e);
+      }
+    }, 500);
+  };
+  for (const dir of ['content', 'data']) {
+    try {
+      fs.watch(path.join(root, dir), schedule);
+    } catch (e) {
+      console.warn(`could not watch ${dir}/ for hot-reload:`, (e as Error).message);
+    }
+  }
+}
+watchKnowledge();
+
 const client = new Client({
   intents: [GatewayIntentBits.Guilds],
 });
@@ -36,7 +66,7 @@ client.once(Events.ClientReady, (readyClient) => {
   console.log('='.repeat(80));
   console.log('✅ iMoveChainz Bot is online');
   console.log(`   Logged in as: ${readyClient.user.tag}`);
-  console.log(`   Teaching cards: ${cs.glossary} terms, ${cs.coverage} coverages, ${cs.concept} concepts, ${cs.front} fronts, ${cs.usering} usering`);
+  console.log(`   Teaching cards: ${cs.glossary} terms, ${cs.coverage} coverages, ${cs.concept} concepts, ${cs.front} fronts, ${cs.usering} usering, ${cs.situational} situational`);
   console.log(`   Playbook: ${stats.schemes} schemes (🔥 ${stats.snapfire} SnapFire, 🥷 ${stats.shinobi} Shinobi)`);
   console.log('='.repeat(80));
   console.log('');

@@ -75,6 +75,13 @@ export function loadCards(): void {
   loaded = true;
 }
 
+/** Re-read all content/*.json in place (for hot-reload without a restart). */
+export function reloadCards(): void {
+  loaded = false;
+  for (const t of CARD_TRACKS) cards[t] = [];
+  loadCards();
+}
+
 export function getCards(track: CardTrack): Card[] {
   return cards[track];
 }
