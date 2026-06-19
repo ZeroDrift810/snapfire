@@ -2,92 +2,1500 @@
   {
     "id": "43-over",
     "name": "4-3 Over",
-    "subtitle": "4 DL, 3 LB · 3-tech to the strong side",
-    "tags": ["base"],
-    "sections": [
-      { "heading": "What it is", "body": "The most common front in modern football. Four down linemen, three linebackers, with the strength shifted toward the offense's strong side. Balanced and versatile, it supports any coverage behind it." },
-      { "heading": "Key alignment", "body": "Weak DE 5-tech, 1-tech nose to the weak side, 3-tech tackle to the strong side B-gap (the most disruptive spot), strong DE 5-tech. Sam, Mike, and Will fill the gaps behind." },
-      { "heading": "Strengths", "body": "The 3-tech penetrates the B-gap fast and aggressive. Sam is a versatile chess piece. Every gap has a defender, so it stops the run without a blitz." },
-      { "heading": "What beats it", "body": "Weak-side Inside Zone cutback behind the 1-tech. Counter and Trap (let the aggressive 3-tech run upfield, then pull behind him). Zone Read the predictable contain end. Misdirection to hold the flowing linebackers." }
+    "subtitle": "5,1,3,5",
+    "tags": [
+      "4-3",
+      "front"
     ],
-    "related": ["three-tech", "inside-zone", "counter", "zone-read"]
+    "image": "front-4-3-over.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL, 3 LB, 4 DB. 4-3 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,1,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DEw (5), NT (1), DT (3), DEs (5).\nLinebacker level: WILL (W), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Weak DE 5-tech, 1-tech nose to the weak side, 3-tech tackle to the strong side B-gap (the most disruptive spot), strong DE 5-tech. Sam, Mike, and Will fill the gaps behind."
+      },
+      {
+        "heading": "Strengths",
+        "body": "The 3-tech penetrates the B-gap fast and aggressive. Sam is a versatile chess piece. Every gap has a defender, so it stops the run without a blitz."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Weak-side Inside Zone cutback behind the 1-tech. Counter and Trap (let the aggressive 3-tech run upfield, then pull behind him). Zone Read the predictable contain end. Misdirection to hold the flowing linebackers."
+      }
+    ],
+    "related": [
+      "three-tech",
+      "inside-zone",
+      "counter",
+      "zone-read",
+      "43-under",
+      "4-3-even-6-1"
+    ]
   },
   {
     "id": "43-under",
     "name": "4-3 Under",
-    "subtitle": "4 DL, 3 LB · 3-tech to the weak side",
-    "tags": ["base"],
-    "sections": [
-      { "heading": "What it is", "body": "Flips the line strength to the weak side. The 3-tech moves weak and a bigger closed-side end walks down inside the tight end strong. A different look with different run fits, strong against strong-side runs." },
-      { "heading": "Key alignment", "body": "Open-side DE 5-tech weak, 3-tech tackle to the weak B-gap, 1-tech nose shaded strong, a bigger closed-side DE on the tight end. Will is an aggressive run-through player, Sam walks out to coverage." },
-      { "heading": "Strengths", "body": "Loads the strong side with bigger bodies (closed DE plus nose plus Mike), so the offense cannot get movement on strong-side runs. The weak-side 3-tech still disrupts." },
-      { "heading": "What beats it", "body": "Weak-side runs and the Inside Zone cutback (if Will is late filling behind the 3-tech). Spread formations force it to sub. Counter or Power to the strong side can still work against the closed end." }
+    "subtitle": "5,3,1,5",
+    "tags": [
+      "4-3",
+      "front"
     ],
-    "related": ["three-tech", "43-over", "inside-zone", "counter"]
-  },
-  {
-    "id": "34-base",
-    "name": "3-4 Base",
-    "subtitle": "3 DL, 4 LB · Two-gap, disguise",
-    "tags": ["base"],
+    "image": "front-4-3-under.png",
     "sections": [
-      { "heading": "What it is", "body": "Three big two-gap linemen control six gaps and free four linebackers to attack, cover, or blitz from anywhere. The 3-4 is about disguise and versatility, the offense cannot tell who is coming." },
-      { "heading": "Key alignment", "body": "Two 5-tech ends and a 0-tech nose, all two-gapping. Jack and Buck outside linebackers rush or drop, Sam and Mike inside linebackers fill and cover. The nose is the most important player." },
-      { "heading": "Strengths", "body": "Total pre-snap disguise: the same look produces a 3, 4, 5, or 6-man rush. The offense cannot ID the Mike for protection. Any linebacker can be the pressure." },
-      { "heading": "What beats it", "body": "Interior push: double-team the nose with Inside Zone, and if he moves, both A-gaps open. Zone-blocking combos displace two-gap linemen. Spread formations force the 3-4 to sub to Nickel. Attack slow inside linebackers with fast slot receivers." }
+      {
+        "heading": "Personnel",
+        "body": "4 DL + walked SAM, 2 off-ball LB, 4 DB. 4-3 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,1,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DEw (5), DT (3), NT (1), DEs (5).\nLinebacker level: WILL (W), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Open-side DE 5-tech weak, 3-tech tackle to the weak B-gap, 1-tech nose shaded strong, a bigger closed-side DE on the tight end. Will is an aggressive run-through player, Sam walks out to coverage."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Loads the strong side with bigger bodies (closed DE plus nose plus Mike), so the offense cannot get movement on strong-side runs. The weak-side 3-tech still disrupts."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Weak-side runs and the Inside Zone cutback (if Will is late filling behind the 3-tech). Spread formations force it to sub. Counter or Power to the strong side can still work against the closed end."
+      }
     ],
-    "related": ["mike", "inside-zone", "zone-blocking", "nickel"]
+    "related": [
+      "three-tech",
+      "43-over",
+      "inside-zone",
+      "counter",
+      "4-3-even-6-1",
+      "4-3-odd"
+    ]
   },
   {
     "id": "nickel",
-    "name": "Nickel (4-2-5)",
-    "subtitle": "4 DL, 2 LB, 5 DB · The modern base",
-    "tags": ["base", "sub"],
-    "sections": [
-      { "heading": "What it is", "body": "No longer a sub-package, it is the base defense in modern football (60 to 70 percent of snaps). It replaces a linebacker with a fifth defensive back, the nickelback, to match 11 personnel." },
-      { "heading": "Key alignment", "body": "Four down linemen (1-tech, 3-tech, two ends), two linebackers (Mike and Will), and five DBs including the nickel over the slot. The strong and free safeties split deep or rotate." },
-      { "heading": "Strengths", "body": "Covers three receivers properly with the nickel on the slot. Adds nickel-blitz pressure from an unexpected angle. The right answer to spread 11-personnel offenses." },
-      { "heading": "What beats it", "body": "Heavy personnel (21, 22) forces it out of Nickel or out-blocks it. Run at the nickelback (a 190-pound DB) with Outside Zone or Pin and Pull. Trips formations stress the slot coverage. Motion to expose the assignment." }
+    "name": "Nickel Over (4-2-5)",
+    "subtitle": "5,1,3,5",
+    "tags": [
+      "nickel",
+      "front"
     ],
-    "related": ["nickel-position", "personnel", "slot", "outside-zone"]
+    "image": "front-nickel-over.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL, 2 LB + nickel, 4 DB deep/wide. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,1,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE (5), RDT2 (1), RDT1 (3), RLE (5).\nLinebacker level: SLCB1 (N), SLB1 (M), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Four down linemen (1-tech, 3-tech, two ends), two linebackers (Mike and Will), and five DBs including the nickel over the slot. The strong and free safeties split deep or rotate."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Covers three receivers properly with the nickel on the slot. Adds nickel-blitz pressure from an unexpected angle. The right answer to spread 11-personnel offenses."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Heavy personnel (21, 22) forces it out of Nickel or out-blocks it. Run at the nickelback (a 190-pound DB) with Outside Zone or Pin and Pull. Trips formations stress the slot coverage. Motion to expose the assignment."
+      }
+    ],
+    "related": [
+      "nickel-position",
+      "personnel",
+      "slot",
+      "outside-zone",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "3-2-6-mug",
+    "name": "3-2-6 Mug",
+    "subtitle": "4i,2i,0,2i,4i (LBs mugged in the A gaps)",
+    "tags": [
+      "3-2-6",
+      "front"
+    ],
+    "image": "front-3-2-6-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL, 2 mugged sub LB, 6 DB. 3-2-6 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,2i,0,2i,4i (LBs mugged in the A gaps)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i).\nLinebacker level: SLCB1 (N), SLB2 (2i), SLB1 (2i), SS1 ($).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-2-6-odd"
+    ]
+  },
+  {
+    "id": "3-2-6-odd",
+    "name": "3-2-6 Odd",
+    "subtitle": "4i,0,4i",
+    "tags": [
+      "3-2-6",
+      "front"
+    ],
+    "image": "front-3-2-6-odd.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL, 2 sub LB, 6 DB. 3-2-6 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B), SS1 ($).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-2-6-mug"
+    ]
+  },
+  {
+    "id": "3-3-5-3-high",
+    "name": "3-3-5 3 High",
+    "subtitle": "4i,0,4i",
+    "tags": [
+      "3-3-5",
+      "front"
+    ],
+    "image": "front-3-3-5-3-high.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL, 3 LB (apex), 5 DB (3 high). 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i).\nLinebacker level: WILL (W), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS1 (SS), SS2 (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-3-5-3-high-odd",
+      "3-3-5-mint",
+      "3-3-5-over-flex"
+    ]
+  },
+  {
+    "id": "3-3-5-3-high-odd",
+    "name": "3-3-5 3 High Odd",
+    "subtitle": "3,1,5 (tilt)",
+    "tags": [
+      "3-3-5",
+      "front"
+    ],
+    "image": "front-3-3-5-3-high-odd.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL (tilted), 3 LB, 5 DB (3 high). 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 3,1,5 (tilt)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (3), NT (1), DT2 (5).\nLinebacker level: WILL (W), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS1 (SS), SS2 (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-3-5-3-high",
+      "3-3-5-mint",
+      "3-3-5-over-flex"
+    ]
+  },
+  {
+    "id": "3-3-5-mint",
+    "name": "3-3-5 Mint",
+    "subtitle": "4i,0,4i + 7 (Jack)",
+    "tags": [
+      "3-3-5",
+      "front"
+    ],
+    "image": "front-3-3-5-mint.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL + Jack edge, 2 ILB, star overhang, 5 DB. 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i + 7 (Jack)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i), REDG1 (7).\nLinebacker level: SS2 ($), MIKE (M), WILL (W).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-3-5-3-high",
+      "3-3-5-3-high-odd",
+      "3-3-5-over-flex"
+    ]
+  },
+  {
+    "id": "3-3-5-over-flex",
+    "name": "3-3-5 Over Flex",
+    "subtitle": "5,1,3,7",
+    "tags": [
+      "3-3-5",
+      "front"
+    ],
+    "image": "front-3-3-5-over-flex.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4-man Over line (flexed strong edge), 2 ILB, star overhang, 5 DB. 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,1,3,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: LEDG1 (5), NT (1), DT1 (3), REDG1 (7).\nLinebacker level: SS1 ($), MIKE (M), WILL (W).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-3-5-3-high",
+      "3-3-5-3-high-odd",
+      "3-3-5-mint"
+    ]
+  },
+  {
+    "id": "3-3-5-penny",
+    "name": "3-3-5 Penny",
+    "subtitle": "7,4i,0,4i,7",
+    "tags": [
+      "3-3-5",
+      "front"
+    ],
+    "image": "front-3-3-5-penny.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "5-man surface (Tite interior + stand-up edges), 1 LB box, 5 DB. 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,0,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (7), DT1 (4i), NT (0), DT2 (4i), LEDG1 (7).\nLinebacker level: SS1 ($), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-3-5-3-high",
+      "3-3-5-3-high-odd",
+      "3-3-5-mint"
+    ]
+  },
+  {
+    "id": "3-3-5-split",
+    "name": "3-3-5 Split",
+    "subtitle": "5,3,3,5",
+    "tags": [
+      "3-3-5",
+      "front"
+    ],
+    "image": "front-3-3-5-split.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4-man line, 2 ILB, both safeties walked down (4-4 look), 1 high. 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: LEDG1 (5), NT (3), DT1 (3), REDG1 (5).\nLinebacker level: SS2 ($), WILL (W), MIKE (M), SS1 ($).\nSecondary: CBL, FS (FS), CBR."
+      }
+    ],
+    "related": [
+      "3-3-5-3-high",
+      "3-3-5-3-high-odd",
+      "3-3-5-mint"
+    ]
   },
   {
     "id": "33-stack",
-    "name": "3-3 Stack (3-3-5)",
-    "subtitle": "3 DL, 3 LB, 5 DB · The chaos defense",
-    "tags": ["base", "sub"],
-    "sections": [
-      { "heading": "What it is", "body": "Three linemen, three linebackers stacked directly behind them, five defensive backs. Every pre-snap look is identical and every post-snap action is different. The offense cannot read the linebackers because they are hidden." },
-      { "heading": "Key alignment", "body": "Two 4i or 5-tech ends, a 0-tech two-gap nose, three stacked linebackers 4 to 5 yards deep, the nickel over the slot, and a rotating secondary." },
-      { "heading": "Strengths", "body": "Total pre-snap disguise from one alignment: any number of rushers, zone blitz, fire zone. Forces the center to guess the Mike. Adapts to any personnel without subbing." },
-      { "heading": "What beats it", "body": "Only three linemen, so Inside Zone with double teams moves the interior. Quick plays (jet sweep, quick passes) beat the linebackers before they diagnose. Heavy sets create a numbers mismatch in a light box." }
+    "name": "3-3-5 Stack",
+    "subtitle": "4i,0,4i (LBs stacked)",
+    "tags": [
+      "3-3-5",
+      "front"
     ],
-    "related": ["mike", "inside-zone", "jet-motion", "fire-zone"]
+    "image": "front-3-3-5-stack.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL, 3 LB stacked directly behind, 2 walked safeties, 1 high. 3-3-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i (LBs stacked)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i).\nLinebacker level: SS1 ($), WILL (W), MIKE (M), SAM (S), SS2 ($).\nSecondary: CBL, FS (FS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Two 4i or 5-tech ends, a 0-tech two-gap nose, three stacked linebackers 4 to 5 yards deep, the nickel over the slot, and a rotating secondary."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Total pre-snap disguise from one alignment: any number of rushers, zone blitz, fire zone. Forces the center to guess the Mike. Adapts to any personnel without subbing."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Only three linemen, so Inside Zone with double teams moves the interior. Quick plays (jet sweep, quick passes) beat the linebackers before they diagnose. Heavy sets create a numbers mismatch in a light box."
+      }
+    ],
+    "related": [
+      "mike",
+      "inside-zone",
+      "jet-motion",
+      "fire-zone",
+      "3-3-5-3-high",
+      "3-3-5-3-high-odd"
+    ]
+  },
+  {
+    "id": "3-4-bear",
+    "name": "3-4 Bear",
+    "subtitle": "5,3,0,3,5 + SS edge",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-bear.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "5-man surface (3,0,3 interior), SS walked to the strong edge, 2 ILB, 1 high. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,0,3,5 + SS edge."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (3), NT (0), DT2 (3), LEDG1 (5).\nLinebacker level: WILL (W), MIKE (M), SS1 ($).\nSecondary: CBL, FS (FS), CBR."
+      }
+    ],
+    "related": [
+      "3-4-even",
+      "3-4-odd",
+      "34-base"
+    ]
+  },
+  {
+    "id": "3-4-even",
+    "name": "3-4 Even",
+    "subtitle": "5,2i,0,3,5",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-even.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "5-man surface (both OLBs down), 2 ILB, 4 DB. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,2i,0,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (2i), NT (0), DT2 (3), LEDG1 (5).\nLinebacker level: WILL (W), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-4-bear",
+      "3-4-odd",
+      "34-base"
+    ]
+  },
+  {
+    "id": "3-4-odd",
+    "name": "3-4 Odd",
+    "subtitle": "5,4i,0,4i,5",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-odd.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL (4i,0,4i), both OLBs on the edges, 2 ILB, 4 DB. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,4i,0,4i,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (4i), NT (0), DT2 (4i), LEDG1 (5).\nLinebacker level: WILL (W), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-4-bear",
+      "3-4-even",
+      "34-base"
+    ]
+  },
+  {
+    "id": "34-base",
+    "name": "3-4 Over",
+    "subtitle": "7,5,1,3,5",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-over.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "Over interior + both OLBs down (heavy weak edge), 2 ILB, 4 DB. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,5,1,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (7), DT1 (5), NT (1), DT2 (3), LEDG1 (5).\nLinebacker level: WILL (W), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Two 5-tech ends and a 0-tech nose, all two-gapping. Jack and Buck outside linebackers rush or drop, Sam and Mike inside linebackers fill and cover. The nose is the most important player."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Total pre-snap disguise: the same look produces a 3, 4, 5, or 6-man rush. The offense cannot ID the Mike for protection. Any linebacker can be the pressure."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Interior push: double-team the nose with Inside Zone, and if he moves, both A-gaps open. Zone-blocking combos displace two-gap linemen. Spread formations force the 3-4 to sub to Nickel. Attack slow inside linebackers with fast slot receivers."
+      }
+    ],
+    "related": [
+      "mike",
+      "inside-zone",
+      "zone-blocking",
+      "nickel",
+      "3-4-bear",
+      "3-4-even"
+    ]
+  },
+  {
+    "id": "3-4-over-stack",
+    "name": "3-4 Over Stack",
+    "subtitle": "5,1,3,5 (LBs stacked)",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-over-stack.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4-man Over line, 3 LB stacked in the gaps behind, 4 DB. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,1,3,5 (LBs stacked)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), NT (1), DT1 (3), DT2 (5).\nLinebacker level: WILL (W), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-4-bear",
+      "3-4-even",
+      "3-4-odd"
+    ]
+  },
+  {
+    "id": "3-4-tite",
+    "name": "3-4 Tite",
+    "subtitle": "7,4i,0,4i,7",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-tite.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "Tite interior (4i,0,4i), both OLBs down at 7, 2 ILB, 4 DB. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,0,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (7), DT1 (4i), NT (0), DT2 (4i), LEDG1 (7).\nLinebacker level: WILL (W), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-4-bear",
+      "3-4-even",
+      "3-4-odd"
+    ]
+  },
+  {
+    "id": "3-4-under",
+    "name": "3-4 Under",
+    "subtitle": "5,3,1,5,9",
+    "tags": [
+      "3-4",
+      "front"
+    ],
+    "image": "front-3-4-under.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "Under interior + strong OLB down wide, 2 ILB, 4 DB. 3-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,1,5,9."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (3), NT (1), DT2 (5), LEDG1 (9).\nLinebacker level: WILL (W), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "3-4-bear",
+      "3-4-even",
+      "3-4-odd"
+    ]
+  },
+  {
+    "id": "4-2-5-over-g",
+    "name": "4-2-5 Over G",
+    "subtitle": "5,2i,3,5",
+    "tags": [
+      "4-2-5",
+      "front"
+    ],
+    "image": "front-4-2-5-over-g.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL (nose pinched to 2i), 2 box LB, nickel strong, 4 DB. 4-2-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,2i,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: LEDG1 (5), NT (2i), DT1 (3), REDG1 (5).\nLinebacker level: SLB2 (B), SLB1 (M), SS1 ($).\nSecondary: CBL, SS2 (SS), FS (FS), CBR."
+      }
+    ],
+    "related": [
+      "4-2-5-under"
+    ]
+  },
+  {
+    "id": "4-2-5-under",
+    "name": "4-2-5 Under",
+    "subtitle": "5,3,1,5",
+    "tags": [
+      "4-2-5",
+      "front"
+    ],
+    "image": "front-4-2-5-under.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL (Under line), 2 box LB, SS rolled down strong, 4 DB. 4-2-5 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,1,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: LEDG1 (5), DT1 (3), NT (1), REDG1 (5).\nLinebacker level: SLB2 (B), SLB1 (M), SS1 ($).\nSecondary: CBL, SS2 (SS), FS (FS), CBR."
+      }
+    ],
+    "related": [
+      "4-2-5-over-g"
+    ]
+  },
+  {
+    "id": "4-3-even-6-1",
+    "name": "4-3 Even 6-1",
+    "subtitle": "7,5,2,2,5,7",
+    "tags": [
+      "4-3",
+      "front"
+    ],
+    "image": "front-4-3-even-6-1.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "6-man surface (4 DL + both OLBs at 7), MIKE alone, 4 DB. 4-3 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,5,2,2,5,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), NT (2), DT1 (2), LEDG1 (5).\nLinebacker level: WILL (7), MIKE (M), SAM (7).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "43-over",
+      "43-under",
+      "4-3-odd"
+    ]
+  },
+  {
+    "id": "4-3-odd",
+    "name": "4-3 Odd",
+    "subtitle": "7,4i,0,4i,7",
+    "tags": [
+      "4-3",
+      "front"
+    ],
+    "image": "front-4-3-odd.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "Odd interior (4i,0,4i) + WILL down on the weak edge, 2 off-ball LB, 4 DB. 4-3 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,0,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (4i), NT (0), DT1 (4i), LEDG1 (7).\nLinebacker level: WILL (7), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "43-over",
+      "43-under",
+      "4-3-even-6-1"
+    ]
+  },
+  {
+    "id": "4-3-over-solid",
+    "name": "4-3 Over Solid",
+    "subtitle": "5,2i,2i,5",
+    "tags": [
+      "4-3",
+      "front"
+    ],
+    "image": "front-4-3-over-solid.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL, 3 LB (SAM walked to the strong edge), 4 DB. 4-3 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,2i,2i,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), NT (2i), DT1 (2i), LEDG1 (5).\nLinebacker level: WILL (W), MIKE (M), SAM (9).\nSecondary: CBL, SS (SS), FS (FS), CBR."
+      }
+    ],
+    "related": [
+      "43-over",
+      "43-under",
+      "4-3-even-6-1"
+    ]
+  },
+  {
+    "id": "4-3-over-walk",
+    "name": "4-3 Over Walk",
+    "subtitle": "7,5,1,3,5",
+    "tags": [
+      "4-3",
+      "front"
+    ],
+    "image": "front-4-3-over-walk.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL, 3 LB (WILL walked to the weak edge), 4 DB. 4-3 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,5,1,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), NT (1), DT1 (3), LEDG1 (5).\nLinebacker level: WILL (7), MIKE (M), SAM (S).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "43-over",
+      "43-under",
+      "4-3-even-6-1"
+    ]
+  },
+  {
+    "id": "4-4-split",
+    "name": "4-4 Split",
+    "subtitle": "5,3,3,5",
+    "tags": [
+      "4-4",
+      "front"
+    ],
+    "image": "front-4-4-split.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL, 4 LB (split OLBs apexed on both edges), 3 DB. 4-4 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (3), NT (3), LEDG1 (5).\nLinebacker level: WILL (W), MIKE2 (M), MIKE1 (M), SAM (S).\nSecondary: CBL, FS (FS), CBR."
+      }
+    ],
+    "related": []
   },
   {
     "id": "bear",
-    "name": "Bear (46)",
-    "subtitle": "5 DL, 2 LB · Run-stuffing wall",
-    "tags": ["situational"],
-    "sections": [
-      { "heading": "What it is", "body": "Five defenders on the line, including a nose head-up on the center and tackles head-up on both guards. It clogs every interior gap so the two linebackers behind it run free. A short-yardage and goal-line call, not a base defense." },
-      { "heading": "Key alignment", "body": "Two 5-tech ends, two tackles on the guards, a 0-tech nose on the center, and two stacked linebackers." },
-      { "heading": "Strengths", "body": "Every offensive lineman has a man, so nobody can double-team or climb to the linebackers. Impossible to run inside. The linebackers are unblocked." },
-      { "heading": "What beats it", "body": "Outside Zone and perimeter runs (the Bear cannot chase sideline to sideline). Quick passing game (five linemen means fewer coverage defenders, bigger windows). Jet sweep and motion to the edge. Spread it out to 10 or 11 personnel to force it to sub." }
+    "name": "46 Bear",
+    "subtitle": "5,3,0,3",
+    "tags": [
+      "46",
+      "front"
     ],
-    "related": ["outside-zone", "jet-motion", "stick"]
+    "image": "front-46-bear.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL + SAM/WILL walked on the strong edge, SS rolled into the weak box, 1 off-ball LB, 3 deep DB. 46 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,0,3."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (3), NT (0), LEDG1 (3).\nLinebacker level: SS ($), MIKE (M), SAM (5), WILL (9).\nSecondary: CBL, FS (FS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Two 5-tech ends, two tackles on the guards, a 0-tech nose on the center, and two stacked linebackers."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Every offensive lineman has a man, so nobody can double-team or climb to the linebackers. Impossible to run inside. The linebackers are unblocked."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Outside Zone and perimeter runs (the Bear cannot chase sideline to sideline). Quick passing game (five linemen means fewer coverage defenders, bigger windows). Jet sweep and motion to the edge. Spread it out to 10 or 11 personnel to force it to sub."
+      }
+    ],
+    "related": [
+      "outside-zone",
+      "jet-motion",
+      "stick"
+    ]
+  },
+  {
+    "id": "5-2-normal",
+    "name": "5-2 Normal",
+    "subtitle": "5,3,0,3,5",
+    "tags": [
+      "5-2",
+      "front"
+    ],
+    "image": "front-5-2-normal.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "5 DL, 2 LB, 4 DB. 5-2 family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,0,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT1 (3), NT (0), DT2 (3), LEDG1 (5).\nLinebacker level: WILL (W), MIKE (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": []
+  },
+  {
+    "id": "dime-2-3-odd",
+    "name": "Dime 2-3 Odd",
+    "subtitle": "4i,0,4i",
+    "tags": [
+      "dime",
+      "front"
+    ],
+    "image": "front-dime-2-3-odd.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL, 2 sub LB, 6 DB (2 slot corners as overhangs). Dime family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (4i), RDT1 (0), RLE1 (4i).\nLinebacker level: SLCB1 (N), SLB2 (B), SLB1 (B), SLCB2 (N).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "dime-load-weak",
+      "dime",
+      "dime-rush"
+    ]
+  },
+  {
+    "id": "dime-load-weak",
+    "name": "Dime Load Weak",
+    "subtitle": "5,3,1,3,7 (unbalanced weak)",
+    "tags": [
+      "dime",
+      "front"
+    ],
+    "image": "front-dime-load-weak.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL + 2 sub LBs mugged weak, 6 DB (SS rolled down strong). Dime family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,1,3,7 (unbalanced weak)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT1 (3), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB2 (3), SLB1 (1), SS1 ($).\nSecondary: CBL, FS (FS), SS2 (SS), CBR."
+      }
+    ],
+    "related": [
+      "dime-2-3-odd",
+      "dime",
+      "dime-rush"
+    ]
   },
   {
     "id": "dime",
-    "name": "Dime (4-1-6)",
-    "subtitle": "4 DL, 1 LB, 6 DB · Max coverage",
-    "tags": ["situational", "sub"],
-    "sections": [
-      { "heading": "What it is", "body": "Removes a second linebacker for a sixth defensive back. A pass-first defense for 3rd and long, 10 personnel (four receivers), and prevent situations." },
-      { "heading": "Key alignment", "body": "Four down linemen, a single linebacker (spy or fill), and six defensive backs covering the field." },
-      { "heading": "Strengths", "body": "Maximum coverage against four-plus receivers and obvious passing downs. Matches speed with speed against hurry-up." },
-      { "heading": "What beats it", "body": "Run the ball. With one linebacker there is almost no run support, so Inside Zone or Power against a Dime light box is often a big play. The Dime Dilemma: if they stay in it against a run they lose, if they sub out and you throw they lose." }
+    "name": "Dime Normal",
+    "subtitle": "5,1,3,5",
+    "tags": [
+      "dime",
+      "front"
     ],
-    "related": ["personnel", "inside-zone", "power"]
+    "image": "front-dime-normal.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL, 1 sub LB, 6 DB (2 slot corners as overhangs). Dime family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,1,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT2 (1), RDT1 (3), RLE1 (5).\nLinebacker level: SLCB1 (N), SLB1 (M), SLCB2 (N).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      },
+      {
+        "heading": "Key alignment",
+        "body": "Four down linemen, a single linebacker (spy or fill), and six defensive backs covering the field."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Maximum coverage against four-plus receivers and obvious passing downs. Matches speed with speed against hurry-up."
+      },
+      {
+        "heading": "What beats it",
+        "body": "Run the ball. With one linebacker there is almost no run support, so Inside Zone or Power against a Dime light box is often a big play. The Dime Dilemma: if they stay in it against a run they lose, if they sub out and you throw they lose."
+      }
+    ],
+    "related": [
+      "personnel",
+      "inside-zone",
+      "power",
+      "dime-2-3-odd",
+      "dime-load-weak",
+      "dime-rush"
+    ]
+  },
+  {
+    "id": "dime-rush",
+    "name": "Dime Rush",
+    "subtitle": "5,3,4i,7",
+    "tags": [
+      "dime",
+      "front"
+    ],
+    "image": "front-dime-rush.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL (rush-tilted), 1 sub LB, 6 DB (2 slot corners as overhangs). Dime family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT2 (3), RDT1 (4i), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (M), SLCB2 (N).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "dime-2-3-odd",
+      "dime-load-weak",
+      "dime"
+    ]
+  },
+  {
+    "id": "goal-line-5-3",
+    "name": "Goal Line 5-3",
+    "subtitle": "7,5,3,0,3,5,7",
+    "tags": [
+      "goal-line",
+      "front"
+    ],
+    "image": "front-goal-line-5-3.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "5 DL, 3 LB + WILL/SAM walked on the edges, FS and SS tucked into the box. Goal-line family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,5,3,0,3,5,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), LEDG2 (3), DT1 (0), DT2 (3), LEDG1 (5).\nLinebacker level: WILL (7), SS ($), MIKE2 (M), MIKE1 (M), SAM (7).\nSecondary: FS."
+      }
+    ],
+    "related": [
+      "goal-line-6-2"
+    ]
+  },
+  {
+    "id": "goal-line-6-2",
+    "name": "Goal Line 6-2",
+    "subtitle": "7,5,2,2,5,7",
+    "tags": [
+      "goal-line",
+      "front"
+    ],
+    "image": "front-goal-line-6-2.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL + WILL/SAM walked on the edges, FS/SS on the line corners, 2 stacked MIKEs. Goal-line family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,5,2,2,5,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: REDG1 (5), DT2 (2), DT1 (2), LEDG1 (5).\nLinebacker level: WILL (7), MIKE2 (M), MIKE1 (M), SAM (7).\nSecondary: FS, SS, SS2."
+      }
+    ],
+    "related": [
+      "goal-line-5-3"
+    ]
+  },
+  {
+    "id": "nickel-2-4",
+    "name": "Nickel 2-4",
+    "subtitle": "5,2i,2i,5",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-2-4.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "2 DL + 2 stand-up edge rushers, 2 sub LB, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,2i,2i,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT2 (2i), RDT1 (2i), RLE1 (5).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4-load",
+      "nickel-2-4-load-mug"
+    ]
+  },
+  {
+    "id": "nickel-2-4-load",
+    "name": "Nickel 2-4 Load",
+    "subtitle": "3,3,5,7 (unbalanced strong)",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-2-4-load.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4-man rush surface loaded to the strength, 2 sub LB, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 3,3,5,7 (unbalanced strong)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (3), RDT2 (3), RDT1 (5), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load-mug"
+    ]
+  },
+  {
+    "id": "nickel-2-4-load-mug",
+    "name": "Nickel 2-4 Load Mug",
+    "subtitle": "5,3,0,2,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-2-4-load-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL + SLB2 mugged strong, 1 sub LB off-ball, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,0,2,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT1 (3), RDT2 (0), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (2).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-2-4-single-mug",
+    "name": "Nickel 2-4 Single Mug",
+    "subtitle": "7,4i,0,4i,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-2-4-single-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL wide (7,4i,4i,7) + SLB1 mugged at 0, 1 sub LB off-ball, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,0,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (7), RDT2 (4i), RDT1 (4i), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (0), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-3-3-cub",
+    "name": "Nickel 3-3 Cub",
+    "subtitle": "5,2i,0,2i,5",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-3-3-cub.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 interior DL pinched (2i,0,2i) + 2 edge rushers, 1 sub LB, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,2i,0,2i,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), DT1 (2i), NT (0), DT2 (2i), RLE1 (5).\nLinebacker level: SLCB1 (N), SLB1 (M).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-3-3-dbl-mug",
+    "name": "Nickel 3-3 Dbl Mug",
+    "subtitle": "7,4i,2i,2i,4i,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-3-3-dbl-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL wide + both sub LBs mugged in the A gaps, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,2i,2i,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (7), RDT2 (4i), RDT1 (4i), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB2 (2i), SLB1 (2i).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-3-3-mint",
+    "name": "Nickel 3-3 Mint",
+    "subtitle": "4i,0,4i,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-3-3-mint.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 interior DL (tite) + strong Jack edge, 2 sub LB, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-3-3-over",
+    "name": "Nickel 3-3 Over",
+    "subtitle": "5,1,3,5",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-3-3-over.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4-man Over rush surface, 2 sub LB, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,1,3,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT2 (1), RDT1 (3), RLE1 (5).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-3-3-stack",
+    "name": "Nickel 3-3 Stack",
+    "subtitle": "4i,0,4i",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-3-3-stack.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL (tite) with 3 sub LBs stacked directly behind, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 4i,0,4i."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: DT1 (4i), NT (0), DT2 (4i).\nLinebacker level: SLCB1 (N), SLB3 (B), SLB1 (M), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-double-mug",
+    "name": "Nickel Double Mug",
+    "subtitle": "7,4i,2i,2i,4i,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-double-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL wide + both sub LBs mugged in the A gaps, 5 DB (base nickel personnel). Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,2i,2i,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (7), RDT2 (4i), RDT1 (4i), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB2 (2i), SLB1 (2i).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-load",
+    "name": "Nickel Load",
+    "subtitle": "3,3,5,7 (unbalanced strong)",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-load.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4-man rush surface loaded to the strength, 2 sub LB, 5 DB (base nickel personnel). Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 3,3,5,7 (unbalanced strong)."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (3), RDT2 (3), RDT1 (5), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-load-mug",
+    "name": "Nickel Load Mug",
+    "subtitle": "5,3,0,2,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-load-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3 DL + SLB2 mugged strong, 1 sub LB off-ball, 5 DB (base nickel personnel). Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,3,0,2,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT1 (3), RDT2 (0), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (2).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-single-mug",
+    "name": "Nickel Single Mug",
+    "subtitle": "7,4i,0,4i,7",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-single-mug.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL wide + SLB1 mugged at 0, 1 sub LB off-ball, 5 DB (base nickel personnel). Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 7,4i,0,4i,7."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (7), RDT2 (4i), RDT1 (4i), RLE1 (7).\nLinebacker level: SLCB1 (N), SLB1 (0), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "nickel-wide",
+    "name": "Nickel Wide",
+    "subtitle": "9,4i,3,9",
+    "tags": [
+      "nickel",
+      "front"
+    ],
+    "image": "front-nickel-wide.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "4 DL spread wide (9s on both edges), 2 sub LB stacked inside, 5 DB. Nickel family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 9,4i,3,9."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (9), RDT2 (4i), RDT1 (3), RLE1 (9).\nLinebacker level: SLCB1 (N), SLB1 (B), SLB2 (B).\nSecondary: CBL, FS (FS), SS (SS), CBR."
+      }
+    ],
+    "related": [
+      "nickel",
+      "nickel-2-4",
+      "nickel-2-4-load"
+    ]
+  },
+  {
+    "id": "prevent-3-deep",
+    "name": "Prevent 3-Deep",
+    "subtitle": "5,0,5",
+    "tags": [
+      "prevent",
+      "front"
+    ],
+    "image": "front-prevent-3-deep.png",
+    "sections": [
+      {
+        "heading": "Personnel",
+        "body": "3-man rush, 1 sub LB, 7 DB with a 3-deep umbrella. Prevent family."
+      },
+      {
+        "heading": "Front technique",
+        "body": "Technique string: 5,0,5."
+      },
+      {
+        "heading": "Alignment by level",
+        "body": "Line of scrimmage: RRE1 (5), RDT1 (0), RLE1 (5).\nLinebacker level: CB3 (N), SLB1 (M), CB4 (N).\nSecondary: CBL, FS1 (FS), FS2 (FS), SS (SS), CBR."
+      }
+    ],
+    "related": []
   }
 ]

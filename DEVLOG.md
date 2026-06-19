@@ -2,6 +2,24 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — Front track backfilled 7 -> 49 (every CFB26 front, diagrammed)  [content]
+**What:** The `front` track had 7 family stubs; the engine knows 49 fronts. Generated a card +
+an engine diagram for all 49 (`tools/backfill-front-cards.js` in the parent repo, reads
+`HimkageVision/data/fronts.json`). Each card carries ONLY data-derived truth, personnel, family,
+technique string, and an alignment-by-level breakdown read straight from the engine, plus an
+accurate g=0 diagram titled with the front. The 7 pre-existing cards kept their ids (external
+related links in glossary/situational point at them) AND their authored teaching (Strengths /
+What beats it), merged after the structural sections.
+**Files:** `content/fronts.json` (7 -> 49), `assets/card_art/front-*.png` (49 new).
+**Verification:** `npm run smoke` green, "front cards 49 / card diagrams verified: 50 / 0 dead
+buttons"; `tools/canon-check.js` shows engine 49 / cards 49.
+**Gotcha:** NO fabricated strategy prose (the rule that scrapped the old playbook data). Strengths/
+weaknesses were NOT invented; only the 7 sourced fronts have them. Early draft derived "even/odd
+front" and a coverage shell from the geometry, both could be WRONG (the engine tags the Jack edge
+as DL, so 3-3-5 Mint counted as "4-down"), so all derived interpretation was stripped, leaving only
+authoritative engine fields. Diagrams: render at g=0 and override `model.name`/`model.term` to the
+front name + technique string (else the board is titled with the offense's scheme, "INSIDE ZONE").
+
 ## 2026-06-19 — Teaching cards can carry diagrams; first one on mint-front-run-fit  [content, ui]
 **What:** Teaching cards were text-only (only the Playbook track attached art). Added an optional
 `image` field to the `Card` type, mirrored the scheme-detail attach logic into `cardDetail`
