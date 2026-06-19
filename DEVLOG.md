@@ -2,6 +2,16 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — P1 (run): sourced coaching on 11 of 12 run cards  [content, knowledge]
+**What:** Mined the zone-run-system + run-game collections (correct files this time: zone-run-system
+= media-06-18-04-17-*) into knowledge/verified/run-game.md, then added faithful Coaching notes to 11
+run cards (all but draw, which has no source). Deep on inside-zone/outside-zone/power/trap/read-option/
+power-read; concise textbook notes for counter/duo/iso/speed-option/toss.
+**Files:** content/runs.json (11 enriched).
+**Verification:** smoke green, 95 diagrams, 0 dead buttons.
+**Gotcha:** Honesty rule held: draw got NO notes (not in the corpus). media-06-18-04-17-05 is a
+byte-for-byte duplicate of -03 (a capture dup worth cleaning later).
+
 ## 2026-06-19 — Crop diagrams to the play + drop the redundant in-art title  [content, ui]
 **What:** Every card diagram was a tiny cluster in a huge empty field, and the in-art title (e.g.
 "INSIDE ZONE / BANG-BEND-BOUNCE") duplicated the embed header. tools/render-diagrams.js re-renders
