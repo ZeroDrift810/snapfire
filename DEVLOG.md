@@ -2,6 +2,17 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — P1 (partial): sourced air-raid coaching on 12 concept cards  [content, knowledge]
+**What:** First OFFENSIVE sourced teaching. Mined the air-raid collection (Subtonic) into the
+parent repo verified doc air-raid-offense.md, then added faithful, paraphrased "Coaching notes"
+sections to 12 marquee concept cards (drive, mesh, smash, flood, shallow-cross, stick, corner-flat,
+four-verticals, curls, slants, wr-screen, rpo-bubble). Engine basics + diagram + sourced why.
+**Files:** content/concepts.json (12 enriched).
+**Verification:** smoke green, 95 diagrams, 0 dead buttons.
+**Gotcha:** Collection names != filenames. The air-raid-concepts collection is media-06-18-06-01-*
+files, the air-raid collection is Air-raid-*.txt. When mining a collection, resolve its real files
+via collections.json items, do not assume files are named after the collection.
+
 ## 2026-06-19 — P3: coverage shell diagrams on 7 cards  [content]
 **What:** Added engine shell diagrams (resolveShell) to the 7 coverage cards whose id matches an
 engine coverage (cover-0/1/2/2-man/3/4/6). The 5 variants (tampa-2, palms, cover-1-robber,
