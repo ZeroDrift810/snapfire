@@ -2,6 +2,19 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — situational card: `mint-front-run-fit` (3-3-5 inside-zone run fit)  [content]
+**What:** Authored the 8th situational card, `mint-front-run-fit` ("Stop Inside Zone from
+Two-High (the Mint Front)"). Mined from the parent repo's `335-defense` collection (27-part
+course) into `knowledge/verified/335-defense.md`, then authored here. Teaches the 3-3-5 thesis:
+delete inside zone's four-way go one gap at a time from a five-man box, no blitz, while staying
+two-high. Related links to `penny-3-high`, `nickel-3-3-odd-bucket`, `b-gap`.
+**Files:** `content/situational.json`.
+**Verification:** `npm run smoke` green (264 routes, 322 related links, 0 dead buttons, 8
+situational cards). First real-deal deploy test of newly-ingested knowledge end to end.
+**Gotcha:** This card is the only one authored from a 27-part course so far. The rest of the
+335 knowledge is captured in the parent repo's verified doc + AUTHORING-BACKLOG but not yet
+carded. Don't assume the bot "knows" the whole course from this one card.
+
 ## 2026-06-13 — New `situational` track: 7 Madden-tactics teaching cards  [content, ui]
 **What:** Added the first new teaching track since the rebuild began, `situational` 🎯 (orange),
 for Madden pressure & tactics, so the advanced Madden tactics content does not pollute the clean

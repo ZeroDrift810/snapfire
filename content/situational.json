@@ -92,5 +92,19 @@
       { "heading": "Deep-half freedom", "body": "Because the corner plays outside leverage (top-down, not underneath trail), the backside safety does not have to cap him, so he can mug inside, play the box (fill the A gap, stop inside zone), and trigger down on the back's Texas route. Mix Cover 6 Willie with regular Cover 6 for an in/out bracket on the back and TE." }
     ],
     "related": ["cover-6", "palms", "stubby-seahawk"]
+  },
+  {
+    "id": "mint-front-run-fit",
+    "name": "Stop Inside Zone from Two-High (the Mint Front)",
+    "subtitle": "3-3-5 Mint · delete inside zone one gap at a time, no blitz, five-man box",
+    "tags": ["run-defense", "front"],
+    "sections": [
+      { "heading": "The idea", "body": "The whole point of 3-3-5 is to stop the run from a two-high safety shell, so you never have to spin down to single-high and get cooked in the pass game. The tool that makes it work is the Mint (\"tight\") front: nose tackle head-up on the center (0-technique), both tackles in an inside shade of the offensive tackle (4i). You set it by slanting the line inside." },
+      { "heading": "Read inside zone as a four-way go", "body": "Inside zone aims at the B gap but gives the back four answers: bang it in the B gap, dive the A gap, bounce to the C gap, or cut all the way back. A defense that can't account for all four gets gashed. The Mint front takes them away one at a time." },
+      { "heading": "Delete it 25% at a time", "body": "B gap: the 4i tackle forces a double team, so there is no clean lane. A gap: the nose occupies the center, which frees the Mike to scrape over and fill. C-gap bounce: the Cover 2 corner forces the edge and your user safety fills the alley. Cutback: the backside Will sits in the gap. Four answers, four defenders, from a five-man box with no blitz and no stunt." },
+      { "heading": "Why the popular look can't do this", "body": "The common 4-2-5 Over G leaves the center uncovered. That gives a free release into the second level and an open A gap, which is exactly why it can't hold inside zone from two-high. Covering the center with the nose is the difference, that is what lets you keep two safeties deep and still stop the run." },
+      { "heading": "Keep it sound", "body": "Cover 2 is the base because the corners are in the run fit (force on the edge, not buried in the box). Pair it with the Mint front and you have the inside and the edge covered while staying two-high. If a tight end aligns away from the Jack and they run at him, kick to 3-3-5 Penny so the extra safety occupies him." }
+    ],
+    "related": ["penny-3-high", "nickel-3-3-odd-bucket", "b-gap"]
   }
 ]
