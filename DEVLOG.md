@@ -2,6 +2,18 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — Animated GIF diagrams on Run Game + Concept cards  [content, ui]
+**What:** Converted the 12 run + 26 concept card diagrams from static PNG to animated GIF (the play
+develops). The engine renderSVG(model, g) takes a progress g in [0,1]; animate-cards.js sweeps g into
+frame SVGs, stitch-gifs.py rasterizes (PyMuPDF dpi 70) + Pillow stitches a looping GIF (hold the
+finished play 1.2s). Fronts (static alignment) and coverages (zone-bubble still reads best) stay PNG.
+**Files:** content/runs.json + content/concepts.json (image .png->.gif), assets/card_art/{run,concept}-*.gif
+(38 new; the .png removed), src/ui/views.ts (attach honors the file extension so a .gif renders animated).
+**Verification:** tsc clean, smoke green (95 diagrams, 0 dead buttons). GIFs ~270-305 KB each.
+**Gotcha:** Discord animates an attachment by EXTENSION, the attach name was hardcoded diagram.png;
+now it derives .gif/.png from card.image. GIF size scales with frames x dpi; 9-11 frames at dpi 70
+keeps each well under the 8MB embed cap.
+
 ## 2026-06-19 — P1 (partial): sourced air-raid coaching on 12 concept cards  [content, knowledge]
 **What:** First OFFENSIVE sourced teaching. Mined the air-raid collection (Subtonic) into the
 parent repo verified doc air-raid-offense.md, then added faithful, paraphrased "Coaching notes"

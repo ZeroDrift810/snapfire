@@ -297,12 +297,15 @@ function cardDetail(
   );
 
   // Optional engine-generated diagram (original art in assets/card_art/), attached like play art.
+  // Honor the real extension so an animated .gif renders animated in the embed (Discord keys on it).
   const files: AttachmentBuilder[] = [];
   if (card.image) {
     const imagePath = path.join(PROJECT_ROOT, 'assets', 'card_art', card.image);
     if (fs.existsSync(imagePath)) {
-      files.push(new AttachmentBuilder(imagePath, { name: 'diagram.png' }));
-      embed.setImage('attachment://diagram.png');
+      const ext = card.image.split('.').pop()?.toLowerCase() === 'gif' ? 'gif' : 'png';
+      const name = `diagram.${ext}`;
+      files.push(new AttachmentBuilder(imagePath, { name }));
+      embed.setImage(`attachment://${name}`);
     }
   }
 
