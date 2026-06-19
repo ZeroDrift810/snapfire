@@ -2,6 +2,23 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — P2 offense scaffold: concepts 11->30, new Run Game track (12)  [content, ui]
+**What:** Mirrored the front backfill onto offense. Pass concepts 11 -> 30 (26 engine concepts
+diagrammed + sourced from `concepts.json` desc/term/routes/beats/beaten_by, plus 4 preserved
+variants); added a brand-new **Run Game** track (🏃 teal) with all 12 engine run schemes, sourced
+from `schemes.json` (desc/rules/back_profile) + diagrams. Tracks wired in `src/ui/ids.ts`,
+`src/content/cards.ts`, `src/ui/views.ts`.
+**Files:** `content/concepts.json` (30), `content/runs.json` (new, 12), `assets/card_art/concept-*.png`
+(26), `assets/card_art/run-*.png` (12), `src/ui/ids.ts`, `src/content/cards.ts`, `src/ui/views.ts`.
+**Verification:** clean `tsc` build + `npm run smoke` green (88 card diagrams, 505 related links,
+0 dead buttons).
+**Gotcha:** Adding a track means SEVEN exhaustive maps: Track union + TRACKS + TRACK_LABEL/EMOJI/
+BLURB + FACETS + DEFAULT_FILTER + isTrack (ids.ts), CardTrack + CARD_TRACKS + FILES + RESOLVE_ORDER +
+the `cards` init object + cardStats (cards.ts), TRACK_COLOR + HUB_ORDER (views.ts). tsx (smoke) is
+lenient about missing keys; `tsc` (the deploy build) is NOT, so always run `npm run build` before
+deploy. Concept diagrams render busier than front alignment boards; per-concept formations
+(from render-harness) make them readable. The hub now has 8 tracks, RE-POST the hub after deploy.
+
 ## 2026-06-19 — Front track backfilled 7 -> 49 (every CFB26 front, diagrammed)  [content]
 **What:** The `front` track had 7 family stubs; the engine knows 49 fronts. Generated a card +
 an engine diagram for all 49 (`tools/backfill-front-cards.js` in the parent repo, reads

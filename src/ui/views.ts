@@ -56,6 +56,7 @@ const TRACK_COLOR: Record<Track, number> = {
   glossary: GENERIC_BRAND.color, // gray
   coverage: 0x2980b9, // blue
   concept: 0x57f287, // green
+  run: 0x1abc9c, // teal
   front: 0xed4245, // red
   usering: 0x9b59b6, // purple
   playbook: BRAND_CONFIGS.SNAPFIRE.color, // overridden per scheme
@@ -116,7 +117,7 @@ function pageCount(total: number): number {
 // HUB
 // ---------------------------------------------------------------------------
 
-const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'playbook', 'situational'];
+const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'playbook', 'situational'];
 
 function hubEmbed(): EmbedBuilder {
   return new EmbedBuilder()

@@ -21,19 +21,20 @@
  * There are NO slash commands anywhere in this bot.
  */
 
-export type Track = 'glossary' | 'coverage' | 'concept' | 'front' | 'usering' | 'playbook' | 'situational';
+export type Track = 'glossary' | 'coverage' | 'concept' | 'run' | 'front' | 'usering' | 'playbook' | 'situational';
 
 export interface Facet {
   token: string;
   label: string;
 }
 
-export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'front', 'usering', 'playbook', 'situational'];
+export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'playbook', 'situational'];
 
 export const TRACK_LABEL: Record<Track, string> = {
   glossary: 'Terms',
   coverage: 'Coverages',
   concept: 'Concepts',
+  run: 'Run Game',
   front: 'Fronts',
   usering: 'Usering',
   playbook: 'Playbook',
@@ -44,6 +45,7 @@ export const TRACK_EMOJI: Record<Track, string> = {
   glossary: '📖',
   coverage: '🛡️',
   concept: '📘',
+  run: '🏃',
   front: '🧱',
   usering: '🎮',
   playbook: '🏈',
@@ -54,6 +56,7 @@ export const TRACK_BLURB: Record<Track, string> = {
   glossary: 'Plain-language definitions. Tap any term to learn it.',
   coverage: 'Read the shell, find the void, learn how to beat it.',
   concept: 'Offensive concepts and the one defender each one reads.',
+  run: 'Run schemes: how the blocks fit and where the ball hits.',
   front: 'Defensive fronts and what beats them.',
   usering: 'The iMoveChainz way to user the sticks: play the DBs.',
   playbook: 'SnapFire offense and Shinobi defense, matched to the in-game art.',
@@ -65,6 +68,7 @@ export const FACETS: Record<Track, Facet[]> = {
   glossary: [],
   coverage: [],
   concept: [],
+  run: [],
   front: [],
   usering: [],
   situational: [],
@@ -78,6 +82,7 @@ export const DEFAULT_FILTER: Record<Track, string> = {
   glossary: 'all',
   coverage: 'all',
   concept: 'all',
+  run: 'all',
   front: 'all',
   usering: 'all',
   situational: 'all',
@@ -105,6 +110,7 @@ export function isTrack(v: string): v is Track {
     v === 'glossary' ||
     v === 'coverage' ||
     v === 'concept' ||
+    v === 'run' ||
     v === 'front' ||
     v === 'usering' ||
     v === 'playbook' ||

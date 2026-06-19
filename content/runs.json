@@ -1,0 +1,331 @@
+[
+  {
+    "id": "inside-zone",
+    "name": "INSIDE ZONE",
+    "subtitle": "BANG · BEND · BOUNCE",
+    "tags": [
+      "zone",
+      "run"
+    ],
+    "image": "run-inside-zone.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Zone: covered drive, uncovered combo & climb. Back reads bang-bend-bounce."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Linemen step playside. Covered (DL head-up or playside gap): drive him. Uncovered: combo the playside double, climb to the LB. Back aims playside A gap, reads bang / bend / bounce."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Shifty back with vision; he finds the hole and makes the line right."
+      }
+    ],
+    "related": [
+      "outside-zone"
+    ]
+  },
+  {
+    "id": "outside-zone",
+    "name": "OUTSIDE ZONE",
+    "subtitle": "REACH · PRESS · BOUNCE",
+    "tags": [
+      "zone",
+      "run"
+    ],
+    "image": "run-outside-zone.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Stretch: reach playside, press the edge, bend-bang-bounce off the tackle block."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Full line stretches playside, reach the playside shoulder. Back presses the outside leg of the TE/tackle, then bounce, bang, or bend off the edge block."
+      },
+      {
+        "heading": "Back profile",
+        "body": "One-cut back with speed; press the edge, plant, go."
+      }
+    ],
+    "related": [
+      "inside-zone"
+    ]
+  },
+  {
+    "id": "power",
+    "name": "POWER O",
+    "subtitle": "DOWN · DOUBLE · KICK · PULL",
+    "tags": [
+      "gap",
+      "run"
+    ],
+    "image": "run-power.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Playside down-blocks + double, fullback kicks the force, backside guard pulls to the Mike."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Linemen read head-up to backside. Playside down-blocks, double team at the point of attack climbs to the backside LB. Kicker (FB or TE) kicks the force; backside guard pulls. Trap = pull to kick, wrap = pull through the hole to the playside LB. One-back versions: no kicker, lane stays tight and vertical off the double."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Downhill power back; the line builds the hole and hands him the map."
+      }
+    ],
+    "related": [
+      "counter",
+      "duo",
+      "trap"
+    ]
+  },
+  {
+    "id": "counter",
+    "name": "COUNTER (GT)",
+    "subtitle": "TWO PULLERS: G KICKS · T WRAPS",
+    "tags": [
+      "gap",
+      "run"
+    ],
+    "image": "run-counter.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Playside down-blocks; backside guard kicks the edge, backside tackle wraps the Mike. Back counter-steps."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Playside down-blocks; backside guard pulls to kick the force, backside tackle pulls and wraps to the playside LB. Back jab-steps away, then follows the wrapper through the B gap."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Patient back with burst; sell the jab, then hit it downhill."
+      }
+    ],
+    "related": [
+      "power",
+      "duo",
+      "trap"
+    ]
+  },
+  {
+    "id": "duo",
+    "name": "DUO",
+    "subtitle": "DOUBLE TEAMS · READ THE MIKE",
+    "tags": [
+      "gap",
+      "run"
+    ],
+    "image": "run-duo.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Two double teams move the line, no pullers. The back reads the Mike and hits the crease."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Power without the puller: vertical double teams at both interior defenders, TE seals the edge, backside tackle hinges. Nobody blocks the Mike; the back reads him and breaks opposite."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Decisive downhill back; one read, one cut, square pads."
+      }
+    ],
+    "related": [
+      "power",
+      "counter",
+      "trap"
+    ]
+  },
+  {
+    "id": "iso",
+    "name": "ISO",
+    "subtitle": "BASE BLOCKS · LEAD AT THE BACKER",
+    "tags": [
+      "man",
+      "run"
+    ],
+    "image": "run-iso.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Man blocking across the front, fullback isolates the playside backer, back follows him downhill."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Every lineman base-blocks the man over him; uncovered linemen climb. The fullback meets the playside LB in the hole and the back follows his hat. One-back versions hit the same lane as a quick dive."
+      },
+      {
+        "heading": "Back profile",
+        "body": "North-south hammer; follow the lead block, fall forward."
+      }
+    ],
+    "related": []
+  },
+  {
+    "id": "trap",
+    "name": "TRAP",
+    "subtitle": "INFLUENCE · TRAP THE FIRST DL INSIDE",
+    "tags": [
+      "gap",
+      "run"
+    ],
+    "image": "run-trap.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "The line blocks down and invites penetration, then the backside guard traps the first defender past center."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Playside DL is invited upfield (influence), the backside guard pulls short and kicks him from the inside out. Center and playside guard block back; tackles climb or hinge. Hits fast behind the trap block."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Quick-trigger back; the hole opens and closes in a blink."
+      }
+    ],
+    "related": [
+      "power",
+      "counter",
+      "duo"
+    ]
+  },
+  {
+    "id": "draw",
+    "name": "DRAW",
+    "subtitle": "SHOW PASS · RUN LATE",
+    "tags": [
+      "delay",
+      "run"
+    ],
+    "image": "run-draw.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "The line sets like a pass to invite the rush upfield, then the back takes it downhill through the vacated lane."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Five-man pass set, receivers clear out, QB shows pass. The back delays, takes the handoff, and runs the lane the rush vacated. Blockers ride the rushers past the play."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Patient back with vision; let the rush beat itself."
+      }
+    ],
+    "related": []
+  },
+  {
+    "id": "toss",
+    "name": "TOSS",
+    "subtitle": "PIN & PULL · GET THE EDGE",
+    "tags": [
+      "perimeter",
+      "run"
+    ],
+    "image": "run-toss.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Playside pins down, guard and center pull around, the back takes the pitch and outruns the box."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Playside blockers pin their inside men, the playside guard and center pull around the edge for the force and the first backer. The back catches the toss already moving and presses the corner."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Speed back; win the corner, the pullers handle the rest."
+      }
+    ],
+    "related": []
+  },
+  {
+    "id": "read-option",
+    "name": "READ OPTION",
+    "subtitle": "GIVE OR KEEP · READ THE BACKSIDE END",
+    "tags": [
+      "option",
+      "run"
+    ],
+    "image": "run-read-option.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Zone blocking with the backside end unblocked. He crashes, the QB keeps; he sits, the back gets it."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Inside zone up front with the backside end left for the QB's eyes. Mesh rides until the read declares: end crashes flat down the line, QB pulls and replaces him; end stays home, give and the zone hits as called."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Zone back plus a QB who actually keeps it honest."
+      }
+    ],
+    "related": [
+      "speed-option",
+      "power-read"
+    ]
+  },
+  {
+    "id": "speed-option",
+    "name": "SPEED OPTION",
+    "subtitle": "PITCH OFF THE EDGE",
+    "tags": [
+      "option",
+      "run"
+    ],
+    "image": "run-speed-option.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Nobody blocks the pitch key. The QB attacks his shoulder and pitches off his answer; the back keeps the relation."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Reach blocking with the playside edge unblocked: he is the pitch key. QB attacks his upfield shoulder at full speed; key takes the QB, the ball is pitched; key widens with the pitch, QB turns up inside him."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Pitch back with wheels; hold the relation, finish the corner."
+      }
+    ],
+    "related": [
+      "read-option",
+      "power-read"
+    ]
+  },
+  {
+    "id": "power-read",
+    "name": "POWER READ",
+    "subtitle": "SWEEP OR KEEP · READ THE FORCE",
+    "tags": [
+      "option",
+      "run"
+    ],
+    "image": "run-power-read.png",
+    "sections": [
+      {
+        "heading": "The scheme",
+        "body": "Power blocking with the force unblocked. The sweep stretches him; if he runs with it the QB pulls and hits the B gap."
+      },
+      {
+        "heading": "Blocking rules",
+        "body": "Power up front (down blocks, backside guard pulls) but nobody kicks the force: the sweep path stretches him instead. Force chases the sweep, QB pulls and follows the puller through the B gap; force squeezes, the sweep wins the corner."
+      },
+      {
+        "heading": "Back profile",
+        "body": "Jet-speed sweeper plus a downhill QB."
+      }
+    ],
+    "related": [
+      "read-option",
+      "speed-option"
+    ]
+  }
+]
