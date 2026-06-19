@@ -3,192 +3,553 @@
     "id": "cover-0",
     "name": "Cover 0",
     "subtitle": "0 high (no deep safety) · Man / Blitz",
-    "tags": ["man", "blitz"],
-    "sections": [
-      { "heading": "What it is", "body": "All-out man coverage with zero deep help. Every defender is either covering a receiver man-to-man or blitzing. Usually paired with a heavy rush of 5, 6, or 7." },
-      { "heading": "How it lines up", "body": "No safety deep. Corners and the nickel press their men. Safeties and linebackers either blitz or lock man on the tight end and back." },
-      { "heading": "Strengths", "body": "Maximum pressure on the QB. Stops the run with an extra man in the box. Forces fast, panicked throws." },
-      { "heading": "The void", "body": "Everywhere, in the sense that there is no deep help. You do not find a void, you win one matchup. One missed tackle or one lost rep is a touchdown." },
-      { "heading": "How to beat it", "body": "Quick: Slant-Flat, thrown immediately. Intermediate: Drive / Mesh (the crossing picks beat man with no safety to clean up). Deep: Fade to your best receiver, a 1-on-1 with nobody behind the corner. Have a hot route ready every snap." },
-      { "heading": "Ideal usage", "body": "3rd and long when you need a sack, the red zone where the field is short, or once as a surprise after you have shown fake pressure." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner on their best receiver in press. You ARE the coverage on the top threat: jam, trail, and contest. The rush and the other man defenders handle themselves." }
+    "tags": [
+      "man",
+      "blitz"
     ],
-    "related": ["mofc-mofo", "slant-flat", "drive-mesh", "hot-route", "blitz", "press"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "All-out man coverage with zero deep help. Every defender is either covering a receiver man-to-man or blitzing. Usually paired with a heavy rush of 5, 6, or 7."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "No safety deep. Corners and the nickel press their men. Safeties and linebackers either blitz or lock man on the tight end and back."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Maximum pressure on the QB. Stops the run with an extra man in the box. Forces fast, panicked throws."
+      },
+      {
+        "heading": "The void",
+        "body": "Everywhere, in the sense that there is no deep help. You do not find a void, you win one matchup. One missed tackle or one lost rep is a touchdown."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Quick: Slant-Flat, thrown immediately. Intermediate: Drive / Mesh (the crossing picks beat man with no safety to clean up). Deep: Fade to your best receiver, a 1-on-1 with nobody behind the corner. Have a hot route ready every snap."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "3rd and long when you need a sack, the red zone where the field is short, or once as a surprise after you have shown fake pressure."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner on their best receiver in press. You ARE the coverage on the top threat: jam, trail, and contest. The rush and the other man defenders handle themselves."
+      }
+    ],
+    "related": [
+      "mofc-mofo",
+      "slant-flat",
+      "drive-mesh",
+      "hot-route",
+      "blitz",
+      "press"
+    ],
+    "image": "coverage-cover-0.png"
   },
   {
     "id": "cover-1",
     "name": "Cover 1 (Man-Free)",
     "subtitle": "1 high (MOFC) · Man with a free safety",
-    "tags": ["man"],
-    "sections": [
-      { "heading": "What it is", "body": "Cover 0 with a safety net. Every receiver has a man defender, but one free safety stays deep in the middle. That single deep defender lets the corners play aggressive because they have help behind them." },
-      { "heading": "How it lines up", "body": "One safety deep middle (the free safety). The other safety can drop into the box (8-man run support). Corners, nickel, and a linebacker or safety lock man on the rest." },
-      { "heading": "Strengths", "body": "Shuts down quick, short passes because defenders are glued to receivers. Strong run support. The free safety erases deep mistakes and reads the QB's eyes for picks." },
-      { "heading": "The void", "body": "The deep sideline. The free safety sits in the deep middle and cannot help outside the numbers. A corner with no bracket is on an island." },
-      { "heading": "How to beat it", "body": "Quick: Slant-Flat and Stick. Intermediate: Drive / Mesh (rub the man defenders off) and Dagger. Deep: Double Post and 4 Verticals to stress the single high safety, or a corner / fade to the deep sideline he cannot reach." },
-      { "heading": "Ideal usage", "body": "Standard downs, especially against teams that live on crossing routes. The Robber and Hole variants add an underneath zone defender to take away the middle." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner on their best receiver and bait the throw to your side, or user the free safety deep middle and break on the QB's eyes." }
+    "tags": [
+      "man"
     ],
-    "related": ["mofc-mofo", "slant-flat", "drive-mesh", "dagger", "four-verticals", "cover-1-robber"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "Cover 0 with a safety net. Every receiver has a man defender, but one free safety stays deep in the middle. That single deep defender lets the corners play aggressive because they have help behind them."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "One safety deep middle (the free safety). The other safety can drop into the box (8-man run support). Corners, nickel, and a linebacker or safety lock man on the rest."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Shuts down quick, short passes because defenders are glued to receivers. Strong run support. The free safety erases deep mistakes and reads the QB's eyes for picks."
+      },
+      {
+        "heading": "The void",
+        "body": "The deep sideline. The free safety sits in the deep middle and cannot help outside the numbers. A corner with no bracket is on an island."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Quick: Slant-Flat and Stick. Intermediate: Drive / Mesh (rub the man defenders off) and Dagger. Deep: Double Post and 4 Verticals to stress the single high safety, or a corner / fade to the deep sideline he cannot reach."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Standard downs, especially against teams that live on crossing routes. The Robber and Hole variants add an underneath zone defender to take away the middle."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner on their best receiver and bait the throw to your side, or user the free safety deep middle and break on the QB's eyes."
+      }
+    ],
+    "related": [
+      "mofc-mofo",
+      "slant-flat",
+      "drive-mesh",
+      "dagger",
+      "four-verticals",
+      "cover-1-robber"
+    ],
+    "image": "coverage-cover-1.png"
   },
   {
     "id": "cover-1-robber",
     "name": "Cover 1 Robber",
     "subtitle": "1 high (MOFC) · Man + robber defender",
-    "tags": ["man"],
-    "sections": [
-      { "heading": "What it is", "body": "Cover 1 with an extra defender (a safety or linebacker) lurking 5 to 10 yards deep in the middle. He robs crossers, slants, and digs, and baits the QB into a throw over the middle." },
-      { "heading": "How it lines up", "body": "Free safety stays deep middle. The robber sits underneath in the middle of the field, eyes on the QB. Everyone else plays man." },
-      { "heading": "Strengths", "body": "Takes away the middle of the field underneath. Kills slants, crossers, and dig routes. The robber turns an open-looking throw into an interception." },
-      { "heading": "The void", "body": "Outside and deep. With a defender pulled into the middle, the sidelines and deep shots are even more 1-on-1 than base Cover 1." },
-      { "heading": "How to beat it", "body": "Attack the sidelines away from the lurking robber: out routes, comebacks, fades. Or look the robber off with your eyes before throwing back across. Do not throw the slant or dig into the trap." },
-      { "heading": "Ideal usage", "body": "Against crossing-route and slant-heavy offenses. A change-up that disguises as base Cover 1." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner on the outside threat and work the sideline. The AI robber handles the middle, do not pull him off his lurk." }
+    "tags": [
+      "man"
     ],
-    "related": ["cover-1", "mofc-mofo", "press"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "Cover 1 with an extra defender (a safety or linebacker) lurking 5 to 10 yards deep in the middle. He robs crossers, slants, and digs, and baits the QB into a throw over the middle."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Free safety stays deep middle. The robber sits underneath in the middle of the field, eyes on the QB. Everyone else plays man."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Takes away the middle of the field underneath. Kills slants, crossers, and dig routes. The robber turns an open-looking throw into an interception."
+      },
+      {
+        "heading": "The void",
+        "body": "Outside and deep. With a defender pulled into the middle, the sidelines and deep shots are even more 1-on-1 than base Cover 1."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Attack the sidelines away from the lurking robber: out routes, comebacks, fades. Or look the robber off with your eyes before throwing back across. Do not throw the slant or dig into the trap."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Against crossing-route and slant-heavy offenses. A change-up that disguises as base Cover 1."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner on the outside threat and work the sideline. The AI robber handles the middle, do not pull him off his lurk."
+      }
+    ],
+    "related": [
+      "cover-1",
+      "mofc-mofo",
+      "press"
+    ]
   },
   {
     "id": "cover-2",
     "name": "Cover 2 (Two-Deep Zone)",
     "subtitle": "2 high (MOFO) · Zone",
-    "tags": ["zone"],
-    "sections": [
-      { "heading": "What it is", "body": "Two safeties each cover a deep half of the field. Corners play the flats underneath, three linebackers cover the middle zones. A bend-but-don't-break shell with two deep helpers but nobody in the deep middle." },
-      { "heading": "How it lines up", "body": "Two safeties on the hashes at 12 to 15 yards. Corners squat in the flat and funnel receivers inside. Three linebackers in hook and curl zones." },
-      { "heading": "Strengths", "body": "Hard to complete short passes to the sideline. Physical corner jams. Safeties protect against deep balls outside." },
-      { "heading": "The void", "body": "The deep middle between the two safeties, and the sideline hole between the flat corner and the deep safety. Also weak against the run with only seven in the box." },
-      { "heading": "How to beat it", "body": "Quick: Stick and Spacing. Intermediate: Smash (corner route over the squatting corner). Deep: Post-Wheel and 4 Verticals up the middle seam. Smash and Post-Wheel together make Cover 2 unplayable." },
-      { "heading": "Ideal usage", "body": "2nd and long, passing situations, protecting a lead. Tampa 2 closes the deep middle by dropping the Mike." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner in the flat/cloud and bait the QB into the flat throw, then break on it. Or user a safety on the deep half and play the post-wheel." }
+    "tags": [
+      "zone"
     ],
-    "related": ["mofc-mofo", "stick", "smash", "post-wheel", "spacing", "tampa-2", "cover-2-man"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "Two safeties each cover a deep half of the field. Corners play the flats underneath, three linebackers cover the middle zones. A bend-but-don't-break shell with two deep helpers but nobody in the deep middle."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Two safeties on the hashes at 12 to 15 yards. Corners squat in the flat and funnel receivers inside. Three linebackers in hook and curl zones."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Hard to complete short passes to the sideline. Physical corner jams. Safeties protect against deep balls outside."
+      },
+      {
+        "heading": "The void",
+        "body": "The deep middle between the two safeties, and the sideline hole between the flat corner and the deep safety. Also weak against the run with only seven in the box."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Quick: Stick and Spacing. Intermediate: Smash (corner route over the squatting corner). Deep: Post-Wheel and 4 Verticals up the middle seam. Smash and Post-Wheel together make Cover 2 unplayable."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "2nd and long, passing situations, protecting a lead. Tampa 2 closes the deep middle by dropping the Mike."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner in the flat/cloud and bait the QB into the flat throw, then break on it. Or user a safety on the deep half and play the post-wheel."
+      }
+    ],
+    "related": [
+      "mofc-mofo",
+      "stick",
+      "smash",
+      "post-wheel",
+      "spacing",
+      "tampa-2",
+      "cover-2-man"
+    ],
+    "image": "coverage-cover-2.png"
   },
   {
     "id": "cover-2-man",
     "name": "Cover 2 Man",
     "subtitle": "2 high (MOFO) · Man underneath",
-    "tags": ["man"],
-    "sections": [
-      { "heading": "What it is", "body": "Two deep safeties over man-to-man underneath. The premium coverage: man discipline with deep help on both sides. The most talent-dependent shell in football." },
-      { "heading": "How it lines up", "body": "Two safeties on deep halves (looks like Cover 2 Zone pre-snap). Corners, nickel, and linebackers all play man on their assignments with a trail technique." },
-      { "heading": "Strengths", "body": "No zone holes underneath, every receiver is covered individually with help over the top. Hard to diagnose, looks like Cover 2 Zone or Cover 4 before the snap." },
-      { "heading": "The void", "body": "The deep middle seam between the two safeties (same as Cover 2). Underneath it is beaten by picks and double moves, not by sitting in a hole." },
-      { "heading": "How to beat it", "body": "Deep post between the safeties. Double moves (stutter-go, out-and-up) to shake the trail man. Rub and pick routes (Drive, Mesh). A wheel from the back exploits the linebacker mismatch deep." },
-      { "heading": "Ideal usage", "body": "3rd and long, two-minute situations, protecting a lead with athletic defenders." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner on the most dangerous receiver. The deep safeties bracket the middle for you." }
+    "tags": [
+      "man"
     ],
-    "related": ["cover-2", "mofc-mofo", "drive-mesh", "post-wheel"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "Two deep safeties over man-to-man underneath. The premium coverage: man discipline with deep help on both sides. The most talent-dependent shell in football."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Two safeties on deep halves (looks like Cover 2 Zone pre-snap). Corners, nickel, and linebackers all play man on their assignments with a trail technique."
+      },
+      {
+        "heading": "Strengths",
+        "body": "No zone holes underneath, every receiver is covered individually with help over the top. Hard to diagnose, looks like Cover 2 Zone or Cover 4 before the snap."
+      },
+      {
+        "heading": "The void",
+        "body": "The deep middle seam between the two safeties (same as Cover 2). Underneath it is beaten by picks and double moves, not by sitting in a hole."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Deep post between the safeties. Double moves (stutter-go, out-and-up) to shake the trail man. Rub and pick routes (Drive, Mesh). A wheel from the back exploits the linebacker mismatch deep."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "3rd and long, two-minute situations, protecting a lead with athletic defenders."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner on the most dangerous receiver. The deep safeties bracket the middle for you."
+      }
+    ],
+    "related": [
+      "cover-2",
+      "mofc-mofo",
+      "drive-mesh",
+      "post-wheel"
+    ],
+    "image": "coverage-cover-2-man.png"
   },
   {
     "id": "tampa-2",
     "name": "Tampa 2",
     "subtitle": "2 high + Mike deep middle · Zone",
-    "tags": ["zone"],
-    "sections": [
-      { "heading": "What it is", "body": "A Cover 2 variation where the Mike linebacker drops deep down the middle at 15 to 18 yards, creating a three-deep triangle that closes the Cover 2 deep-middle hole." },
-      { "heading": "How it lines up", "body": "Two deep-half safeties plus the Mike running to the deep middle. Only two linebackers remain underneath." },
-      { "heading": "Strengths", "body": "Shuts down the deep middle seam that normally kills Cover 2. Keeps two deep halves and a deep middle." },
-      { "heading": "The void", "body": "The underneath middle the Mike vacated, at 10 to 12 yards. Shallow crossers and drags under the dropping Mike, plus quick throws before the coverage settles." },
-      { "heading": "How to beat it", "body": "Crossers and drags underneath the vacated Mike. Dagger, the dig sits exactly in the hole the Mike left. Quick underneath runs and slants." },
-      { "heading": "Ideal usage", "body": "Against 4-vertical and deep-seam teams when you have a rangy Mike who can cover ground." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User a corner or safety on the perimeter and let the AI carry the deep middle. Watch the crosser under the dropping Mike." }
+    "tags": [
+      "zone"
     ],
-    "related": ["cover-2", "dagger", "mofc-mofo"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "A Cover 2 variation where the Mike linebacker drops deep down the middle at 15 to 18 yards, creating a three-deep triangle that closes the Cover 2 deep-middle hole."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Two deep-half safeties plus the Mike running to the deep middle. Only two linebackers remain underneath."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Shuts down the deep middle seam that normally kills Cover 2. Keeps two deep halves and a deep middle."
+      },
+      {
+        "heading": "The void",
+        "body": "The underneath middle the Mike vacated, at 10 to 12 yards. Shallow crossers and drags under the dropping Mike, plus quick throws before the coverage settles."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Crossers and drags underneath the vacated Mike. Dagger, the dig sits exactly in the hole the Mike left. Quick underneath runs and slants."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Against 4-vertical and deep-seam teams when you have a rangy Mike who can cover ground."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User a corner or safety on the perimeter and let the AI carry the deep middle. Watch the crosser under the dropping Mike."
+      }
+    ],
+    "related": [
+      "cover-2",
+      "dagger",
+      "mofc-mofo"
+    ]
   },
   {
     "id": "cover-3",
     "name": "Cover 3 (Three-Deep Zone)",
     "subtitle": "1 high (MOFC) · Zone",
-    "tags": ["zone"],
-    "sections": [
-      { "heading": "What it is", "body": "The most common coverage in football. One safety takes the deep middle third, both corners take the deep outside thirds, and four defenders play underneath. Simple, sound, and adaptable." },
-      { "heading": "How it lines up", "body": "Free safety deep middle third. Both corners bail to deep outside thirds. The strong safety plays flat and force, two outside linebackers play curl-to-flat, the Mike plays the hook." },
-      { "heading": "Strengths", "body": "Very hard to complete deep, keeps everything in front, and keeps the strong safety in the box for an 8-man run front. Cloud, Buzz, and Match variations disguise it." },
-      { "heading": "The void", "body": "The flats (the primary weakness), the hole between the hook and curl defenders at 10 to 15 yards, and the seams against pattern-match versions." },
-      { "heading": "How to beat it", "body": "Quick: Stick and Curl-Flat (attack the flat). Intermediate: Dagger (the dig sits in the hook/curl hole). Deep: 4 Verticals up the outside seam. The Flood concept overloads the underneath zones." },
-      { "heading": "Ideal usage", "body": "Base first-and-ten defense and running downs. Cover 3 Match (pattern matching) is the modern standard against the spread and kills 4 Verts." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner in a deep third. Read the QB, cheat toward the most dangerous route in your third, and jump the throw. Do NOT user the hook linebacker, let the AI run its checks underneath." }
+    "tags": [
+      "zone"
     ],
-    "related": ["mofc-mofo", "stick", "dagger", "four-verticals", "cover-3-match", "fire-zone"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "The most common coverage in football. One safety takes the deep middle third, both corners take the deep outside thirds, and four defenders play underneath. Simple, sound, and adaptable."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Free safety deep middle third. Both corners bail to deep outside thirds. The strong safety plays flat and force, two outside linebackers play curl-to-flat, the Mike plays the hook."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Very hard to complete deep, keeps everything in front, and keeps the strong safety in the box for an 8-man run front. Cloud, Buzz, and Match variations disguise it."
+      },
+      {
+        "heading": "The void",
+        "body": "The flats (the primary weakness), the hole between the hook and curl defenders at 10 to 15 yards, and the seams against pattern-match versions."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Quick: Stick and Curl-Flat (attack the flat). Intermediate: Dagger (the dig sits in the hook/curl hole). Deep: 4 Verticals up the outside seam. The Flood concept overloads the underneath zones."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Base first-and-ten defense and running downs. Cover 3 Match (pattern matching) is the modern standard against the spread and kills 4 Verts."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner in a deep third. Read the QB, cheat toward the most dangerous route in your third, and jump the throw. Do NOT user the hook linebacker, let the AI run its checks underneath."
+      }
+    ],
+    "related": [
+      "mofc-mofo",
+      "stick",
+      "dagger",
+      "four-verticals",
+      "cover-3-match",
+      "fire-zone"
+    ],
+    "image": "coverage-cover-3.png"
   },
   {
     "id": "cover-3-match",
     "name": "Cover 3 Match",
     "subtitle": "1 high (MOFC) · Pattern match",
-    "tags": ["zone", "hybrid"],
-    "sections": [
-      { "heading": "What it is", "body": "Modern Cover 3 that reads routes and matches them man-to-man instead of spot-dropping. It starts as zone and converts to man based on the route distribution, eliminating the holes spot-drop zone leaves." },
-      { "heading": "How it lines up", "body": "Same three-deep, four-under shell, but the seam defenders carry vertical routes and the underneath defenders match the receivers entering their area." },
-      { "heading": "Strengths", "body": "Kills 4 Verticals, the weakness of regular Cover 3. Tighter windows than spot dropping. Nearly impossible to beat with simple concepts." },
-      { "heading": "The void", "body": "The flats and combination routes that confuse the match rules. High bust potential if defenders miss the matching rules." },
-      { "heading": "How to beat it", "body": "Use combinations and levels to stress the match rules: Mesh (rubs break the pattern match), floods, and three-route combos. Motion to confuse who matches whom." },
-      { "heading": "Ideal usage", "body": "Against spread offenses that rely on vertical concepts and pre-snap reads." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User a corner in a deep third and read combinations. Motion the offense to test whether the match holds." }
+    "tags": [
+      "zone",
+      "hybrid"
     ],
-    "related": ["cover-3", "drive-mesh", "motion", "mofc-mofo"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "Modern Cover 3 that reads routes and matches them man-to-man instead of spot-dropping. It starts as zone and converts to man based on the route distribution, eliminating the holes spot-drop zone leaves."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Same three-deep, four-under shell, but the seam defenders carry vertical routes and the underneath defenders match the receivers entering their area."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Kills 4 Verticals, the weakness of regular Cover 3. Tighter windows than spot dropping. Nearly impossible to beat with simple concepts."
+      },
+      {
+        "heading": "The void",
+        "body": "The flats and combination routes that confuse the match rules. High bust potential if defenders miss the matching rules."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Use combinations and levels to stress the match rules: Mesh (rubs break the pattern match), floods, and three-route combos. Motion to confuse who matches whom."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Against spread offenses that rely on vertical concepts and pre-snap reads."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User a corner in a deep third and read combinations. Motion the offense to test whether the match holds."
+      }
+    ],
+    "related": [
+      "cover-3",
+      "drive-mesh",
+      "motion",
+      "mofc-mofo"
+    ]
   },
   {
     "id": "cover-4",
     "name": "Cover 4 (Quarters)",
     "subtitle": "2 high (MOFO) · Zone / match",
-    "tags": ["zone", "hybrid"],
-    "sections": [
-      { "heading": "What it is", "body": "The safest deep coverage. Four defenders (both corners and both safeties) each cover a deep quarter, with only three underneath. Built to never give up the deep ball." },
-      { "heading": "How it lines up", "body": "Two-high shell. Safeties read the number 2 receiver: if 2 goes vertical they carry him, if 2 goes short the safety becomes an extra robber. Corners carry number 1 vertical. Three linebackers underneath." },
-      { "heading": "Strengths", "body": "Nearly impossible to beat deep. Safeties can play the run aggressively (a 9-man fit) when number 2 does not threaten vertical, giving the offense an unaccounted-for defender." },
-      { "heading": "The void", "body": "The flat and the short middle, only three linebackers cover the whole underneath. And the run, Cover 4 is the worst run-support coverage with both safeties deep." },
-      { "heading": "How to beat it", "body": "Quick: Stick and Spacing (exploit the three underneath defenders). Intermediate: Curl-Flat and Smash (throw the hitch as the corner sinks). Deep: a post can isolate a safety. Or just run the ball into the light box." },
-      { "heading": "Ideal usage", "body": "Base defense against the spread and against RPO teams, and as a prevent look late in halves." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User a corner or safety on a deep quarter and read number 2. If 2 goes vertical, carry him, if 2 goes out, play over the top of number 1." }
+    "tags": [
+      "zone",
+      "hybrid"
     ],
-    "related": ["mofc-mofo", "stick", "spacing", "smash", "palms", "cover-6"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "The safest deep coverage. Four defenders (both corners and both safeties) each cover a deep quarter, with only three underneath. Built to never give up the deep ball."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Two-high shell. Safeties read the number 2 receiver: if 2 goes vertical they carry him, if 2 goes short the safety becomes an extra robber. Corners carry number 1 vertical. Three linebackers underneath."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Nearly impossible to beat deep. Safeties can play the run aggressively (a 9-man fit) when number 2 does not threaten vertical, giving the offense an unaccounted-for defender."
+      },
+      {
+        "heading": "The void",
+        "body": "The flat and the short middle, only three linebackers cover the whole underneath. And the run, Cover 4 is the worst run-support coverage with both safeties deep."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Quick: Stick and Spacing (exploit the three underneath defenders). Intermediate: Curl-Flat and Smash (throw the hitch as the corner sinks). Deep: a post can isolate a safety. Or just run the ball into the light box."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Base defense against the spread and against RPO teams, and as a prevent look late in halves."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User a corner or safety on a deep quarter and read number 2. If 2 goes vertical, carry him, if 2 goes out, play over the top of number 1."
+      }
+    ],
+    "related": [
+      "mofc-mofo",
+      "stick",
+      "spacing",
+      "smash",
+      "palms",
+      "cover-6"
+    ],
+    "image": "coverage-cover-4.png"
   },
   {
     "id": "palms",
     "name": "Palms (Cover 4 Match)",
     "subtitle": "2 high (MOFO) · Match / trap",
-    "tags": ["zone", "hybrid"],
-    "sections": [
-      { "heading": "What it is", "body": "A Cover 4 variation that plays like man on common combinations. The corner and safety read number 2 together: if 2 breaks out, the corner jumps it (a Cover 2 trap), if 2 goes vertical, it plays quarters." },
-      { "heading": "How it lines up", "body": "Two-high quarters look. Corner reads number 2. The safety has number 1 behind the corner, so the corner can drive aggressively on the out route." },
-      { "heading": "Strengths", "body": "Kills bubble screens and quick outs by trapping the flat. Looks like zone but plays like man on the most common route combos, one of the hardest coverages to throw against." },
-      { "heading": "The void", "body": "Double moves on the outside, the Sluggo (slant-and-go), because the corner jumps the short out aggressively." },
-      { "heading": "How to beat it", "body": "Double moves on the outside: out-and-up, slant-and-go. Mesh and seam routes inside also stress the match rules." },
-      { "heading": "Ideal usage", "body": "Against bubble-screen and quick-game heavy teams." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User a corner and read number 2: trap the out, carry the vertical." }
+    "tags": [
+      "zone",
+      "hybrid"
     ],
-    "related": ["cover-4", "mofc-mofo", "drive-mesh"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "A Cover 4 variation that plays like man on common combinations. The corner and safety read number 2 together: if 2 breaks out, the corner jumps it (a Cover 2 trap), if 2 goes vertical, it plays quarters."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Two-high quarters look. Corner reads number 2. The safety has number 1 behind the corner, so the corner can drive aggressively on the out route."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Kills bubble screens and quick outs by trapping the flat. Looks like zone but plays like man on the most common route combos, one of the hardest coverages to throw against."
+      },
+      {
+        "heading": "The void",
+        "body": "Double moves on the outside, the Sluggo (slant-and-go), because the corner jumps the short out aggressively."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Double moves on the outside: out-and-up, slant-and-go. Mesh and seam routes inside also stress the match rules."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Against bubble-screen and quick-game heavy teams."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User a corner and read number 2: trap the out, carry the vertical."
+      }
+    ],
+    "related": [
+      "cover-4",
+      "mofc-mofo",
+      "drive-mesh"
+    ]
   },
   {
     "id": "cover-6",
     "name": "Cover 6 (Quarter-Quarter-Half)",
     "subtitle": "2 high · Split field (Cover 4 + Cover 2)",
-    "tags": ["zone", "hybrid", "split"],
-    "sections": [
-      { "heading": "What it is", "body": "A split-field coverage: Cover 4 (quarters) to the field side, Cover 2 to the boundary side. Different coverage on each half, hard to diagnose pre-snap." },
-      { "heading": "How it lines up", "body": "Field side plays quarters (corner plus safety, both deep). Boundary side plays Cover 2 (corner in the flat, safety on the deep half). The passing-strength side gets the quarters/Palms structure." },
-      { "heading": "Strengths", "body": "Aggressive run support to the wide field side, tight coverage to the short boundary side, and it confuses the QB by showing two looks." },
-      { "heading": "The void", "body": "The Cover 2 side: the corner route (Smash) over the squatting boundary corner, and the deep seam from the boundary." },
-      { "heading": "How to beat it", "body": "Identify the Cover 2 side and attack it: Smash and Post-Wheel to the boundary, or seams. Motion can change the rules pre-snap (motioning to trips activates Palms)." },
-      { "heading": "Ideal usage", "body": "Against trips formations and to play the field and boundary differently based on space." },
-      { "heading": "In Madden (iMoveChainz)", "body": "User the corner on the Cover 2 (boundary) side, that is the vulnerable side. Bait the flat and break on the Smash corner route." }
+    "tags": [
+      "zone",
+      "hybrid",
+      "split"
     ],
-    "related": ["cover-4", "cover-2", "smash", "post-wheel", "field-boundary", "cover-9"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "A split-field coverage: Cover 4 (quarters) to the field side, Cover 2 to the boundary side. Different coverage on each half, hard to diagnose pre-snap."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Field side plays quarters (corner plus safety, both deep). Boundary side plays Cover 2 (corner in the flat, safety on the deep half). The passing-strength side gets the quarters/Palms structure."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Aggressive run support to the wide field side, tight coverage to the short boundary side, and it confuses the QB by showing two looks."
+      },
+      {
+        "heading": "The void",
+        "body": "The Cover 2 side: the corner route (Smash) over the squatting boundary corner, and the deep seam from the boundary."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Identify the Cover 2 side and attack it: Smash and Post-Wheel to the boundary, or seams. Motion can change the rules pre-snap (motioning to trips activates Palms)."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Against trips formations and to play the field and boundary differently based on space."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "User the corner on the Cover 2 (boundary) side, that is the vulnerable side. Bait the flat and break on the Smash corner route."
+      }
+    ],
+    "related": [
+      "cover-4",
+      "cover-2",
+      "smash",
+      "post-wheel",
+      "field-boundary",
+      "cover-9"
+    ],
+    "image": "coverage-cover-6.png"
   },
   {
     "id": "cover-9",
     "name": "Cover 9 (Sister of Cover 6)",
     "subtitle": "2 high · Split field (Cover 2 + Cover 4)",
-    "tags": ["zone", "hybrid", "split"],
-    "sections": [
-      { "heading": "What it is", "body": "The mirror of Cover 6. Same split-field rules, but the Cover 2 side and Cover 4 side are flipped, often defaulting the Cover 2 side to the passing strength or tight end side. Used for mind games on where the help is." },
-      { "heading": "How it lines up", "body": "Field side plays Cover 2 (triangle), boundary side plays quarters (box). The alignment often auto-flips based on the formation." },
-      { "heading": "Strengths", "body": "Clouds and traps the wide-side star receiver. Confuses the QB on which side has deep help." },
-      { "heading": "The void", "body": "Same as Cover 6: the seam on the Cover 2 side. Knowing where the Cover 2 side is tells you where to attack." },
-      { "heading": "How to beat it", "body": "Find the Cover 2 side and attack the seam and the Smash corner there. Motion to force the auto-flip and confirm the look." },
-      { "heading": "Ideal usage", "body": "Matchup-specific, for example putting the Cover 2 trap on the field-side star receiver." },
-      { "heading": "In Madden (iMoveChainz)", "body": "Identify the Cover 2 side post-snap and user the corner there. Same break as Cover 6." }
+    "tags": [
+      "zone",
+      "hybrid",
+      "split"
     ],
-    "related": ["cover-6", "cover-2", "smash", "field-boundary"]
+    "sections": [
+      {
+        "heading": "What it is",
+        "body": "The mirror of Cover 6. Same split-field rules, but the Cover 2 side and Cover 4 side are flipped, often defaulting the Cover 2 side to the passing strength or tight end side. Used for mind games on where the help is."
+      },
+      {
+        "heading": "How it lines up",
+        "body": "Field side plays Cover 2 (triangle), boundary side plays quarters (box). The alignment often auto-flips based on the formation."
+      },
+      {
+        "heading": "Strengths",
+        "body": "Clouds and traps the wide-side star receiver. Confuses the QB on which side has deep help."
+      },
+      {
+        "heading": "The void",
+        "body": "Same as Cover 6: the seam on the Cover 2 side. Knowing where the Cover 2 side is tells you where to attack."
+      },
+      {
+        "heading": "How to beat it",
+        "body": "Find the Cover 2 side and attack the seam and the Smash corner there. Motion to force the auto-flip and confirm the look."
+      },
+      {
+        "heading": "Ideal usage",
+        "body": "Matchup-specific, for example putting the Cover 2 trap on the field-side star receiver."
+      },
+      {
+        "heading": "In Madden (iMoveChainz)",
+        "body": "Identify the Cover 2 side post-snap and user the corner there. Same break as Cover 6."
+      }
+    ],
+    "related": [
+      "cover-6",
+      "cover-2",
+      "smash",
+      "field-boundary"
+    ]
   }
 ]

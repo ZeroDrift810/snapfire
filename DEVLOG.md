@@ -2,6 +2,15 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — P3: coverage shell diagrams on 7 cards  [content]
+**What:** Added engine shell diagrams (resolveShell) to the 7 coverage cards whose id matches an
+engine coverage (cover-0/1/2/2-man/3/4/6). The 5 variants (tampa-2, palms, cover-1-robber,
+cover-3-match, cover-9) stay text-only, drawing them as a base shell would mislabel the picture.
+**Files:** content/coverages.json, assets/card_art/coverage-*.png (7).
+**Verification:** smoke green, 95 card diagrams, 0 dead buttons.
+**Gotcha:** Coverage shells render the cleanest of all diagram types (static zone bubbles), unlike
+route concepts/runs which develop busier. resolveShell(form, front, coverage) + override model.name.
+
 ## 2026-06-19 — P2 offense scaffold: concepts 11->30, new Run Game track (12)  [content, ui]
 **What:** Mirrored the front backfill onto offense. Pass concepts 11 -> 30 (26 engine concepts
 diagrammed + sourced from `concepts.json` desc/term/routes/beats/beaten_by, plus 4 preserved
