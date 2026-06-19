@@ -2,6 +2,21 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — Crop diagrams to the play + drop the redundant in-art title  [content, ui]
+**What:** Every card diagram was a tiny cluster in a huge empty field, and the in-art title (e.g.
+"INSIDE ZONE / BANG-BEND-BOUNCE") duplicated the embed header. tools/render-diagrams.js re-renders
+ALL card images (49 fronts, 7 coverages, 26 concepts, 12 runs) cropped to the union bounding box of
+the token positions across the animation + route points + coverage zone-bubble extents, padded 40px,
+with model.name/model.term blanked so the title band is gone. Image-only: card JSON (and the air-raid
+coaching notes) untouched. tools/rasterize-diagrams.py emits PNG for fronts/coverages, looping GIF for
+concepts/runs.
+**Files:** assets/card_art/* (all 95 regenerated), mint-front-run-fit.png synced to the cropped mint.
+**Verification:** smoke green, 95 diagrams, 0 dead buttons. Inside-zone GIF 973x700 -> 867x420 (play
+fills the frame); ~13MB total card_art.
+**Gotcha:** The crop bbox must include coverage zone ELLIPSES (e.bubble.rx/ry), not just token x/y, or
+the deep thirds clip at the top. For animation the bbox is the UNION across all frames so the view does
+not pan/zoom. Engine exposes buildModel + positionsAt for the coordinates.
+
 ## 2026-06-19 — Animated GIF diagrams on Run Game + Concept cards  [content, ui]
 **What:** Converted the 12 run + 26 concept card diagrams from static PNG to animated GIF (the play
 develops). The engine renderSVG(model, g) takes a progress g in [0,1]; animate-cards.js sweeps g into
