@@ -295,6 +295,16 @@ function cardDetail(
     }))
   );
 
+  // Optional engine-generated diagram (original art in assets/card_art/), attached like play art.
+  const files: AttachmentBuilder[] = [];
+  if (card.image) {
+    const imagePath = path.join(PROJECT_ROOT, 'assets', 'card_art', card.image);
+    if (fs.existsSync(imagePath)) {
+      files.push(new AttachmentBuilder(imagePath, { name: 'diagram.png' }));
+      embed.setImage('attachment://diagram.png');
+    }
+  }
+
   const components: ActionRowBuilder<any>[] = [];
 
   // Related "tap to learn" buttons (cross-track), capped to keep within row limits.
@@ -320,7 +330,7 @@ function cardDetail(
   }
 
   components.push(backRow(track, filter, page));
-  return { embeds: [embed], components, attachments: [] };
+  return { embeds: [embed], components, files, attachments: [] };
 }
 
 /** Scheme (playbook) detail, with play art attached. */

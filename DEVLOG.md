@@ -2,6 +2,20 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — Teaching cards can carry diagrams; first one on mint-front-run-fit  [content, ui]
+**What:** Teaching cards were text-only (only the Playbook track attached art). Added an optional
+`image` field to the `Card` type, mirrored the scheme-detail attach logic into `cardDetail`
+(`assets/card_art/<image>` -> `embed.setImage('attachment://diagram.png')`), and extended the smoke
+test to verify a card naming an image actually attaches one. First diagram: `mint-front-run-fit`
+gets `assets/card_art/mint-front-run-fit.png`, an engine-generated 3-3-5 Mint vs inside-zone
+alignment board (NT 0-tech, DTs 4i, two-high shell).
+**Files:** `src/content/cards.ts`, `src/ui/views.ts`, `scripts/smoke-test.ts`,
+`content/situational.json`, `assets/card_art/mint-front-run-fit.png` (new).
+**Verification:** `npm run smoke` green, "card diagrams verified: 1".
+**Gotcha:** Card diagrams must be ORIGINAL art (canon: paraphrase, never republish), so they come
+from the HimkageVision engine (`render-card.js`), NOT from captured video frames. The PNG lives in
+the bot repo (deploy ships it); `assets/` is tracked, not gitignored.
+
 ## 2026-06-19 — situational card: `mint-front-run-fit` (3-3-5 inside-zone run fit)  [content]
 **What:** Authored the 8th situational card, `mint-front-run-fit` ("Stop Inside Zone from
 Two-High (the Mint Front)"). Mined from the parent repo's `335-defense` collection (27-part

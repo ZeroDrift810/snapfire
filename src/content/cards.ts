@@ -22,6 +22,8 @@ export interface Card {
   sections: Section[];
   related?: string[];
   tags?: string[];
+  /** Optional diagram filename in assets/card_art/ (engine-generated, original art). */
+  image?: string;
 }
 
 export type CardTrack = 'glossary' | 'coverage' | 'concept' | 'front' | 'usering' | 'situational';

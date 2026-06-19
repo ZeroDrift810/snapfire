@@ -193,12 +193,19 @@ function partA() {
 // --- Part B: exhaustive content -------------------------------------------
 
 function partB() {
+  let cardImagesChecked = 0;
   for (const track of CARD_TRACKS) {
     for (const card of getCards(track)) {
       detailsTested++;
       const p = buildDetail(track as Track, card.id, DEFAULT_FILTER[track as Track], 0);
       if (detailIsBroken(p)) fail(`card detail broke: ${track}:${card.id}`);
       validatePayload(p, `${track}:${card.id}`);
+      if ((card as any).image) {
+        cardImagesChecked++;
+        if (!p.files || p.files.length !== 1) {
+          fail(`card ${track}:${card.id} names image "${(card as any).image}" but no attachment was built`);
+        }
+      }
       for (const rid of card.related ?? []) {
         relatedChecked++;
         if (!resolveCard(rid)) fail(`DEAD related link: ${track}:${card.id} -> ${rid}`);
@@ -220,6 +227,7 @@ function partB() {
   }
   console.log(`   related links verified: ${relatedChecked}`);
   console.log(`   play-art attachments verified: ${imagesChecked}`);
+  console.log(`   card diagrams verified: ${cardImagesChecked}`);
 }
 
 // --- Part C: no slash surface ---------------------------------------------
