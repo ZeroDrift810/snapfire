@@ -490,7 +490,36 @@
     "display_name": "RPO Alert Bubble",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off",
-    "image_file": "play1_2025-12-01T08-44-32-582Z.png"
+    "image_file": "play1_2025-12-01T08-44-32-582Z.png",
+    "routes": [
+      {
+        "receiver": "HB",
+        "route": "Inside zone (give)",
+        "note": "The run option, hand off into the box"
+      },
+      {
+        "receiver": "Slot",
+        "route": "Bubble screen",
+        "note": "Yellow bubble arcing out, the quick throw option"
+      },
+      {
+        "receiver": "WR (alert)",
+        "route": "Out and up",
+        "note": "Red backside alert, the pre-snap shot if the leverage is there"
+      },
+      {
+        "receiver": "Line/WRs",
+        "route": "Zone block / stalk",
+        "note": "Blocks the run and the bubble perimeter"
+      }
+    ],
+    "reads": [
+      "Pre-snap alert: take the backside red route if the look gives it",
+      "Read the bubble defender: sits inside on the run, throw the bubble",
+      "He widens to the bubble, hand off the inside zone"
+    ],
+    "usage_notes": "**Beats:** Defenders who cannot fit the run and cover the bubble at once\n**Coach’s Key:** RPO, let the read key declare",
+    "verified": true
   },
   {
     "name": "snapfire_doubles_shot",
@@ -2259,7 +2288,36 @@
     "display_name": "Charger Wheel",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trips TE Flex",
-    "image_file": "play1_2025-12-01T08-45-45-995Z.png"
+    "image_file": "play1_2025-12-01T08-45-45-995Z.png",
+    "routes": [
+      {
+        "receiver": "RB/TE",
+        "route": "Wheel",
+        "note": "Yellow wheel up the right sideline, cannot be pressed by man"
+      },
+      {
+        "receiver": "WR (deep)",
+        "route": "Vertical/Post",
+        "note": "Red primary up the left, the deep shot"
+      },
+      {
+        "receiver": "Left WRs",
+        "route": "Out / Dig",
+        "note": "Yellow out and a dig coming back to settle underneath"
+      },
+      {
+        "receiver": "Inside",
+        "route": "Dig",
+        "note": "Comes back across to the middle as an outlet"
+      }
+    ],
+    "reads": [
+      "Watch the wheel develop up the right sideline",
+      "If the flat defender carries the wheel, hit the dig underneath",
+      "Take the backside deep shot if single high"
+    ],
+    "usage_notes": "**Beats:** Squat flat defenders (the wheel runs by them)\n**Coach’s Key:** Let the wheel clear, throw over the trailer",
+    "verified": true
   },
   {
     "name": "snapfire_mtn_dagger_sit",
@@ -4156,7 +4214,36 @@
     "display_name": "Mtn Corners",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trips Close",
-    "image_file": "play2_2025-12-01T08-44-49-949Z.png"
+    "image_file": "play2_2025-12-01T08-44-49-949Z.png",
+    "routes": [
+      {
+        "receiver": "Outside WRs",
+        "route": "Corner",
+        "note": "Both break to the corners off the verticals"
+      },
+      {
+        "receiver": "Slot/Motion",
+        "route": "Motion vertical",
+        "note": "Cyan motion then up the seam"
+      },
+      {
+        "receiver": "Inside",
+        "route": "Vertical",
+        "note": "Clears the middle to open the corners"
+      },
+      {
+        "receiver": "RB",
+        "route": "Checkdown",
+        "note": "Outlet underneath"
+      }
+    ],
+    "reads": [
+      "Read the safeties: two high opens a corner outside the half safety",
+      "Throw the corner away from the rotation",
+      "Take the checkdown if both corners are capped"
+    ],
+    "usage_notes": "**Beats:** Two-high shells (the corners sit outside the safeties)\n**Coach’s Key:** Put air under the corner, lead it to the sideline",
+    "verified": true
   },
   {
     "name": "snapfire_te_whip",
@@ -4305,7 +4392,36 @@
     "display_name": "TE Corner",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch TE",
-    "image_file": "play2_2025-12-01T08-44-56-599Z.png"
+    "image_file": "play2_2025-12-01T08-44-56-599Z.png",
+    "routes": [
+      {
+        "receiver": "TE",
+        "route": "Corner",
+        "note": "Out of the bunch, the corner off the rub"
+      },
+      {
+        "receiver": "WR (deep)",
+        "route": "Vertical/Post",
+        "note": "Red primary, the deep shot up the middle"
+      },
+      {
+        "receiver": "Bunch WRs",
+        "route": "Vertical / Out",
+        "note": "Verticals to clear and an out underneath off the bunch rub"
+      },
+      {
+        "receiver": "RB",
+        "route": "Flat",
+        "note": "Blue release to the right flat as the checkdown"
+      }
+    ],
+    "reads": [
+      "The bunch creates a natural rub for the TE corner",
+      "Take the red vertical if the middle is open",
+      "Work the corner off the rub, then the RB flat"
+    ],
+    "usage_notes": "**Beats:** Man coverage (the bunch rub springs the corner)\n**Coach’s Key:** Let the rub happen, the TE corner comes clean",
+    "verified": true
   },
   {
     "name": "snapfire_curl_flat_corner",
@@ -4691,7 +4807,36 @@
     "display_name": "X Close PA Slants",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trips",
-    "image_file": "play2_2025-12-01T08-45-12-650Z.png"
+    "image_file": "play2_2025-12-01T08-45-12-650Z.png",
+    "routes": [
+      {
+        "receiver": "WR (dig)",
+        "route": "Deep dig",
+        "note": "Red primary, the deep in-breaker behind the linebackers off play-action"
+      },
+      {
+        "receiver": "Slot/WR",
+        "route": "Dig / In",
+        "note": "Yellow in-breakers coming back across at two levels"
+      },
+      {
+        "receiver": "RB",
+        "route": "Checkdown",
+        "note": "Blue release to the flat after the fake"
+      },
+      {
+        "receiver": "Line",
+        "route": "PA pass set",
+        "note": "Sell the run, then protect"
+      }
+    ],
+    "reads": [
+      "Sell the play-action to hold the linebackers",
+      "Throw the red deep dig in the window the fake opened",
+      "Work the second in-breaker or the checkdown if covered"
+    ],
+    "usage_notes": "**Beats:** Run-keying linebackers (the fake holds them, the digs come behind)\n**Coach’s Key:** Ride the fake, the red dig is the throw",
+    "verified": true
   },
   {
     "name": "snapfire_duo-3",
