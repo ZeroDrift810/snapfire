@@ -82,3 +82,10 @@ Fanned out 164 agents (82 readers + 82 adversarial verifiers, 6 concurrent) over
 230 schemes confirmed and merged (170 high / 16 medium / 44 low confidence), all passed the
 adversarial verify (no invented routes). **Verified now 246/890.** The verify pass for ~57 families
 was cut off by the session limit; their reads are cached, resume the workflow to finish them.
+
+## Workflow rebuild wave 3 (2026-06-20)
+
+Fixed the args-as-string bug (the work-list was arriving as a JSON string, so earlier waves had an
+empty fan-out). Re-ran the read-only wave over 67 families (67 agents, ~27 min). 639 schemes returned
+(234 high / 373 medium / 32 low confidence). Merged the 607 high+medium as verified. **858/890 verified.**
+The 32 low-confidence (blurry art) are held structural-only for a careful manual pass.
