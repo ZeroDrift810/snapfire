@@ -45,7 +45,7 @@ export const TRACK_EMOJI: Record<Track, string> = {
   glossary: '📖',
   coverage: '🛡️',
   concept: '📘',
-  run: '🏃',
+  run: '🏃🏿',
   front: '🧱',
   usering: '🎮',
   playbook: '🏈',
@@ -74,7 +74,7 @@ export const FACETS: Record<Track, Facet[]> = {
   situational: [],
   playbook: [
     { token: 'snapfire', label: '🔥 SnapFire' },
-    { token: 'shinobi', label: '🥷 Shinobi' },
+    { token: 'shinobi', label: '🥷🏿 Shinobi' },
   ],
 };
 

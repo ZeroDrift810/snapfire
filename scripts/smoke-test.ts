@@ -280,6 +280,29 @@ function partC() {
   }
 }
 
+// --- Part E: emoji skin tone (every person/hand emoji must use the dark tone 🏿) ----
+function partEmoji() {
+  const root = path.resolve(__dirname, '..');
+  const files: string[] = [];
+  walk(path.join(root, 'src'), files);
+  for (const f of fs.readdirSync(path.join(root, 'content'))) {
+    if (f.endsWith('.json')) files.push(path.join(root, 'content', f));
+  }
+  // skin-tone-capable base emoji we actually use / might add (runner, ninja, hands, people, athletes)
+  const BASE = /[\u{1F3C3}\u{1F977}\u{1F44B}\u{1F4AA}\u{1F91D}\u{270A}\u{1F64C}\u{1F44D}\u{1F44E}\u{1F64F}\u{270D}\u{1F919}\u{1F448}\u{1F449}\u{261D}\u{1F446}\u{1F447}\u{1F91E}\u{1F44F}\u{1F590}\u{1F44C}\u{1F9D1}\u{1F468}\u{1F469}\u{1F64B}\u{1F926}\u{1F937}\u{1F3CB}\u{1F3CC}\u{26F9}\u{1F938}\u{1F93E}\u{1F3C4}\u{1F3CA}\u{1F6A3}\u{1F6B4}\u{1F6B5}]/u;
+  const LIGHT = /[\u{1F3FB}-\u{1F3FE}]/u; // any non-dark skin tone modifier
+  const DARK = '\u{1F3FF}';
+  for (const file of files) {
+    const lines = fs.readFileSync(file, 'utf-8').split('\n');
+    lines.forEach((line, i) => {
+      // a base emoji must be immediately followed by the dark modifier
+      const re = new RegExp(BASE.source + '(?!\\u{1F3FF})', 'gu');
+      if (re.test(line)) fail(`bare/non-dark skin-tone emoji at ${path.relative(root, file)}:${i + 1} (must use ${DARK})`);
+      if (LIGHT.test(line)) fail(`light/medium skin-tone emoji at ${path.relative(root, file)}:${i + 1} (must use ${DARK})`);
+    });
+  }
+}
+
 // --- run -------------------------------------------------------------------
 
 console.log('iMoveChainz smoke test');
@@ -305,6 +328,10 @@ console.log('   structure checked');
 console.log('Part D: validating the operator hub...');
 partOperator();
 console.log('   operator hub checked');
+
+console.log('Part E: emoji skin tone (dark 🏿, non-negotiable)...');
+partEmoji();
+console.log('   emoji skin tone checked');
 
 console.log('');
 console.log('='.repeat(60));

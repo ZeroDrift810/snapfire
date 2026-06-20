@@ -72,8 +72,8 @@ export const BRAND_CONFIGS: Record<SchemeSystem, BrandConfig> = {
   },
   SHINOBI: {
     color: 0x2C3E50,  // Ninja Dark/Grey
-    emoji: "🥷",
-    footer: "🥷 Shinobi Defense // iMoveChainz"
+    emoji: "🥷🏿",
+    footer: "🥷🏿 Shinobi Defense // iMoveChainz"
   }
 };
 
