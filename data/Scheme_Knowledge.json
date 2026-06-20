@@ -3590,7 +3590,42 @@
     "display_name": "PA Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
-    "image_file": "play1_2025-12-01T08-46-18-195Z.png"
+    "image_file": "play1_2025-12-01T08-46-18-195Z.png",
+    "routes": [
+      {
+        "receiver": "Primary read (red, right side)",
+        "route": "Deep crosser / dig",
+        "note": "Red primary: starts wide off the right edge near the top, drives downhill and breaks inward across the middle around the 30. This is the throw the play is built around."
+      },
+      {
+        "receiver": "Outside WR (far left)",
+        "route": "Out / Speed Out",
+        "note": "Yellow: stems vertically up to about the 20 then breaks hard out toward the left sideline."
+      },
+      {
+        "receiver": "Slot / inside receiver (left of center)",
+        "route": "Deep In / Dig",
+        "note": "Yellow: pushes up to roughly the 30 then breaks back inside across the field to the left."
+      },
+      {
+        "receiver": "Inside receiver (right of center)",
+        "route": "Crosser",
+        "note": "Yellow: releases from the right side of the cluster and runs the long diagonal back across the formation toward the left, filling the intermediate middle."
+      },
+      {
+        "receiver": "Back / underneath receiver (dotted, center)",
+        "route": "Shallow Out / Flat",
+        "note": "Yellow: short release out of the backfield breaking out to the left at a shallow depth as the checkdown / flat option."
+      }
+    ],
+    "reads": [
+      "Sell the play-action fake first, that holds the underneath defenders and opens the crossing windows.",
+      "If the red crosser comes clean across the middle, that is your first throw.",
+      "If the middle is muddied, work the dig settling behind the underneath coverage.",
+      "If nothing opens up, dump the shallow out / flat underneath and take the easy yards."
+    ],
+    "usage_notes": "Beats: man coverage and aggressive run defenders who bite on the play fake. Coach's Key: fake the run, then read the red crosser to the dig to the underneath out in that order.",
+    "verified": true
   },
   {
     "name": "snapfire_deep_post",
@@ -3843,7 +3878,46 @@
     "display_name": "Reload Spacing Switch",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Open Offset",
-    "image_file": "play1_2025-12-01T08-46-25-573Z.png"
+    "image_file": "play1_2025-12-01T08-46-25-573Z.png",
+    "routes": [
+      {
+        "receiver": "Isolated WR (left)",
+        "route": "Drag / shallow in",
+        "note": "Cyan. Comes across underneath toward the middle of the field on a flat-breaking shallow."
+      },
+      {
+        "receiver": "Slot / inside left",
+        "route": "Curl / sit",
+        "note": "Yellow short stem that pushes up a few yards and settles down, a spacing-hook over the ball."
+      },
+      {
+        "receiver": "HB",
+        "route": "Swing / flat (left)",
+        "note": "Cyan. Releases out of the backfield and runs to the left flat under the drag, the checkdown / spacing flat."
+      },
+      {
+        "receiver": "Bunch outer (right)",
+        "route": "Out / corner",
+        "note": "Yellow. Climbs and breaks back out toward the right sideline."
+      },
+      {
+        "receiver": "Bunch point (right)",
+        "route": "Dig / in",
+        "note": "Red primary read. Switch-releases inside and drives in across the middle, the strike on this spacing concept."
+      },
+      {
+        "receiver": "Bunch inner (right)",
+        "route": "Drag / under switch",
+        "note": "Yellow. Crosses with the bunch on a switch release working back underneath."
+      }
+    ],
+    "reads": [
+      "Work the red in-breaker off the bunch first as he settles in the middle window.",
+      "If the middle is walled, drop down to the underneath drag or the curl sitting over the ball.",
+      "The HB swing to the left flat is your spacing outlet if everything inside is covered."
+    ],
+    "usage_notes": "Beats: zone coverage by flooding the underneath spacing windows. Coach's Key: the bunch switch creates traffic, take the in-breaker, then work down the spacing ladder.",
+    "verified": true
   },
   {
     "name": "snapfire_hb_power",
@@ -4813,7 +4887,41 @@
     "display_name": "Counter Y",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Tight Y Off Flex",
-    "image_file": "play1_2025-12-01T08-47-09-027Z.png"
+    "image_file": "play1_2025-12-01T08-47-09-027Z.png",
+    "routes": [
+      {
+        "receiver": "HB",
+        "route": "Counter run to the left",
+        "note": "Red ball-carrier path: starts deep in the pistol backfield, takes a counter step then cuts back up and to the left into the left interior (A/B) gap, drawn as a short red arrow angling up-left."
+      },
+      {
+        "receiver": "QB",
+        "route": "Handoff",
+        "note": "Upper backfield dot in the pistol alignment, gives the ball to the back."
+      },
+      {
+        "receiver": "Offensive line",
+        "route": "Down block / pull",
+        "note": "White block lines across the line of scrimmage. Interior blockers down-block, with a puller sweeping down and across to the right, the pulling/kick action that defines a counter front."
+      },
+      {
+        "receiver": "Left WRs",
+        "route": "Stalk block",
+        "note": "Two long vertical white lines on the left side: receivers blocking downfield in front of the run, not running routes."
+      },
+      {
+        "receiver": "Right WR",
+        "route": "Stalk block",
+        "note": "Long vertical white line on the far right: backside receiver blocking downfield."
+      }
+    ],
+    "reads": [
+      "If the puller kicks out the edge, then bounce the run outside the block.",
+      "If the edge squeezes inside, then cut it up vertically through the left interior gap.",
+      "If a backside defender chases, then stay tight off the down blocks and get north."
+    ],
+    "usage_notes": "Beats: fast-flowing or over-pursuing fronts. Coach's Key: it is a counter to the left, follow the pulling blocker and hit the gap downhill.",
+    "verified": true
   },
   {
     "name": "snapfire_orbit_triple_option",
@@ -13344,7 +13452,42 @@
     "display_name": "Mtn Fk Screen Wheel",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
-    "image_file": "play3_2025-12-01T08-45-42-343Z.png"
+    "image_file": "play3_2025-12-01T08-45-42-343Z.png",
+    "routes": [
+      {
+        "receiver": "X (far left WR)",
+        "route": "Deep crosser",
+        "note": "Yellow. Releases vertical off the LOS, then breaks at a sharp angle to the upper right and runs across the field deep."
+      },
+      {
+        "receiver": "Left slot",
+        "route": "Deep angle / post-corner",
+        "note": "Yellow. Angled stem climbing to the upper right with an arrowhead, clearing the deep middle."
+      },
+      {
+        "receiver": "Right slot / back (wheel man)",
+        "route": "Wheel (primary)",
+        "note": "Red = primary read and ball carrier. Sets up just past the LOS to the right, then turns and runs vertical up the right sideline. This is the real target behind the screen fake."
+      },
+      {
+        "receiver": "Right flat man",
+        "route": "Jet / shuffle motion under",
+        "note": "Cyan = pre-snap motion. Comes across underneath toward the left, selling the screen action; the wheel runner works off this fake."
+      },
+      {
+        "receiver": "Offensive line (5)",
+        "route": "Pass / screen block",
+        "note": "White. Five linemen across the LOS, center is the square. A white block arrow pulls diagonally back to the right to sell the screen and wall off for the wheel."
+      }
+    ],
+    "reads": [
+      "First, sell the screen with the motion and the pulling block to the right.",
+      "If the flat defender jumps the screen fake, hit the wheel (red) climbing up the right sideline.",
+      "If the wheel is bracketed, work back to the deep crosser coming across from the left.",
+      "If everything deep is covered, take the angle route up the right hash."
+    ],
+    "usage_notes": "Beats: defenders who bite on screen action and corners who sit flat. Coach's Key: the red wheel up the right sideline is the real shot, the screen look is just the bait.",
+    "verified": true
   },
   {
     "name": "snapfire_levels_sail",
@@ -13881,7 +14024,42 @@
     "display_name": "Jet Sprint HB Slide",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
-    "image_file": "play3_2025-12-01T08-45-57-287Z.png"
+    "image_file": "play3_2025-12-01T08-45-57-287Z.png",
+    "routes": [
+      {
+        "receiver": "Jet motion man (cyan)",
+        "route": "Jet motion across the formation",
+        "note": "Cyan path runs left to right behind the line and finishes past the right side along the line of scrimmage. This is the pre-snap jet motion / jet fake that sets up the pass."
+      },
+      {
+        "receiver": "Primary read (red)",
+        "route": "Deep drive / dig breaking left",
+        "note": "Red is the primary read. Pushes vertical from the right-center, then breaks hard back to the left across the middle at roughly 12 yards."
+      },
+      {
+        "receiver": "Left WR (yellow)",
+        "route": "Vertical then dig in",
+        "note": "Releases vertical up the left numbers, then bends in toward the middle of the field at depth (roughly 18-20 yards)."
+      },
+      {
+        "receiver": "Right WR (yellow)",
+        "route": "Vertical then deep crosser",
+        "note": "Climbs vertical up the right side, then breaks left at the top and works across the field deep."
+      },
+      {
+        "receiver": "HB (yellow)",
+        "route": "HB slide to the flat",
+        "note": "Releases out of the backfield on a short slide underneath into the right flat. This is the checkdown the play is named for."
+      }
+    ],
+    "reads": [
+      "Sell the jet motion first: if the defense chases the cyan motion man, the backside throws open.",
+      "Work the red primary read across the middle: if the dig comes open in the window, deliver it.",
+      "If the middle is covered, climb to the deep crosser or the left dig over the top.",
+      "If everything downfield is taken away, check it down to the HB on the slide in the flat."
+    ],
+    "usage_notes": "Beats: man coverage that follows the jet motion and zone that sinks with the verticals. Coach's Key: the jet motion is window dressing for the dropback. Trust the red dig as your first look and use the HB slide as the safe outlet underneath.",
+    "verified": true
   },
   {
     "name": "snapfire_flood_post",
@@ -15024,14 +15202,82 @@
     "display_name": "Y Trail",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Open Offset",
-    "image_file": "play3_2025-12-01T08-46-25-573Z.png"
+    "image_file": "play3_2025-12-01T08-46-25-573Z.png",
+    "routes": [
+      {
+        "receiver": "Isolated WR (left)",
+        "route": "Deep in / comeback",
+        "note": "Yellow. Pushes vertical up the left numbers then bends back in across the top of the picture."
+      },
+      {
+        "receiver": "Bunch outer (right)",
+        "route": "Deep cross",
+        "note": "Yellow. Releases and runs a long crossing route bending all the way across the field toward the left."
+      },
+      {
+        "receiver": "Bunch point (right)",
+        "route": "Trail / dig (Y)",
+        "note": "Red primary read. Breaks in underneath the crosser and trails across the middle, the Y trail strike."
+      },
+      {
+        "receiver": "Bunch inner (right)",
+        "route": "Go / vertical",
+        "note": "Yellow. Stems up the right sideline turning vertical to clear the deep defender."
+      },
+      {
+        "receiver": "HB",
+        "route": "Flat / swing (right)",
+        "note": "Yellow. Releases out of the backfield underneath to the right flat as the checkdown."
+      }
+    ],
+    "reads": [
+      "First look is the red trail route coming in underneath the deep cross over the middle.",
+      "If the trail is covered, the deep crosser running across the field is the next window.",
+      "The HB flat to the right is the quick outlet if the in-breakers are carried."
+    ],
+    "usage_notes": "Beats: man coverage and zone over the middle. Coach's Key: the deep cross clears the grass, then the Y trails into the vacated window underneath.",
+    "verified": true
   },
   {
     "name": "snapfire_reload_flood_x_choice",
     "display_name": "Reload Flood X-Choice",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Open Offset",
-    "image_file": "play3_2025-12-01T08-46-26-347Z.png"
+    "image_file": "play3_2025-12-01T08-46-26-347Z.png",
+    "routes": [
+      {
+        "receiver": "Isolated WR (left)",
+        "route": "Out",
+        "note": "Yellow. Pushes up off the numbers then breaks flat out toward the left sideline."
+      },
+      {
+        "receiver": "HB",
+        "route": "Angle / swing (left)",
+        "note": "Cyan. Releases out of the backfield underneath and works to the left flat, the checkdown."
+      },
+      {
+        "receiver": "Bunch point (right)",
+        "route": "Choice / curl (X-choice)",
+        "note": "Red primary read. Stems up then settles or breaks back, the option route that gives the X his choice off leverage."
+      },
+      {
+        "receiver": "Bunch outer (right)",
+        "route": "Go / vertical",
+        "note": "Yellow. Runs vertical up the right sideline as the deep clear-out of the flood."
+      },
+      {
+        "receiver": "Bunch inner (right)",
+        "route": "Out / flat",
+        "note": "Yellow. Breaks out underneath toward the right sideline, the low man of the flood stretch."
+      }
+    ],
+    "reads": [
+      "Read the X-choice settling route on the bunch side first off the defender's leverage.",
+      "On the flood side, high-low the flat defender with the vertical over the out underneath.",
+      "Back side, the isolated WR out and the HB swing give the quick outlet if the flood is covered."
+    ],
+    "usage_notes": "Beats: zone with the three-level flood and man with the X-choice option. Coach's Key: take the choice route, then stretch the right flat defender high-low.",
+    "verified": true
   },
   {
     "name": "snapfire_rpo_alert_bubble-5",
@@ -15605,7 +15851,52 @@
     "display_name": "Mtn Flood H-Choice",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
-    "image_file": "play3_2025-12-01T08-46-40-673Z.png"
+    "image_file": "play3_2025-12-01T08-46-40-673Z.png",
+    "routes": [
+      {
+        "receiver": "Inside receiver (right of center)",
+        "route": "Deep dig / in-cut (primary read)",
+        "note": "red, releases vertically to depth then breaks hard left and runs across the deep middle, this is the drawn primary"
+      },
+      {
+        "receiver": "Motion man (starts right side)",
+        "route": "Jet motion across to a flat / drag left",
+        "note": "cyan into yellow, motions from the right across the formation and runs flat to the far left, cyan marks the pre-snap motion"
+      },
+      {
+        "receiver": "Left slot / outside left",
+        "route": "Post / seam up the left",
+        "note": "yellow, stems straight up the field to the deep left"
+      },
+      {
+        "receiver": "Right bunch receiver",
+        "route": "H-Choice option route",
+        "note": "yellow, vertical stem then an option break at intermediate depth, the choice route the play is named for"
+      },
+      {
+        "receiver": "Right side (intermediate)",
+        "route": "Crosser / over to the far right sideline",
+        "note": "yellow, runs horizontally across at intermediate depth toward the right sideline, the deep level of the flood"
+      },
+      {
+        "receiver": "Right side (underneath)",
+        "route": "Out / flat breaking back across",
+        "note": "yellow, intermediate break working back to the inside-left, fills the short level of the flood"
+      },
+      {
+        "receiver": "Back out of the backfield",
+        "route": "Release up into the right-side concept",
+        "note": "yellow, the back starts below the line then releases up to join the right-side routes"
+      }
+    ],
+    "reads": [
+      "First look the red dig coming open across the deep middle.",
+      "If the dig is covered, work the H-Choice option route to whatever window the defender gives.",
+      "Use the flood routes to the right to high-low the intermediate level.",
+      "Late, check the motion man on the flat underneath against man."
+    ],
+    "usage_notes": "Beats: zone with the flood stretch, plus a man-beater in the H-Choice option route. Coach's Key: the red dig is the primary, the H-Choice and the right-side flood are your built-in answers underneath.",
+    "verified": true
   },
   {
     "name": "snapfire_z_spot_dig",
@@ -19696,14 +19987,72 @@
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
-    "image_file": "play1_2025-12-01T08-53-52-094Z.png"
+    "image_file": "play1_2025-12-01T08-53-52-094Z.png",
+    "routes": [
+      {
+        "receiver": "Three deep defenders",
+        "route": "Deep thirds",
+        "note": "Three blue zones split the deep field into thirds, the safety rotates down (Sky) so a corner and the deep safeties cap the top"
+      },
+      {
+        "receiver": "Two outside underneath defenders",
+        "route": "Curl / flat",
+        "note": "Purple zones on each side sink to the curl and widen to the flat"
+      },
+      {
+        "receiver": "Two mugged linebackers",
+        "route": "Hook drop",
+        "note": "Yellow lines: the two A-gap mug defenders bail out into the tan middle hook zones instead of rushing"
+      },
+      {
+        "receiver": "Front four",
+        "route": "Rush",
+        "note": "Four red arrows fire straight ahead, the four down linemen bring the only pressure"
+      }
+    ],
+    "reads": [
+      "If the offense pushes a vertical down the sideline, then the deep-third defender and the rotated safety bracket it over the top.",
+      "If a receiver sits in the curl or works the flat, then the purple underneath defender squeezes it.",
+      "If a crosser or dig shows over the middle, then the two mug linebackers in the hooks wall it off."
+    ],
+    "usage_notes": "Beats: vertical and sideline shots. Coach's Key: spot-drop Cover 3 with a Sky rotation, only the front four rush and both mugs drop to the hooks.",
+    "verified": true
   },
   {
     "name": "shinobi_nickel_sim_2_double_mug_pressure",
     "display_name": "Nickel Sim 2 - Double Mug Pressure",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
-    "image_file": "play1_2025-12-01T08-53-52-914Z.png"
+    "image_file": "play1_2025-12-01T08-53-52-914Z.png",
+    "routes": [
+      {
+        "receiver": "Two deep safeties",
+        "route": "Deep halves",
+        "note": "Two blue zones cap the field in halves behind the pressure (Cover 2 shell)"
+      },
+      {
+        "receiver": "Two outside defenders",
+        "route": "Deep / flat",
+        "note": "Teal zones drop and carry the outside, sinking under the deep halves"
+      },
+      {
+        "receiver": "Dropping defender",
+        "route": "Hot / hole drop",
+        "note": "White line bails out of the mug look into the olive middle hole, the sim drops one of the shown rushers"
+      },
+      {
+        "receiver": "Rushers",
+        "route": "Pressure",
+        "note": "Red arrows fire forward off the line, the mugged front sends the pressure while one drops to fake the double mug"
+      }
+    ],
+    "reads": [
+      "If the protection slides to the double-mug look, then one mug drops (white) and the other green-dog rushers create a free runner.",
+      "If the quarterback throws hot over the middle, then the dropper in the olive hole takes it away.",
+      "If the ball goes outside, then the two-deep halves and the teal underneath defenders rally and squeeze."
+    ],
+    "usage_notes": "Beats: quick-game answers to mug pressure. Coach's Key: simulated pressure, it shows double mug then drops one defender to a two-deep shell so the count stays safe.",
+    "verified": true
   },
   {
     "name": "shinobi_over_storm_brave_blitz",
@@ -19746,21 +20095,96 @@
     "display_name": "1 Double WR2 Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
-    "image_file": "play1_2025-12-01T08-53-54-759Z.png"
+    "image_file": "play1_2025-12-01T08-53-54-759Z.png",
+    "routes": [
+      {
+        "receiver": "Front 4 (down linemen)",
+        "route": "Four-man rush",
+        "note": "Four white boxes on the line, each with a red downhill arrow attacking straight ahead."
+      },
+      {
+        "receiver": "Linebackers (x2)",
+        "route": "Underneath / man coverage",
+        "note": "Two white dots set just off the line behind the front, no rush arrow drawn."
+      },
+      {
+        "receiver": "Defensive backs",
+        "route": "Man coverage",
+        "note": "X marks spread across the field covering receivers man-to-man, label reads MAN."
+      }
+    ],
+    "reads": [
+      "Pre-snap: count the four red arrows, this is a straight four-man rush from the Nickel 2-4 front.",
+      "Everyone behind the rush is locked in man, so the back-end X defenders travel with their assigned man.",
+      "If your rush wins early, the man coverage behind it only has to hold for a beat.",
+      "If the QB scrambles, the man defenders turn and run, so the rush has to stay disciplined in its lanes."
+    ],
+    "usage_notes": "Beats: timing-based quick passing. Coach's Key: four rush, the rest play man behind it.",
+    "verified": true
   },
   {
     "name": "shinobi_1_double_te_man_coverage-2",
     "display_name": "1 Double TE Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
-    "image_file": "play1_2025-12-01T08-53-55-710Z.png"
+    "image_file": "play1_2025-12-01T08-53-55-710Z.png",
+    "routes": [
+      {
+        "receiver": "Front 4 (down linemen)",
+        "route": "Four-man rush",
+        "note": "Four white boxes on the line, each with a red downhill arrow rushing straight upfield."
+      },
+      {
+        "receiver": "Linebackers (x2)",
+        "route": "Man coverage",
+        "note": "Two white dots behind the front, no rush arrow, dropping into man assignments."
+      },
+      {
+        "receiver": "Defensive backs",
+        "route": "Man coverage",
+        "note": "X marks spread across the field in man coverage, label reads MAN."
+      }
+    ],
+    "reads": [
+      "Pre-snap: identify the four-man rush from the red arrows on the Nickel 2-4 front.",
+      "This is a man call, so the X defenders match up and travel with their receivers.",
+      "If the offense motions to find a matchup, your man defenders follow the motion across.",
+      "If nobody comes open quickly, the four rushers have to finish at the QB."
+    ],
+    "usage_notes": "Beats: predictable route concepts against locked man. Coach's Key: four rush, man behind, follow your guy.",
+    "verified": true
   },
   {
     "name": "shinobi_1_double_wr1_man_coverage",
     "display_name": "1 Double WR1 Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
-    "image_file": "play1_2025-12-01T08-53-56-541Z.png"
+    "image_file": "play1_2025-12-01T08-53-56-541Z.png",
+    "routes": [
+      {
+        "receiver": "Front 4 (down linemen)",
+        "route": "Four-man rush",
+        "note": "Four white boxes on the line, each with a red downhill arrow attacking forward."
+      },
+      {
+        "receiver": "Linebackers (x2)",
+        "route": "Man coverage",
+        "note": "Two white dots set behind the front, no rush arrow, in man assignments."
+      },
+      {
+        "receiver": "Defensive backs",
+        "route": "Man coverage",
+        "note": "X marks spread across the field covering man-to-man, label reads MAN."
+      }
+    ],
+    "reads": [
+      "Pre-snap: count four red arrows, four-man rush out of the Nickel 2-4.",
+      "It is a man call across the board, so back-end defenders lock onto their receivers.",
+      "If a receiver releases inside or outside, the man defender mirrors his release.",
+      "If the QB holds the ball, the four-man rush has to close and finish."
+    ],
+    "usage_notes": "Beats: slow-developing routes against tight man. Coach's Key: four rush, lock man behind it.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_1_robber-2",
@@ -20459,7 +20883,46 @@
     "display_name": "Double Bracket Switch",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
-    "image_file": "play1_2025-12-01T08-54-15-667Z.png"
+    "image_file": "play1_2025-12-01T08-54-15-667Z.png",
+    "routes": [
+      {
+        "receiver": "Line defender 1 (left white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow attacking the backfield"
+      },
+      {
+        "receiver": "Line defender 2 (center-left white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow"
+      },
+      {
+        "receiver": "Line defender 3 (center-right white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow"
+      },
+      {
+        "receiver": "Line defender 4 (right white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow"
+      },
+      {
+        "receiver": "Coverage defenders (white X and dot markers)",
+        "route": "Man coverage",
+        "note": "Static markers spread across the middle and second level, no drawn coverage lines (MAN label)"
+      },
+      {
+        "receiver": "Deep defenders (two white X near the 20)",
+        "route": "Man / bracket coverage",
+        "note": "Two static X markers at the deepest level, no drawn lines"
+      }
+    ],
+    "reads": [
+      "If the offense drops to pass, the four squares rush the drawn arrows and collapse the pocket.",
+      "If you are a coverage defender, lock your man and trail through the route since the badge reads MAN.",
+      "If a receiver releases vertical, the two deep markers stay over the top to bracket the route."
+    ],
+    "usage_notes": "Beats: dropback passing out of Dime personnel. Coach's Key: badge reads MAN. Only the four red rush arrows are drawn assignments, the coverage players are shown as static markers.",
+    "verified": true
   },
   {
     "name": "shinobi_tampa_2-6",
@@ -21580,7 +22043,62 @@
     "display_name": "Cover 4 Drop",
     "system": "SHINOBI",
     "formation_family": "Quarter Normal",
-    "image_file": "play1_2025-12-01T08-54-47-614Z.png"
+    "image_file": "play1_2025-12-01T08-54-47-614Z.png",
+    "routes": [
+      {
+        "receiver": "Left CB",
+        "route": "Deep quarter (left)",
+        "note": "Blue drop line to the deep-left zone oval. Carries any vertical to his outside fourth."
+      },
+      {
+        "receiver": "Free Safety",
+        "route": "Deep quarter (left-middle)",
+        "note": "Blue drop to the inner deep zone. Splits the field on his half with the strong safety."
+      },
+      {
+        "receiver": "Strong Safety",
+        "route": "Deep quarter (right-middle)",
+        "note": "Blue drop to the inner deep zone. Two-high look, four over the top."
+      },
+      {
+        "receiver": "Right CB",
+        "route": "Deep quarter (right)",
+        "note": "Blue drop line to the deep-right zone oval. Outside fourth."
+      },
+      {
+        "receiver": "Left underneath defender",
+        "route": "Hook/curl drop",
+        "note": "Inner olive zone. Drops to the curl/hook area in front of the deep coverage."
+      },
+      {
+        "receiver": "Right underneath defender",
+        "route": "Hook/curl drop",
+        "note": "Inner olive zone. Mirrors the left hook/curl dropper."
+      },
+      {
+        "receiver": "Left flat defender",
+        "route": "Flat drop",
+        "note": "Lavender line angling out and down to the flat. Sinks under the deep quarter on his side."
+      },
+      {
+        "receiver": "Right flat defender",
+        "route": "Flat drop",
+        "note": "Lavender line angling out and down to the flat. Mirrors the left flat dropper."
+      },
+      {
+        "receiver": "3 down linemen",
+        "route": "Rush",
+        "note": "Red arrows straight ahead from the white squares at the line. Three-man rush, eight in coverage."
+      }
+    ],
+    "reads": [
+      "IF you only see a three-man rush, THEN expect a soft drop-eight shell: get to your zone landmark first, do not freelance.",
+      "IF a receiver runs vertical, THEN the deep-quarter defender on that side carries him; the underneath dropper passes him off and sinks.",
+      "IF the throw goes underneath to a flat or hook, THEN rally and tackle in front; you are giving up the short stuff on purpose.",
+      "IF the QB holds the ball, THEN your three rushers have to win one-on-one or collapse the pocket, since there is no extra pressure coming."
+    ],
+    "usage_notes": "Beats: deep shots and four verticals (four over the top). Coach's Key: two-high quarters with a three-man rush, eight defenders dropping. Keep everything in front, tackle the underneath catch.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_2_spy",
@@ -23473,7 +23991,42 @@
     "display_name": "Tampa Sim Pressure",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
-    "image_file": "play2_2025-12-01T08-53-02-006Z.png"
+    "image_file": "play2_2025-12-01T08-53-02-006Z.png",
+    "routes": [
+      {
+        "receiver": "Front rushers",
+        "route": "rush",
+        "note": "red arrows fire up from the line squares with one extra red arrow from a defender to the left, a simulated pressure"
+      },
+      {
+        "receiver": "Middle runner",
+        "route": "olive deep middle (Tampa)",
+        "note": "olive oval over the middle with a green line running up the seam, the Tampa middle hole runner"
+      },
+      {
+        "receiver": "Two hook defenders",
+        "route": "white hook drops",
+        "note": "two grey/white ovals with white lines drop to the middle hook windows"
+      },
+      {
+        "receiver": "Two flat defenders",
+        "route": "teal flat zones",
+        "note": "teal ovals and cyan lines to both sidelines cover the flats"
+      },
+      {
+        "receiver": "Two deep safeties",
+        "route": "blue deep halves",
+        "note": "two blue deep zones across the top split the deep field in half"
+      }
+    ],
+    "reads": [
+      "IF the simulated pressure is not picked up, THEN a rusher comes free off the front.",
+      "IF the seam is attacked, THEN the olive middle runner walls the deep hole.",
+      "IF the throw is to the flat, THEN the teal flat defenders jump it.",
+      "IF the ball goes over the top, THEN the two deep halves stay capped."
+    ],
+    "usage_notes": "Beats: quick game and deep crossers. Coach's Key: it is a Tampa 2 shell behind a simulated pressure, two deep, a runner up the middle, hooks and flats underneath.",
+    "verified": true
   },
   {
     "name": "shinobi_1_double_wr1_man_coverage-2",
@@ -23537,7 +24090,42 @@
     "display_name": "Cover 9 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
-    "image_file": "play2_2025-12-01T08-53-04-481Z.png"
+    "image_file": "play2_2025-12-01T08-53-04-481Z.png",
+    "routes": [
+      {
+        "receiver": "Front rushers",
+        "route": "rush",
+        "note": "four red arrows fire up from the line squares"
+      },
+      {
+        "receiver": "Two hook defenders",
+        "route": "olive hook drops",
+        "note": "two olive ovals with green lines drop to the middle hook windows"
+      },
+      {
+        "receiver": "Flat defender",
+        "route": "teal flat zone",
+        "note": "teal oval and cyan line to the left covers the flat"
+      },
+      {
+        "receiver": "Match curl/flat defender",
+        "route": "purple match drop",
+        "note": "purple oval to the right with a long purple line running back inside, matches the curl-flat"
+      },
+      {
+        "receiver": "Deep secondary",
+        "route": "blue deep thirds",
+        "note": "three blue deep zones across the top split the deep field into thirds"
+      }
+    ],
+    "reads": [
+      "IF the offense pushes verticals, THEN the three deep zones match the thirds.",
+      "IF a route works the curl-flat, THEN the purple match defender carries and drives on it.",
+      "IF the throw is to the near flat, THEN the teal flat defender squeezes it.",
+      "IF the middle is attacked, THEN the olive hook defenders wall it."
+    ],
+    "usage_notes": "Beats: vertical and curl-flat combinations. Coach's Key: it is a MATCH call, three deep with a match curl-flat defender and pattern-read underneath.",
+    "verified": true
   },
   {
     "name": "shinobi_double_bracket_switch-2",
@@ -24020,7 +24608,67 @@
     "display_name": "Nickel Sim 2",
     "system": "SHINOBI",
     "formation_family": "Nickel Double Mug",
-    "image_file": "play2_2025-12-01T08-53-21-151Z.png"
+    "image_file": "play2_2025-12-01T08-53-21-151Z.png",
+    "routes": [
+      {
+        "receiver": "Left edge rusher",
+        "route": "Rush",
+        "note": "Red arrow attacking down toward the LOS from the left side, this is the simulated pressure"
+      },
+      {
+        "receiver": "Left interior rusher",
+        "route": "Rush",
+        "note": "Red arrow driving into the line, part of the left-side rush package"
+      },
+      {
+        "receiver": "Second left interior rusher",
+        "route": "Rush",
+        "note": "Red arrow at the LOS, fills the gap as the sim pressure comes"
+      },
+      {
+        "receiver": "Mug LB (left of center)",
+        "route": "Drop to hook zone",
+        "note": "White line peeling off the mug back into the underneath middle, bails instead of rushing"
+      },
+      {
+        "receiver": "Mug defender (center)",
+        "route": "Drop to middle hole",
+        "note": "Green line bailing into the green middle zone bubble, robs the seam"
+      },
+      {
+        "receiver": "Mug LB (right of center)",
+        "route": "Drop to hook / curl",
+        "note": "White line dropping back to the right underneath, peels out of the mug look"
+      },
+      {
+        "receiver": "Nickel / flat defender (right)",
+        "route": "Flat zone",
+        "note": "Cyan line working out to the right flat, covers the teal underneath bubble"
+      },
+      {
+        "receiver": "Flat defender (left)",
+        "route": "Flat zone",
+        "note": "Teal underneath bubble on the left, sits on the short outside"
+      },
+      {
+        "receiver": "Deep defender (left half)",
+        "route": "Deep zone",
+        "note": "Blue bubble capping the top left, plays over the top"
+      },
+      {
+        "receiver": "Deep defender (right half)",
+        "route": "Deep zone",
+        "note": "Blue bubble capping the top right, plays over the top"
+      }
+    ],
+    "reads": [
+      "IF the back releases or the offense slides protection, THEN the left-side red rush comes free as the simulated pressure.",
+      "IF the mug shows but only some rush, THEN the dropping defenders sink into the green middle hole and the underneath hooks.",
+      "IF a vertical pushes downfield, THEN the deep blue zones cap it over the top.",
+      "IF the ball comes out quick, THEN the teal flat defenders rally up and tackle short."
+    ],
+    "usage_notes": "Art label: BLITZ. Beats: protections that bite on the mug look and leave the left-side rush unblocked. Coach's Key: show pressure from the double mug, send the left side, drop the rest into a middle-hole and two-deep zone shell.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_2_man-7",
@@ -24883,7 +25531,36 @@
     "display_name": "Blitz Loop Sim 3",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
-    "image_file": "play2_2025-12-01T08-53-50-637Z.png"
+    "image_file": "play2_2025-12-01T08-53-50-637Z.png",
+    "routes": [
+      {
+        "receiver": "Three deep defenders",
+        "route": "Deep thirds",
+        "note": "Three blue zones cap the field in thirds behind the pressure"
+      },
+      {
+        "receiver": "Two outside underneath defenders",
+        "route": "Curl / flat",
+        "note": "Purple zones sink to the curl and widen to the flat on each side"
+      },
+      {
+        "receiver": "Two mugged linebackers",
+        "route": "Hook drop",
+        "note": "Yellow lines: the mug defenders bail to the tan middle hooks rather than rush"
+      },
+      {
+        "receiver": "Looping front",
+        "route": "Loop rush",
+        "note": "Red lines loop and cross at the line of scrimmage, the interior rushers twist to win a new gap"
+      }
+    ],
+    "reads": [
+      "If the protection sets for the mug look, then the front loops (red cross) to free a rusher off the twist.",
+      "If the ball comes out quick over the middle, then the two mug hooks in the tan zones wall it.",
+      "If a vertical or out develops, then the three-deep thirds and the purple curl/flat defenders cover behind the loop."
+    ],
+    "usage_notes": "Beats: slow dropbacks against a looping rush. Coach's Key: sim pressure, the front twists to beat protection while a three-deep zone sits behind it.",
+    "verified": true
   },
   {
     "name": "shinobi_tampa_2-14",
@@ -25138,7 +25815,37 @@
     "display_name": "Bracket Switch Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
-    "image_file": "play2_2025-12-01T08-53-56-541Z.png"
+    "image_file": "play2_2025-12-01T08-53-56-541Z.png",
+    "routes": [
+      {
+        "receiver": "Front 4 (down linemen)",
+        "route": "Four-man rush",
+        "note": "Four white boxes on the line, each with a red downhill arrow rushing the QB."
+      },
+      {
+        "receiver": "Linebackers (x2)",
+        "route": "Man coverage",
+        "note": "Two white dots behind the front, no rush arrow drawn."
+      },
+      {
+        "receiver": "Bracket defender",
+        "route": "Bracket / zone help",
+        "note": "Blue motion-style line runs from an X near the top numbers up into a large blue zone bubble over the deep right, showing a defender bracketing into deep help."
+      },
+      {
+        "receiver": "Defensive backs",
+        "route": "Man coverage",
+        "note": "Remaining X marks in man across the field, label reads MAN."
+      }
+    ],
+    "reads": [
+      "Pre-snap: see the blue bubble up top, one defender is bracketing the receiver in that area with help over the top.",
+      "The rest of the front is a four-man rush shown by the red arrows.",
+      "If the bracketed receiver runs vertical, the deep blue help caps him while the under defender squeezes.",
+      "Everyone else is man, so they travel with their guy while the bracket doubles the key matchup."
+    ],
+    "usage_notes": "Beats: a single dangerous deep target. Coach's Key: four rush, man everywhere except the bracketed receiver who gets doubled.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_3_buzz_mable-3",
@@ -25294,7 +26001,32 @@
     "display_name": "1 Double Slot Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
-    "image_file": "play2_2025-12-01T08-54-00-885Z.png"
+    "image_file": "play2_2025-12-01T08-54-00-885Z.png",
+    "routes": [
+      {
+        "receiver": "Front 4 (down linemen)",
+        "route": "Four-man rush",
+        "note": "Four white boxes on the line, each with a red downhill arrow attacking forward."
+      },
+      {
+        "receiver": "Linebackers (x2)",
+        "route": "Man coverage",
+        "note": "Two white dots behind the front, no rush arrow, in man assignments."
+      },
+      {
+        "receiver": "Defensive backs",
+        "route": "Man coverage",
+        "note": "X marks spread across the field in man-to-man, label reads MAN."
+      }
+    ],
+    "reads": [
+      "Pre-snap: four red arrows tell you it is a four-man rush from the Nickel 2-4.",
+      "It is a man call, so the back-end X defenders lock onto their receivers.",
+      "If the slot shows movement, the matched man defender stays glued through the release.",
+      "If coverage holds, the four rushers have to win and get home."
+    ],
+    "usage_notes": "Beats: routes that need separation against sticky man. Coach's Key: four rush, man behind, no help drawn.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_6_nickel_2_4",
@@ -25730,7 +26462,41 @@
     "display_name": "Cover 9 Show 2",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
-    "image_file": "play2_2025-12-01T08-54-13-618Z.png"
+    "image_file": "play2_2025-12-01T08-54-13-618Z.png",
+    "routes": [
+      {
+        "receiver": "Deep defenders (3)",
+        "route": "Deep thirds (match)",
+        "note": "Three blue deep zone bubbles across the top with lines back to the deep defenders"
+      },
+      {
+        "receiver": "Underneath left (teal/cyan)",
+        "route": "Curl/flat drop",
+        "note": "Teal underneath zone bubble on the left with a short match line"
+      },
+      {
+        "receiver": "Middle droppers (olive/yellow, 2)",
+        "route": "Hook/seam drop",
+        "note": "Two olive-yellow underneath bubbles over the middle, one with a vertical match line"
+      },
+      {
+        "receiver": "Underneath right (purple)",
+        "route": "Curl/flat drop (match)",
+        "note": "Purple underneath bubble on the right with a long match line out toward the flat"
+      },
+      {
+        "receiver": "Underneath defenders (4)",
+        "route": "Drop",
+        "note": "Four white squares with red down-arrows releasing underneath"
+      }
+    ],
+    "reads": [
+      "If a vertical releases, the three deep defenders match and carry their thirds.",
+      "If a route works the underneath, the match droppers squeeze the curl and seam windows.",
+      "If the ball goes to the flat, the purple match defender drives out on it since the badge reads MATCH."
+    ],
+    "usage_notes": "Beats: vertical and curl-flat concepts in passing downs. Coach's Key: badge reads MATCH, shows a two-high look and plays three-deep match with the underneath defenders matching out.",
+    "verified": true
   },
   {
     "name": "shinobi_edge_blitz_3-3",
@@ -25979,7 +26745,46 @@
     "display_name": "Bracket Switch Willie",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
-    "image_file": "play2_2025-12-01T08-54-19-269Z.png"
+    "image_file": "play2_2025-12-01T08-54-19-269Z.png",
+    "routes": [
+      {
+        "receiver": "Line defender 1 (left white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow attacking the backfield"
+      },
+      {
+        "receiver": "Line defender 2 (center-left white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow"
+      },
+      {
+        "receiver": "Line defender 3 (center-right white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow"
+      },
+      {
+        "receiver": "Line defender 4 (right white square)",
+        "route": "Rush",
+        "note": "White square on the line with a red down-arrow"
+      },
+      {
+        "receiver": "Deep defender (top-right)",
+        "route": "Deep bracket / help",
+        "note": "Single blue deep zone bubble in the top right with a line down to a defender near the 20"
+      },
+      {
+        "receiver": "Coverage defenders (white X and dot markers)",
+        "route": "Man coverage",
+        "note": "Static markers spread across the middle and second level, no drawn coverage lines (MAN label)"
+      }
+    ],
+    "reads": [
+      "If the offense drops to pass, the four squares rush the drawn arrows and pressure the pocket.",
+      "If you are a coverage defender, lock your man and trail through the route since the badge reads MAN.",
+      "If a receiver releases vertical to that side, the deep bracket defender caps it over the top."
+    ],
+    "usage_notes": "Beats: dropback passing with a bracket on one side. Coach's Key: badge reads MAN. Only the four red rush arrows and the single deep bracket are drawn, the rest are static man markers.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_4_palms-4",
@@ -28855,7 +29660,37 @@
     "display_name": "Nickel 2 Trap",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
-    "image_file": "play3_2025-12-01T08-53-02-760Z.png"
+    "image_file": "play3_2025-12-01T08-53-02-760Z.png",
+    "routes": [
+      {
+        "receiver": "Front rushers",
+        "route": "rush",
+        "note": "red arrows fire up from the line squares with one extra red arrow from a defender to the left, a five-ish man rush"
+      },
+      {
+        "receiver": "Two trap/hook defenders",
+        "route": "olive hook-trap drops",
+        "note": "two olive ovals over the middle with yellow lines, the trap droppers sitting under the routes"
+      },
+      {
+        "receiver": "Two flat defenders",
+        "route": "teal flat zones",
+        "note": "teal ovals and cyan lines to both sidelines cover the flats"
+      },
+      {
+        "receiver": "Two deep safeties",
+        "route": "blue deep halves",
+        "note": "two blue deep zones across the top split the deep field in half"
+      }
+    ],
+    "reads": [
+      "IF the protection cannot account for the extra rusher, THEN the pressure gets home.",
+      "IF a route sits in the trap window, THEN the olive trap defenders jump it.",
+      "IF the throw is to the flat, THEN the teal flat defenders break on it.",
+      "IF the ball goes deep, THEN the two blue halves stay over the top."
+    ],
+    "usage_notes": "Beats: hitches and quick out-breaking routes. Coach's Key: it is a cover 2 shell behind pressure with the underneath defenders trapping the short windows.",
+    "verified": true
   },
   {
     "name": "shinobi_sam_mike_3_press",
@@ -30343,7 +31178,36 @@
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
-    "image_file": "play3_2025-12-01T08-53-51-350Z.png"
+    "image_file": "play3_2025-12-01T08-53-51-350Z.png",
+    "routes": [
+      {
+        "receiver": "Three deep defenders",
+        "route": "Deep thirds (match)",
+        "note": "Three blue zones split the deep field into thirds and pattern-match the verticals"
+      },
+      {
+        "receiver": "Two outside underneath defenders",
+        "route": "Curl / flat",
+        "note": "Purple zones sink to the curl and carry to the flat on each side"
+      },
+      {
+        "receiver": "Two mugged linebackers",
+        "route": "Hook drop",
+        "note": "Yellow lines: the two mug defenders drop out into the tan middle hook zones instead of rushing"
+      },
+      {
+        "receiver": "Front four",
+        "route": "Rush",
+        "note": "Four red arrows, the four down linemen bring the only rush"
+      }
+    ],
+    "reads": [
+      "If a receiver runs vertical, then the matching deep-third defender carries it man-style.",
+      "If two receivers flood one third, then the underneath curl/flat defender takes the short one and the deep third stays on top.",
+      "If a route crosses the middle, then the mug hooks in the tan zones pass it off and wall it."
+    ],
+    "usage_notes": "Beats: four-verticals and flood concepts. Coach's Key: Cover 3 with pattern-match rules (carry, do not spot-drop), front four rush and both mugs drop.",
+    "verified": true
   },
   {
     "name": "shinobi_cb_bench_sim_2",
@@ -30609,7 +31473,32 @@
     "display_name": "Double Bracket Switch",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
-    "image_file": "play3_2025-12-01T08-53-59-183Z.png"
+    "image_file": "play3_2025-12-01T08-53-59-183Z.png",
+    "routes": [
+      {
+        "receiver": "Front 4 (down linemen)",
+        "route": "Four-man rush",
+        "note": "Four white boxes on the line, each with a red downhill arrow rushing straight ahead."
+      },
+      {
+        "receiver": "Linebackers (x2)",
+        "route": "Man coverage",
+        "note": "Two white dots behind the front, no rush arrow drawn."
+      },
+      {
+        "receiver": "Defensive backs",
+        "route": "Man coverage",
+        "note": "X marks spread across the field in man, label reads MAN."
+      }
+    ],
+    "reads": [
+      "Pre-snap: count the four red arrows, this is a four-man rush from the Nickel 2-4 front.",
+      "The label reads MAN, so the back-end defenders match up with their receivers.",
+      "If receivers cross, the man defenders switch or stay based on the bracket rule and pass the crossers off.",
+      "If nothing comes open, the four-man rush has to finish at the QB."
+    ],
+    "usage_notes": "Beats: crossing and switch route concepts. Coach's Key: four rush, man behind it with bracket switch rules on crossers.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_3_sky-14",
@@ -31168,7 +32057,36 @@
     "display_name": "Nickel 2 Trap",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
-    "image_file": "play3_2025-12-01T08-54-14-322Z.png"
+    "image_file": "play3_2025-12-01T08-54-14-322Z.png",
+    "routes": [
+      {
+        "receiver": "Interior rushers (3-4)",
+        "route": "Rush",
+        "note": "Red arrows from the line pointing down and in toward the QB"
+      },
+      {
+        "receiver": "Deep defenders (2)",
+        "route": "Deep halves",
+        "note": "Two large blue deep zone bubbles across the top with lines back to the deep defenders"
+      },
+      {
+        "receiver": "Underneath droppers (olive/yellow, 2)",
+        "route": "Hook/curl drop (match)",
+        "note": "Olive-yellow underneath bubbles over the middle with match lines"
+      },
+      {
+        "receiver": "Outside underneath (teal/cyan, 2)",
+        "route": "Flat/curl drop",
+        "note": "Teal underneath zone bubbles on each side with short match lines"
+      }
+    ],
+    "reads": [
+      "If the protection cannot pick up the interior pressure, a rusher comes free through the middle.",
+      "If the ball comes out hot, the underneath droppers trap and squeeze the curl and flat windows.",
+      "If a route runs vertical, the two deep defenders cap their halves over the top."
+    ],
+    "usage_notes": "Beats: protections that struggle with interior pressure. Coach's Key: badge reads BLITZ. Interior rush behind a two-deep, trap-coverage shell with the underneath defenders matching the short routes.",
+    "verified": true
   },
   {
     "name": "shinobi_cover_4_quarters-14",

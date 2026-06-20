@@ -89,3 +89,10 @@ Fixed the args-as-string bug (the work-list was arriving as a JSON string, so ea
 empty fan-out). Re-ran the read-only wave over 67 families (67 agents, ~27 min). 639 schemes returned
 (234 high / 373 medium / 32 low confidence). Merged the 607 high+medium as verified. **858/890 verified.**
 The 32 low-confidence (blurry art) are held structural-only for a careful manual pass.
+
+## Rebuild COMPLETE (2026-06-20): 885/890 verified
+
+Final targeted wave over the 14 low-confidence families upgraded 27 more. **885/890 verified.**
+The remaining 5 have missing or unreadable play art (e.g. PA Boot Left is a logo on a dark field,
+no diagram), they stay structural-only honestly rather than fabricated. Final QA: mine 137/137,
+fronts 49/49, 890 unique slugs, smoke green, 0 dead buttons.
