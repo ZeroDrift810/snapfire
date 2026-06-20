@@ -246,7 +246,7 @@
     "image_file": "play1_2025-12-01T08-44-39-776Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_bubble",
+    "name": "snapfire_rpo_alert_bubble-2",
     "display_name": "RPO Alert Bubble",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Ace Slot",
@@ -386,14 +386,14 @@
     "image_file": "play1_2025-12-01T08-45-00-139Z.png"
   },
   {
-    "name": "snapfire_fake_jet_pass_power",
+    "name": "snapfire_fake_jet_pass_power-2",
     "display_name": "Fake Jet Pass Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off",
     "image_file": "play1_2025-12-01T08-45-02-609Z.png"
   },
   {
-    "name": "snapfire_midline_read_option",
+    "name": "snapfire_midline_read_option-2",
     "display_name": "Midline Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off",
@@ -428,7 +428,7 @@
     "image_file": "play1_2025-12-01T08-45-09-339Z.png"
   },
   {
-    "name": "snapfire_fake_jet_pass_power",
+    "name": "snapfire_fake_jet_pass_power-3",
     "display_name": "Fake Jet Pass Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Doubles",
@@ -512,7 +512,7 @@
     "image_file": "play1_2025-12-01T08-45-22-760Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-2",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off Close",
@@ -533,7 +533,7 @@
     "image_file": "play1_2025-12-01T08-45-26-924Z.png"
   },
   {
-    "name": "snapfire_flood",
+    "name": "snapfire_flood-2",
     "display_name": "Flood",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trio Close",
@@ -582,7 +582,7 @@
     "image_file": "play1_2025-12-01T08-45-36-243Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-3",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
@@ -820,7 +820,7 @@
     "image_file": "play1_2025-12-01T08-46-09-949Z.png"
   },
   {
-    "name": "snapfire_four_verticals",
+    "name": "snapfire_four_verticals-2",
     "display_name": "Four Verticals",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Slot",
@@ -848,7 +848,7 @@
     "image_file": "play1_2025-12-01T08-46-13-449Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-4",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Slot",
@@ -876,7 +876,7 @@
     "image_file": "play1_2025-12-01T08-46-17-488Z.png"
   },
   {
-    "name": "snapfire_pa_read",
+    "name": "snapfire_pa_read-2",
     "display_name": "PA Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -904,7 +904,7 @@
     "image_file": "play1_2025-12-01T08-46-21-195Z.png"
   },
   {
-    "name": "snapfire_mesh",
+    "name": "snapfire_mesh-2",
     "display_name": "Mesh",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -939,7 +939,7 @@
     "image_file": "play1_2025-12-01T08-46-27-630Z.png"
   },
   {
-    "name": "snapfire_post_wheel_shallow",
+    "name": "snapfire_post_wheel_shallow-2",
     "display_name": "Post Wheel Shallow",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun U Off Trips",
@@ -974,7 +974,7 @@
     "image_file": "play1_2025-12-01T08-46-33-739Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-5",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off Wk",
@@ -988,7 +988,7 @@
     "image_file": "play1_2025-12-01T08-46-35-268Z.png"
   },
   {
-    "name": "snapfire_duo",
+    "name": "snapfire_duo-2",
     "display_name": "Duo",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off Wk",
@@ -1263,7 +1263,7 @@
     "image_file": "play2_2025-12-01T08-44-20-139Z.png"
   },
   {
-    "name": "snapfire_speed_option",
+    "name": "snapfire_speed_option-2",
     "display_name": "Speed Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Wk",
@@ -1319,7 +1319,7 @@
     "image_file": "play2_2025-12-01T08-44-32-582Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-2",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off",
@@ -1340,7 +1340,7 @@
     "image_file": "play2_2025-12-01T08-44-39-776Z.png"
   },
   {
-    "name": "snapfire_hb_quick_base",
+    "name": "snapfire_hb_quick_base-2",
     "display_name": "HB Quick Base",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Ace Slot",
@@ -1417,14 +1417,14 @@
     "image_file": "play2_2025-12-01T08-44-54-751Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-6",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch TE",
     "image_file": "play2_2025-12-01T08-44-55-675Z.png"
   },
   {
-    "name": "snapfire_te_corner",
+    "name": "snapfire_te_corner-2",
     "display_name": "TE Corner",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch TE",
@@ -1438,7 +1438,7 @@
     "image_file": "play2_2025-12-01T08-44-57-565Z.png"
   },
   {
-    "name": "snapfire_power_read",
+    "name": "snapfire_power_read-2",
     "display_name": "Power Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trio Wk",
@@ -1529,7 +1529,7 @@
     "image_file": "play2_2025-12-01T08-45-07-676Z.png"
   },
   {
-    "name": "snapfire_45_quick_base",
+    "name": "snapfire_45_quick_base-2",
     "display_name": "45 Quick Base",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Doubles",
@@ -1550,7 +1550,7 @@
     "image_file": "play2_2025-12-01T08-45-12-650Z.png"
   },
   {
-    "name": "snapfire_duo",
+    "name": "snapfire_duo-3",
     "display_name": "Duo",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trips",
@@ -1564,7 +1564,7 @@
     "image_file": "play2_2025-12-01T08-45-14-519Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_out",
+    "name": "snapfire_rpo_alert_out-2",
     "display_name": "RPO Alert Out",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off Close",
@@ -1592,7 +1592,7 @@
     "image_file": "play2_2025-12-01T08-45-18-529Z.png"
   },
   {
-    "name": "snapfire_power_read",
+    "name": "snapfire_power_read-3",
     "display_name": "Power Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off Close",
@@ -1704,7 +1704,7 @@
     "image_file": "play2_2025-12-01T08-45-29-527Z.png"
   },
   {
-    "name": "snapfire_verticals",
+    "name": "snapfire_verticals-2",
     "display_name": "Verticals",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Triple Stack",
@@ -1739,21 +1739,21 @@
     "image_file": "play2_2025-12-01T08-45-36-243Z.png"
   },
   {
-    "name": "snapfire_hb_power",
+    "name": "snapfire_hb_power-2",
     "display_name": "HB Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun U Off Trips Wk",
     "image_file": "play2_2025-12-01T08-45-37-043Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-3",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
     "image_file": "play2_2025-12-01T08-45-38-213Z.png"
   },
   {
-    "name": "snapfire_y_cross",
+    "name": "snapfire_y_cross-2",
     "display_name": "Y Cross",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
@@ -1788,7 +1788,7 @@
     "image_file": "play2_2025-12-01T08-45-42-343Z.png"
   },
   {
-    "name": "snapfire_dagger",
+    "name": "snapfire_dagger-2",
     "display_name": "Dagger",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trips TE Flex",
@@ -1830,7 +1830,7 @@
     "image_file": "play2_2025-12-01T08-45-48-761Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_out",
+    "name": "snapfire_rpo_alert_out-3",
     "display_name": "RPO Alert Out",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Y-Flex",
@@ -1851,14 +1851,14 @@
     "image_file": "play2_2025-12-01T08-45-51-503Z.png"
   },
   {
-    "name": "snapfire_pa_jailbreak_screen",
+    "name": "snapfire_pa_jailbreak_screen-2",
     "display_name": "PA Jailbreak Screen",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
     "image_file": "play2_2025-12-01T08-45-52-935Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-7",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
@@ -1879,7 +1879,7 @@
     "image_file": "play2_2025-12-01T08-45-55-315Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_bubble",
+    "name": "snapfire_rpo_alert_bubble-3",
     "display_name": "RPO Alert Bubble",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
@@ -1893,7 +1893,7 @@
     "image_file": "play2_2025-12-01T08-45-57-287Z.png"
   },
   {
-    "name": "snapfire_power_read",
+    "name": "snapfire_power_read-4",
     "display_name": "Power Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Ace",
@@ -1935,7 +1935,7 @@
     "verified": true
   },
   {
-    "name": "snapfire_pa_read",
+    "name": "snapfire_pa_read-3",
     "display_name": "PA Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Ace",
@@ -1949,7 +1949,7 @@
     "image_file": "play2_2025-12-01T08-46-00-165Z.png"
   },
   {
-    "name": "snapfire_inside_cross",
+    "name": "snapfire_inside_cross-2",
     "display_name": "Inside Cross",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Ace",
@@ -1984,14 +1984,14 @@
     "image_file": "play2_2025-12-01T08-46-05-166Z.png"
   },
   {
-    "name": "snapfire_rpo_read_y_flat",
+    "name": "snapfire_rpo_read_y_flat-2",
     "display_name": "RPO Read Y Flat",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Trips Offset",
     "image_file": "play2_2025-12-01T08-46-06-404Z.png"
   },
   {
-    "name": "snapfire_01_trap",
+    "name": "snapfire_01_trap-2",
     "display_name": "01 Trap",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Deuce Close",
@@ -2061,14 +2061,14 @@
     "image_file": "play2_2025-12-01T08-46-12-067Z.png"
   },
   {
-    "name": "snapfire_pa_read",
+    "name": "snapfire_pa_read-4",
     "display_name": "PA Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Slot",
     "image_file": "play2_2025-12-01T08-46-12-728Z.png"
   },
   {
-    "name": "snapfire_mesh",
+    "name": "snapfire_mesh-3",
     "display_name": "Mesh",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Slot",
@@ -2096,14 +2096,14 @@
     "image_file": "play2_2025-12-01T08-46-16-208Z.png"
   },
   {
-    "name": "snapfire_qb_zone",
+    "name": "snapfire_qb_zone-2",
     "display_name": "QB Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
     "image_file": "play2_2025-12-01T08-46-17-488Z.png"
   },
   {
-    "name": "snapfire_four_verticals",
+    "name": "snapfire_four_verticals-3",
     "display_name": "Four Verticals",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -2117,7 +2117,7 @@
     "image_file": "play2_2025-12-01T08-46-19-064Z.png"
   },
   {
-    "name": "snapfire_power_read",
+    "name": "snapfire_power_read-5",
     "display_name": "Power Read",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -2180,7 +2180,7 @@
     "image_file": "play2_2025-12-01T08-46-22-752Z.png"
   },
   {
-    "name": "snapfire_corner_strike",
+    "name": "snapfire_corner_strike-2",
     "display_name": "Corner Strike",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -2194,7 +2194,7 @@
     "image_file": "play2_2025-12-01T08-46-24-773Z.png"
   },
   {
-    "name": "snapfire_duo",
+    "name": "snapfire_duo-4",
     "display_name": "Duo",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Open Offset",
@@ -2222,7 +2222,7 @@
     "image_file": "play2_2025-12-01T08-46-28-430Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-8",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun U Off Trips",
@@ -2299,7 +2299,7 @@
     "image_file": "play2_2025-12-01T08-46-38-610Z.png"
   },
   {
-    "name": "snapfire_01_trap",
+    "name": "snapfire_01_trap-3",
     "display_name": "01 Trap",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off Wk",
@@ -2355,7 +2355,7 @@
     "image_file": "play2_2025-12-01T08-46-41-460Z.png"
   },
   {
-    "name": "snapfire_speed_option",
+    "name": "snapfire_speed_option-3",
     "display_name": "Speed Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
@@ -2376,14 +2376,14 @@
     "image_file": "play2_2025-12-01T08-46-43-692Z.png"
   },
   {
-    "name": "snapfire_spacing",
+    "name": "snapfire_spacing-2",
     "display_name": "Spacing",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
     "image_file": "play2_2025-12-01T08-46-44-426Z.png"
   },
   {
-    "name": "snapfire_y_cross",
+    "name": "snapfire_y_cross-3",
     "display_name": "Y Cross",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
@@ -2397,7 +2397,7 @@
     "image_file": "play2_2025-12-01T08-46-45-907Z.png"
   },
   {
-    "name": "snapfire_salem",
+    "name": "snapfire_salem-2",
     "display_name": "Salem",
     "system": "SNAPFIRE",
     "formation_family": "Singleback Y Trips",
@@ -2432,21 +2432,21 @@
     "image_file": "play2_2025-12-01T08-46-59-360Z.png"
   },
   {
-    "name": "snapfire_read_option",
+    "name": "snapfire_read_option-2",
     "display_name": "Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Ace Double Wing",
     "image_file": "play2_2025-12-01T08-47-06-544Z.png"
   },
   {
-    "name": "snapfire_mtn_duo",
+    "name": "snapfire_mtn_duo-2",
     "display_name": "Mtn Duo",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Ace Double Wing",
     "image_file": "play2_2025-12-01T08-47-07-371Z.png"
   },
   {
-    "name": "snapfire_wheel_switch",
+    "name": "snapfire_wheel_switch-2",
     "display_name": "Wheel Switch",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Tight Y Off Flex",
@@ -2474,7 +2474,7 @@
     "image_file": "play2_2025-12-01T08-47-11-745Z.png"
   },
   {
-    "name": "snapfire_strong_power",
+    "name": "snapfire_strong_power-2",
     "display_name": "Strong Power",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
@@ -2488,7 +2488,7 @@
     "image_file": "play2_2025-12-01T08-47-13-382Z.png"
   },
   {
-    "name": "snapfire_stick",
+    "name": "snapfire_stick-2",
     "display_name": "Stick",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
@@ -2531,7 +2531,7 @@
     "verified": true
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-4",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
@@ -2581,7 +2581,7 @@
     "image_file": "play3_2025-12-01T08-44-18-571Z.png"
   },
   {
-    "name": "snapfire_rpo_read_bubble",
+    "name": "snapfire_rpo_read_bubble-2",
     "display_name": "RPO Read Bubble",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Wk",
@@ -2602,7 +2602,7 @@
     "image_file": "play3_2025-12-01T08-44-23-316Z.png"
   },
   {
-    "name": "snapfire_corner_strike",
+    "name": "snapfire_corner_strike-3",
     "display_name": "Corner Strike",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Trey",
@@ -2616,21 +2616,21 @@
     "image_file": "play3_2025-12-01T08-44-27-870Z.png"
   },
   {
-    "name": "snapfire_y_corner",
+    "name": "snapfire_y_corner-2",
     "display_name": "Y Corner",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Trey",
     "image_file": "play3_2025-12-01T08-44-28-826Z.png"
   },
   {
-    "name": "snapfire_duo",
+    "name": "snapfire_duo-5",
     "display_name": "Duo",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off",
     "image_file": "play3_2025-12-01T08-44-30-565Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_out",
+    "name": "snapfire_rpo_alert_out-4",
     "display_name": "RPO Alert Out",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off",
@@ -2644,7 +2644,7 @@
     "image_file": "play3_2025-12-01T08-44-32-582Z.png"
   },
   {
-    "name": "snapfire_rpo_peek_slant",
+    "name": "snapfire_rpo_peek_slant-2",
     "display_name": "RPO Peek Slant",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off",
@@ -2679,21 +2679,21 @@
     "image_file": "play3_2025-12-01T08-44-42-409Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-9",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Str Offset",
     "image_file": "play3_2025-12-01T08-44-43-480Z.png"
   },
   {
-    "name": "snapfire_dagger",
+    "name": "snapfire_dagger-3",
     "display_name": "Dagger",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Str Offset",
     "image_file": "play3_2025-12-01T08-44-44-590Z.png"
   },
   {
-    "name": "snapfire_duo",
+    "name": "snapfire_duo-6",
     "display_name": "Duo",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Str Offset",
@@ -2721,21 +2721,21 @@
     "image_file": "play3_2025-12-01T08-44-49-949Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-10",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trips Close",
     "image_file": "play3_2025-12-01T08-44-50-857Z.png"
   },
   {
-    "name": "snapfire_hb_power",
+    "name": "snapfire_hb_power-3",
     "display_name": "HB Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trips Close",
     "image_file": "play3_2025-12-01T08-44-51-821Z.png"
   },
   {
-    "name": "snapfire_qb_wrap",
+    "name": "snapfire_qb_wrap-2",
     "display_name": "QB Wrap",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch TE",
@@ -2749,7 +2749,7 @@
     "image_file": "play3_2025-12-01T08-44-54-751Z.png"
   },
   {
-    "name": "snapfire_inside_cross",
+    "name": "snapfire_inside_cross-3",
     "display_name": "Inside Cross",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch TE",
@@ -2763,7 +2763,7 @@
     "image_file": "play3_2025-12-01T08-44-56-599Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_bubble",
+    "name": "snapfire_rpo_alert_bubble-4",
     "display_name": "RPO Alert Bubble",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch TE",
@@ -2784,21 +2784,21 @@
     "image_file": "play3_2025-12-01T08-45-00-139Z.png"
   },
   {
-    "name": "snapfire_y_lead_read_option",
+    "name": "snapfire_y_lead_read_option-2",
     "display_name": "Y Lead Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trio Wk",
     "image_file": "play3_2025-12-01T08-45-01-054Z.png"
   },
   {
-    "name": "snapfire_rpo_peek_slant",
+    "name": "snapfire_rpo_peek_slant-3",
     "display_name": "RPO Peek Slant",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off",
     "image_file": "play3_2025-12-01T08-45-02-609Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-5",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off",
@@ -2812,7 +2812,7 @@
     "image_file": "play3_2025-12-01T08-45-04-282Z.png"
   },
   {
-    "name": "snapfire_four_verticals",
+    "name": "snapfire_four_verticals-4",
     "display_name": "Four Verticals",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off",
@@ -2826,7 +2826,7 @@
     "image_file": "play3_2025-12-01T08-45-06-775Z.png"
   },
   {
-    "name": "snapfire_redzone_scissors",
+    "name": "snapfire_redzone_scissors-2",
     "display_name": "Redzone Scissors",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off",
@@ -2840,7 +2840,7 @@
     "image_file": "play3_2025-12-01T08-45-09-339Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-6",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Doubles",
@@ -2868,7 +2868,7 @@
     "image_file": "play3_2025-12-01T08-45-13-628Z.png"
   },
   {
-    "name": "snapfire_four_verticals",
+    "name": "snapfire_four_verticals-5",
     "display_name": "Four Verticals",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Off Trips",
@@ -2910,7 +2910,7 @@
     "image_file": "play3_2025-12-01T08-45-19-435Z.png"
   },
   {
-    "name": "snapfire_mesh_spot",
+    "name": "snapfire_mesh_spot-2",
     "display_name": "Mesh Spot",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off Close",
@@ -2931,7 +2931,7 @@
     "image_file": "play3_2025-12-01T08-45-21-938Z.png"
   },
   {
-    "name": "snapfire_read_option",
+    "name": "snapfire_read_option-3",
     "display_name": "Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off Close",
@@ -2945,7 +2945,7 @@
     "image_file": "play3_2025-12-01T08-45-23-593Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-7",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Normal Y Off Close",
@@ -3029,28 +3029,28 @@
     "image_file": "play3_2025-12-01T08-45-37-043Z.png"
   },
   {
-    "name": "snapfire_hb_quick_base",
+    "name": "snapfire_hb_quick_base-3",
     "display_name": "HB Quick Base",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
     "image_file": "play3_2025-12-01T08-45-38-213Z.png"
   },
   {
-    "name": "snapfire_mesh",
+    "name": "snapfire_mesh-4",
     "display_name": "Mesh",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
     "image_file": "play3_2025-12-01T08-45-39-119Z.png"
   },
   {
-    "name": "snapfire_qb_zone",
+    "name": "snapfire_qb_zone-3",
     "display_name": "QB Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
     "image_file": "play3_2025-12-01T08-45-40-003Z.png"
   },
   {
-    "name": "snapfire_y_corner",
+    "name": "snapfire_y_corner-3",
     "display_name": "Y Corner",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Flex",
@@ -3078,14 +3078,14 @@
     "image_file": "play3_2025-12-01T08-45-43-690Z.png"
   },
   {
-    "name": "snapfire_read_option",
+    "name": "snapfire_read_option-4",
     "display_name": "Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trips TE Flex",
     "image_file": "play3_2025-12-01T08-45-44-493Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-11",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trips TE Flex",
@@ -3106,7 +3106,7 @@
     "image_file": "play3_2025-12-01T08-45-46-799Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-12",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Y-Flex",
@@ -3120,7 +3120,7 @@
     "image_file": "play3_2025-12-01T08-45-48-761Z.png"
   },
   {
-    "name": "snapfire_hb_power",
+    "name": "snapfire_hb_power-4",
     "display_name": "HB Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Y-Flex",
@@ -3141,28 +3141,28 @@
     "image_file": "play3_2025-12-01T08-45-51-503Z.png"
   },
   {
-    "name": "snapfire_jet_qb_counter",
+    "name": "snapfire_jet_qb_counter-2",
     "display_name": "Jet QB Counter",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
     "image_file": "play3_2025-12-01T08-45-52-935Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-8",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
     "image_file": "play3_2025-12-01T08-45-53-692Z.png"
   },
   {
-    "name": "snapfire_four_verticals",
+    "name": "snapfire_four_verticals-6",
     "display_name": "Four Verticals",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
     "image_file": "play3_2025-12-01T08-45-54-449Z.png"
   },
   {
-    "name": "snapfire_qb_power",
+    "name": "snapfire_qb_power-2",
     "display_name": "QB Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Wing Slot Offset",
@@ -3190,7 +3190,7 @@
     "image_file": "play3_2025-12-01T08-45-58-462Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-13",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Ace",
@@ -3218,7 +3218,7 @@
     "image_file": "play3_2025-12-01T08-46-01-760Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-14",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun U Off Trips Flex",
@@ -3246,14 +3246,14 @@
     "image_file": "play3_2025-12-01T08-46-05-166Z.png"
   },
   {
-    "name": "snapfire_rpo_bubble_y_pop",
+    "name": "snapfire_rpo_bubble_y_pop-2",
     "display_name": "RPO Bubble Y Pop",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Trips Offset",
     "image_file": "play3_2025-12-01T08-46-06-404Z.png"
   },
   {
-    "name": "snapfire_duo",
+    "name": "snapfire_duo-7",
     "display_name": "Duo",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Y Trips Offset",
@@ -3295,14 +3295,14 @@
     "image_file": "play3_2025-12-01T08-46-12-067Z.png"
   },
   {
-    "name": "snapfire_y_stick",
+    "name": "snapfire_y_stick-2",
     "display_name": "Y Stick",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Slot",
     "image_file": "play3_2025-12-01T08-46-12-728Z.png"
   },
   {
-    "name": "snapfire_45_quick_base",
+    "name": "snapfire_45_quick_base-3",
     "display_name": "45 Quick Base",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Spread Y-Slot",
@@ -3323,7 +3323,7 @@
     "image_file": "play3_2025-12-01T08-46-15-400Z.png"
   },
   {
-    "name": "snapfire_qb_blast",
+    "name": "snapfire_qb_blast-2",
     "display_name": "QB Blast",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trio HB Wk",
@@ -3337,14 +3337,14 @@
     "image_file": "play3_2025-12-01T08-46-17-488Z.png"
   },
   {
-    "name": "snapfire_strong_flood",
+    "name": "snapfire_strong_flood-2",
     "display_name": "Strong Flood",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
     "image_file": "play3_2025-12-01T08-46-18-195Z.png"
   },
   {
-    "name": "snapfire_y_corner",
+    "name": "snapfire_y_corner-4",
     "display_name": "Y Corner",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -3358,14 +3358,14 @@
     "image_file": "play3_2025-12-01T08-46-19-789Z.png"
   },
   {
-    "name": "snapfire_speed_option",
+    "name": "snapfire_speed_option-4",
     "display_name": "Speed Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
     "image_file": "play3_2025-12-01T08-46-21-195Z.png"
   },
   {
-    "name": "snapfire_y_sail",
+    "name": "snapfire_y_sail-2",
     "display_name": "Y Sail",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Trey Open",
@@ -3393,7 +3393,7 @@
     "image_file": "play3_2025-12-01T08-46-24-773Z.png"
   },
   {
-    "name": "snapfire_y_trail",
+    "name": "snapfire_y_trail-2",
     "display_name": "Y Trail",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Bunch Open Offset",
@@ -3407,7 +3407,7 @@
     "image_file": "play3_2025-12-01T08-46-26-347Z.png"
   },
   {
-    "name": "snapfire_rpo_alert_bubble",
+    "name": "snapfire_rpo_alert_bubble-5",
     "display_name": "RPO Alert Bubble",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun U Off Trips",
@@ -3435,7 +3435,7 @@
     "image_file": "play3_2025-12-01T08-46-30-043Z.png"
   },
   {
-    "name": "snapfire_read_option",
+    "name": "snapfire_read_option-5",
     "display_name": "Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun U Off Trips",
@@ -3456,7 +3456,7 @@
     "image_file": "play3_2025-12-01T08-46-32-733Z.png"
   },
   {
-    "name": "snapfire_rpo_zone_alert_omaha",
+    "name": "snapfire_rpo_zone_alert_omaha-2",
     "display_name": "RPO Zone Alert Omaha",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off Wk",
@@ -3505,7 +3505,7 @@
     "image_file": "play3_2025-12-01T08-46-38-610Z.png"
   },
   {
-    "name": "snapfire_corner_strike",
+    "name": "snapfire_corner_strike-4",
     "display_name": "Corner Strike",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Y Off Wk",
@@ -3540,7 +3540,7 @@
     "image_file": "play3_2025-12-01T08-46-42-919Z.png"
   },
   {
-    "name": "snapfire_inside_zone",
+    "name": "snapfire_inside_zone-15",
     "display_name": "Inside Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
@@ -3554,14 +3554,14 @@
     "image_file": "play3_2025-12-01T08-46-44-426Z.png"
   },
   {
-    "name": "snapfire_drive",
+    "name": "snapfire_drive-2",
     "display_name": "Drive",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
     "image_file": "play3_2025-12-01T08-46-45-169Z.png"
   },
   {
-    "name": "snapfire_mesh_spot",
+    "name": "snapfire_mesh_spot-3",
     "display_name": "Mesh Spot",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Tight Open",
@@ -3575,7 +3575,7 @@
     "image_file": "play3_2025-12-01T08-46-52-166Z.png"
   },
   {
-    "name": "snapfire_y_trail",
+    "name": "snapfire_y_trail-3",
     "display_name": "Y Trail",
     "system": "SNAPFIRE",
     "formation_family": "Singleback Y Trips",
@@ -3589,7 +3589,7 @@
     "image_file": "play3_2025-12-01T08-46-57-940Z.png"
   },
   {
-    "name": "snapfire_hb_stretch",
+    "name": "snapfire_hb_stretch-2",
     "display_name": "HB Stretch",
     "system": "SNAPFIRE",
     "formation_family": "Strong I Y Off Close",
@@ -3603,21 +3603,21 @@
     "image_file": "play3_2025-12-01T08-46-59-360Z.png"
   },
   {
-    "name": "snapfire_hb_blunt_dive",
+    "name": "snapfire_hb_blunt_dive-2",
     "display_name": "HB Blunt Dive",
     "system": "SNAPFIRE",
     "formation_family": "Strong I Y Off Close",
     "image_file": "play3_2025-12-01T08-47-00-157Z.png"
   },
   {
-    "name": "snapfire_mesh_spot",
+    "name": "snapfire_mesh_spot-4",
     "display_name": "Mesh Spot",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Ace Double Wing",
     "image_file": "play3_2025-12-01T08-47-06-544Z.png"
   },
   {
-    "name": "snapfire_speed_option",
+    "name": "snapfire_speed_option-5",
     "display_name": "Speed Option",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Ace Double Wing",
@@ -3638,35 +3638,35 @@
     "image_file": "play3_2025-12-01T08-47-09-027Z.png"
   },
   {
-    "name": "snapfire_rpo_read_flat_wheel",
+    "name": "snapfire_rpo_read_flat_wheel-2",
     "display_name": "RPO Read Flat Wheel",
     "system": "SNAPFIRE",
     "formation_family": "Pistol Tight Y Off Flex",
     "image_file": "play3_2025-12-01T08-47-09-690Z.png"
   },
   {
-    "name": "snapfire_read_option",
+    "name": "snapfire_read_option-6",
     "display_name": "Read Option",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
     "image_file": "play3_2025-12-01T08-47-10-989Z.png"
   },
   {
-    "name": "snapfire_inside_zone_split",
+    "name": "snapfire_inside_zone_split-2",
     "display_name": "Inside Zone Split",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
     "image_file": "play3_2025-12-01T08-47-11-745Z.png"
   },
   {
-    "name": "snapfire_hb_stretch",
+    "name": "snapfire_hb_stretch-3",
     "display_name": "HB Stretch",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
     "image_file": "play3_2025-12-01T08-47-12-541Z.png"
   },
   {
-    "name": "snapfire_shock",
+    "name": "snapfire_shock-2",
     "display_name": "Shock",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
@@ -3680,7 +3680,7 @@
     "image_file": "play3_2025-12-01T08-47-14-194Z.png"
   },
   {
-    "name": "snapfire_jet_touch_pass",
+    "name": "snapfire_jet_touch_pass-9",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Pistol U Off Trips",
@@ -3785,7 +3785,7 @@
     "image_file": "play1_2025-12-01T08-52-21-333Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-2",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "4-3 Over Walk",
@@ -3876,14 +3876,14 @@
     "image_file": "play1_2025-12-01T08-52-40-840Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-2",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
     "image_file": "play1_2025-12-01T08-52-41-697Z.png"
   },
   {
-    "name": "shinobi_cover_6",
+    "name": "shinobi_cover_6-2",
     "display_name": "Cover 6",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
@@ -3904,7 +3904,7 @@
     "image_file": "play1_2025-12-01T08-52-45-513Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-3",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Under",
@@ -3974,7 +3974,7 @@
     "image_file": "play1_2025-12-01T08-53-00-038Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_mable",
+    "name": "shinobi_cover_3_buzz_mable-2",
     "display_name": "Cover 3 Buzz Mable",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
@@ -3988,14 +3988,14 @@
     "image_file": "play1_2025-12-01T08-53-01-358Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-2",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play1_2025-12-01T08-53-02-006Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-2",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
@@ -4016,14 +4016,14 @@
     "image_file": "play1_2025-12-01T08-53-04-481Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-3",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play1_2025-12-01T08-53-06-972Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-2",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
@@ -4065,14 +4065,14 @@
     "image_file": "play1_2025-12-01T08-53-12-870Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_0",
+    "name": "shinobi_edge_blitz_0-2",
     "display_name": "Edge Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play1_2025-12-01T08-53-13-699Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-4",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
@@ -4086,35 +4086,35 @@
     "image_file": "play1_2025-12-01T08-53-16-287Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-3",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel Double Mug",
     "image_file": "play1_2025-12-01T08-53-19-545Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-2",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Nickel Double Mug",
     "image_file": "play1_2025-12-01T08-53-21-151Z.png"
   },
   {
-    "name": "shinobi_cover_6",
+    "name": "shinobi_cover_6-3",
     "display_name": "Cover 6",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Odd",
     "image_file": "play1_2025-12-01T08-53-22-916Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-3",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play1_2025-12-01T08-53-26-621Z.png"
   },
   {
-    "name": "shinobi_double_bracket",
+    "name": "shinobi_double_bracket-2",
     "display_name": "Double Bracket",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -4135,7 +4135,7 @@
     "image_file": "play1_2025-12-01T08-53-28-828Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_0",
+    "name": "shinobi_edge_blitz_0-3",
     "display_name": "Edge Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -4156,7 +4156,7 @@
     "image_file": "play1_2025-12-01T08-53-30-952Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-5",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -4170,14 +4170,14 @@
     "image_file": "play1_2025-12-01T08-53-32-586Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop_field",
+    "name": "shinobi_cover_4_drop_field-2",
     "display_name": "Cover 4 Drop Field",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play1_2025-12-01T08-53-33-360Z.png"
   },
   {
-    "name": "shinobi_cover_1_lb_blitz",
+    "name": "shinobi_cover_1_lb_blitz-2",
     "display_name": "Cover 1 LB Blitz",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -4212,14 +4212,14 @@
     "image_file": "play1_2025-12-01T08-53-37-988Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-2",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play1_2025-12-01T08-53-42-691Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-2",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
@@ -4240,14 +4240,14 @@
     "image_file": "play1_2025-12-01T08-53-45-800Z.png"
   },
   {
-    "name": "shinobi_cover_1_lb_blitz",
+    "name": "shinobi_cover_1_lb_blitz-3",
     "display_name": "Cover 1 LB Blitz",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play1_2025-12-01T08-53-46-522Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-3",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
@@ -4261,7 +4261,7 @@
     "image_file": "play1_2025-12-01T08-53-48-138Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-4",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
@@ -4282,7 +4282,7 @@
     "image_file": "play1_2025-12-01T08-53-51-350Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-5",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
@@ -4310,7 +4310,7 @@
     "image_file": "play1_2025-12-01T08-53-54-759Z.png"
   },
   {
-    "name": "shinobi_1_double_te_man_coverage",
+    "name": "shinobi_1_double_te_man_coverage-2",
     "display_name": "1 Double TE Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -4324,14 +4324,14 @@
     "image_file": "play1_2025-12-01T08-53-56-541Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber",
+    "name": "shinobi_cover_1_robber-2",
     "display_name": "Cover 1 Robber",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play1_2025-12-01T08-53-57-564Z.png"
   },
   {
-    "name": "shinobi_cover_1_lb_blitz",
+    "name": "shinobi_cover_1_lb_blitz-4",
     "display_name": "Cover 1 LB Blitz",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -4352,7 +4352,7 @@
     "image_file": "play1_2025-12-01T08-54-00-020Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-4",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -4380,14 +4380,14 @@
     "image_file": "play1_2025-12-01T08-54-03-099Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-4",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play1_2025-12-01T08-54-03-916Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-3",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Single Mug",
@@ -4408,7 +4408,7 @@
     "image_file": "play1_2025-12-01T08-54-07-052Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-5",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Single Mug",
@@ -4429,14 +4429,14 @@
     "image_file": "play1_2025-12-01T08-54-13-618Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-3",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play1_2025-12-01T08-54-14-322Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-6",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
@@ -4450,14 +4450,14 @@
     "image_file": "play1_2025-12-01T08-54-15-667Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-6",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play1_2025-12-01T08-54-16-377Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-4",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
@@ -4478,14 +4478,14 @@
     "image_file": "play1_2025-12-01T08-54-18-448Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-6",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play1_2025-12-01T08-54-19-269Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-5",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
@@ -4499,7 +4499,7 @@
     "image_file": "play1_2025-12-01T08-54-21-652Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber_press",
+    "name": "shinobi_cover_1_robber_press-2",
     "display_name": "Cover 1 Robber Press",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
@@ -4513,7 +4513,7 @@
     "image_file": "play1_2025-12-01T08-54-23-003Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-7",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
@@ -4534,7 +4534,7 @@
     "image_file": "play1_2025-12-01T08-54-25-789Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop",
+    "name": "shinobi_cover_4_drop-2",
     "display_name": "Cover 4 Drop",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
@@ -4583,7 +4583,7 @@
     "image_file": "play1_2025-12-01T08-54-31-778Z.png"
   },
   {
-    "name": "shinobi_cover_4_palms",
+    "name": "shinobi_cover_4_palms-2",
     "display_name": "Cover 4 Palms",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
@@ -4611,7 +4611,7 @@
     "image_file": "play1_2025-12-01T08-54-34-747Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-4",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
@@ -4625,7 +4625,7 @@
     "image_file": "play1_2025-12-01T08-54-36-337Z.png"
   },
   {
-    "name": "shinobi_hot_blitz_3",
+    "name": "shinobi_hot_blitz_3-2",
     "display_name": "Hot Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
@@ -4653,7 +4653,7 @@
     "image_file": "play1_2025-12-01T08-54-46-064Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop",
+    "name": "shinobi_cover_4_drop-3",
     "display_name": "Cover 4 Drop",
     "system": "SHINOBI",
     "formation_family": "Quarter Normal",
@@ -4667,7 +4667,7 @@
     "image_file": "play1_2025-12-01T08-54-48-383Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-8",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",
@@ -4688,14 +4688,14 @@
     "image_file": "play1_2025-12-01T08-54-52-993Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-6",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",
     "image_file": "play1_2025-12-01T08-54-53-700Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber",
+    "name": "shinobi_cover_1_robber-3",
     "display_name": "Cover 1 Robber",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",
@@ -4709,7 +4709,7 @@
     "image_file": "play1_2025-12-01T08-54-58-867Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-9",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Penny 3 High",
@@ -4723,56 +4723,56 @@
     "image_file": "play2_2025-12-01T08-52-04-512Z.png"
   },
   {
-    "name": "shinobi_cover_6_invert",
+    "name": "shinobi_cover_6_invert-2",
     "display_name": "Cover 6 Invert",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Penny 3 High",
     "image_file": "play2_2025-12-01T08-52-05-351Z.png"
   },
   {
-    "name": "shinobi_cover_2_roll",
+    "name": "shinobi_cover_2_roll-2",
     "display_name": "Cover 2 Roll",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Penny 3 High",
     "image_file": "play2_2025-12-01T08-52-06-246Z.png"
   },
   {
-    "name": "shinobi_double_bracket",
+    "name": "shinobi_double_bracket-3",
     "display_name": "Double Bracket",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
     "image_file": "play2_2025-12-01T08-52-07-704Z.png"
   },
   {
-    "name": "shinobi_hot_blitz_3",
+    "name": "shinobi_hot_blitz_3-3",
     "display_name": "Hot Blitz 3",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
     "image_file": "play2_2025-12-01T08-52-08-489Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-10",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
     "image_file": "play2_2025-12-01T08-52-09-285Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop_field",
+    "name": "shinobi_cover_4_drop_field-3",
     "display_name": "Cover 4 Drop Field",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
     "image_file": "play2_2025-12-01T08-52-10-066Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-7",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
     "image_file": "play2_2025-12-01T08-52-10-799Z.png"
   },
   {
-    "name": "shinobi_cover_6",
+    "name": "shinobi_cover_6-4",
     "display_name": "Cover 6",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
@@ -4821,14 +4821,14 @@
     "image_file": "play2_2025-12-01T08-52-25-138Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-8",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "4-3 Over Walk",
     "image_file": "play2_2025-12-01T08-52-25-832Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-11",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "4-3 Odd",
@@ -4842,28 +4842,28 @@
     "image_file": "play2_2025-12-01T08-52-27-957Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-4",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "4-3 Odd",
     "image_file": "play2_2025-12-01T08-52-28-629Z.png"
   },
   {
-    "name": "shinobi_sam_will_blitz",
+    "name": "shinobi_sam_will_blitz-2",
     "display_name": "Sam Will Blitz",
     "system": "SHINOBI",
     "formation_family": "4-3 Even",
     "image_file": "play2_2025-12-01T08-52-30-137Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-5",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "4-3 Even",
     "image_file": "play2_2025-12-01T08-52-30-887Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-5",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "4-3 Even 6-1",
@@ -4877,7 +4877,7 @@
     "image_file": "play2_2025-12-01T08-52-37-422Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-7",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
@@ -4898,14 +4898,14 @@
     "image_file": "play2_2025-12-01T08-52-40-840Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-6",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
     "image_file": "play2_2025-12-01T08-52-41-697Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_match",
+    "name": "shinobi_cover_3_buzz_match-2",
     "display_name": "Cover 3 Buzz Match",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
@@ -4919,21 +4919,21 @@
     "image_file": "play2_2025-12-01T08-52-44-796Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-7",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Under",
     "image_file": "play2_2025-12-01T08-52-45-513Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-12",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Under",
     "image_file": "play2_2025-12-01T08-52-46-147Z.png"
   },
   {
-    "name": "shinobi_cover_2_invert",
+    "name": "shinobi_cover_2_invert-2",
     "display_name": "Cover 2 Invert",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Under",
@@ -4982,14 +4982,14 @@
     "image_file": "play2_2025-12-01T08-52-58-461Z.png"
   },
   {
-    "name": "shinobi_cover_4_palms",
+    "name": "shinobi_cover_4_palms-3",
     "display_name": "Cover 4 Palms",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play2_2025-12-01T08-52-59-374Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber_press",
+    "name": "shinobi_cover_1_robber_press-3",
     "display_name": "Cover 1 Robber Press",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
@@ -5003,7 +5003,7 @@
     "image_file": "play2_2025-12-01T08-53-00-780Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-6",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
@@ -5017,49 +5017,49 @@
     "image_file": "play2_2025-12-01T08-53-02-006Z.png"
   },
   {
-    "name": "shinobi_1_double_wr1_man_coverage",
+    "name": "shinobi_1_double_wr1_man_coverage-2",
     "display_name": "1 Double WR1 Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play2_2025-12-01T08-53-02-760Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-5",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play2_2025-12-01T08-53-03-479Z.png"
   },
   {
-    "name": "shinobi_cover_9_match",
+    "name": "shinobi_cover_9_match-2",
     "display_name": "Cover 9 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play2_2025-12-01T08-53-04-481Z.png"
   },
   {
-    "name": "shinobi_double_bracket_switch",
+    "name": "shinobi_double_bracket_switch-2",
     "display_name": "Double Bracket Switch",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play2_2025-12-01T08-53-06-972Z.png"
   },
   {
-    "name": "shinobi_fs_will_blitz_0",
+    "name": "shinobi_fs_will_blitz_0-2",
     "display_name": "FS Will Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play2_2025-12-01T08-53-07-769Z.png"
   },
   {
-    "name": "shinobi_nickel_blitz_3",
+    "name": "shinobi_nickel_blitz_3-2",
     "display_name": "Nickel Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play2_2025-12-01T08-53-08-658Z.png"
   },
   {
-    "name": "shinobi_1_double_wr1",
+    "name": "shinobi_1_double_wr1-2",
     "display_name": "1 Double WR1",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
@@ -5080,14 +5080,14 @@
     "image_file": "play2_2025-12-01T08-53-11-978Z.png"
   },
   {
-    "name": "shinobi_cover_9_show_2",
+    "name": "shinobi_cover_9_show_2-2",
     "display_name": "Cover 9 Show 2",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play2_2025-12-01T08-53-12-870Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-9",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
@@ -5122,14 +5122,14 @@
     "image_file": "play2_2025-12-01T08-53-21-151Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-7",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Odd",
     "image_file": "play2_2025-12-01T08-53-22-916Z.png"
   },
   {
-    "name": "shinobi_cover_9_show_2",
+    "name": "shinobi_cover_9_show_2-3",
     "display_name": "Cover 9 Show 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -5150,14 +5150,14 @@
     "image_file": "play2_2025-12-01T08-53-28-163Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_3",
+    "name": "shinobi_edge_blitz_3-2",
     "display_name": "Edge Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-28-828Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-3",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -5171,63 +5171,63 @@
     "image_file": "play2_2025-12-01T08-53-30-279Z.png"
   },
   {
-    "name": "shinobi_1_double_wr2_man_coverage",
+    "name": "shinobi_1_double_wr2_man_coverage-2",
     "display_name": "1 Double WR2 Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-30-952Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_match",
+    "name": "shinobi_cover_3_buzz_match-3",
     "display_name": "Cover 3 Buzz Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-31-698Z.png"
   },
   {
-    "name": "shinobi_sim_pressure_3",
+    "name": "shinobi_sim_pressure_3-2",
     "display_name": "Sim Pressure 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-32-586Z.png"
   },
   {
-    "name": "shinobi_nickel_sim_2",
+    "name": "shinobi_nickel_sim_2-2",
     "display_name": "Nickel Sim 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-33-360Z.png"
   },
   {
-    "name": "shinobi_cover_2_roll",
+    "name": "shinobi_cover_2_roll-3",
     "display_name": "Cover 2 Roll",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-34-045Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-8",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-34-853Z.png"
   },
   {
-    "name": "shinobi_cross_sim_2",
+    "name": "shinobi_cross_sim_2-2",
     "display_name": "Cross Sim 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play2_2025-12-01T08-53-35-790Z.png"
   },
   {
-    "name": "shinobi_nickel_blitz_0",
+    "name": "shinobi_nickel_blitz_0-2",
     "display_name": "Nickel Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play2_2025-12-01T08-53-37-275Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-7",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
@@ -5241,35 +5241,35 @@
     "image_file": "play2_2025-12-01T08-53-42-691Z.png"
   },
   {
-    "name": "shinobi_cover_6_match",
+    "name": "shinobi_cover_6_match-2",
     "display_name": "Cover 6 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play2_2025-12-01T08-53-43-518Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-13",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play2_2025-12-01T08-53-44-387Z.png"
   },
   {
-    "name": "shinobi_nickel_blitz_3",
+    "name": "shinobi_nickel_blitz_3-3",
     "display_name": "Nickel Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play2_2025-12-01T08-53-45-800Z.png"
   },
   {
-    "name": "shinobi_hot_blitz_3",
+    "name": "shinobi_hot_blitz_3-4",
     "display_name": "Hot Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play2_2025-12-01T08-53-46-522Z.png"
   },
   {
-    "name": "shinobi_nickel_blitz_1",
+    "name": "shinobi_nickel_blitz_1-2",
     "display_name": "Nickel Blitz 1",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
@@ -5283,7 +5283,7 @@
     "image_file": "play2_2025-12-01T08-53-48-138Z.png"
   },
   {
-    "name": "shinobi_nickel_blitz_2",
+    "name": "shinobi_nickel_blitz_2-2",
     "display_name": "Nickel Blitz 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
@@ -5297,14 +5297,14 @@
     "image_file": "play2_2025-12-01T08-53-50-637Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-14",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Double Mug",
     "image_file": "play2_2025-12-01T08-53-51-350Z.png"
   },
   {
-    "name": "shinobi_cover_1_lb_blitz",
+    "name": "shinobi_cover_1_lb_blitz-5",
     "display_name": "Cover 1 LB Blitz",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
@@ -5332,7 +5332,7 @@
     "image_file": "play2_2025-12-01T08-53-54-759Z.png"
   },
   {
-    "name": "shinobi_sim_pressure_3",
+    "name": "shinobi_sim_pressure_3-3",
     "display_name": "Sim Pressure 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -5346,14 +5346,14 @@
     "image_file": "play2_2025-12-01T08-53-56-541Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_mable",
+    "name": "shinobi_cover_3_buzz_mable-3",
     "display_name": "Cover 3 Buzz Mable",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play2_2025-12-01T08-53-57-564Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_0",
+    "name": "shinobi_edge_blitz_0-4",
     "display_name": "Edge Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -5367,7 +5367,7 @@
     "image_file": "play2_2025-12-01T08-53-59-183Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-4",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -5388,21 +5388,21 @@
     "image_file": "play2_2025-12-01T08-54-01-588Z.png"
   },
   {
-    "name": "shinobi_cover_2_roll",
+    "name": "shinobi_cover_2_roll-4",
     "display_name": "Cover 2 Roll",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play2_2025-12-01T08-54-02-367Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-8",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play2_2025-12-01T08-54-03-099Z.png"
   },
   {
-    "name": "shinobi_overload_3_seam",
+    "name": "shinobi_overload_3_seam-2",
     "display_name": "Overload 3 Seam",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -5416,14 +5416,14 @@
     "image_file": "play2_2025-12-01T08-54-05-628Z.png"
   },
   {
-    "name": "shinobi_nickel_blitz_3",
+    "name": "shinobi_nickel_blitz_3-4",
     "display_name": "Nickel Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Single Mug",
     "image_file": "play2_2025-12-01T08-54-06-341Z.png"
   },
   {
-    "name": "shinobi_nickel_2_trap",
+    "name": "shinobi_nickel_2_trap-2",
     "display_name": "Nickel 2 Trap",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Single Mug",
@@ -5444,84 +5444,84 @@
     "image_file": "play2_2025-12-01T08-54-12-981Z.png"
   },
   {
-    "name": "shinobi_cover_9_show_2",
+    "name": "shinobi_cover_9_show_2-4",
     "display_name": "Cover 9 Show 2",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-13-618Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_3",
+    "name": "shinobi_edge_blitz_3-3",
     "display_name": "Edge Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-14-322Z.png"
   },
   {
-    "name": "shinobi_dbl_safety_blitz",
+    "name": "shinobi_dbl_safety_blitz-2",
     "display_name": "Dbl Safety Blitz",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-14-955Z.png"
   },
   {
-    "name": "shinobi_field_sim_3_blitz",
+    "name": "shinobi_field_sim_3_blitz-2",
     "display_name": "Field Sim 3 Blitz",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-15-667Z.png"
   },
   {
-    "name": "shinobi_over_storm_brave_blitz",
+    "name": "shinobi_over_storm_brave_blitz-2",
     "display_name": "Over Storm Brave Blitz",
     "system": "SHINOBI",
     "formation_family": "Over Storm Brave",
     "image_file": "play2_2025-12-01T08-54-16-377Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_0",
+    "name": "shinobi_edge_blitz_0-5",
     "display_name": "Edge Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-17-145Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-5",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-17-823Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_mable",
+    "name": "shinobi_cover_3_buzz_mable-4",
     "display_name": "Cover 3 Buzz Mable",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-18-448Z.png"
   },
   {
-    "name": "shinobi_bracket_switch_willie",
+    "name": "shinobi_bracket_switch_willie-2",
     "display_name": "Bracket Switch Willie",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play2_2025-12-01T08-54-19-269Z.png"
   },
   {
-    "name": "shinobi_cover_4_palms",
+    "name": "shinobi_cover_4_palms-4",
     "display_name": "Cover 4 Palms",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play2_2025-12-01T08-54-20-994Z.png"
   },
   {
-    "name": "shinobi_3_double_buzz",
+    "name": "shinobi_3_double_buzz-2",
     "display_name": "3 Double Buzz",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play2_2025-12-01T08-54-21-652Z.png"
   },
   {
-    "name": "shinobi_dbl_safety_blitz",
+    "name": "shinobi_dbl_safety_blitz-3",
     "display_name": "Dbl Safety Blitz",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
@@ -5535,28 +5535,28 @@
     "image_file": "play2_2025-12-01T08-54-23-003Z.png"
   },
   {
-    "name": "shinobi_cover_1_contain",
+    "name": "shinobi_cover_1_contain-2",
     "display_name": "Cover 1 Contain",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play2_2025-12-01T08-54-23-757Z.png"
   },
   {
-    "name": "shinobi_cover_2_hard_flat",
+    "name": "shinobi_cover_2_hard_flat-2",
     "display_name": "Cover 2 Hard Flat",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play2_2025-12-01T08-54-24-417Z.png"
   },
   {
-    "name": "shinobi_overload_3_seam",
+    "name": "shinobi_overload_3_seam-3",
     "display_name": "Overload 3 Seam",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
     "image_file": "play2_2025-12-01T08-54-25-789Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-15",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
@@ -5591,28 +5591,28 @@
     "image_file": "play2_2025-12-01T08-54-29-562Z.png"
   },
   {
-    "name": "shinobi_fs_zone_blitz",
+    "name": "shinobi_fs_zone_blitz-2",
     "display_name": "FS Zone Blitz",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
     "image_file": "play2_2025-12-01T08-54-30-353Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-6",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play2_2025-12-01T08-54-31-778Z.png"
   },
   {
-    "name": "shinobi_dbl_safety_go",
+    "name": "shinobi_dbl_safety_go-2",
     "display_name": "Dbl Safety Go",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play2_2025-12-01T08-54-32-420Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-16",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
@@ -5626,21 +5626,21 @@
     "image_file": "play2_2025-12-01T08-54-34-067Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber_press",
+    "name": "shinobi_cover_1_robber_press-4",
     "display_name": "Cover 1 Robber Press",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play2_2025-12-01T08-54-34-747Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-8",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play2_2025-12-01T08-54-35-571Z.png"
   },
   {
-    "name": "shinobi_cover_6_match",
+    "name": "shinobi_cover_6_match-3",
     "display_name": "Cover 6 Match",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
@@ -5689,14 +5689,14 @@
     "image_file": "play2_2025-12-01T08-54-48-383Z.png"
   },
   {
-    "name": "shinobi_cross_3_fire",
+    "name": "shinobi_cross_3_fire-2",
     "display_name": "Cross 3 Fire",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",
     "image_file": "play2_2025-12-01T08-54-51-494Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-9",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",
@@ -5731,7 +5731,7 @@
     "image_file": "play2_2025-12-01T08-54-58-867Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop",
+    "name": "shinobi_cover_4_drop-4",
     "display_name": "Cover 4 Drop",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Penny 3 High",
@@ -5745,7 +5745,7 @@
     "image_file": "play3_2025-12-01T08-52-04-512Z.png"
   },
   {
-    "name": "shinobi_hot_blitz_3",
+    "name": "shinobi_hot_blitz_3-5",
     "display_name": "Hot Blitz 3",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Penny 3 High",
@@ -5759,7 +5759,7 @@
     "image_file": "play3_2025-12-01T08-52-06-246Z.png"
   },
   {
-    "name": "shinobi_cover_1_ss_blitz",
+    "name": "shinobi_cover_1_ss_blitz-2",
     "display_name": "Cover 1 SS Blitz",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
@@ -5773,7 +5773,7 @@
     "image_file": "play3_2025-12-01T08-52-08-489Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-7",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
@@ -5787,14 +5787,14 @@
     "image_file": "play3_2025-12-01T08-52-10-066Z.png"
   },
   {
-    "name": "shinobi_cover_4_palms",
+    "name": "shinobi_cover_4_palms-5",
     "display_name": "Cover 4 Palms",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
     "image_file": "play3_2025-12-01T08-52-10-799Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-8",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "3-3-5 Over Flex",
@@ -5829,7 +5829,7 @@
     "image_file": "play3_2025-12-01T08-52-21-333Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-6",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "4-3 Over Walk",
@@ -5843,14 +5843,14 @@
     "image_file": "play3_2025-12-01T08-52-25-138Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-10",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "4-3 Over Walk",
     "image_file": "play3_2025-12-01T08-52-25-832Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber_press",
+    "name": "shinobi_cover_1_robber_press-5",
     "display_name": "Cover 1 Robber Press",
     "system": "SHINOBI",
     "formation_family": "4-3 Odd",
@@ -5864,21 +5864,21 @@
     "image_file": "play3_2025-12-01T08-52-27-957Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-10",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "4-3 Odd",
     "image_file": "play3_2025-12-01T08-52-28-629Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-9",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "4-3 Even 6-1",
     "image_file": "play3_2025-12-01T08-52-30-137Z.png"
   },
   {
-    "name": "shinobi_mike_will_blitz",
+    "name": "shinobi_mike_will_blitz-2",
     "display_name": "Mike Will Blitz",
     "system": "SHINOBI",
     "formation_family": "4-3 Even 6-1",
@@ -5906,14 +5906,14 @@
     "image_file": "play3_2025-12-01T08-52-38-322Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-11",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
     "image_file": "play3_2025-12-01T08-52-39-229Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-9",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Over G",
@@ -5934,7 +5934,7 @@
     "image_file": "play3_2025-12-01T08-52-42-531Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-10",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Under",
@@ -5962,7 +5962,7 @@
     "image_file": "play3_2025-12-01T08-52-46-878Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-10",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Big Nickel Under",
@@ -6004,28 +6004,28 @@
     "image_file": "play3_2025-12-01T08-52-58-461Z.png"
   },
   {
-    "name": "shinobi_1_double_wr2_man_coverage",
+    "name": "shinobi_1_double_wr2_man_coverage-3",
     "display_name": "1 Double WR2 Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play3_2025-12-01T08-52-59-374Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-11",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play3_2025-12-01T08-53-00-038Z.png"
   },
   {
-    "name": "shinobi_cover_6_match",
+    "name": "shinobi_cover_6_match-4",
     "display_name": "Cover 6 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
     "image_file": "play3_2025-12-01T08-53-00-780Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-9",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
@@ -6039,7 +6039,7 @@
     "image_file": "play3_2025-12-01T08-53-02-006Z.png"
   },
   {
-    "name": "shinobi_nickel_2_trap",
+    "name": "shinobi_nickel_2_trap-3",
     "display_name": "Nickel 2 Trap",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Odd",
@@ -6060,14 +6060,14 @@
     "image_file": "play3_2025-12-01T08-53-04-481Z.png"
   },
   {
-    "name": "shinobi_cover_1_lb_blitz",
+    "name": "shinobi_cover_1_lb_blitz-6",
     "display_name": "Cover 1 LB Blitz",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-06-972Z.png"
   },
   {
-    "name": "shinobi_bracket_switch_willie",
+    "name": "shinobi_bracket_switch_willie-3",
     "display_name": "Bracket Switch Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
@@ -6081,56 +6081,56 @@
     "image_file": "play3_2025-12-01T08-53-08-658Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-17",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-10-321Z.png"
   },
   {
-    "name": "shinobi_1_double_te_man_coverage",
+    "name": "shinobi_1_double_te_man_coverage-3",
     "display_name": "1 Double TE Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-11-126Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_mable",
+    "name": "shinobi_cover_3_buzz_mable-5",
     "display_name": "Cover 3 Buzz Mable",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-11-978Z.png"
   },
   {
-    "name": "shinobi_nickel_sim_2",
+    "name": "shinobi_nickel_sim_2-3",
     "display_name": "Nickel Sim 2",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-12-870Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-11",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-13-699Z.png"
   },
   {
-    "name": "shinobi_double_bracket",
+    "name": "shinobi_double_bracket-4",
     "display_name": "Double Bracket",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-14-570Z.png"
   },
   {
-    "name": "shinobi_cover_1_contain",
+    "name": "shinobi_cover_1_contain-3",
     "display_name": "Cover 1 Contain",
     "system": "SHINOBI",
     "formation_family": "Nickel Over",
     "image_file": "play3_2025-12-01T08-53-16-287Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-12",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel Double Mug",
@@ -6144,14 +6144,14 @@
     "image_file": "play3_2025-12-01T08-53-21-151Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop",
+    "name": "shinobi_cover_4_drop-5",
     "display_name": "Cover 4 Drop",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Odd",
     "image_file": "play3_2025-12-01T08-53-22-916Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-7",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Odd",
@@ -6165,84 +6165,84 @@
     "image_file": "play3_2025-12-01T08-53-26-621Z.png"
   },
   {
-    "name": "shinobi_tampa_2",
+    "name": "shinobi_tampa_2-18",
     "display_name": "Tampa 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-27-363Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_mable",
+    "name": "shinobi_cover_3_buzz_mable-6",
     "display_name": "Cover 3 Buzz Mable",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-28-163Z.png"
   },
   {
-    "name": "shinobi_double_bracket_switch",
+    "name": "shinobi_double_bracket_switch-3",
     "display_name": "Double Bracket Switch",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-28-828Z.png"
   },
   {
-    "name": "shinobi_cover_4_palms",
+    "name": "shinobi_cover_4_palms-6",
     "display_name": "Cover 4 Palms",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-29-555Z.png"
   },
   {
-    "name": "shinobi_cover_6",
+    "name": "shinobi_cover_6-5",
     "display_name": "Cover 6",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-30-279Z.png"
   },
   {
-    "name": "shinobi_1_double_slot",
+    "name": "shinobi_1_double_slot-2",
     "display_name": "1 Double Slot",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-30-952Z.png"
   },
   {
-    "name": "shinobi_show_ss_sim_2",
+    "name": "shinobi_show_ss_sim_2-2",
     "display_name": "Show SS Sim 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-31-698Z.png"
   },
   {
-    "name": "shinobi_nickel_2_trap",
+    "name": "shinobi_nickel_2_trap-4",
     "display_name": "Nickel 2 Trap",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-32-586Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-12",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-33-360Z.png"
   },
   {
-    "name": "shinobi_bracket_switch_willie",
+    "name": "shinobi_bracket_switch_willie-4",
     "display_name": "Bracket Switch Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-34-045Z.png"
   },
   {
-    "name": "shinobi_fs_will_blitz_0",
+    "name": "shinobi_fs_will_blitz_0-3",
     "display_name": "FS Will Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
     "image_file": "play3_2025-12-01T08-53-34-853Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-8",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Over",
@@ -6256,63 +6256,63 @@
     "image_file": "play3_2025-12-01T08-53-37-275Z.png"
   },
   {
-    "name": "shinobi_cover_1_lb_blitz",
+    "name": "shinobi_cover_1_lb_blitz-7",
     "display_name": "Cover 1 LB Blitz",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play3_2025-12-01T08-53-37-988Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-13",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play3_2025-12-01T08-53-42-691Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-8",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play3_2025-12-01T08-53-43-518Z.png"
   },
   {
-    "name": "shinobi_lb_blitz_0",
+    "name": "shinobi_lb_blitz_0-2",
     "display_name": "LB Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4 Load Mug",
     "image_file": "play3_2025-12-01T08-53-44-387Z.png"
   },
   {
-    "name": "shinobi_cover_6",
+    "name": "shinobi_cover_6-6",
     "display_name": "Cover 6",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play3_2025-12-01T08-53-45-800Z.png"
   },
   {
-    "name": "shinobi_lb_de_twist_3",
+    "name": "shinobi_lb_de_twist_3-2",
     "display_name": "LB DE Twist 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play3_2025-12-01T08-53-46-522Z.png"
   },
   {
-    "name": "shinobi_cover_6_willie",
+    "name": "shinobi_cover_6_willie-9",
     "display_name": "Cover 6 Willie",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play3_2025-12-01T08-53-47-306Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-12",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
     "image_file": "play3_2025-12-01T08-53-48-138Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-10",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Load Mug",
@@ -6326,7 +6326,7 @@
     "image_file": "play3_2025-12-01T08-53-50-637Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-11",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel Load Dbl Mug",
@@ -6347,21 +6347,21 @@
     "image_file": "play3_2025-12-01T08-53-52-914Z.png"
   },
   {
-    "name": "shinobi_fs_will_blitz_0",
+    "name": "shinobi_fs_will_blitz_0-4",
     "display_name": "FS Will Blitz 0",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-53-54-056Z.png"
   },
   {
-    "name": "shinobi_double_bracket_man_coverage",
+    "name": "shinobi_double_bracket_man_coverage-2",
     "display_name": "Double Bracket Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Double Bracket",
     "image_file": "play3_2025-12-01T08-53-54-759Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop_field",
+    "name": "shinobi_cover_4_drop_field-4",
     "display_name": "Cover 4 Drop Field",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -6375,63 +6375,63 @@
     "image_file": "play3_2025-12-01T08-53-56-541Z.png"
   },
   {
-    "name": "shinobi_show_ss_sim_2",
+    "name": "shinobi_show_ss_sim_2-3",
     "display_name": "Show SS Sim 2",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-53-57-564Z.png"
   },
   {
-    "name": "shinobi_cover_1_hole",
+    "name": "shinobi_cover_1_hole-11",
     "display_name": "Cover 1 Hole",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-53-58-401Z.png"
   },
   {
-    "name": "shinobi_double_bracket_switch",
+    "name": "shinobi_double_bracket_switch-4",
     "display_name": "Double Bracket Switch",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-53-59-183Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-14",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-54-00-020Z.png"
   },
   {
-    "name": "shinobi_silver_shoot_pinch",
+    "name": "shinobi_silver_shoot_pinch-2",
     "display_name": "Silver Shoot Pinch",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-54-00-885Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-12",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-54-01-588Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_3",
+    "name": "shinobi_edge_blitz_3-4",
     "display_name": "Edge Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-54-02-367Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-9",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
     "image_file": "play3_2025-12-01T08-54-03-099Z.png"
   },
   {
-    "name": "shinobi_cover_2_invert",
+    "name": "shinobi_cover_2_invert-3",
     "display_name": "Cover 2 Invert",
     "system": "SHINOBI",
     "formation_family": "Nickel 2-4",
@@ -6445,14 +6445,14 @@
     "image_file": "play3_2025-12-01T08-54-05-628Z.png"
   },
   {
-    "name": "shinobi_cover_2_invert",
+    "name": "shinobi_cover_2_invert-4",
     "display_name": "Cover 2 Invert",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Single Mug",
     "image_file": "play3_2025-12-01T08-54-06-341Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-13",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Nickel 3-3 Single Mug",
@@ -6466,42 +6466,42 @@
     "image_file": "play3_2025-12-01T08-54-07-832Z.png"
   },
   {
-    "name": "shinobi_cover_2_invert",
+    "name": "shinobi_cover_2_invert-5",
     "display_name": "Cover 2 Invert",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play3_2025-12-01T08-54-12-981Z.png"
   },
   {
-    "name": "shinobi_1_double_slot_man_coverage",
+    "name": "shinobi_1_double_slot_man_coverage-2",
     "display_name": "1 Double Slot Man Coverage",
     "system": "SHINOBI",
     "formation_family": "1 Double Slot",
     "image_file": "play3_2025-12-01T08-54-13-618Z.png"
   },
   {
-    "name": "shinobi_nickel_2_trap",
+    "name": "shinobi_nickel_2_trap-5",
     "display_name": "Nickel 2 Trap",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play3_2025-12-01T08-54-14-322Z.png"
   },
   {
-    "name": "shinobi_cover_4_quarters",
+    "name": "shinobi_cover_4_quarters-14",
     "display_name": "Cover 4 Quarters",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play3_2025-12-01T08-54-14-955Z.png"
   },
   {
-    "name": "shinobi_1_double_te_man_coverage",
+    "name": "shinobi_1_double_te_man_coverage-4",
     "display_name": "1 Double TE Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
     "image_file": "play3_2025-12-01T08-54-15-667Z.png"
   },
   {
-    "name": "shinobi_1_double_wr1",
+    "name": "shinobi_1_double_wr1-3",
     "display_name": "1 Double WR1",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
@@ -6515,7 +6515,7 @@
     "image_file": "play3_2025-12-01T08-54-17-145Z.png"
   },
   {
-    "name": "shinobi_cover_4_palms",
+    "name": "shinobi_cover_4_palms-7",
     "display_name": "Cover 4 Palms",
     "system": "SHINOBI",
     "formation_family": "Dime 2-3-6",
@@ -6543,28 +6543,28 @@
     "image_file": "play3_2025-12-01T08-54-20-994Z.png"
   },
   {
-    "name": "shinobi_ss_blitz_3",
+    "name": "shinobi_ss_blitz_3-2",
     "display_name": "SS Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play3_2025-12-01T08-54-21-652Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-13",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play3_2025-12-01T08-54-22-348Z.png"
   },
   {
-    "name": "shinobi_cover_3_buzz_match",
+    "name": "shinobi_cover_3_buzz_match-4",
     "display_name": "Cover 3 Buzz Match",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
     "image_file": "play3_2025-12-01T08-54-23-003Z.png"
   },
   {
-    "name": "shinobi_cover_3_cloud",
+    "name": "shinobi_cover_3_cloud-10",
     "display_name": "Cover 3 Cloud",
     "system": "SHINOBI",
     "formation_family": "Dime Normal",
@@ -6599,49 +6599,49 @@
     "image_file": "play3_2025-12-01T08-54-27-451Z.png"
   },
   {
-    "name": "shinobi_overload_blitz",
+    "name": "shinobi_overload_blitz-2",
     "display_name": "Overload Blitz",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
     "image_file": "play3_2025-12-01T08-54-28-136Z.png"
   },
   {
-    "name": "shinobi_cover_1_robber",
+    "name": "shinobi_cover_1_robber-4",
     "display_name": "Cover 1 Robber",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
     "image_file": "play3_2025-12-01T08-54-28-820Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-15",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
     "image_file": "play3_2025-12-01T08-54-29-562Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-14",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Dime 1-4-6",
     "image_file": "play3_2025-12-01T08-54-30-353Z.png"
   },
   {
-    "name": "shinobi_1_double_wr2",
+    "name": "shinobi_1_double_wr2-2",
     "display_name": "1 Double WR2",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play3_2025-12-01T08-54-31-778Z.png"
   },
   {
-    "name": "shinobi_tampa_2_drop",
+    "name": "shinobi_tampa_2_drop-2",
     "display_name": "Tampa 2 Drop",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play3_2025-12-01T08-54-32-420Z.png"
   },
   {
-    "name": "shinobi_double_bracket_man_coverage",
+    "name": "shinobi_double_bracket_man_coverage-3",
     "display_name": "Double Bracket Man Coverage",
     "system": "SHINOBI",
     "formation_family": "Double Bracket",
@@ -6662,28 +6662,28 @@
     "image_file": "play3_2025-12-01T08-54-34-747Z.png"
   },
   {
-    "name": "shinobi_cover_2_man",
+    "name": "shinobi_cover_2_man-15",
     "display_name": "Cover 2 Man",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play3_2025-12-01T08-54-35-571Z.png"
   },
   {
-    "name": "shinobi_edge_blitz_3",
+    "name": "shinobi_edge_blitz_3-5",
     "display_name": "Edge Blitz 3",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play3_2025-12-01T08-54-36-337Z.png"
   },
   {
-    "name": "shinobi_1_double_wr1",
+    "name": "shinobi_1_double_wr1-4",
     "display_name": "1 Double WR1",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
     "image_file": "play3_2025-12-01T08-54-37-283Z.png"
   },
   {
-    "name": "shinobi_cover_4_drop",
+    "name": "shinobi_cover_4_drop-6",
     "display_name": "Cover 4 Drop",
     "system": "SHINOBI",
     "formation_family": "Dime 3-2",
@@ -6697,7 +6697,7 @@
     "image_file": "play3_2025-12-01T08-54-45-362Z.png"
   },
   {
-    "name": "shinobi_3_double_buzz",
+    "name": "shinobi_3_double_buzz-3",
     "display_name": "3 Double Buzz",
     "system": "SHINOBI",
     "formation_family": "Quarter Normal",
@@ -6725,14 +6725,14 @@
     "image_file": "play3_2025-12-01T08-54-51-494Z.png"
   },
   {
-    "name": "shinobi_cover_3_match",
+    "name": "shinobi_cover_3_match-13",
     "display_name": "Cover 3 Match",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",
     "image_file": "play3_2025-12-01T08-54-52-140Z.png"
   },
   {
-    "name": "shinobi_cover_3_sky",
+    "name": "shinobi_cover_3_sky-16",
     "display_name": "Cover 3 Sky",
     "system": "SHINOBI",
     "formation_family": "3-4 Odd",

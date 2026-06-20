@@ -2,6 +2,15 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — Phase 4: cleanup + final QA gate  [data, content]
+**What:** (1) Deduped 354 scheme name slugs so all 890 are unique and every formation variant is
+reachable (the list/select keys on name; dup names hid variants). display_name unchanged. (2) Fixed the
+startup log to include the run track. (3) Quarantined media-06-18-04-17-05 (byte-dup of -03).
+**Final QA:** canon-check fronts 49/49, concepts 30>=26, coverages 12>=7; mine-status 137/137 (0 raw);
+schemes 890 unique slugs, 16 verified; engine test 5.77M checks / 0 failures; smoke green, 0 dead buttons.
+**Status:** Phases 0/1/2/4 complete. Phase 3 (art-by-art scheme rebuild) is the staged long game:
+batch 1 done (16/890), 874 remain, continue family by family with rebuild-schemes-batch.js (art wins).
+
 ## 2026-06-19 — Phase 2: enrich teaching cards from the mined docs  [content]
 **What:** Added sourced teaching to the cards the Phase-1 verified docs cover. Fronts 7 -> 16 with a
 "How to use it" section (3-3-5 family, 4-2-5 Over G/Under, goal-line 6-2, Nickel 3-3 dbl-mug, from
