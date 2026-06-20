@@ -75,3 +75,10 @@ misleading names: "Fake Jet Pass Power" is labelled RUN, not a pass.
   Touch Pass. Authored by `tools/rebuild-schemes-batch.js` from the art.
 - **Remaining: 874 stripped-to-foundation.** Continue family by family with the same art-first method.
   Do NOT auto-fill from master_data (its concept.type is part of the original fabricated batch).
+
+## Workflow rebuild wave 1 (2026-06-20)
+
+Fanned out 164 agents (82 readers + 82 adversarial verifiers, 6 concurrent) over the play art.
+230 schemes confirmed and merged (170 high / 16 medium / 44 low confidence), all passed the
+adversarial verify (no invented routes). **Verified now 246/890.** The verify pass for ~57 families
+was cut off by the session limit; their reads are cached, resume the workflow to finish them.
