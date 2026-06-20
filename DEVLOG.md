@@ -2,6 +2,18 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-19 — Phase 2: enrich teaching cards from the mined docs  [content]
+**What:** Added sourced teaching to the cards the Phase-1 verified docs cover. Fronts 7 -> 16 with a
+"How to use it" section (3-3-5 family, 4-2-5 Over G/Under, goal-line 6-2, Nickel 3-3 dbl-mug, from
+335-defense + defense-strategy-and-fronts + pressure-method). Concepts 12 -> 22 (levels, dagger, mills,
+scissors, switch, spacing, snag, post-wheel, rpo-slant, hb-screen, from offensive-foundations +
+air-raid-concepts).
+**Files:** content/fronts.json, content/concepts.json. tools/enrich-front-cards.js, enrich-concepts-wave2.js.
+**Verification:** smoke green, 95 diagrams, 0 dead buttons.
+**Gotcha:** Honesty rule, fronts/concepts with NO source keep their structural card + diagram and get
+NO invented strategy. 33 fronts (4-3/3-4/dime families) and the 4 concept variants stay structural by
+design, that is the correct complete state, not a gap to fabricate.
+
 ## 2026-06-19 — P1 (run): sourced coaching on 11 of 12 run cards  [content, knowledge]
 **What:** Mined the zone-run-system + run-game collections (correct files this time: zone-run-system
 = media-06-18-04-17-*) into knowledge/verified/run-game.md, then added faithful Coaching notes to 11
