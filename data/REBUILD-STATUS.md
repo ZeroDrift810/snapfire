@@ -63,3 +63,15 @@ draw only from those, so they stay clean.
 
 Set `verified: true` on each entry as it is rebuilt and checked. The render can later
 badge verified plays or gate any future "reads" section on the flag.
+
+## Phase 3 rebuild progress (2026-06-19)
+
+The play art is the ground truth and carries a **RUN/PASS label** plus the drawn routes, so each
+scheme can be verified from its art (cross-checked against the engine). Confirmed the art corrects
+misleading names: "Fake Jet Pass Power" is labelled RUN, not a pass.
+
+- **Verified: 16/890.** The original 10 (power-read family + 01 Trap) + the Shotgun Empty Ace family
+  (6): Post Wheel Shallow, Jet QB Zone, Jet QB Zone Wk, Jet QB Counter, Fake Jet Pass Power, Jet
+  Touch Pass. Authored by `tools/rebuild-schemes-batch.js` from the art.
+- **Remaining: 874 stripped-to-foundation.** Continue family by family with the same art-first method.
+  Do NOT auto-fill from master_data (its concept.type is part of the original fabricated batch).

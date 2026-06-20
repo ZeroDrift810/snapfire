@@ -4,14 +4,78 @@
     "display_name": "Post Wheel Shallow",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
-    "image_file": "play1_2025-12-01T08-43-44-295Z.png"
+    "image_file": "play1_2025-12-01T08-43-44-295Z.png",
+    "routes": [
+      {
+        "receiver": "WR (post)",
+        "route": "Post",
+        "note": "The primary, attacks the deep middle between the safeties"
+      },
+      {
+        "receiver": "WR (wheel)",
+        "route": "Wheel",
+        "note": "Sells short then turns up the sideline, cannot be pressed by a man defender"
+      },
+      {
+        "receiver": "Slot",
+        "route": "Shallow cross",
+        "note": "The drag underneath, the checkdown and the man-coverage outlet"
+      },
+      {
+        "receiver": "Outside WRs",
+        "route": "Vertical",
+        "note": "Clear the deep defenders to open the post and wheel"
+      },
+      {
+        "receiver": "QB",
+        "route": "Read post to wheel to shallow",
+        "note": "Empty set, no back to check, get it out on rhythm"
+      }
+    ],
+    "reads": [
+      "**Pre-Snap:** Empty, read the middle-of-field safety. One high opens the post, two high opens the wheel up the sideline",
+      "**1️⃣ Post:** Take it when the deep middle is open and the verticals have cleared",
+      "**2️⃣ Wheel:** Hits up the sideline versus man (cannot be pressed) or when the corner sinks",
+      "**3️⃣ Shallow:** The underneath outlet, take the easy yards if the deep stuff is covered"
+    ],
+    "usage_notes": "**Beats:** Single-high (the post) and man coverage (the wheel and shallow)\n**Coach's Key:** Empty has no protection help, the ball must come out on time\n",
+    "verified": true
   },
   {
     "name": "snapfire_fake_jet_pass_power",
     "display_name": "Fake Jet Pass Power",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
-    "image_file": "play1_2025-12-01T08-44-08-562Z.png"
+    "image_file": "play1_2025-12-01T08-44-08-562Z.png",
+    "routes": [
+      {
+        "receiver": "QB/Back",
+        "route": "Power",
+        "note": "Despite the name this is a RUN, the power hits downhill behind the pull"
+      },
+      {
+        "receiver": "Jet WR",
+        "route": "Jet fake",
+        "note": "Fakes the jet to hold the backside edge, no handoff"
+      },
+      {
+        "receiver": "Pulling Guard",
+        "route": "Pull and kick",
+        "note": "Kicks the force, the back runs off his block"
+      },
+      {
+        "receiver": "Line",
+        "route": "Power blocking",
+        "note": "Playside down-blocks and a double team up to the linebacker"
+      }
+    ],
+    "reads": [
+      "**Pre-Snap:** The name says pass but the art is a power RUN, the jet is a fake to freeze the edge",
+      "**1️⃣ Jet fake holds the backside:** run power downhill behind the kick",
+      "**Read the kickout:** if the end spills, bounce; if he is kicked, follow the pull inside"
+    ],
+    "usage_notes": "**Beats:** Edge defenders who honor the jet, the fake removes them from the power\n**Coach's Key:** This is a run, do not look to throw it\n",
+    "verified": true
   },
   {
     "name": "snapfire_power_read",
@@ -1110,14 +1174,72 @@
     "display_name": "Jet QB Zone",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
-    "image_file": "play2_2025-12-01T08-43-44-295Z.png"
+    "image_file": "play2_2025-12-01T08-43-44-295Z.png",
+    "routes": [
+      {
+        "receiver": "QB",
+        "route": "QB zone",
+        "note": "Takes the zone path behind the line off the jet action"
+      },
+      {
+        "receiver": "Jet WR",
+        "route": "Jet motion",
+        "note": "Motions across the formation, a decoy that pulls the edge defender"
+      },
+      {
+        "receiver": "Line",
+        "route": "Zone blocking",
+        "note": "Covered drive, uncovered combo and climb to the linebacker"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Stalk block",
+        "note": "Wall off the perimeter defenders"
+      }
+    ],
+    "reads": [
+      "**Pre-Snap:** Empty QB-run look, the jet motion stretches the edge and counts a hat for the box",
+      "**1️⃣ Jet pulls the edge:** the QB keeps on the zone path inside",
+      "**Back's read:** bang the A gap, bend the B gap, bounce outside if the front overflows"
+    ],
+    "usage_notes": "**Beats:** Light boxes and edge defenders who chase the jet motion\n**Coach's Key:** Needs a mobile QB, this is a quarterback-carrier run\n",
+    "verified": true
   },
   {
     "name": "snapfire_jet_qb_zone_wk",
     "display_name": "Jet QB Zone Wk",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
-    "image_file": "play2_2025-12-01T08-44-08-562Z.png"
+    "image_file": "play2_2025-12-01T08-44-08-562Z.png",
+    "routes": [
+      {
+        "receiver": "QB",
+        "route": "QB zone (weak)",
+        "note": "Runs the zone path to the weak side off the jet action"
+      },
+      {
+        "receiver": "Jet WR",
+        "route": "Jet motion",
+        "note": "Motions across to hold the play-side edge"
+      },
+      {
+        "receiver": "Line",
+        "route": "Zone blocking",
+        "note": "Covered drive, uncovered combo and climb"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Stalk block",
+        "note": "Wall the perimeter"
+      }
+    ],
+    "reads": [
+      "**Pre-Snap:** The weak-side mirror of Jet QB Zone, call it to run away from the defense's strength",
+      "**1️⃣ Jet holds the edge:** keep the QB on the weak-side zone path",
+      "**Back's read:** bang, bend, bounce off the line's movement"
+    ],
+    "usage_notes": "**Beats:** Defenses that set strength to the jet motion, you run away from it\n**Coach's Key:** Mobile QB required\n",
+    "verified": true
   },
   {
     "name": "snapfire_hb_counter_u",
@@ -2377,14 +2499,72 @@
     "display_name": "Jet QB Counter",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
-    "image_file": "play3_2025-12-01T08-43-44-295Z.png"
+    "image_file": "play3_2025-12-01T08-43-44-295Z.png",
+    "routes": [
+      {
+        "receiver": "QB",
+        "route": "QB counter",
+        "note": "Counter-steps off the jet, follows the pullers downhill"
+      },
+      {
+        "receiver": "Jet WR",
+        "route": "Jet motion",
+        "note": "Flows one way to pull the defense, the counter hits back the other way"
+      },
+      {
+        "receiver": "Pullers",
+        "route": "Kick and wrap",
+        "note": "One kicks the edge, one wraps to the play-side linebacker"
+      },
+      {
+        "receiver": "Line",
+        "route": "Down block",
+        "note": "Backside gap rules, wall off the lane"
+      }
+    ],
+    "reads": [
+      "**Pre-Snap:** The jet motion sets the flow, the counter goes back against it",
+      "**1️⃣ Defense chases the jet:** the QB counters behind the pullers into the vacated side",
+      "**🚨 Patience:** let the pullers clear before pressing the hole"
+    ],
+    "usage_notes": "**Beats:** Fast-flowing, jet-chasing defenses (the counter punishes over-pursuit)\n**Coach's Key:** Mobile QB, time it behind the kick and wrap\n",
+    "verified": true
   },
   {
     "name": "snapfire_jet_touch_pass",
     "display_name": "Jet Touch Pass",
     "system": "SNAPFIRE",
     "formation_family": "Shotgun Empty Ace",
-    "image_file": "play3_2025-12-01T08-44-08-562Z.png"
+    "image_file": "play3_2025-12-01T08-44-08-562Z.png",
+    "routes": [
+      {
+        "receiver": "Jet WR",
+        "route": "Jet, touch pass",
+        "note": "Catches a quick flip on the perimeter at full speed off the motion"
+      },
+      {
+        "receiver": "WRs",
+        "route": "Block",
+        "note": "Stalk and crack the perimeter defenders to spring the catch"
+      },
+      {
+        "receiver": "Line",
+        "route": "Pass set",
+        "note": "Brief protection, the ball comes out instantly"
+      },
+      {
+        "receiver": "QB",
+        "route": "Catch and flip",
+        "note": "Touch it to the jet man before the edge can react"
+      }
+    ],
+    "reads": [
+      "**Pre-Snap:** A glorified outside-zone to the edge, get the fast man the ball in space",
+      "**1️⃣ Edge stays inside:** flip it to the jet on the perimeter with blockers in front",
+      "**🚨 If the edge widens with the motion:** pull it down, the space is gone"
+    ],
+    "usage_notes": "**Beats:** Pinched fronts and slow edge defenders, it attacks the perimeter they vacate\n**Coach's Key:** Get the ball out instantly, this is a perimeter run by another name\n",
+    "verified": true
   },
   {
     "name": "snapfire_mtn_pa_slot_option",
