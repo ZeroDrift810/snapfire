@@ -86,6 +86,7 @@ sessions, play breakdowns with the matching in-game art.
 
 ## Related
 
+- Playcall game (beta build doc): `docs/playcall-beta.md`.
 - Setup + player flow: `README.md`. Agent ops: `OPENCLAW-OPERATING-GUIDE.md`.
 - Data truth + rebuild: `data/REBUILD-STATUS.md`, `../FOOTBALL-KNOWLEDGE-CANON.md`.
 - History: `DEVLOG.md`. Cross-session (for Claude): `imovechainz-bot-data` memory.
