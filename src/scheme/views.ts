@@ -136,7 +136,9 @@ export function buildIdentityView(b: SchemeBuild): ViewPayload {
     embed.addFields({ name: 'Reference plays (M24)', value: truncate(exampleLine(b), 1024), inline: false });
   }
 
-  const exports = new ActionRowBuilder<ButtonBuilder>().addComponents(
+  // NOTE: do not name this `exports` — that shadows the CommonJS module binding and throws a
+  // TDZ ReferenceError at runtime ("Cannot access 'exports' before initialization").
+  const exportRow = new ActionRowBuilder<ButtonBuilder>().addComponents(
     new ButtonBuilder().setCustomId(SB_ID.exportImage).setLabel('Export Card').setEmoji('🖼️').setStyle(ButtonStyle.Success),
     new ButtonBuilder().setCustomId(SB_ID.exportPdf).setLabel('Export PDF').setEmoji('📄').setStyle(ButtonStyle.Success)
   );
@@ -144,7 +146,7 @@ export function buildIdentityView(b: SchemeBuild): ViewPayload {
     new ButtonBuilder().setCustomId(SB_ID.edit).setLabel('Edit Concepts').setEmoji('✏️').setStyle(ButtonStyle.Secondary),
     new ButtonBuilder().setCustomId(SB_ID.new).setLabel('New Scheme').setEmoji('🔄').setStyle(ButtonStyle.Secondary)
   );
-  return { embeds: [embed], components: [exports, actions], attachments: [] };
+  return { embeds: [embed], components: [exportRow, actions], attachments: [] };
 }
 
 function exampleLine(b: SchemeBuild): string {

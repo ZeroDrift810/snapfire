@@ -2,6 +2,21 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-21 — Scheme Builder: "Build Identity Card" crashed live  [scheme, bug]
+**Symptom:** Tapping "Build Identity Card" returned the generic "Something glitched on that tap."
+Live logs: `ReferenceError: Cannot access 'exports' before initialization` at buildIdentityView
+(views.ts:140).
+**Root cause:** I named a local `const exports` for the export button row. In the prod CommonJS build
+(tsc -> `node dist`) that shadows the module-level `exports` binding and creates a TDZ, so the function
+threw on entry. The `tsx`-based smoke + `tsc --noEmit` BOTH passed because tsx transpiles to ESM-style
+where `exports` is not the live binding; only the real CJS `dist` build trips it.
+**Fix:** renamed `exports` -> `exportRow`. Verified the FIX against the prod path: `tsc` build, then
+`require('./dist/scheme/views.js').buildIdentityView(...)` returns cleanly. Added a shadowing scan
+(`grep -nE '(const|let|var) (exports|module|require|__dirname|__filename)'` over src/) — no other hits.
+**Gotcha:** Never name a variable `exports`/`module`/`require` (CJS bindings). And the smoke test runs via
+tsx, which does NOT catch CJS-only runtime errors; for anything subtle, sanity-call the compiled `dist/`
+output, not just the tsx path.
+
 ## 2026-06-21 — Scheme artifacts: branded image + multi-page PDF  [feature, scheme, render]
 **What:** `src/scheme/render.ts` turns a built scheme into the sellable goods: a branded portrait
 "Scheme Identity" card (PNG) and a multi-page PDF (page 1 card, page 2 custom-playbook roadmap +
