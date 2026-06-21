@@ -22,6 +22,8 @@ export const SB_ID = {
   group: (g: string) => `imc:sb:grp:${g}`,
   review: 'imc:sb:review',
   edit: 'imc:sb:edit',
+  exportImage: 'imc:sb:img',
+  exportPdf: 'imc:sb:pdf',
 };
 
 function truncate(s: string, max: number): string {
@@ -134,11 +136,15 @@ export function buildIdentityView(b: SchemeBuild): ViewPayload {
     embed.addFields({ name: 'Reference plays (M24)', value: truncate(exampleLine(b), 1024), inline: false });
   }
 
+  const exports = new ActionRowBuilder<ButtonBuilder>().addComponents(
+    new ButtonBuilder().setCustomId(SB_ID.exportImage).setLabel('Export Card').setEmoji('🖼️').setStyle(ButtonStyle.Success),
+    new ButtonBuilder().setCustomId(SB_ID.exportPdf).setLabel('Export PDF').setEmoji('📄').setStyle(ButtonStyle.Success)
+  );
   const actions = new ActionRowBuilder<ButtonBuilder>().addComponents(
     new ButtonBuilder().setCustomId(SB_ID.edit).setLabel('Edit Concepts').setEmoji('✏️').setStyle(ButtonStyle.Secondary),
     new ButtonBuilder().setCustomId(SB_ID.new).setLabel('New Scheme').setEmoji('🔄').setStyle(ButtonStyle.Secondary)
   );
-  return { embeds: [embed], components: [actions], attachments: [] };
+  return { embeds: [embed], components: [exports, actions], attachments: [] };
 }
 
 function exampleLine(b: SchemeBuild): string {

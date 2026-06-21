@@ -2,6 +2,24 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-21 — Scheme artifacts: branded image + multi-page PDF  [feature, scheme, render]
+**What:** `src/scheme/render.ts` turns a built scheme into the sellable goods: a branded portrait
+"Scheme Identity" card (PNG) and a multi-page PDF (page 1 card, page 2 custom-playbook roadmap +
+M24 reference plays, pages 3+ the core concepts drawn by the HimkageVision engine, 4-up). Card +
+roadmap pages are composed as SVG and rasterized with resvg + bundled Barlow (same pipeline as the
+playcall diagrams); pdf-lib (pure JS) stitches the pages and lays out the engine concept PNGs.
+Wired into the builder: the identity card has **Export Card** + **Export PDF** buttons that defer an
+ephemeral reply and deliver the file.
+**Files:** src/scheme/render.ts, src/scheme/views.ts (export buttons), src/scheme/handler.ts (export
++ defer + AttachmentBuilder), scripts/smoke-test.ts (Part G renders the card PNG), package.json (+pdf-lib).
+**Verification:** tsc clean; smoke green (card PNG renders). POC generated for West Coast Zone Run:
+109KB card + 705KB 5-page PDF in ~4.3s (the PDF time is the ~12 engine concept renders).
+**Gotchas:** (1) Barlow has no ⚖ glyph (rendered tofu) — keep artifact text to plain ASCII + ASCII
+punctuation. (2) A concept's engine key can be a run SCHEME or a pass CONCEPT; pick the resolver by
+`Engine.SCHEMES.includes(k)` vs `Engine.CONCEPT_KEYS.includes(k)`, not by the concept's run/pass side
+(e.g. RPO: Option is side=run but maps to the rpo-bubble pass concept). (3) Export defers a fresh
+ephemeral reply (not an update) so the identity card message stays and the artifact arrives alongside.
+
 ## 2026-06-21 — Scheme Builder: ingest the M24 Playbook Creator + authoring flow  [feature, scheme, data]
 **What:** New `src/scheme/` feature, foundation for a planned premium product line (sell schemes /
 playsheets / playbooks as a gated, image+PDF content library). (1) **Ingest** the SchemeGuide M24

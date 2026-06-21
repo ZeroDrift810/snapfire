@@ -28,6 +28,7 @@ import { Dir } from '../src/playcall/engine';
 import { loadSchemeData, allSchemes, allTempos } from '../src/scheme/data';
 import { newBuild, setScheme, setTempo, setGroupConcepts, groupConcepts } from '../src/scheme/builder';
 import { buildSetupView, buildConceptView, buildIdentityView } from '../src/scheme/views';
+import { renderSchemeCardPng } from '../src/scheme/render';
 
 const errors: string[] = [];
 let routesTested = 0;
@@ -411,6 +412,10 @@ function partScheme() {
   sbViewsValidated++;
   const hasRoadmap = (card.embeds[0] as any).data.fields?.some((f: any) => /roadmap/i.test(f.name));
   if (!hasRoadmap) fail('scheme builder: identity card has no playbook roadmap');
+
+  // the sellable card image must render to a real PNG
+  const png = renderSchemeCardPng(b);
+  if (!png || png.length < 4000 || !(png[0] === 0x89 && png[1] === 0x50)) fail('scheme builder: card image did not render to a PNG');
 }
 
 // --- run -------------------------------------------------------------------

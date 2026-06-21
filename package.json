@@ -30,7 +30,8 @@
     "@resvg/resvg-js": "^2.6.2",
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",
-    "gifenc": "^1.0.3"
+    "gifenc": "^1.0.3",
+    "pdf-lib": "^1.17.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
