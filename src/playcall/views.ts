@@ -11,7 +11,7 @@
 import { ActionRowBuilder, AttachmentBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, StringSelectMenuBuilder } from 'discord.js';
 import { ViewPayload } from '../ui/views';
 import { OFFENSE } from './catalog';
-import { renderPlayPng } from './render';
+import { renderPlayGif } from './render';
 import { Game, PlayRecord, fieldLabel, ordinal, situationLine } from './game';
 import { PlayModel } from './engine';
 
@@ -29,9 +29,11 @@ function truncate(s: string, max: number): string {
   return !s ? '' : s.length <= max ? s : `${s.slice(0, max - 1)}…`;
 }
 
-function diagram(model: PlayModel, g = 0.62): AttachmentBuilder {
-  const png = renderPlayPng(model, g);
-  return new AttachmentBuilder(png, { name: 'play.png' });
+// Animated diagram of the exact matchup (the snap developing). Discord animates by file
+// extension, so the name must end .gif and the embed image points at attachment://play.gif.
+function diagram(model: PlayModel): AttachmentBuilder {
+  const gif = renderPlayGif(model);
+  return new AttachmentBuilder(gif, { name: 'play.gif' });
 }
 
 function offenseSelectRow(): ActionRowBuilder<StringSelectMenuBuilder> {
@@ -81,7 +83,7 @@ export function buildCallView(g: Game): ViewPayload {
       { name: 'Drive', value: driveLog(g) || '—', inline: false }
     );
     files.push(diagram(p.model));
-    embed.setImage('attachment://play.png');
+    embed.setImage('attachment://play.gif');
   } else {
     embed
       .setTitle('🏈 Playcall — SnapFire Drive')
@@ -127,8 +129,8 @@ export function buildOverView(g: Game): ViewPayload {
 
   const files: AttachmentBuilder[] = [];
   if (g.last) {
-    files.push(diagram(g.last.model, g.last.outcome.explosive ? 0.85 : 0.62));
-    embed.setImage('attachment://play.png');
+    files.push(diagram(g.last.model));
+    embed.setImage('attachment://play.gif');
   }
 
   const yards = g.plays.reduce((s, p: PlayRecord) => s + Math.max(0, p.outcome.yards), 0);

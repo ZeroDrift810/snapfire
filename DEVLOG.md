@@ -2,6 +2,23 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-21 — Playcall: animate the diagrams (live GIF) + defer the interaction  [game, ui, render]
+**Symptom:** Playcall diagrams shipped as a single still PNG; the play did not animate (the rest of
+the bot's card diagrams are GIFs, so a still looked broken).
+**Fix:** `renderPlayGif()` sweeps the engine's progress g 0->1, rasterizes each frame with resvg, and
+encodes a looping GIF with `gifenc` (pure JS, no native dep) using one global palette built from the
+final frame (no inter-frame flicker). Views attach `play.gif` (Discord animates by extension). Frame
+count + width are env-tunable (`PLAYCALL_GIF_FRAMES`/`_WIDTH`, read lazily) so smoke renders cheap
+3-frame GIFs. Production: 11 frames @ 760px, ~210-330KB, ~1.7s cold / cached instant.
+**Files:** src/playcall/render.ts (renderPlayGif + cache), src/playcall/views.ts (diagram -> gif),
+src/playcall/handler.ts (defer-then-editReply), src/playcall/gifenc.d.ts, scripts/smoke-test.ts
+(Part F cheap-render env), package.json (+gifenc).
+**Gotcha:** An 11-frame GIF renders in ~1.7s, OVER Discord's 3-second interaction limit. The handler
+now `deferReply`/`deferUpdate` FIRST (instant ack, lifts the limit to ~15 min), then builds the
+payload (which renders) and `editReply`s it. `deliver()` takes a thunk so the render runs AFTER the
+ack, never before. Launch-from-public-message defers an ephemeral reply; in-game taps defer an update
+so the same private message is edited in place.
+
 ## 2026-06-20 — Playcall: engine-resolved drive game with live HimkageVision art  [feature, game, engine]
 **What:** New button-driven mini-game `src/playcall/`. You are SnapFire offense, the Shinobi bot
 is the defense; you call a play + side each down, the bot answers with a front + coverage, and the

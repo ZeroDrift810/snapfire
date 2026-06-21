@@ -392,6 +392,9 @@ partEmoji();
 console.log('   emoji skin tone checked');
 
 console.log('Part F: playcall game (simulated drives + live diagrams)...');
+// Render small, few-frame GIFs here: we are validating the pipeline + payloads, not visual polish.
+process.env.PLAYCALL_GIF_FRAMES = process.env.PLAYCALL_GIF_FRAMES ?? '3';
+process.env.PLAYCALL_GIF_WIDTH = process.env.PLAYCALL_GIF_WIDTH ?? '380';
 partPlaycall();
 console.log(`   playcall: ${pcDrivesPlayed} drives, ${pcPlaysResolved} plays resolved, ${pcDiagramsRendered} live diagrams rendered`);
 
