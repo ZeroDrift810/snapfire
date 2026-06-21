@@ -1,29 +1,22 @@
 /**
  * Playcall interaction handler.
  *
- * Side-effecting (it mutates drive state, rolls outcomes, renders diagrams), so it is handled
- * outside the pure resolve() router exactly like the operator hub. Owns every `imc:pc:*` button
- * and the `imc:pc:pick` select. Replies ephemeral when launched from a public message (a fresh
- * private drive) and updates in place once the drive is running.
+ * Side-effecting (drive state, RNG, live render), so it is handled outside the pure resolve()
+ * router like the operator hub. Owns every `imc:pc:*` button + the offense/defense selects. The
+ * interaction is DEFERRED first (instant ack), then the payload is built (which renders the ~2s
+ * animated GIF) and edited in, so the render never trips Discord's 3s response limit.
  */
 
-import { ActionRowBuilder, ButtonBuilder, ButtonInteraction, ButtonStyle, EmbedBuilder, Interaction, MessageFlags, StringSelectMenuInteraction } from 'discord.js';
+import { ButtonInteraction, Interaction, MessageFlags, StringSelectMenuInteraction } from 'discord.js';
 import { ViewPayload } from '../ui/views';
-import { chooseOffense, endGame, getGame, newGame, resolveDown } from './game';
-import { buildCallView, buildDirView, buildOverView, PC_ID } from './views';
+import { chooseOffense, endGame, getGame, newGame, resolveAsDefense, resolveDown } from './game';
+import { buildDirView, buildOverView, buildStartView, buildTurnView, PC_ID } from './views';
 import { Dir } from './engine';
 
 function toMessage(p: ViewPayload) {
   return { embeds: p.embeds, components: p.components, files: p.files ?? [], attachments: p.attachments ?? [] };
 }
 
-/**
- * Ack the interaction immediately (defer), THEN build the payload (which renders the animated
- * diagram, ~2s) and edit it in. Deferring lifts Discord's 3-second response limit to ~15 min, so
- * the GIF render can never fail the interaction. The build is a thunk so rendering happens AFTER
- * the ack, not before. Launches from a public message defer a fresh ephemeral reply; in-game taps
- * (already ephemeral) defer an update so the same private message is edited in place.
- */
 async function deliver(interaction: ButtonInteraction | StringSelectMenuInteraction, build: () => ViewPayload, forceReply = false): Promise<void> {
   const isEphemeral = Boolean(interaction.message?.flags?.has(MessageFlags.Ephemeral));
   if (forceReply || !isEphemeral) {
@@ -36,27 +29,54 @@ async function deliver(interaction: ButtonInteraction | StringSelectMenuInteract
 
 export async function handlePlaycall(interaction: Interaction): Promise<void> {
   if (interaction.isStringSelectMenu()) {
-    if (interaction.customId !== PC_ID.pick) return;
-    const userId = interaction.user.id;
+    await handleSelect(interaction);
+    return;
+  }
+  if (interaction.isButton()) {
+    await handleButton(interaction);
+  }
+}
+
+async function handleSelect(interaction: StringSelectMenuInteraction): Promise<void> {
+  const userId = interaction.user.id;
+  const value = interaction.values[0];
+
+  if (interaction.customId === PC_ID.pick) {
     let g = getGame(userId);
-    if (!g || g.status === 'over') g = newGame(userId);
-    const offId = interaction.values[0];
-    if (!chooseOffense(g, offId)) {
-      await deliver(interaction, () => buildCallView(g));
+    if (!g || g.mode !== 'offense' || g.status === 'over') g = newGame(userId, 'offense');
+    if (!chooseOffense(g, value)) {
+      await deliver(interaction, () => buildTurnView(g!));
       return;
     }
-    await deliver(interaction, () => buildDirView(g, offId));
+    await deliver(interaction, () => buildDirView(g!, value));
     return;
   }
 
-  if (!interaction.isButton()) return;
+  if (interaction.customId === PC_ID.defpick) {
+    let g = getGame(userId);
+    if (!g || g.mode !== 'defense' || g.status === 'over') g = newGame(userId, 'defense');
+    const game = g;
+    resolveAsDefense(game, value);
+    await deliver(interaction, () => (getGame(userId)?.status === 'over' ? buildOverView(game) : buildTurnView(game)));
+    return;
+  }
+}
+
+async function handleButton(interaction: ButtonInteraction): Promise<void> {
   const id = interaction.customId;
   const userId = interaction.user.id;
 
-  // New / restart a drive.
+  // Open the side chooser.
   if (id === PC_ID.new) {
-    const g = newGame(userId);
-    await deliver(interaction, () => buildCallView(g));
+    await deliver(interaction, buildStartView);
+    return;
+  }
+
+  // Start a drive on the chosen side.  imc:pc:start:<off|def>
+  if (id.startsWith('imc:pc:start:')) {
+    const mode = id.endsWith(':def') ? 'defense' : 'offense';
+    const g = newGame(userId, mode);
+    await deliver(interaction, () => buildTurnView(g));
     return;
   }
 
@@ -69,42 +89,36 @@ export async function handlePlaycall(interaction: Interaction): Promise<void> {
       await deliver(interaction, () => buildOverView(g));
     } else {
       endGame(userId);
-      await deliver(interaction, () => {
-        const embed = new EmbedBuilder().setColor(0x34495e).setTitle('Drive ended.').setDescription('Run it back whenever you want.').setFooter({ text: '🎮 Playcall // iMoveChainz' });
-        const row = new ActionRowBuilder<ButtonBuilder>().addComponents(new ButtonBuilder().setCustomId(PC_ID.new).setLabel('New Drive').setEmoji('🔄').setStyle(ButtonStyle.Success));
-        return { embeds: [embed], components: [row], files: [], attachments: [] };
-      });
+      await deliver(interaction, buildStartView);
     }
     return;
   }
 
-  // Direction chosen -> resolve the down.  imc:pc:dir:<offId>:<l|r>
+  // Offense direction chosen -> resolve the down.  imc:pc:dir:<offId>:<l|r>
   if (id.startsWith('imc:pc:dir:')) {
-    const parts = id.split(':'); // imc, pc, dir, offId, d
+    const parts = id.split(':');
     const offId = parts[3];
     const d = parts[4];
     let g = getGame(userId);
-    if (!g) {
-      const fresh = newGame(userId);
-      await deliver(interaction, () => buildCallView(fresh));
+    if (!g || g.mode !== 'offense') {
+      const fresh = newGame(userId, 'offense');
+      await deliver(interaction, () => buildTurnView(fresh));
       return;
     }
     const game = g;
-    // If state drifted (stale button), re-sync to the chosen offense.
     if (game.status !== 'await_dir' || game.pendingOff !== offId) {
       if (game.status === 'over') {
         await deliver(interaction, () => buildOverView(game));
         return;
       }
       if (!chooseOffense(game, offId)) {
-        await deliver(interaction, () => buildCallView(game));
+        await deliver(interaction, () => buildTurnView(game));
         return;
       }
     }
     const dir: Dir = d === 'l' ? -1 : 1;
     resolveDown(game, dir);
-    // resolveDown mutates status at runtime; read it through the live object.
-    await deliver(interaction, () => (getGame(userId)?.status === 'over' ? buildOverView(game) : buildCallView(game)));
+    await deliver(interaction, () => (getGame(userId)?.status === 'over' ? buildOverView(game) : buildTurnView(game)));
     return;
   }
 }

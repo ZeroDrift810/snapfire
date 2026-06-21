@@ -121,3 +121,42 @@ export function botPickDefense(sit: DriveSituation, rng: () => number = Math.ran
 export function pickDir(rng: () => number = Math.random): Dir {
   return rng() < 0.5 ? 1 : -1;
 }
+
+/**
+ * SnapFire bot offense (used in DEFENSE mode): pick a play + side, down/distance aware. Runs on
+ * short yardage and to milk the clock, passes when behind the sticks, with disguise so the human
+ * defense cannot tee off on one call.
+ */
+export function botPickOffense(sit: DriveSituation, rng: () => number = Math.random): { off: OffenseCall; dir: Dir } {
+  const shortYardage = sit.toGo <= 2;
+  const passingDown = sit.down >= 3 && sit.toGo >= 6;
+  const longYardage = sit.toGo >= 8;
+
+  const weights: Record<string, number> = {};
+  for (const o of OFFENSE) weights[o.id] = 1;
+  for (const o of OFFENSE) {
+    if (shortYardage) weights[o.id] += o.kind === 'run' ? 2 : -0.3;
+    if (passingDown || longYardage) weights[o.id] += o.kind === 'pass' ? 2 : -0.3;
+    if (sit.down <= 2 && !shortYardage && !longYardage) weights[o.id] += 0.5; // balanced early downs
+  }
+  // In the red zone, lean on power runs and quick game (less field to work).
+  if (sit.ballOn >= 80) {
+    weights.power += 1.5;
+    weights.iz += 1;
+    weights.slants += 1;
+    weights.verts -= 1;
+  }
+
+  const pool = OFFENSE.map((o) => ({ o, w: Math.max(0.1, weights[o.id]) }));
+  const total = pool.reduce((s, p) => s + p.w, 0);
+  let r = rng() * total;
+  let chosen = pool[0].o;
+  for (const p of pool) {
+    r -= p.w;
+    if (r <= 0) {
+      chosen = p.o;
+      break;
+    }
+  }
+  return { off: chosen, dir: rng() < 0.5 ? 1 : -1 };
+}

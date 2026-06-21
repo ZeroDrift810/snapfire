@@ -13,6 +13,7 @@
 import { Resvg } from '@resvg/resvg-js';
 import { GIFEncoder, quantize, applyPalette } from 'gifenc';
 import { Engine, FONT_FILES, PlayModel } from './engine';
+import { decorate, FieldCtx } from './field';
 
 // Frame count + width are env-tunable (read lazily) so the smoke test can render cheaply
 // (PLAYCALL_GIF_FRAMES=3) while production animates smoothly. Width 760 keeps GIFs ~300KB.
@@ -23,8 +24,11 @@ const GIF_CACHE = new Map<string, Buffer>();
 const PNG_CACHE = new Map<string, Buffer>();
 const CACHE_LIMIT = 200;
 
-function key(model: PlayModel): string {
-  return [model.kind === 'pass' ? 'P' : 'R', model.formKey, model.frontKey, model.key, model.dir, model.coverage ?? '-', model.motion ?? '-'].join('|');
+function key(model: PlayModel, ctx?: FieldCtx): string {
+  const base = [model.kind === 'pass' ? 'P' : 'R', model.formKey, model.frontKey, model.key, model.dir, model.coverage ?? '-', model.motion ?? '-'].join('|');
+  if (!ctx) return base;
+  // Field markings + banner depend on the spot/distance/outcome, so they are part of the identity.
+  return `${base}|${ctx.ballOn}|${ctx.toGo}|${ctx.event?.text ?? '-'}`;
 }
 
 function lruSet(cache: Map<string, Buffer>, k: string, v: Buffer): Buffer {
@@ -36,8 +40,9 @@ function lruSet(cache: Map<string, Buffer>, k: string, v: Buffer): Buffer {
   return v;
 }
 
-function rasterize(model: PlayModel, g: number, width: number): { pixels: Buffer; width: number; height: number } {
-  const svg = Engine.renderSVG(model, g, '', true);
+function rasterize(model: PlayModel, g: number, width: number, ctx?: FieldCtx, bannerT = 0): { pixels: Buffer; width: number; height: number } {
+  const raw = Engine.renderSVG(model, g, '', true);
+  const svg = ctx ? decorate(raw, ctx, bannerT) : raw;
   const r = new Resvg(svg, {
     fitTo: { mode: 'width', value: width },
     font: { loadSystemFonts: false, fontFiles: FONT_FILES, defaultFontFamily: 'Barlow' },
@@ -60,21 +65,29 @@ function frameSchedule(n: number): { g: number; delay: number }[] {
   return out;
 }
 
-/** Render the play to an animated GIF buffer (the snap developing, looping). */
-export function renderPlayGif(model: PlayModel): Buffer {
-  const k = key(model);
+/**
+ * Render the play to an animated GIF buffer (the snap developing, looping). With a FieldCtx it
+ * adds the broadcast field markings on every frame and slams the outcome banner in on the final
+ * two (hold) frames.
+ */
+export function renderPlayGif(model: PlayModel, ctx?: FieldCtx): Buffer {
+  const k = key(model, ctx);
   const hit = GIF_CACHE.get(k);
   if (hit) return hit;
 
   const width = gifWidth();
   const schedule = frameSchedule(gifFrames());
+  const n = schedule.length;
+  // Banner slams in over the hold: full on the last frame, partial on the second-to-last.
+  const bannerAt = (i: number): number => (!ctx?.event ? 0 : i === n - 1 ? 1 : i === n - 2 ? 0.6 : 0);
+
   const enc = GIFEncoder();
-  // One global palette built from the fullest frame: stable field colors, no inter-frame flicker.
-  const full = rasterize(model, 1, width);
-  const palette = quantize(full.pixels, 256);
+  // One global palette from the final, fullest (banner-on) frame so every color is represented.
+  const pal = rasterize(model, 1, width, ctx, ctx?.event ? 1 : 0);
+  const palette = quantize(pal.pixels, 256);
 
   schedule.forEach((f, i) => {
-    const img = i === schedule.length - 1 || f.g === 1 ? full : rasterize(model, f.g, width);
+    const img = rasterize(model, f.g, width, ctx, bannerAt(i));
     const index = applyPalette(img.pixels, palette);
     enc.writeFrame(index, img.width, img.height, { palette: i === 0 ? palette : undefined, delay: f.delay });
   });

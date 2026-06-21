@@ -21,9 +21,9 @@ import { resolve } from '../src/router';
 import { DEFAULT_FILTER, Track } from '../src/ui/ids';
 import { AUTOPOST_ITEMS, BUILDERS } from '../src/engagement/items';
 import { buildOperatorHub, operatorActionIds } from '../src/operator/operator';
-import { buildCallView, buildDirView, buildOverView } from '../src/playcall/views';
-import { chooseOffense, getGame, newGame, resolveDown } from '../src/playcall/game';
-import { OFFENSE } from '../src/playcall/catalog';
+import { buildDirView, buildOverView, buildStartView, buildTurnView } from '../src/playcall/views';
+import { chooseOffense, getGame, newGame, resolveAsDefense, resolveDown } from '../src/playcall/game';
+import { OFFENSE, DEFENSE } from '../src/playcall/catalog';
 import { Dir } from '../src/playcall/engine';
 
 const errors: string[] = [];
@@ -329,34 +329,53 @@ let pcPlaysResolved = 0;
 let pcDiagramsRendered = 0;
 
 function partPlaycall() {
-  // Validate the opening view (no diagram yet) and the per-call direction view.
-  const g0 = newGame('smoke-user');
-  validatePayload(buildCallView(g0), 'playcall:open');
+  // Validate the side chooser, the opening views, and the offense direction view.
+  validatePayload(buildStartView(), 'playcall:start');
+  const g0 = newGame('smoke-user', 'offense');
+  validatePayload(buildTurnView(g0), 'playcall:open-off');
   chooseOffense(g0, OFFENSE[0].id);
   validatePayload(buildDirView(g0, OFFENSE[0].id), 'playcall:dir');
+  validatePayload(buildTurnView(newGame('smoke-user', 'defense')), 'playcall:open-def');
 
-  // Play several full drives with a seeded RNG; every resolved play renders a live diagram
-  // and every view must be a valid Discord payload. Different seeds exercise score/turnover/downs.
-  for (let s = 0; s < 6; s++) {
+  // Play full OFFENSE drives with a seeded RNG; every resolved play renders a live diagram.
+  for (let s = 0; s < 4; s++) {
     const rng = mulberry32(1000 + s * 7);
-    const g = newGame('smoke-user');
+    const g = newGame('smoke-user', 'offense');
     let guard = 0;
     while (g.status !== 'over' && guard++ < 40) {
       const off = OFFENSE[Math.floor(rng() * OFFENSE.length)];
       if (!chooseOffense(g, off.id)) break;
       const dir: Dir = rng() < 0.5 ? -1 : 1;
-      const rec = resolveDown(g, dir, rng);
-      if (!rec) break;
+      if (!resolveDown(g, dir, rng)) break;
       pcPlaysResolved++;
-      // the diagram for this exact matchup must render (live HimkageVision art)
       const live = getGame('smoke-user')!;
-      const view = live.status === 'over' ? buildOverView(live) : buildCallView(live);
-      if (!view.files || view.files.length !== 1) fail(`playcall: resolved play built no diagram (seed ${s})`);
+      const view = live.status === 'over' ? buildOverView(live) : buildTurnView(live);
+      if (!view.files || view.files.length !== 1) fail(`playcall: offense play built no diagram (seed ${s})`);
       else pcDiagramsRendered++;
-      validatePayload(view, `playcall:play:${s}`);
+      validatePayload(view, `playcall:off:${s}`);
     }
-    if (g.status !== 'over') fail(`playcall: drive ${s} never ended (guard hit)`);
-    validatePayload(buildOverView(g), `playcall:over:${s}`);
+    if (g.status !== 'over') fail(`playcall: offense drive ${s} never ended (guard hit)`);
+    validatePayload(buildOverView(g), `playcall:off-over:${s}`);
+    pcDrivesPlayed++;
+  }
+
+  // Play full DEFENSE drives (bot offense; you call front+coverage each down).
+  for (let s = 0; s < 3; s++) {
+    const rng = mulberry32(5000 + s * 11);
+    const g = newGame('smoke-user', 'defense');
+    let guard = 0;
+    while (g.status !== 'over' && guard++ < 40) {
+      const def = DEFENSE[Math.floor(rng() * DEFENSE.length)];
+      if (!resolveAsDefense(g, def.id, rng)) break;
+      pcPlaysResolved++;
+      const live = getGame('smoke-user')!;
+      const view = live.status === 'over' ? buildOverView(live) : buildTurnView(live);
+      if (!view.files || view.files.length !== 1) fail(`playcall: defense play built no diagram (seed ${s})`);
+      else pcDiagramsRendered++;
+      validatePayload(view, `playcall:def:${s}`);
+    }
+    if (g.status !== 'over') fail(`playcall: defense drive ${s} never ended (guard hit)`);
+    validatePayload(buildOverView(g), `playcall:def-over:${s}`);
     pcDrivesPlayed++;
   }
 }

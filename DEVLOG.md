@@ -2,6 +2,30 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-21 — Playcall: defense mode + broadcast field + event banners  [game, ui, render]
+**What:** Four upgrades. (1) **Play defense:** a side chooser (Offense/Defense) at drive start; in
+defense mode the SnapFire bot has the ball (`botPickOffense`, down/distance aware), you pick a front +
+coverage each down (one tap, no direction), and you win by forcing stops/takeaways. Shared `applyPlay`
+core resolves both modes; headlines + win framing flip by mode. (2) **Real yard markers:** the engine
+field is abstract, so `field.ts` post-processes its SVG, strips the engine's misaligned yard lines, and
+draws numbered lines at the correct absolute positions for the snap. (3) **End zone** band drawn when
+the opponent goal is in view, plus the blue LOS and a yellow first-down line at ballOn+toGo. (4) **Event
+banners** baked into the final GIF frames (Kunai shinobi pattern): TOUCHDOWN / FIRST DOWN / BIG PLAY /
+SACK / STUFFED / INTERCEPTED / FUMBLE / TURNOVER / SAFETY, color-coded, slam-in scale.
+**Files:** src/playcall/field.ts (new: overlay + banner + eventFor), render.ts (decorate per frame +
+ctx in cache key), game.ts (mode + applyPlay + resolveAsDefense + toGoAtSnap/downAtSnap on the record),
+catalog.ts (botPickOffense), views.ts (start chooser, buildTurnView for both modes, offense/defense
+selects), handler.ts (start:off/def + defpick routing), scripts/smoke-test.ts (Part F covers both modes).
+**Verification:** tsc clean; smoke green (Part F: 7 drives across both modes, 29 live diagrams). Visual
+spot-checks: red-zone TD shows the end zone + numbers counting down + TOUCHDOWN slam; midfield shows the
+fold (50->40->30) + yellow first-down line + no end zone; sack/INT banners correct.
+**Gotchas:** (1) Field overlay must be injected AFTER the engine's border rect (above turf, below art/
+tokens) and the engine's own `stroke-opacity="0.5"` yard lines stripped first, or you get a moire of two
+misaligned grids. Yard numbers go at the sidelines (x~80/920) so tokens (center) never hide them.
+(2) The banner depends on the OUTCOME (not just the matchup), so ballOn/toGo/event are part of the GIF
+cache key now; same matchup at a different spot/result is a different render. (3) Downfield = decreasing
+y, 5 yds = 52px; numbers fold L<=50?L:100-L and skip the goal lines.
+
 ## 2026-06-21 — Playcall: animate the diagrams (live GIF) + defer the interaction  [game, ui, render]
 **Symptom:** Playcall diagrams shipped as a single still PNG; the play did not animate (the rest of
 the bot's card diagrams are GIFs, so a still looked broken).
