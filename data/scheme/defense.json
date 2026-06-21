@@ -1,0 +1,65 @@
+{
+  "shells": [
+    "0.0",
+    "1.0",
+    "2.0"
+  ],
+  "coverages": [
+    "1.0",
+    "2 Man",
+    "Man Blitz",
+    "3 Match",
+    "4 Match",
+    "6/9 Match",
+    "Zone Blitz",
+    "2.0",
+    "3 Zone",
+    "4 Zone",
+    "6/9 Zone",
+    "Zone Blitz",
+    "Add a 5th Front",
+    "Add a 6th Front"
+  ],
+  "coverageTypes": [
+    "Match",
+    "Zone"
+  ],
+  "base": [
+    "3-4",
+    "4-3"
+  ],
+  "schemes": [
+    "Base 4-3",
+    "4-3 Under",
+    "4-3 Cover 3",
+    "4-3 Quarters",
+    "Tampa 2",
+    "46.0",
+    "Base 3-4",
+    "3-4 Under",
+    "3-4 Disguise",
+    "3-4 Storm"
+  ],
+  "fronts": [
+    "Bear",
+    "Eagle",
+    "Okie",
+    "Even",
+    "Over",
+    "Under"
+  ],
+  "formations": [
+    "3-4",
+    "4-3",
+    "4-4",
+    "46",
+    "5-2",
+    "Big Nickel",
+    "Dime",
+    "Dollar",
+    "Goal Line",
+    "Nickel",
+    "Prevent",
+    "Quarter"
+  ]
+}

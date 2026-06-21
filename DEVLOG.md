@@ -2,6 +2,32 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-21 — Scheme Builder: ingest the M24 Playbook Creator + authoring flow  [feature, scheme, data]
+**What:** New `src/scheme/` feature, foundation for a planned premium product line (sell schemes /
+playsheets / playbooks as a gated, image+PDF content library). (1) **Ingest** the SchemeGuide M24
+Playbook Creator workbook (`tools/ingest-playbook-creator.py`) into `data/scheme/*.json`: the 35-concept
+declaration taxonomy bucketed (Gap/Zone/Option-RPO/PA/Quick/Medium/Deep) with per-bucket recommended
+counts, offensive schemes/tempos/formations, the defensive vocabulary, and an aggregated concept ->
+formation / example-play map mined from the 4,709-row OFF Play Log. The taxonomy is evergreen; the M24
+play names are kept as REFERENCE only; each concept carries a HimkageVision engine key so artifacts can
+render the real diagram. (2) **Scheme Identity Builder**: a button-driven authoring flow (base scheme +
+tempo -> pick up to 12 core concepts in 3 grouped multi-selects -> a Scheme Identity card with concepts
+by bucket, a balance check vs the recommended ranges, and a custom-playbook roadmap ranking formations
+by how many of your concepts they carry). In-memory per user.
+**Files:** tools/ingest-playbook-creator.py, data/scheme/*.json (concepts/buckets/schemes/tempos/
+formations/defense), src/scheme/{data,builder,views,handler}.ts, src/router.ts (+imc:sb dispatch),
+src/ui/views.ts (hub button), src/index.ts (boot load), scripts/smoke-test.ts (Part G).
+**Verification:** tsc clean; smoke green (Part G: 35 concepts loaded, 6 builder views validated, identity
+card + roadmap built). Sample card: West Coast Zone Run, Pro Style, balanced 12, Shotgun/Singleback top
+of the roadmap.
+**Gotchas:** (1) The OFF Play Log uses ~50 finer concept labels; the ingest maps them onto the 35
+declaration concepts (PA Shot->PA Shots, Iso->Dive, Jet Sweep->Sweep, Portland->Switch, etc.) before
+aggregating. (2) Discord selects cap at 25 options, so the 35 concepts are split into 3 group selects
+(run / quick+PA / pass); current picks are re-shown via per-option `default:true`. (3) Scheme builder is
+side-effecting, handled outside resolve() like playcall; Part A of the smoke skips `imc:sb:`.
+**Next (not yet built):** render schemes/playsheets to branded image + PDF; a gated content library with
+Discord-role entitlement (the commercial layer).
+
 ## 2026-06-21 — Playcall: defense mode + broadcast field + event banners  [game, ui, render]
 **What:** Four upgrades. (1) **Play defense:** a side chooser (Offense/Defense) at drive start; in
 defense mode the SnapFire bot has the ball (`botPickOffense`, down/distance aware), you pick a front +

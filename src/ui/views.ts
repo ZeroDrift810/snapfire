@@ -129,6 +129,7 @@ function hubEmbed(): EmbedBuilder {
         '',
         ...HUB_ORDER.map((t) => `${TRACK_EMOJI[t]} **${TRACK_LABEL[t]}:** ${TRACK_BLURB[t]}`),
         '🎮 **Playcall:** Call a SnapFire drive against the Shinobi defense. The engine draws every snap.',
+        '🧩 **Scheme Builder:** Declare your tempo and 12 core concepts, get your custom playbook roadmap.',
       ].join('\n')
     )
     .setFooter({ text: GENERIC_BRAND.footer });
@@ -153,7 +154,8 @@ export function buildHubPublic(): ViewPayload {
 // kept as a literal here to avoid importing the game module into the core hub view.
 function playcallRow(): ActionRowBuilder<ButtonBuilder> {
   return new ActionRowBuilder<ButtonBuilder>().addComponents(
-    new ButtonBuilder().setCustomId('imc:pc:new').setLabel('Playcall').setEmoji('🎮').setStyle(ButtonStyle.Success)
+    new ButtonBuilder().setCustomId('imc:pc:new').setLabel('Playcall').setEmoji('🎮').setStyle(ButtonStyle.Success),
+    new ButtonBuilder().setCustomId('imc:sb:new').setLabel('Scheme Builder').setEmoji('🧩').setStyle(ButtonStyle.Success)
   );
 }
 

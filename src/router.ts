@@ -16,6 +16,7 @@ import { buildDetail, buildGoto, buildHubSession, buildList, ViewPayload } from 
 import { DEFAULT_FILTER, isTrack, parseId, Track } from './ui/ids';
 import { handleOperator } from './operator/operator';
 import { handlePlaycall } from './playcall/handler';
+import { handleScheme } from './scheme/handler';
 
 export type Mode = 'open' | 'update';
 
@@ -119,6 +120,12 @@ export async function handleInteraction(interaction: Interaction): Promise<void>
   // Playcall game buttons + select are side-effecting (drive state, RNG, live render); own them.
   if ((interaction.isButton() || interaction.isStringSelectMenu()) && interaction.customId.startsWith('imc:pc:')) {
     await handlePlaycall(interaction);
+    return;
+  }
+
+  // Scheme Builder buttons + selects are side-effecting (build state); own them.
+  if ((interaction.isButton() || interaction.isStringSelectMenu()) && interaction.customId.startsWith('imc:sb:')) {
+    await handleScheme(interaction);
     return;
   }
 

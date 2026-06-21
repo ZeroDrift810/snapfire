@@ -12,6 +12,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { getKnowledgeStats, loadKnowledgeBases, reloadKnowledgeBases } from './knowledge/loader';
 import { cardStats, loadCards, reloadCards } from './content/cards';
+import { loadSchemeData } from './scheme/data';
 import { handleInteraction } from './router';
 
 dotenv.config();
@@ -26,6 +27,7 @@ if (!DISCORD_BOT_TOKEN) {
 // Knowledge loads at boot so the first interaction is instant.
 loadKnowledgeBases();
 loadCards();
+loadSchemeData();
 
 // Hot-reload: re-read content/ (teaching cards) and data/ (playbook) when their files
 // change, so a content edit or a content-only deploy takes effect with NO restart.

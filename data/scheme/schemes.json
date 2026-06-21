@@ -1,0 +1,46 @@
+[
+  {
+    "id": "west-coast-power-run",
+    "name": "West Coast Power Run"
+  },
+  {
+    "id": "west-coast-zone-run",
+    "name": "West Coast Zone Run"
+  },
+  {
+    "id": "west-coast-spread",
+    "name": "West Coast Spread"
+  },
+  {
+    "id": "vertical-power-run",
+    "name": "Vertical Power Run"
+  },
+  {
+    "id": "vertical-zone-run",
+    "name": "Vertical Zone Run"
+  },
+  {
+    "id": "multiple-power-run",
+    "name": "Multiple Power Run"
+  },
+  {
+    "id": "multiple-zone-run",
+    "name": "Multiple Zone Run"
+  },
+  {
+    "id": "pistol:",
+    "name": "Pistol"
+  },
+  {
+    "id": "spread",
+    "name": "Spread"
+  },
+  {
+    "id": "air-raid",
+    "name": "Air Raid"
+  },
+  {
+    "id": "run-and-shoot",
+    "name": "Run and Shoot"
+  }
+]

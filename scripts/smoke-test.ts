@@ -25,6 +25,9 @@ import { buildDirView, buildOverView, buildStartView, buildTurnView } from '../s
 import { chooseOffense, getGame, newGame, resolveAsDefense, resolveDown } from '../src/playcall/game';
 import { OFFENSE, DEFENSE } from '../src/playcall/catalog';
 import { Dir } from '../src/playcall/engine';
+import { loadSchemeData, allSchemes, allTempos } from '../src/scheme/data';
+import { newBuild, setScheme, setTempo, setGroupConcepts, groupConcepts } from '../src/scheme/builder';
+import { buildSetupView, buildConceptView, buildIdentityView } from '../src/scheme/views';
 
 const errors: string[] = [];
 let routesTested = 0;
@@ -166,9 +169,9 @@ function partA() {
     if (visited.has(key)) continue;
     visited.add(key);
 
-    // Playcall is side-effecting (handled outside resolve(), like the operator hub).
-    // It does not nav-route; it is exercised exhaustively in Part F.
-    if (node.id.startsWith('imc:pc:')) continue;
+    // Playcall + Scheme Builder are side-effecting (handled outside resolve(), like the operator
+    // hub). They do not nav-route; they are exercised in Part F / Part G.
+    if (node.id.startsWith('imc:pc:') || node.id.startsWith('imc:sb:')) continue;
 
     const resolved = resolve(node.id, node.value);
     routesTested++;
@@ -380,6 +383,36 @@ function partPlaycall() {
   }
 }
 
+// --- Part G: scheme builder (side-effecting; build a scheme end to end) -----
+
+let sbViewsValidated = 0;
+
+function partScheme() {
+  loadSchemeData();
+  if (allSchemes().length < 1) fail('scheme builder: no schemes loaded (run tools/ingest-playbook-creator.py)');
+  const b = newBuild('smoke-sb');
+  validatePayload(buildSetupView(b), 'scheme:setup-empty');
+  sbViewsValidated++;
+  setScheme(b, allSchemes()[0].id);
+  setTempo(b, allTempos()[0].id);
+  validatePayload(buildSetupView(b), 'scheme:setup');
+  sbViewsValidated++;
+
+  // pick a couple concepts from each group, validate the running concept view each time
+  for (const g of ['run', 'qpa', 'pass'] as const) {
+    const ids = groupConcepts(g).slice(0, g === 'pass' ? 4 : 2).map((c) => c.id);
+    setGroupConcepts(b, g, ids);
+    validatePayload(buildConceptView(b), `scheme:concepts-${g}`);
+    sbViewsValidated++;
+  }
+  // the identity card with the roadmap must render
+  const card = buildIdentityView(b);
+  validatePayload(card, 'scheme:identity');
+  sbViewsValidated++;
+  const hasRoadmap = (card.embeds[0] as any).data.fields?.some((f: any) => /roadmap/i.test(f.name));
+  if (!hasRoadmap) fail('scheme builder: identity card has no playbook roadmap');
+}
+
 // --- run -------------------------------------------------------------------
 
 console.log('iMoveChainz smoke test');
@@ -416,6 +449,10 @@ process.env.PLAYCALL_GIF_FRAMES = process.env.PLAYCALL_GIF_FRAMES ?? '3';
 process.env.PLAYCALL_GIF_WIDTH = process.env.PLAYCALL_GIF_WIDTH ?? '380';
 partPlaycall();
 console.log(`   playcall: ${pcDrivesPlayed} drives, ${pcPlaysResolved} plays resolved, ${pcDiagramsRendered} live diagrams rendered`);
+
+console.log('Part G: scheme builder (declare + roadmap)...');
+partScheme();
+console.log(`   scheme builder: ${sbViewsValidated} views validated, identity card + roadmap built`);
 
 console.log('');
 console.log('='.repeat(60));

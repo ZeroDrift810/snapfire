@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gap_run",
+    "label": "Gap Run",
+    "recommended": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "zone_run",
+    "label": "Zone Run",
+    "recommended": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "rpo",
+    "label": "Option / RPO",
+    "recommended": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "pa",
+    "label": "Play Action",
+    "recommended": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "quick",
+    "label": "Quick Pass",
+    "recommended": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "medium",
+    "label": "Medium Pass",
+    "recommended": [
+      3,
+      6
+    ]
+  },
+  {
+    "id": "deep",
+    "label": "Deep Pass",
+    "recommended": [
+      1,
+      4
+    ]
+  }
+]

@@ -1,0 +1,2536 @@
+[
+  {
+    "id": "power",
+    "name": "Power",
+    "bucket": "gap_run",
+    "bucketLabel": "Gap Run",
+    "side": "run",
+    "engineConcept": "power",
+    "formations": {
+      "Shotgun": 68,
+      "Singleback": 56,
+      "Strong I": 18,
+      "I Form": 13,
+      "Weak I": 10,
+      "Pistol": 9,
+      "Wildcat": 4
+    },
+    "examples": [
+      {
+        "play": "Power O",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Power O",
+        "formation": "I Form"
+      },
+      {
+        "play": "26 Duo",
+        "formation": "I Form"
+      },
+      {
+        "play": "95 Willie",
+        "formation": "I Form"
+      },
+      {
+        "play": "Mtn Power",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Power G",
+        "formation": "I Form"
+      },
+      {
+        "play": "26 Duo Alert X Lookie",
+        "formation": "I Form"
+      },
+      {
+        "play": "Strong Power",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Wing Power 0",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Ravens Power",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Power Alert Smoke",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Base",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Fake Reverse",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y-Off Power O",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "counter",
+    "name": "Counter",
+    "bucket": "gap_run",
+    "bucketLabel": "Gap Run",
+    "side": "run",
+    "engineConcept": "counter",
+    "formations": {
+      "Singleback": 59,
+      "Shotgun": 23,
+      "Strong I": 14,
+      "Weak I": 14,
+      "Pistol": 10,
+      "I Form": 8,
+      "Wildcat": 3,
+      "Full House": 1
+    },
+    "examples": [
+      {
+        "play": "Counter Lead",
+        "formation": "Full House"
+      },
+      {
+        "play": "HB Counter Wk",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Counter Str",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Counter",
+        "formation": "I Form"
+      },
+      {
+        "play": "Counter Y",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Raven Cntr Lead",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Motion Counter Y",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Counter Alert Flat",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Counter F Alert Smoke",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Read Counter Stick",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Counter",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Counter Read",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Counter U",
+        "formation": "Singleback"
+      },
+      {
+        "play": "Mtn Counter Str",
+        "formation": "Singleback"
+      }
+    ]
+  },
+  {
+    "id": "trap",
+    "name": "Trap",
+    "bucket": "gap_run",
+    "bucketLabel": "Gap Run",
+    "side": "run",
+    "engineConcept": "trap",
+    "formations": {
+      "Singleback": 25,
+      "Shotgun": 16,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "Trap Fake Jet",
+        "formation": "Pistol"
+      },
+      {
+        "play": "01 Trap",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Trap Alert Screen",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "O1 Trap",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "56 Trap",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Trap Alert Bubble",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "5 6 Trap",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "0 1 Trap",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "HB Wham",
+        "formation": "Singleback"
+      },
+      {
+        "play": "HB Cutback",
+        "formation": "Singleback"
+      }
+    ]
+  },
+  {
+    "id": "sweep",
+    "name": "Sweep",
+    "bucket": "gap_run",
+    "bucketLabel": "Gap Run",
+    "side": "run",
+    "engineConcept": "toss",
+    "formations": {
+      "Singleback": 46,
+      "Shotgun": 19,
+      "Strong I": 10,
+      "I Form": 4,
+      "Pistol": 2,
+      "Wildcat": 2,
+      "Weak I": 2
+    },
+    "examples": [
+      {
+        "play": "HB Wk Toss",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Toss",
+        "formation": "I Form"
+      },
+      {
+        "play": "Buck Alert Screen",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Jet Touch Pass",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Crack Toss",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bears QB Sweep",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Buck Sweep",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Jet Pass Fk Zone",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Sweep Peek",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Jet Sweep",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Weak Toss",
+        "formation": "Singleback"
+      },
+      {
+        "play": "HB Toss Crack",
+        "formation": "Singleback"
+      },
+      {
+        "play": "Jet Sweep Wk",
+        "formation": "Singleback"
+      },
+      {
+        "play": "Quick Pitch",
+        "formation": "Singleback"
+      }
+    ]
+  },
+  {
+    "id": "outside-zone",
+    "name": "Outside Zone",
+    "bucket": "zone_run",
+    "bucketLabel": "Zone Run",
+    "side": "run",
+    "engineConcept": "outside-zone",
+    "formations": {
+      "Singleback": 97,
+      "Shotgun": 62,
+      "I Form": 28,
+      "Strong I": 23,
+      "Pistol": 12,
+      "Weak I": 5,
+      "Wildcat": 2
+    },
+    "examples": [
+      {
+        "play": "HB Stretch",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Zone Toss",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch",
+        "formation": "I Form"
+      },
+      {
+        "play": "FB Fake HB Flip",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert X Smoke",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert Bubble",
+        "formation": "I Form"
+      },
+      {
+        "play": "Jet Sweep",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert U Pop",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert Lookie",
+        "formation": "I Form"
+      },
+      {
+        "play": "Zone Toss",
+        "formation": "I Form"
+      },
+      {
+        "play": "Jet Pass Fk Zone",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Jet Touch Pass",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Fake Philly Special",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Stretch Alert X Lookie",
+        "formation": "Pistol"
+      }
+    ]
+  },
+  {
+    "id": "inside-zone",
+    "name": "Inside Zone",
+    "bucket": "zone_run",
+    "bucketLabel": "Zone Run",
+    "side": "run",
+    "engineConcept": "inside-zone",
+    "formations": {
+      "Singleback": 197,
+      "Shotgun": 165,
+      "I Form": 34,
+      "Pistol": 31,
+      "Strong I": 25,
+      "Weak I": 23,
+      "Power I": 3,
+      "Full House": 1
+    },
+    "examples": [
+      {
+        "play": "HB Smash",
+        "formation": "Full House"
+      },
+      {
+        "play": "Zone Wk",
+        "formation": "I Form"
+      },
+      {
+        "play": "Inside Zone",
+        "formation": "I Form"
+      },
+      {
+        "play": "94 Will",
+        "formation": "I Form"
+      },
+      {
+        "play": "95 Mike",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Blast",
+        "formation": "I Form"
+      },
+      {
+        "play": "Zone Weak",
+        "formation": "I Form"
+      },
+      {
+        "play": "Bills Alert Z Lookie",
+        "formation": "I Form"
+      },
+      {
+        "play": "Zone Fake Jet",
+        "formation": "I Form"
+      },
+      {
+        "play": "Mtn Zone",
+        "formation": "I Form"
+      },
+      {
+        "play": "Inside Zone Split",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Zone",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Inside Zone Wk",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Motion Zone Split",
+        "formation": "Pistol"
+      }
+    ]
+  },
+  {
+    "id": "dive",
+    "name": "Dive",
+    "bucket": "zone_run",
+    "bucketLabel": "Zone Run",
+    "side": "run",
+    "engineConcept": "iso",
+    "formations": {
+      "Singleback": 87,
+      "Strong I": 30,
+      "I Form": 23,
+      "Pistol": 18,
+      "Weak I": 17,
+      "Shotgun": 3,
+      "Full House": 1,
+      "Wildcat": 1
+    },
+    "examples": [
+      {
+        "play": "HB Slam",
+        "formation": "Full House"
+      },
+      {
+        "play": "HB Lead Dive",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Iso",
+        "formation": "I Form"
+      },
+      {
+        "play": "FB Dive Fake HB",
+        "formation": "I Form"
+      },
+      {
+        "play": "Iso",
+        "formation": "I Form"
+      },
+      {
+        "play": "Dive Alert Bubble",
+        "formation": "I Form"
+      },
+      {
+        "play": "Dive Alert Smoke",
+        "formation": "I Form"
+      },
+      {
+        "play": "FB Dive",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Dive",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Alert Screen",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Double Iso",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Wing HB Dive",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Dive Wk",
+        "formation": "Pistol"
+      },
+      {
+        "play": "QB Blast",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "draw",
+    "name": "Draw",
+    "bucket": "zone_run",
+    "bucketLabel": "Zone Run",
+    "side": "run",
+    "engineConcept": "draw",
+    "formations": {
+      "Shotgun": 52,
+      "Singleback": 17,
+      "Strong I": 5,
+      "Pistol": 4,
+      "Weak I": 2
+    },
+    "examples": [
+      {
+        "play": "HB Draw",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Mid Draw",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "QB Draw",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Inside Zone",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "HB Lead Draw",
+        "formation": "Strong I"
+      },
+      {
+        "play": "HB Pump Draw",
+        "formation": "Singleback"
+      },
+      {
+        "play": "Mtn HB Draw",
+        "formation": "Singleback"
+      },
+      {
+        "play": "HB Delay",
+        "formation": "Singleback"
+      },
+      {
+        "play": "Pump HB Draw",
+        "formation": "Singleback"
+      }
+    ]
+  },
+  {
+    "id": "rpo-screens",
+    "name": "RPO: Screens",
+    "bucket": "rpo",
+    "bucketLabel": "Option / RPO",
+    "side": "pass",
+    "engineConcept": "wr-screen",
+    "formations": {
+      "Shotgun": 141,
+      "Singleback": 52,
+      "Pistol": 25,
+      "Strong I": 11,
+      "Weak I": 6,
+      "I Form": 5
+    },
+    "examples": [
+      {
+        "play": "Stretch Alert X Smoke",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA TE Screen",
+        "formation": "I Form"
+      },
+      {
+        "play": "Dive Alert Bubble",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert Bubble",
+        "formation": "I Form"
+      },
+      {
+        "play": "Dive Alert Smoke",
+        "formation": "I Form"
+      },
+      {
+        "play": "HB Slip Screen",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Alert Screen",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Zone Alert Bubble",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Zone Alert X Smoke",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Slip  Screen",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Blast Alert X Smoke",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Counter Alert Flat",
+        "formation": "Pistol"
+      },
+      {
+        "play": "HB Blast Alert X Smoke",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Zone Alert Smoke",
+        "formation": "Pistol"
+      }
+    ]
+  },
+  {
+    "id": "rpo-downfield",
+    "name": "RPO: Downfield",
+    "bucket": "rpo",
+    "bucketLabel": "Option / RPO",
+    "side": "pass",
+    "engineConcept": "rpo-slant",
+    "formations": {
+      "Shotgun": 65,
+      "Singleback": 14,
+      "I Form": 4,
+      "Strong I": 3,
+      "Pistol": 2,
+      "Weak I": 2
+    },
+    "examples": [
+      {
+        "play": "Bills Alert Z Lookie",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert U Pop",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert Lookie",
+        "formation": "I Form"
+      },
+      {
+        "play": "26 Duo Alert X Lookie",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stretch Alert X Lookie",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Zone Peek",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Peek WR Screen",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Zone Alert Omaha",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Alert Omaha",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Power Peek",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Power Alert Glance",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Zone Alert Glance",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Zone Y Peek",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Zone Alert Bus",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "rpo-option",
+    "name": "RPO: Option",
+    "bucket": "rpo",
+    "bucketLabel": "Option / RPO",
+    "side": "run",
+    "engineConcept": "rpo-bubble",
+    "formations": {
+      "Shotgun": 84,
+      "Pistol": 27
+    },
+    "examples": [
+      {
+        "play": "Read Option Wk",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Read Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Read Flat Wheel",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Raven Read Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Lead Read Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Tr Opt Switch",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Power Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Triple Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Tr Option Slip",
+        "formation": "Pistol"
+      },
+      {
+        "play": "F Lead Read Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "RPO Read Bubble",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Speed Option",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Y Lead Read Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Zone Read Bubble",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "pa-boots",
+    "name": "PA Boots",
+    "bucket": "pa",
+    "bucketLabel": "Play Action",
+    "side": "pass",
+    "engineConcept": "flood",
+    "formations": {
+      "Singleback": 142,
+      "Weak I": 27,
+      "Strong I": 26,
+      "I Form": 15,
+      "Pistol": 13,
+      "Shotgun": 5,
+      "Power I": 2
+    },
+    "examples": [
+      {
+        "play": "PA Boot Flow",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA FB Slide",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Comeback Slide",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Sprint HB Flat",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Y Throwback",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Boot Comeback",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Sprint FB Flat",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Boot",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA U Slide",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Boot Slide",
+        "formation": "Pistol"
+      },
+      {
+        "play": "PA Boot Rt",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Philly Special",
+        "formation": "Pistol"
+      },
+      {
+        "play": "PA Boot Lt",
+        "formation": "Pistol"
+      },
+      {
+        "play": "PA TE Slide",
+        "formation": "Pistol"
+      }
+    ]
+  },
+  {
+    "id": "pa-shots",
+    "name": "PA Shots",
+    "bucket": "pa",
+    "bucketLabel": "Play Action",
+    "side": "pass",
+    "engineConcept": "four-verticals",
+    "formations": {
+      "Singleback": 292,
+      "Shotgun": 176,
+      "Strong I": 57,
+      "I Form": 54,
+      "Weak I": 29,
+      "Pistol": 25,
+      "Power I": 3,
+      "Wildcat": 3,
+      "Full House": 1
+    },
+    "examples": [
+      {
+        "play": "PA Middle",
+        "formation": "Full House"
+      },
+      {
+        "play": "PA TE Leak",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Spider Mesh",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Deep Cross Go",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Deep Read",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA TE Corner",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Spot",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Level",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Scissors",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Power",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Power O",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA WR In",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA X Dig",
+        "formation": "I Form"
+      }
+    ]
+  },
+  {
+    "id": "ohio",
+    "name": "Ohio",
+    "bucket": "quick",
+    "bucketLabel": "Quick Pass",
+    "side": "pass",
+    "engineConcept": "curls",
+    "formations": {
+      "Shotgun": 26,
+      "Singleback": 3,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "Stack Out",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Double Outs",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Ohio Double Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slots Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Curl Ohio",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Out Levels",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Corner",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Fade Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Outs",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Ohio Double In",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Ohio Sail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Ohio Spacing",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flanker Dig",
+        "formation": "Singleback"
+      }
+    ]
+  },
+  {
+    "id": "omaha",
+    "name": "Omaha",
+    "bucket": "quick",
+    "bucketLabel": "Quick Pass",
+    "side": "pass",
+    "engineConcept": "bench",
+    "formations": {
+      "Shotgun": 12,
+      "Strong I": 7,
+      "I Form": 6,
+      "Singleback": 5,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "DBL Outs",
+        "formation": "I Form"
+      },
+      {
+        "play": "Y Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "WR Curl",
+        "formation": "I Form"
+      },
+      {
+        "play": "Tech Out",
+        "formation": "Pistol"
+      },
+      {
+        "play": "TE Hook",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Deep Outs",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Outs",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Out Double Under",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Curl",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "46 Y Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Pivot Corner",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "WR Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Inside Post Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Over Pivot",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "slant",
+    "name": "Slant",
+    "bucket": "quick",
+    "bucketLabel": "Quick Pass",
+    "side": "pass",
+    "engineConcept": "slants",
+    "formations": {
+      "Shotgun": 60,
+      "Singleback": 29,
+      "Strong I": 16,
+      "Pistol": 10,
+      "Weak I": 9,
+      "I Form": 8,
+      "Power I": 1
+    },
+    "examples": [
+      {
+        "play": "Slants",
+        "formation": "I Form"
+      },
+      {
+        "play": "X Slant",
+        "formation": "I Form"
+      },
+      {
+        "play": "Quick Slants",
+        "formation": "I Form"
+      },
+      {
+        "play": "Double Slant",
+        "formation": "I Form"
+      },
+      {
+        "play": "Z Slant",
+        "formation": "I Form"
+      },
+      {
+        "play": "Y Stick",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Slants Flat",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Slants",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spot Dbl Slants",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spot Dbl Slant",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slant Flat",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Slant Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Packer Slants",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Slant Stick",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "spacing",
+    "name": "Spacing",
+    "bucket": "quick",
+    "bucketLabel": "Quick Pass",
+    "side": "pass",
+    "engineConcept": "spacing",
+    "formations": {
+      "Shotgun": 37,
+      "Singleback": 32,
+      "I Form": 5,
+      "Weak I": 5,
+      "Pistol": 4,
+      "Strong I": 1
+    },
+    "examples": [
+      {
+        "play": "Spacing",
+        "formation": "I Form"
+      },
+      {
+        "play": "Curls",
+        "formation": "I Form"
+      },
+      {
+        "play": "Panthers Spacing",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Stick Spacing",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Curls Attack",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spacing Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Curl",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slant Spacing Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slant Spacing",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Hitches",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "All Hitch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Choice Spacing",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dragon Spacing",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "WR Stick N Out",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "stick",
+    "name": "Stick",
+    "bucket": "quick",
+    "bucketLabel": "Quick Pass",
+    "side": "pass",
+    "engineConcept": "stick",
+    "formations": {
+      "Shotgun": 84,
+      "Singleback": 51,
+      "Pistol": 9,
+      "Weak I": 5,
+      "Strong I": 3,
+      "I Form": 2,
+      "Power I": 1
+    },
+    "examples": [
+      {
+        "play": "X Slant",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stick Spacing",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Stick",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Y Stick",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Both Stick",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dolphins Stick",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spot Y Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Packer Stick",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "HB Angle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Packers Scat",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Shock WR Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "RPO Q Stick Draw",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Shock Slot Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Slant Stick",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "choice",
+    "name": "Choice",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "stick",
+    "formations": {
+      "Shotgun": 47,
+      "Singleback": 22,
+      "I Form": 2
+    },
+    "examples": [
+      {
+        "play": "PA Deep Read",
+        "formation": "I Form"
+      },
+      {
+        "play": "Choice Shallow Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Option Pivot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Rams Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Under Y Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dolphins Combo",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Choice Stick Nod",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Shock Slot Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Hoss Juke",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Choice Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Choice Spacing",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Speed Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Choice Shallow Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dagger Ohio",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "curl",
+    "name": "Curl",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "curls",
+    "formations": {
+      "Shotgun": 61,
+      "Singleback": 33,
+      "Strong I": 14,
+      "Weak I": 7,
+      "Pistol": 6,
+      "I Form": 3,
+      "Full House": 1
+    },
+    "examples": [
+      {
+        "play": "Curls",
+        "formation": "Full House"
+      },
+      {
+        "play": "Curl Flat Corner",
+        "formation": "Pistol"
+      },
+      {
+        "play": "494 F Flat",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Double Flares",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Deep Curls",
+        "formation": "Pistol"
+      },
+      {
+        "play": "PA Read",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "518 Hook",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Ravens Hook",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Pats Curl Flat",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Curl Flat",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Hook",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Curl Combo",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "SE Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Curl Ohio",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "drive",
+    "name": "Drive",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "drive",
+    "formations": {
+      "Shotgun": 41,
+      "Singleback": 33,
+      "Strong I": 8,
+      "Weak I": 5,
+      "I Form": 2,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "Flanker Drive",
+        "formation": "I Form"
+      },
+      {
+        "play": "WR Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bunch Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drive Y Corner",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Packer Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drive Wheel",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Curl Pivot Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Weak Flood",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "TE Wheel",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood Z Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drive Trail",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "follow-texas",
+    "name": "Follow / Texas",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "texas",
+    "formations": {
+      "Shotgun": 36,
+      "Singleback": 19,
+      "Strong I": 8,
+      "I Form": 1
+    },
+    "examples": [
+      {
+        "play": "Texas",
+        "formation": "I Form"
+      },
+      {
+        "play": "Slot Trail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Trail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bunch Trail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Ravens Hook",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "TE Angle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Post Wheel",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "HB Angle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bench HB Angle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Texas Double Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Seam HB Angle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Trail Shake",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bunch Arches",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Middle Slant",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "levels",
+    "name": "Levels",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "levels",
+    "formations": {
+      "Shotgun": 33,
+      "Singleback": 10,
+      "I Form": 1
+    },
+    "examples": [
+      {
+        "play": "FB Flare",
+        "formation": "I Form"
+      },
+      {
+        "play": "Levels",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y-Sail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Out Levels",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Levels Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Under",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Levels Mills",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "WR Under",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Under Y Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Levels Divide",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Rams Levels",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Jet New Orleans",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Levels Out",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "mesh",
+    "name": "Mesh",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "mesh",
+    "formations": {
+      "Shotgun": 33,
+      "Singleback": 8,
+      "Weak I": 7,
+      "Strong I": 4,
+      "I Form": 2,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "Mesh",
+        "formation": "I Form"
+      },
+      {
+        "play": "Mesh Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Mesh Flat Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Mesh Sit",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Mesh Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Mesh Post Wheel",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Motion PA Mesh",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "X Follow",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Wheel Mesh",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Mesh Y Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Mesh Post",
+        "formation": "Strong I"
+      },
+      {
+        "play": "Z Mesh Goalline",
+        "formation": "Singleback"
+      },
+      {
+        "play": "Tight Mesh",
+        "formation": "Strong I"
+      }
+    ]
+  },
+  {
+    "id": "salem-pivot",
+    "name": "Salem / Pivot",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "whips",
+    "formations": {
+      "Shotgun": 38,
+      "Singleback": 11
+    },
+    "examples": [
+      {
+        "play": "Jet Pull Shallow",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slant Spacing Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Speed Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Jet Shallow Swirl",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bench Dig Curl",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "X Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Sail Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "SE Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Rams Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y-Sail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Comeback Z Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Curl Flat Salem",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dig WR Option",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "shallow-cross",
+    "name": "Shallow Cross",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "shallow-cross",
+    "formations": {
+      "Shotgun": 48,
+      "Singleback": 22,
+      "Weak I": 3,
+      "Pistol": 2
+    },
+    "examples": [
+      {
+        "play": "Tech Out",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Y Shallow Cross",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Inside Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Choice Shallow Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Branch Return",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Smash Return",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Post Wheel Shallow",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Shark HB Wheel",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Short Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Choice Shallow Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Shallow Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dbl Slot Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Pivot",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "smash",
+    "name": "Smash",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "smash",
+    "formations": {
+      "Shotgun": 168,
+      "Singleback": 39,
+      "Pistol": 6,
+      "Weak I": 5,
+      "Strong I": 2,
+      "Full House": 1,
+      "I Form": 1
+    },
+    "examples": [
+      {
+        "play": "Corner Strike",
+        "formation": "Full House"
+      },
+      {
+        "play": "Y Cop",
+        "formation": "I Form"
+      },
+      {
+        "play": "Fade Smash",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Bench Switch",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Z Under",
+        "formation": "Pistol"
+      },
+      {
+        "play": "FL Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Z Spot N Go",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bench Pivot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Smash Return",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Corner Out Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Triple Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Branch Return",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bench X Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bench Swap",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "spot",
+    "name": "Spot",
+    "bucket": "medium",
+    "bucketLabel": "Medium Pass",
+    "side": "pass",
+    "engineConcept": "snag",
+    "formations": {
+      "Shotgun": 58,
+      "Singleback": 23,
+      "Pistol": 2,
+      "I Form": 1,
+      "Strong I": 1
+    },
+    "examples": [
+      {
+        "play": "PA Spot",
+        "formation": "I Form"
+      },
+      {
+        "play": "Z Spot",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Wheel Switch",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Dig Return",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Z Spot N Go",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Sprint Z Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "X Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Swirl Hook N Go",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "WR Wheels",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spot Smash",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Digs Y Corner",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "FL Spot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Slant Spot",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "dagger",
+    "formations": {
+      "Shotgun": 33,
+      "Strong I": 6,
+      "Singleback": 4,
+      "I Form": 3,
+      "Weak I": 2,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "Dagger",
+        "formation": "I Form"
+      },
+      {
+        "play": "PA Dagger",
+        "formation": "I Form"
+      },
+      {
+        "play": "Drag",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "X Dagger",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dagger Ohio",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dagger Deep Curl",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flanker Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Z Dagger",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Bench Dagger",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dagger Sit",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dagger X Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Deep In",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "FL Dagger",
+        "formation": "Singleback"
+      },
+      {
+        "play": "FL Dig",
+        "formation": "Singleback"
+      }
+    ]
+  },
+  {
+    "id": "divide",
+    "name": "Divide",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "mills",
+    "formations": {
+      "Shotgun": 40,
+      "Singleback": 15,
+      "I Form": 3,
+      "Strong I": 3,
+      "Pistol": 1
+    },
+    "examples": [
+      {
+        "play": "Y Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "Double Dig",
+        "formation": "I Form"
+      },
+      {
+        "play": "TE Attack",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Clearout SE Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Inside Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Texas Double Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Middle Hi Lo",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double In",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Seams Y Corner",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "DBL Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "DBL Dig",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "flood",
+    "name": "Flood",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "flood",
+    "formations": {
+      "Shotgun": 84,
+      "Singleback": 9,
+      "Pistol": 4
+    },
+    "examples": [
+      {
+        "play": "Flood Post",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Out N Under",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Y Corner",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Flood",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Deep Corner",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Pats Sail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y-Sail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Redzone Scissors",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Sail Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood Drive",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Sail",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Escape",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Strong Flood",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Out X Dig",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "man-beaters",
+    "name": "Man Beaters",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "post-wheel",
+    "formations": {
+      "Shotgun": 95,
+      "Singleback": 41,
+      "Strong I": 5,
+      "I Form": 4,
+      "Weak I": 1
+    },
+    "examples": [
+      {
+        "play": "Double Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "Out N Up",
+        "formation": "I Form"
+      },
+      {
+        "play": "Stutter Go's",
+        "formation": "I Form"
+      },
+      {
+        "play": "Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "Bench Pivot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Inside Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Jet Shallow Swirl",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Middle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Corner Pivot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "DBL Outs",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Dig Return",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Corner N Go's",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "PoCo X Dig",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "switch",
+    "name": "Switch",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "switch",
+    "formations": {
+      "Shotgun": 23,
+      "Singleback": 8,
+      "Pistol": 4,
+      "I Form": 3,
+      "Strong I": 1
+    },
+    "examples": [
+      {
+        "play": "PA Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "X Post",
+        "formation": "I Form"
+      },
+      {
+        "play": "Double Dig",
+        "formation": "I Form"
+      },
+      {
+        "play": "Raven Post Wheel",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Raven Curl Wheel",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Dig Wheel",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Deep Curls",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Flood Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Option Pivot",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Post Wheel",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Switch WR Drag",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Switch",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Rams Option",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drive Y Corner",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "verticals",
+    "name": "Verticals",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "four-verticals",
+    "formations": {
+      "Shotgun": 117,
+      "Singleback": 48,
+      "Pistol": 11,
+      "Weak I": 4
+    },
+    "examples": [
+      {
+        "play": "Verticals",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Four Verticals",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Fade Smash",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Fade Stop",
+        "formation": "Pistol"
+      },
+      {
+        "play": "WR Under",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Bills Verts",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "TE Verticals",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Verts HB Under",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drag Under",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Durham",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Seattle",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Inside Seams",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Fake Jet HB Seam",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Levels",
+        "formation": "Shotgun"
+      }
+    ]
+  },
+  {
+    "id": "y-cross",
+    "name": "Y Cross",
+    "bucket": "deep",
+    "bucketLabel": "Deep Pass",
+    "side": "pass",
+    "engineConcept": "shallow-cross",
+    "formations": {
+      "Shotgun": 49,
+      "Pistol": 2,
+      "Singleback": 1,
+      "Strong I": 1
+    },
+    "examples": [
+      {
+        "play": "X Seam",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Y Cross",
+        "formation": "Pistol"
+      },
+      {
+        "play": "Steelers Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Speed Dig",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Drag Under",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Seam Divide",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Speed Dig Out",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Jags Duval",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "83 HB Choice",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "PA Y Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Slot Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Spot Y Cross",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Double Post",
+        "formation": "Shotgun"
+      },
+      {
+        "play": "Y Cross Flood",
+        "formation": "Shotgun"
+      }
+    ]
+  }
+]
