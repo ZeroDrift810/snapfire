@@ -2,6 +2,37 @@
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.
 
+## 2026-06-20 — Playcall: engine-resolved drive game with live HimkageVision art  [feature, game, engine]
+**What:** New button-driven mini-game `src/playcall/`. You are SnapFire offense, the Shinobi bot
+is the defense; you call a play + side each down, the bot answers with a front + coverage, and the
+HimkageVision play engine resolves the real matchup. Outcomes are NOT a hand-authored matrix: the
+grader reads what the engine actually drew (box count, double-teams + unblocked defenders at the
+point of attack for runs; free rushers the protection missed + the canon concept.beats / beaten_by
+coverage tags for passes) into an expected-value + variance + event model, rolled with an injectable
+RNG. Every resolved snap renders a LIVE diagram of that exact matchup (engine SVG -> PNG), never a
+pre-baked image. Single-drive vs the bot for v1 (field position, downs, TD / turnover / downs); PvP
+is a later layer (swap the bot pick for a second player, same resolution path).
+**Files:** engine/ (vendored play-engine.core.js + play-data.js from HimkageVision, + OFL Barlow
+fonts under engine/fonts), src/playcall/{engine,render,catalog,grade,game,views,handler}.ts,
+scripts/sim-playcall.ts (grader balance harness), src/router.ts + src/ui/views.ts (hub launch
+button + pc dispatch), scripts/smoke-test.ts (Part F: plays 6 full drives, renders 45 live diagrams),
+package.json (+@resvg/resvg-js, sim:playcall script).
+**Verification:** tsc clean. Smoke green (296 routes, 1064 detail pages, Part F 6 drives / 45 plays /
+45 live diagrams, 0 dead buttons). Grader sim (4000 rolls/matchup) is football-correct: Four Verts
+10.0 yds vs Cover 3 (canon beats) but 3.7 vs Quarters (canon beaten_by); Smash 9.8 vs Cover 2;
+quick game eats pressure (Slants 8% sack vs the A-gap fire) while shots do not (Four Verts 21%);
+runs walled to ~3.0 vs Bear Zero, ~5.8 vs Prevent; Read Option beats the loaded box because the
+engine leaves the read key unblocked by design.
+**Gotchas:** (1) The engine is plain CommonJS with no build step; it is required at runtime from
+PROJECT_ROOT/engine (NOT compiled into dist/), exactly like data/ and content/ are read, so it
+survives `tsc`. (2) HimkageVision only emits SVG (its rasterizer is a Python/PyMuPDF tool, unusable
+in the bot); runtime PNG comes from @resvg/resvg-js with a BUNDLED font (Barlow, OFL) and
+loadSystemFonts:false so headless hosts render text deterministically. (3) The engine leaves option
+read keys unblocked on purpose; unblockedAtPOA() subtracts one for read/speed-option/power-read so a
+designed read does not score as a busted block. (4) To re-sync vendored engine after a HimkageVision
+data change: rebuild play-data.js there (node build-data.js) and copy play-engine.core.js +
+play-data.js into engine/.
+
 ## 2026-06-19 — Phase 4: cleanup + final QA gate  [data, content]
 **What:** (1) Deduped 354 scheme name slugs so all 890 are unique and every formation variant is
 reachable (the list/select keys on name; dup names hid variants). display_name unchanged. (2) Fixed the

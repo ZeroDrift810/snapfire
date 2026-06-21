@@ -128,6 +128,7 @@ function hubEmbed(): EmbedBuilder {
         'Football IQ for Madden and CFB. Pick a track to start.',
         '',
         ...HUB_ORDER.map((t) => `${TRACK_EMOJI[t]} **${TRACK_LABEL[t]}:** ${TRACK_BLURB[t]}`),
+        '🎮 **Playcall:** Call a SnapFire drive against the Shinobi defense. The engine draws every snap.',
       ].join('\n')
     )
     .setFooter({ text: GENERIC_BRAND.footer });
@@ -144,7 +145,16 @@ export function buildHubPublic(): ViewPayload {
   const components = chunk(buttons, 3).map((g) =>
     new ActionRowBuilder<ButtonBuilder>().addComponents(g)
   );
+  components.push(playcallRow());
   return { embeds: [hubEmbed()], components, attachments: [] };
+}
+
+// Playcall launch button. customId is the playcall handler's namespace ('imc:pc:new');
+// kept as a literal here to avoid importing the game module into the core hub view.
+function playcallRow(): ActionRowBuilder<ButtonBuilder> {
+  return new ActionRowBuilder<ButtonBuilder>().addComponents(
+    new ButtonBuilder().setCustomId('imc:pc:new').setLabel('Playcall').setEmoji('🎮').setStyle(ButtonStyle.Success)
+  );
 }
 
 export function buildHubSession(): ViewPayload {
@@ -158,6 +168,7 @@ export function buildHubSession(): ViewPayload {
   const components = chunk(buttons, 3).map((g) =>
     new ActionRowBuilder<ButtonBuilder>().addComponents(g)
   );
+  components.push(playcallRow());
   return { embeds: [hubEmbed()], components, attachments: [] };
 }
 

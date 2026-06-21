@@ -15,6 +15,7 @@ import {
 import { buildDetail, buildGoto, buildHubSession, buildList, ViewPayload } from './ui/views';
 import { DEFAULT_FILTER, isTrack, parseId, Track } from './ui/ids';
 import { handleOperator } from './operator/operator';
+import { handlePlaycall } from './playcall/handler';
 
 export type Mode = 'open' | 'update';
 
@@ -115,6 +116,12 @@ async function apply(
 
 /** Live entry point, wired to interactionCreate. Buttons and select menus only. */
 export async function handleInteraction(interaction: Interaction): Promise<void> {
+  // Playcall game buttons + select are side-effecting (drive state, RNG, live render); own them.
+  if ((interaction.isButton() || interaction.isStringSelectMenu()) && interaction.customId.startsWith('imc:pc:')) {
+    await handlePlaycall(interaction);
+    return;
+  }
+
   if (interaction.isButton()) {
     // Operator hub buttons are owner-gated and side-effecting; handled separately.
     if (interaction.customId.startsWith('imc:op:')) {

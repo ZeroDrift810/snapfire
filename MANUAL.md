@@ -61,6 +61,19 @@ sessions, play breakdowns with the matching in-game art.
   **`FOOTBALL-KNOWLEDGE-CANON.md`** (the engine is the authority). Only `verified:true` entries
   carry real route/read text.
 
+### 6. Playcall game (engine-resolved drive vs the bot)
+- Players tap **🎮 Playcall** on the hub to start a private drive: they are SnapFire offense, the
+  Shinobi bot defends. Each down they pick a play and a side; the bot answers with a front +
+  coverage; the HimkageVision engine resolves the real matchup, the grader scores it from the
+  geometry (box count, blocks, pressure) + the canon concept/coverage tags, and a **live diagram of
+  that exact matchup** is rendered (engine SVG to PNG via the bundled Barlow font). No static art.
+- It is in-memory (one drive per player, no database) and side-effecting, so it is handled outside
+  the pure router. Validate it with `npm run smoke` (Part F plays full drives and renders diagrams)
+  and balance-check the grader with `npm run sim:playcall`.
+- The play engine + corpus are vendored at **`engine/`** (from `../HimkageVision`). To re-sync after
+  a HimkageVision data change: there run `node build-data.js`, then copy `play-engine.core.js` +
+  `play-data.js` into `engine/`. Fonts live in `engine/fonts/` (OFL Barlow, shipped in the repo).
+
 ## Troubleshooting
 
 | Symptom | Fix |

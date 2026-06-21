@@ -5,20 +5,29 @@
   "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {
-  "build": "tsc",
-  "start": "node dist/index.js",
-  "dev": "tsx src/index.ts",
-  "post-hub": "tsx scripts/post-hub.ts",
-  "post-operator-hub": "tsx scripts/post-operator-hub.ts",
-  "autopost": "tsx scripts/autopost.ts",
-  "setup-channels": "tsx scripts/setup-channels.ts",
-  "smoke": "tsx scripts/smoke-test.ts",
-  "export-playbook": "tsx tools/export_playbook_data.ts"
-},
-  "keywords": ["discord", "bot", "madden", "football", "snapfire", "shinobi"],
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "post-hub": "tsx scripts/post-hub.ts",
+    "post-operator-hub": "tsx scripts/post-operator-hub.ts",
+    "autopost": "tsx scripts/autopost.ts",
+    "setup-channels": "tsx scripts/setup-channels.ts",
+    "smoke": "tsx scripts/smoke-test.ts",
+    "sim:playcall": "tsx scripts/sim-playcall.ts",
+    "export-playbook": "tsx tools/export_playbook_data.ts"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "madden",
+    "football",
+    "snapfire",
+    "shinobi"
+  ],
   "author": "Himkage",
   "license": "MIT",
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1"
   },

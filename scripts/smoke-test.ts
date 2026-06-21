@@ -21,6 +21,10 @@ import { resolve } from '../src/router';
 import { DEFAULT_FILTER, Track } from '../src/ui/ids';
 import { AUTOPOST_ITEMS, BUILDERS } from '../src/engagement/items';
 import { buildOperatorHub, operatorActionIds } from '../src/operator/operator';
+import { buildCallView, buildDirView, buildOverView } from '../src/playcall/views';
+import { chooseOffense, getGame, newGame, resolveDown } from '../src/playcall/game';
+import { OFFENSE } from '../src/playcall/catalog';
+import { Dir } from '../src/playcall/engine';
 
 const errors: string[] = [];
 let routesTested = 0;
@@ -161,6 +165,10 @@ function partA() {
     const key = `${node.kind}|${node.id}|${node.value ?? ''}`;
     if (visited.has(key)) continue;
     visited.add(key);
+
+    // Playcall is side-effecting (handled outside resolve(), like the operator hub).
+    // It does not nav-route; it is exercised exhaustively in Part F.
+    if (node.id.startsWith('imc:pc:')) continue;
 
     const resolved = resolve(node.id, node.value);
     routesTested++;
@@ -303,6 +311,56 @@ function partEmoji() {
   }
 }
 
+// --- Part F: playcall game (side-effecting; play a full simulated drive) ----
+
+function mulberry32(seed: number): () => number {
+  let a = seed >>> 0;
+  return () => {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+let pcDrivesPlayed = 0;
+let pcPlaysResolved = 0;
+let pcDiagramsRendered = 0;
+
+function partPlaycall() {
+  // Validate the opening view (no diagram yet) and the per-call direction view.
+  const g0 = newGame('smoke-user');
+  validatePayload(buildCallView(g0), 'playcall:open');
+  chooseOffense(g0, OFFENSE[0].id);
+  validatePayload(buildDirView(g0, OFFENSE[0].id), 'playcall:dir');
+
+  // Play several full drives with a seeded RNG; every resolved play renders a live diagram
+  // and every view must be a valid Discord payload. Different seeds exercise score/turnover/downs.
+  for (let s = 0; s < 6; s++) {
+    const rng = mulberry32(1000 + s * 7);
+    const g = newGame('smoke-user');
+    let guard = 0;
+    while (g.status !== 'over' && guard++ < 40) {
+      const off = OFFENSE[Math.floor(rng() * OFFENSE.length)];
+      if (!chooseOffense(g, off.id)) break;
+      const dir: Dir = rng() < 0.5 ? -1 : 1;
+      const rec = resolveDown(g, dir, rng);
+      if (!rec) break;
+      pcPlaysResolved++;
+      // the diagram for this exact matchup must render (live HimkageVision art)
+      const live = getGame('smoke-user')!;
+      const view = live.status === 'over' ? buildOverView(live) : buildCallView(live);
+      if (!view.files || view.files.length !== 1) fail(`playcall: resolved play built no diagram (seed ${s})`);
+      else pcDiagramsRendered++;
+      validatePayload(view, `playcall:play:${s}`);
+    }
+    if (g.status !== 'over') fail(`playcall: drive ${s} never ended (guard hit)`);
+    validatePayload(buildOverView(g), `playcall:over:${s}`);
+    pcDrivesPlayed++;
+  }
+}
+
 // --- run -------------------------------------------------------------------
 
 console.log('iMoveChainz smoke test');
@@ -332,6 +390,10 @@ console.log('   operator hub checked');
 console.log('Part E: emoji skin tone (dark 🏿, non-negotiable)...');
 partEmoji();
 console.log('   emoji skin tone checked');
+
+console.log('Part F: playcall game (simulated drives + live diagrams)...');
+partPlaycall();
+console.log(`   playcall: ${pcDrivesPlayed} drives, ${pcPlaysResolved} plays resolved, ${pcDiagramsRendered} live diagrams rendered`);
 
 console.log('');
 console.log('='.repeat(60));
