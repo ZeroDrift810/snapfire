@@ -71,7 +71,7 @@ client.once(Events.ClientReady, (readyClient) => {
   console.log('='.repeat(80));
   console.log('✅ iMoveChainz Bot is online');
   console.log(`   Logged in as: ${readyClient.user.tag}`);
-  console.log(`   Teaching cards: ${cs.glossary} terms, ${cs.coverage} coverages, ${cs.concept} concepts, ${cs.run} run, ${cs.front} fronts, ${cs.usering} usering, ${cs.situational} situational`);
+  console.log(`   Teaching cards: ${cs.glossary} terms, ${cs.coverage} coverages, ${cs.concept} concepts, ${cs.run} run, ${cs.front} fronts, ${cs.usering} usering, ${cs.situational} situational, ${cs.adjustments} adjustments`);
   const pc = playbookCounts();
   console.log(`   Playbook (${playbookGame()}): ${pc.offense_plays} offense / ${pc.defense_plays} defense plays, ${pc.offense_sets} sets + ${pc.defense_fronts} fronts`);
   void stats;

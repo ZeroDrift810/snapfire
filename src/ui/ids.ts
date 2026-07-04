@@ -22,14 +22,14 @@
  */
 
 // Note: the CFB Playbook is its own feature (imc:pb:*, see playbook/), not a card track.
-export type Track = 'glossary' | 'coverage' | 'concept' | 'run' | 'front' | 'usering' | 'situational';
+export type Track = 'glossary' | 'coverage' | 'concept' | 'run' | 'front' | 'usering' | 'situational' | 'adjustments';
 
 export interface Facet {
   token: string;
   label: string;
 }
 
-export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'situational'];
+export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'situational', 'adjustments'];
 
 export const TRACK_LABEL: Record<Track, string> = {
   glossary: 'Terms',
@@ -39,6 +39,7 @@ export const TRACK_LABEL: Record<Track, string> = {
   front: 'Fronts',
   usering: 'Usering',
   situational: 'Situational',
+  adjustments: 'Adjustments',
 };
 
 export const TRACK_EMOJI: Record<Track, string> = {
@@ -49,6 +50,7 @@ export const TRACK_EMOJI: Record<Track, string> = {
   front: '🧱',
   usering: '🎮',
   situational: '🎯',
+  adjustments: '🎛️',
 };
 
 export const TRACK_BLURB: Record<Track, string> = {
@@ -59,6 +61,7 @@ export const TRACK_BLURB: Record<Track, string> = {
   front: 'Defensive fronts and what beats them.',
   usering: 'The iMoveChainz way to user the sticks: play the DBs.',
   situational: 'Madden pressure and tactics: disguised rushes, the bucket, the checks.',
+  adjustments: 'CFB27 coach adjustments: the menu options and when to use each.',
 };
 
 /** Filter facets per track. Card tracks browse with a single list (no facets). */
@@ -70,6 +73,7 @@ export const FACETS: Record<Track, Facet[]> = {
   front: [],
   usering: [],
   situational: [],
+  adjustments: [],
 };
 
 export const DEFAULT_FILTER: Record<Track, string> = {
@@ -80,6 +84,7 @@ export const DEFAULT_FILTER: Record<Track, string> = {
   front: 'all',
   usering: 'all',
   situational: 'all',
+  adjustments: 'all',
 };
 
 export const PAGE_SIZE = 25;
@@ -106,7 +111,8 @@ export function isTrack(v: string): v is Track {
     v === 'run' ||
     v === 'front' ||
     v === 'usering' ||
-    v === 'situational'
+    v === 'situational' ||
+    v === 'adjustments'
   );
 }
 

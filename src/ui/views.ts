@@ -58,6 +58,7 @@ const TRACK_COLOR: Record<Track, number> = {
   front: 0xed4245, // red
   usering: 0x9b59b6, // purple
   situational: 0xe67e22, // orange
+  adjustments: 0x16a085, // dark teal
 };
 
 function truncate(text: string, max: number): string {
@@ -104,7 +105,7 @@ function pageCount(total: number): number {
 // HUB
 // ---------------------------------------------------------------------------
 
-const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'situational'];
+const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'situational', 'adjustments'];
 
 function hubEmbed(): EmbedBuilder {
   return new EmbedBuilder()
