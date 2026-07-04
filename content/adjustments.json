@@ -88,7 +88,8 @@
     ],
     "related": [
       "adj-general"
-    ]
+    ],
+    "image": "adj-option-keys.png"
   },
   {
     "id": "adj-dline",
@@ -116,7 +117,8 @@
     "related": [
       "adj-zone-drops",
       "adj-individual-def"
-    ]
+    ],
+    "image": "adj-dline.png"
   },
   {
     "id": "adj-linebackers",
@@ -328,7 +330,8 @@
     "related": [
       "adj-receiver-routes",
       "adj-offense-general"
-    ]
+    ],
+    "image": "adj-oline.png"
   },
   {
     "id": "adj-receiver-routes",
@@ -354,7 +357,8 @@
     ],
     "related": [
       "adj-oline"
-    ]
+    ],
+    "image": "adj-receiver-routes.png"
   },
   {
     "id": "adj-offense-general",
