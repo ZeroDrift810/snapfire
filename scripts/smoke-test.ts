@@ -15,8 +15,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { loadKnowledgeBases } from '../src/knowledge/loader';
-import { loadPlaybook, sets, formations, plays, Side } from '../src/knowledge/playbook';
-import { pbHome, pbSets, pbForms, pbPlays, pbDetail } from '../src/playbook/views';
+import { loadPlaybook, sets, families, formIndicesInFamily, plays, Side } from '../src/knowledge/playbook';
+import { pbHome, pbSets, pbFamilies, pbForms, pbPlays, pbDetail } from '../src/playbook/views';
 import { loadCards, getCards, resolveCard, cardStats, CARD_TRACKS } from '../src/content/cards';
 import { buildHubPublic, buildDetail, ViewPayload } from '../src/ui/views';
 import { resolve } from '../src/router';
@@ -226,7 +226,7 @@ function partB() {
       }
     }
   }
-  // CFB Playbook drill-down: home -> every set -> first formation -> first play detail.
+  // CFB Playbook drill-down: home -> every set -> every family -> first formation -> first play.
   // (Full 12.7k-play render is exercised at runtime; here we validate the nav graph + payloads.)
   let pbChecked = 0;
   validatePayload(pbHome(), 'pb:home');
@@ -234,22 +234,28 @@ function partB() {
     validatePayload(pbSets(side), `pb:sets:${side}`);
     const setList = sets(side);
     for (let si = 0; si < setList.length; si++) {
-      validatePayload(pbForms(side, si, 0), `pb:forms:${side}:${si}`);
-      const forms = formations(side, si);
-      if (!forms.length) fail(`playbook set ${side}/${setList[si]} has no formations`);
-      // sample the first formation of each set
-      const p = pbPlays(side, si, 0, 0);
-      validatePayload(p, `pb:plays:${side}:${si}`);
-      if (!plays(side, si, 0).length) fail(`playbook ${side}/${setList[si]}/${forms[0]} has no plays`);
-      const d = pbDetail(side, si, 0, 0);
-      if (detailIsBroken(d)) fail(`playbook detail broke: ${side}/${setList[si]}/${forms[0]}`);
-      validatePayload(d, `pb:detail:${side}:${si}`);
-      detailsTested++;
-      pbChecked++;
+      validatePayload(pbFamilies(side, si, 0), `pb:fams:${side}:${si}`);
+      const fams = families(side, si);
+      if (!fams.length) fail(`playbook set ${side}/${setList[si]} has no families`);
+      for (let fi = 0; fi < fams.length; fi++) {
+        validatePayload(pbForms(side, si, fi, 0), `pb:forms:${side}:${si}:${fi}`);
+        const formIdxs = formIndicesInFamily(side, si, fi);
+        if (!formIdxs.length) fail(`playbook family ${side}/${setList[si]}/${fams[fi]} has no formations`);
+        // sample the first formation of each family down to a play card
+        const formIdx = formIdxs[0];
+        const p = pbPlays(side, si, formIdx, 0);
+        validatePayload(p, `pb:plays:${side}:${si}:${fi}`);
+        if (!plays(side, si, formIdx).length) fail(`playbook ${side}/${setList[si]}/${fams[fi]} has no plays`);
+        const d = pbDetail(side, si, formIdx, 0);
+        if (detailIsBroken(d)) fail(`playbook detail broke: ${side}/${setList[si]}/${fams[fi]}`);
+        validatePayload(d, `pb:detail:${side}:${si}:${fi}`);
+        detailsTested++;
+        pbChecked++;
+      }
     }
   }
   console.log(`   related links verified: ${relatedChecked}`);
-  console.log(`   playbook nodes verified: ${pbChecked} sets walked to a play card`);
+  console.log(`   playbook nodes verified: ${pbChecked} families walked to a play card`);
   console.log(`   card diagrams verified: ${cardImagesChecked}`);
 }
 

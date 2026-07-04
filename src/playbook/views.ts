@@ -25,8 +25,12 @@ import {
 import { ViewPayload } from '../ui/views';
 import {
   artPath,
+  families,
+  familyIdxOfForm,
+  familyName,
   formationName,
   formations,
+  formIndicesInFamily,
   play,
   PlayNode,
   playbookCounts,
@@ -133,28 +137,27 @@ function pager(prevId: string, nextId: string, page: number, pages: number, back
   );
 }
 
-export function pbForms(side: Side, setIdx: number, pageIn: number): ViewPayload {
+// FAMILIES — group a set's formations by base name (Ace, Bunch, Empty, Trips...) so the list is
+// browsable instead of a 12-page dump. Paged only if a set has > 25 families (Shotgun has ~53).
+export function pbFamilies(side: Side, setIdx: number, pageIn: number): ViewPayload {
   const sd = SD_CODE[side];
-  const list = formations(side, setIdx);
+  const list = families(side, setIdx);
   const pages = Math.max(1, Math.ceil(list.length / PAGE));
   const page = Math.min(Math.max(0, pageIn), pages - 1);
   const slice = list.slice(page * PAGE, page * PAGE + PAGE);
   const embed = new EmbedBuilder()
     .setColor(sideColor(side))
     .setTitle(`🏈 ${setName(side, setIdx) ?? ''}`)
-    .setDescription(`${list.length} formations. Page ${page + 1}/${pages}. Pick one to see its plays.`)
+    .setDescription(`${list.length} formation families${pages > 1 ? `, page ${page + 1}/${pages}` : ''}. Pick a family.`)
     .setFooter({ text: FOOTER });
   const select = new StringSelectMenuBuilder()
-    .setCustomId(`imc:pb:sform:${sd}:${setIdx}:${page}`)
-    .setPlaceholder('Choose a formation')
+    .setCustomId(`imc:pb:sfam:${sd}:${setIdx}:${page}`)
+    .setPlaceholder('Choose a formation family')
     .addOptions(
-      slice.map((name, i) => {
-        const formIdx = page * PAGE + i;
-        return {
-          label: truncate(name, 100),
-          value: String(formIdx),
-          description: `${plays(side, setIdx, formIdx).length} plays`,
-        };
+      slice.map((fam, i) => {
+        const famIdx = page * PAGE + i;
+        const n = formIndicesInFamily(side, setIdx, famIdx).length;
+        return { label: truncate(fam, 100), value: String(famIdx), description: `${n} formation${n === 1 ? '' : 's'}` };
       })
     );
   return {
@@ -162,11 +165,51 @@ export function pbForms(side: Side, setIdx: number, pageIn: number): ViewPayload
     components: [
       new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(select),
       pager(
-        `imc:pb:forms:${sd}:${setIdx}:${Math.max(0, page - 1)}:p`,
-        `imc:pb:forms:${sd}:${setIdx}:${Math.min(pages - 1, page + 1)}:n`,
+        `imc:pb:fams:${sd}:${setIdx}:${Math.max(0, page - 1)}:p`,
+        `imc:pb:fams:${sd}:${setIdx}:${Math.min(pages - 1, page + 1)}:n`,
         page,
         pages,
         `imc:pb:sets:${sd}`
+      ),
+    ],
+    attachments: [],
+  };
+}
+
+// FORMATIONS within a chosen family. Option values are GLOBAL formation indices, so plays()/detail
+// are unchanged; only which formations show is scoped to the family.
+export function pbForms(side: Side, setIdx: number, famIdx: number, pageIn: number): ViewPayload {
+  const sd = SD_CODE[side];
+  const idxs = formIndicesInFamily(side, setIdx, famIdx);
+  const pages = Math.max(1, Math.ceil(idxs.length / PAGE));
+  const page = Math.min(Math.max(0, pageIn), pages - 1);
+  const slice = idxs.slice(page * PAGE, page * PAGE + PAGE);
+  const title = `${setName(side, setIdx) ?? ''} · ${familyName(side, setIdx, famIdx) ?? ''}`.trim();
+  const embed = new EmbedBuilder()
+    .setColor(sideColor(side))
+    .setTitle(`🏈 ${title}`)
+    .setDescription(`${idxs.length} formation${idxs.length === 1 ? '' : 's'}${pages > 1 ? `, page ${page + 1}/${pages}` : ''}. Pick one to see its plays.`)
+    .setFooter({ text: FOOTER });
+  const select = new StringSelectMenuBuilder()
+    .setCustomId(`imc:pb:sform:${sd}:${setIdx}:${famIdx}:${page}`)
+    .setPlaceholder('Choose a formation')
+    .addOptions(
+      slice.map((formIdx) => ({
+        label: truncate(formationName(side, setIdx, formIdx) ?? '', 100),
+        value: String(formIdx),
+        description: `${plays(side, setIdx, formIdx).length} plays`,
+      }))
+    );
+  return {
+    embeds: [embed],
+    components: [
+      new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(select),
+      pager(
+        `imc:pb:forms:${sd}:${setIdx}:${famIdx}:${Math.max(0, page - 1)}:p`,
+        `imc:pb:forms:${sd}:${setIdx}:${famIdx}:${Math.min(pages - 1, page + 1)}:n`,
+        page,
+        pages,
+        `imc:pb:fams:${sd}:${setIdx}:0` // back to this set's families
       ),
     ],
     attachments: [],
@@ -212,7 +255,7 @@ export function pbPlays(side: Side, setIdx: number, formIdx: number, pageIn: num
         `imc:pb:plays:${sd}:${setIdx}:${formIdx}:${Math.min(pages - 1, page + 1)}:n`,
         page,
         pages,
-        `imc:pb:forms:${sd}:${setIdx}:0` // back to this set's formations
+        `imc:pb:forms:${sd}:${setIdx}:${familyIdxOfForm(side, setIdx, formIdx)}:0` // back to this formation's family
       ),
     ],
     attachments: [],

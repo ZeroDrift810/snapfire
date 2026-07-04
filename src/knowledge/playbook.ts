@@ -100,6 +100,48 @@ export function play(side: Side, setIdx: number, formIdx: number, playIdx: numbe
   return plays(side, setIdx, formIdx)[playIdx] ?? null;
 }
 
+// --- Family tier: group a set's formations by their base name (Ace, Bunch, Empty, Trips...) so
+// the Discord list splits into how players actually think, instead of one 12-page formation dump.
+export function familyKey(name: string): string {
+  const w = name.trim().split(/\s+/);
+  if (!w.length || !w[0]) return name;
+  if (w[0] === 'GO') return 'GO GO';                 // "Go Go ..." is one family
+  if (w[0] === 'WIDE' && w.length > 1) return 'WIDE ' + w[1]; // Wide subfamilies are large
+  return w[0];
+}
+
+/** Ordered unique family names for a set. */
+export function families(side: Side, setIdx: number): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const f of formations(side, setIdx)) {
+    const k = familyKey(f);
+    if (!seen.has(k)) { seen.add(k); out.push(k); }
+  }
+  return out.sort();
+}
+
+export function familyName(side: Side, setIdx: number, famIdx: number): string | null {
+  return families(side, setIdx)[famIdx] ?? null;
+}
+
+/** GLOBAL formation indices (into formations(side,setIdx)) that belong to a family. Keeping them
+ * global means plays()/play()/detail never change — only which formations the picker shows. */
+export function formIndicesInFamily(side: Side, setIdx: number, famIdx: number): number[] {
+  const fam = familyName(side, setIdx, famIdx);
+  if (fam == null) return [];
+  const out: number[] = [];
+  formations(side, setIdx).forEach((f, i) => { if (familyKey(f) === fam) out.push(i); });
+  return out;
+}
+
+/** Which family a formation belongs to (for back-navigation from the plays view). */
+export function familyIdxOfForm(side: Side, setIdx: number, formIdx: number): number {
+  const f = formations(side, setIdx)[formIdx];
+  if (f == null) return 0;
+  return Math.max(0, families(side, setIdx).indexOf(familyKey(f)));
+}
+
 /**
  * Absolute path to a play's diagram, or null if the art dir/file isn't present locally.
  * Art dir is configurable (CFB_ART_DIR) so it can live outside the repo; defaults to the

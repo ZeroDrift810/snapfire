@@ -7,7 +7,7 @@
  */
 import { ButtonInteraction, MessageFlags, StringSelectMenuInteraction } from 'discord.js';
 import { ViewPayload } from '../ui/views';
-import { decodeSide, pbDetail, pbForms, pbHome, pbPlays, pbSets } from './views';
+import { decodeSide, pbDetail, pbFamilies, pbForms, pbHome, pbPlays, pbSets } from './views';
 
 function num(s: string | undefined): number {
   const n = Number.parseInt(s ?? '', 10);
@@ -30,11 +30,15 @@ export function resolvePlaybook(
       return { payload: pbHome(), mode: 'update' };
     case 'sets':
       return { payload: pbSets(decodeSide(t[3])), mode: 'update' };
-    case 'sset': // select -> value = setIdx
-      return { payload: pbForms(decodeSide(t[3]), val, 0), mode: 'update' };
+    case 'sset': // select -> value = setIdx -> families
+      return { payload: pbFamilies(decodeSide(t[3]), val, 0), mode: 'update' };
+    case 'fams':
+      return { payload: pbFamilies(decodeSide(t[3]), num(t[4]), num(t[5])), mode: 'update' };
+    case 'sfam': // select -> value = famIdx -> formations in that family
+      return { payload: pbForms(decodeSide(t[3]), num(t[4]), val, 0), mode: 'update' };
     case 'forms':
-      return { payload: pbForms(decodeSide(t[3]), num(t[4]), num(t[5])), mode: 'update' };
-    case 'sform': // select -> value = formIdx
+      return { payload: pbForms(decodeSide(t[3]), num(t[4]), num(t[5]), num(t[6])), mode: 'update' };
+    case 'sform': // select -> value = GLOBAL formIdx -> plays
       return { payload: pbPlays(decodeSide(t[3]), num(t[4]), val, 0), mode: 'update' };
     case 'plays':
       return { payload: pbPlays(decodeSide(t[3]), num(t[4]), num(t[5]), num(t[6])), mode: 'update' };
