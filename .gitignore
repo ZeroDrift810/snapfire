@@ -11,3 +11,6 @@ Thumbs.db
 .idea/
 .claude/
 nul
+
+# CFB play-art (branded copies placed at deploy; or point CFB_ART_DIR at them)
+assets/play_art_cfb/

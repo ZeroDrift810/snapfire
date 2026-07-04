@@ -16,6 +16,7 @@ import { buildDetail, buildGoto, buildHubSession, buildList, ViewPayload } from 
 import { DEFAULT_FILTER, isTrack, parseId, Track } from './ui/ids';
 import { handleOperator } from './operator/operator';
 import { handlePlaycall } from './playcall/handler';
+import { handlePlaybook } from './playbook/handler';
 import { handleScheme } from './scheme/handler';
 
 export type Mode = 'open' | 'update';
@@ -126,6 +127,12 @@ export async function handleInteraction(interaction: Interaction): Promise<void>
   // Scheme Builder buttons + selects are side-effecting (build state); own them.
   if ((interaction.isButton() || interaction.isStringSelectMenu()) && interaction.customId.startsWith('imc:sb:')) {
     await handleScheme(interaction);
+    return;
+  }
+
+  // CFB Playbook drill-down (side -> set -> formation -> play); owns its own grammar.
+  if ((interaction.isButton() || interaction.isStringSelectMenu()) && interaction.customId.startsWith('imc:pb:')) {
+    await handlePlaybook(interaction);
     return;
   }
 

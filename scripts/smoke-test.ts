@@ -14,7 +14,9 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { loadKnowledgeBases, getAllSchemes } from '../src/knowledge/loader';
+import { loadKnowledgeBases } from '../src/knowledge/loader';
+import { loadPlaybook, sets, formations, plays, Side } from '../src/knowledge/playbook';
+import { pbHome, pbSets, pbForms, pbPlays, pbDetail } from '../src/playbook/views';
 import { loadCards, getCards, resolveCard, cardStats, CARD_TRACKS } from '../src/content/cards';
 import { buildHubPublic, buildDetail, ViewPayload } from '../src/ui/views';
 import { resolve } from '../src/router';
@@ -172,7 +174,7 @@ function partA() {
 
     // Playcall + Scheme Builder are side-effecting (handled outside resolve(), like the operator
     // hub). They do not nav-route; they are exercised in Part F / Part G.
-    if (node.id.startsWith('imc:pc:') || node.id.startsWith('imc:sb:')) continue;
+    if (node.id.startsWith('imc:pc:') || node.id.startsWith('imc:sb:') || node.id.startsWith('imc:pb:')) continue;
 
     const resolved = resolve(node.id, node.value);
     routesTested++;
@@ -224,21 +226,30 @@ function partB() {
       }
     }
   }
-  let imagesChecked = 0;
-  for (const s of getAllSchemes()) {
-    detailsTested++;
-    const p = buildDetail('playbook', s.name, s.system.toLowerCase(), 0);
-    if (detailIsBroken(p)) fail(`scheme detail broke: ${s.name}`);
-    validatePayload(p, `playbook:${s.name}`);
-    if (s.image_file) {
-      imagesChecked++;
-      if (!p.files || p.files.length !== 1) {
-        fail(`scheme ${s.name} names art "${s.image_file}" but no attachment was built`);
-      }
+  // CFB Playbook drill-down: home -> every set -> first formation -> first play detail.
+  // (Full 12.7k-play render is exercised at runtime; here we validate the nav graph + payloads.)
+  let pbChecked = 0;
+  validatePayload(pbHome(), 'pb:home');
+  for (const side of ['OFF', 'DEF'] as Side[]) {
+    validatePayload(pbSets(side), `pb:sets:${side}`);
+    const setList = sets(side);
+    for (let si = 0; si < setList.length; si++) {
+      validatePayload(pbForms(side, si, 0), `pb:forms:${side}:${si}`);
+      const forms = formations(side, si);
+      if (!forms.length) fail(`playbook set ${side}/${setList[si]} has no formations`);
+      // sample the first formation of each set
+      const p = pbPlays(side, si, 0, 0);
+      validatePayload(p, `pb:plays:${side}:${si}`);
+      if (!plays(side, si, 0).length) fail(`playbook ${side}/${setList[si]}/${forms[0]} has no plays`);
+      const d = pbDetail(side, si, 0, 0);
+      if (detailIsBroken(d)) fail(`playbook detail broke: ${side}/${setList[si]}/${forms[0]}`);
+      validatePayload(d, `pb:detail:${side}:${si}`);
+      detailsTested++;
+      pbChecked++;
     }
   }
   console.log(`   related links verified: ${relatedChecked}`);
-  console.log(`   play-art attachments verified: ${imagesChecked}`);
+  console.log(`   playbook nodes verified: ${pbChecked} sets walked to a play card`);
   console.log(`   card diagrams verified: ${cardImagesChecked}`);
 }
 
@@ -424,6 +435,7 @@ console.log('iMoveChainz smoke test');
 console.log('='.repeat(60));
 loadKnowledgeBases();
 loadCards();
+loadPlaybook();
 const cs = cardStats();
 console.log(`   cards: ${cs.glossary} terms, ${cs.coverage} coverages, ${cs.concept} concepts, ${cs.front} fronts, ${cs.usering} usering`);
 console.log('');

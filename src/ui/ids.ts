@@ -21,14 +21,15 @@
  * There are NO slash commands anywhere in this bot.
  */
 
-export type Track = 'glossary' | 'coverage' | 'concept' | 'run' | 'front' | 'usering' | 'playbook' | 'situational';
+// Note: the CFB Playbook is its own feature (imc:pb:*, see playbook/), not a card track.
+export type Track = 'glossary' | 'coverage' | 'concept' | 'run' | 'front' | 'usering' | 'situational';
 
 export interface Facet {
   token: string;
   label: string;
 }
 
-export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'playbook', 'situational'];
+export const TRACKS: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'situational'];
 
 export const TRACK_LABEL: Record<Track, string> = {
   glossary: 'Terms',
@@ -37,7 +38,6 @@ export const TRACK_LABEL: Record<Track, string> = {
   run: 'Run Game',
   front: 'Fronts',
   usering: 'Usering',
-  playbook: 'Playbook',
   situational: 'Situational',
 };
 
@@ -48,7 +48,6 @@ export const TRACK_EMOJI: Record<Track, string> = {
   run: '🏃🏿',
   front: '🧱',
   usering: '🎮',
-  playbook: '🏈',
   situational: '🎯',
 };
 
@@ -59,11 +58,10 @@ export const TRACK_BLURB: Record<Track, string> = {
   run: 'Run schemes: how the blocks fit and where the ball hits.',
   front: 'Defensive fronts and what beats them.',
   usering: 'The iMoveChainz way to user the sticks: play the DBs.',
-  playbook: 'SnapFire offense and Shinobi defense, matched to the in-game art.',
   situational: 'Madden pressure and tactics: disguised rushes, the bucket, the checks.',
 };
 
-/** Filter facets per track. Only the playbook splits by system; cards browse with a single list. */
+/** Filter facets per track. Card tracks browse with a single list (no facets). */
 export const FACETS: Record<Track, Facet[]> = {
   glossary: [],
   coverage: [],
@@ -72,10 +70,6 @@ export const FACETS: Record<Track, Facet[]> = {
   front: [],
   usering: [],
   situational: [],
-  playbook: [
-    { token: 'snapfire', label: '🔥 SnapFire' },
-    { token: 'shinobi', label: '🥷🏿 Shinobi' },
-  ],
 };
 
 export const DEFAULT_FILTER: Record<Track, string> = {
@@ -86,7 +80,6 @@ export const DEFAULT_FILTER: Record<Track, string> = {
   front: 'all',
   usering: 'all',
   situational: 'all',
-  playbook: 'snapfire',
 };
 
 export const PAGE_SIZE = 25;
@@ -113,13 +106,13 @@ export function isTrack(v: string): v is Track {
     v === 'run' ||
     v === 'front' ||
     v === 'usering' ||
-    v === 'playbook' ||
     v === 'situational'
   );
 }
 
-export function isCardTrack(t: Track): boolean {
-  return t !== 'playbook';
+/** Every remaining track is a hand-authored teaching-card track. */
+export function isCardTrack(_t: Track): boolean {
+  return true;
 }
 
 export function parseId(id: string): string[] {

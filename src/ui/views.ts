@@ -16,8 +16,7 @@ import {
 } from 'discord.js';
 import * as fs from 'fs';
 import * as path from 'path';
-import { getAllSchemes } from '../knowledge/loader';
-import { BRAND_CONFIGS, GENERIC_BRAND } from '../knowledge/types';
+import { GENERIC_BRAND } from '../knowledge/types';
 import {
   Card,
   CardTrack,
@@ -29,7 +28,6 @@ import {
   DEFAULT_FILTER,
   FACETS,
   ID,
-  isCardTrack,
   PAGE_SIZE,
   Track,
   TRACK_BLURB,
@@ -59,7 +57,6 @@ const TRACK_COLOR: Record<Track, number> = {
   run: 0x1abc9c, // teal
   front: 0xed4245, // red
   usering: 0x9b59b6, // purple
-  playbook: BRAND_CONFIGS.SNAPFIRE.color, // overridden per scheme
   situational: 0xe67e22, // orange
 };
 
@@ -91,22 +88,12 @@ function homeButton(): ButtonBuilder {
 // Browse rows
 // ---------------------------------------------------------------------------
 
-function rowsFor(track: Track, filter: string): Row[] {
-  if (isCardTrack(track)) {
-    return getCards(track as CardTrack).map((c) => ({
-      id: c.id,
-      label: c.name,
-      desc: c.subtitle || (c.tags && c.tags.length ? c.tags.join(', ') : ''),
-    }));
-  }
-  // playbook (schemes)
-  return getAllSchemes()
-    .filter((s) => s.system.toLowerCase() === filter)
-    .map((s) => ({
-      id: s.name,
-      label: s.display_name,
-      desc: s.formation_family || 'Playbook',
-    }));
+function rowsFor(track: Track, _filter: string): Row[] {
+  return getCards(track as CardTrack).map((c) => ({
+    id: c.id,
+    label: c.name,
+    desc: c.subtitle || (c.tags && c.tags.length ? c.tags.join(', ') : ''),
+  }));
 }
 
 function pageCount(total: number): number {
@@ -117,7 +104,7 @@ function pageCount(total: number): number {
 // HUB
 // ---------------------------------------------------------------------------
 
-const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'playbook', 'situational'];
+const HUB_ORDER: Track[] = ['glossary', 'coverage', 'concept', 'run', 'front', 'usering', 'situational'];
 
 function hubEmbed(): EmbedBuilder {
   return new EmbedBuilder()
@@ -125,9 +112,10 @@ function hubEmbed(): EmbedBuilder {
     .setTitle('iMoveChainz')
     .setDescription(
       [
-        'Football IQ for Madden and CFB. Pick a track to start.',
+        'Football IQ for CFB and Madden. Pick a track to start.',
         '',
         ...HUB_ORDER.map((t) => `${TRACK_EMOJI[t]} **${TRACK_LABEL[t]}:** ${TRACK_BLURB[t]}`),
+        '🏈 **Playbook:** The full CFB playbook by set, formation, and play, with the real in-game diagrams.',
         '🎮 **Playcall:** Call a SnapFire drive against the Shinobi defense. The engine draws every snap.',
         '🧩 **Scheme Builder:** Declare your tempo and 12 core concepts, get your custom playbook roadmap.',
       ].join('\n')
@@ -154,6 +142,7 @@ export function buildHubPublic(): ViewPayload {
 // kept as a literal here to avoid importing the game module into the core hub view.
 function playcallRow(): ActionRowBuilder<ButtonBuilder> {
   return new ActionRowBuilder<ButtonBuilder>().addComponents(
+    new ButtonBuilder().setCustomId('imc:pb:open').setLabel('Playbook').setEmoji('🏈').setStyle(ButtonStyle.Success),
     new ButtonBuilder().setCustomId('imc:pc:new').setLabel('Playcall').setEmoji('🎮').setStyle(ButtonStyle.Success),
     new ButtonBuilder().setCustomId('imc:sb:new').setLabel('Scheme Builder').setEmoji('🧩').setStyle(ButtonStyle.Success)
   );
@@ -193,11 +182,7 @@ export function buildList(track: Track, filterIn: string, pageIn: number): ViewP
   const activeFacet = facets.find((f) => f.token === filter)?.label;
 
   const embed = new EmbedBuilder()
-    .setColor(
-      track === 'playbook'
-        ? BRAND_CONFIGS[filter === 'shinobi' ? 'SHINOBI' : 'SNAPFIRE'].color
-        : TRACK_COLOR[track]
-    )
+    .setColor(TRACK_COLOR[track])
     .setTitle(`${TRACK_EMOJI[track]} ${TRACK_LABEL[track]}${activeFacet ? ` · ${activeFacet}` : ''}`)
     .setDescription(
       `${TRACK_BLURB[track]}\n\n${all.length} in this track. Tap one to open it.\nPage ${page + 1} of ${pages}.`
@@ -350,52 +335,7 @@ function cardDetail(
   return { embeds: [embed], components, files, attachments: [] };
 }
 
-/** Scheme (playbook) detail, with play art attached. */
-function schemeDetail(id: string, filter: string, page: number): ViewPayload {
-  const s = getAllSchemes().find((x) => x.name === id);
-  if (!s) return notFound('playbook', filter, page, id);
-  const brand = BRAND_CONFIGS[s.system];
-
-  const fields: { name: string; value: string; inline: boolean }[] = [];
-  if (s.routes && s.routes.length) {
-    const routeText = s.routes
-      .slice(0, 8)
-      .map((r) => {
-        let line = `• **${r.receiver}:** ${r.route}`;
-        if (r.note && r.note !== r.route) line += ` *(${r.note})*`;
-        return line;
-      })
-      .join('\n');
-    fields.push({ name: '📋 Assignments', value: field(routeText), inline: false });
-  }
-  if (s.reads && s.reads.length) {
-    fields.push({ name: '🧠 Reads / Keys', value: field(s.reads.join('\n')), inline: false });
-  }
-  if (s.usage_notes && s.usage_notes.trim()) {
-    fields.push({ name: '💡 Strategy', value: field(s.usage_notes), inline: false });
-  }
-
-  const embed = new EmbedBuilder()
-    .setColor(brand.color)
-    .setTitle(`${brand.emoji} ${s.display_name}`)
-    .setDescription(`**Formation:** ${s.formation_family}`)
-    .addFields(fields)
-    .setFooter({ text: brand.footer });
-
-  const files: AttachmentBuilder[] = [];
-  if (s.image_file) {
-    const imagePath = path.join(PROJECT_ROOT, 'assets', 'play_art', s.image_file);
-    if (fs.existsSync(imagePath)) {
-      files.push(new AttachmentBuilder(imagePath, { name: 'play_art.png' }));
-      embed.setImage('attachment://play_art.png');
-    }
-  }
-
-  return { embeds: [embed], components: [backRow('playbook', filter, page)], files, attachments: [] };
-}
-
 export function buildDetail(track: Track, id: string, filter: string, page: number): ViewPayload {
-  if (track === 'playbook') return schemeDetail(id, filter, page);
   const card = getCard(track as CardTrack, id);
   if (!card) return notFound(track, filter, page, id);
   return cardDetail(track as CardTrack, card, filter, page);

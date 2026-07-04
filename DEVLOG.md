@@ -1,3 +1,10 @@
+## 2026-07-04 — Playbook feature rebuilt on real CFB data (fabrications retired)  [bot/playbook]
+**Symptom:** The Playbook track rendered 885/890 machine-fabricated "verified:true" cards (invented routes/reads/usage_notes) over old Madden in-game screenshots. Originally a Madden bot; switching to CFB27.
+**Root cause:** Scheme_Knowledge.json's text fields beyond display_name/formation/system/image were never trustworthy (2026-06-12 finding); a re-derivation stamped them verified without human check.
+**Fix:** New CFB Playbook feature (imc:pb:*): side -> set -> formation -> play drill-down over the scraped 12.7k-play HimkageVision index (data/cfb-playbook.json). Zero fabricated fields — the diagram IS the assignment; defense shows the real coverage class. New files: src/knowledge/playbook.ts, src/playbook/{views,handler}.ts. Removed 'playbook' from the card-track grammar; deleted schemeDetail. Also fixed 66 OCR'd play names at the index source (DOVBLE->DOUBLE, CLOWD->CLOUD, etc). Full smoke test passes.
+**Files:** src/knowledge/playbook.ts, src/playbook/*, src/ui/{ids,views}.ts, src/router.ts, src/index.ts, scripts/smoke-test.ts, data/cfb-playbook.json.
+**Gotcha:** Pager Prev/Next collide on single-page sets (both clamp to page 0) — customIds MUST carry a p|n disambiguator or Discord rejects the message. Art is served from CFB_ART_DIR (branded copies), placed at deploy, not in git. Madden Scheme_Knowledge.json + assets/play_art still LOAD (scripts depend on the loader) but render nowhere — Phase 4 will archive them.
+
 # DEVLOG — iMoveChainz Bot (snapfire)
 
 Append-only record of non-trivial fixes, decisions, and gotchas. Newest on top.

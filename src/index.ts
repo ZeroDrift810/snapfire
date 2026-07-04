@@ -12,6 +12,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { getKnowledgeStats, loadKnowledgeBases, reloadKnowledgeBases } from './knowledge/loader';
 import { cardStats, loadCards, reloadCards } from './content/cards';
+import { loadPlaybook, playbookCounts, playbookGame } from './knowledge/playbook';
 import { loadSchemeData } from './scheme/data';
 import { handleInteraction } from './router';
 
@@ -27,6 +28,7 @@ if (!DISCORD_BOT_TOKEN) {
 // Knowledge loads at boot so the first interaction is instant.
 loadKnowledgeBases();
 loadCards();
+loadPlaybook();
 loadSchemeData();
 
 // Hot-reload: re-read content/ (teaching cards) and data/ (playbook) when their files
@@ -41,6 +43,7 @@ function watchKnowledge(): void {
       try {
         reloadCards();
         reloadKnowledgeBases();
+        loadPlaybook();
         console.log('♻️  knowledge hot-reloaded (content/ + data/)');
       } catch (e) {
         console.error('hot-reload failed (keeping previous in-memory data):', e);
@@ -69,7 +72,9 @@ client.once(Events.ClientReady, (readyClient) => {
   console.log('✅ iMoveChainz Bot is online');
   console.log(`   Logged in as: ${readyClient.user.tag}`);
   console.log(`   Teaching cards: ${cs.glossary} terms, ${cs.coverage} coverages, ${cs.concept} concepts, ${cs.run} run, ${cs.front} fronts, ${cs.usering} usering, ${cs.situational} situational`);
-  console.log(`   Playbook: ${stats.schemes} schemes (🔥 ${stats.snapfire} SnapFire, 🥷🏿 ${stats.shinobi} Shinobi)`);
+  const pc = playbookCounts();
+  console.log(`   Playbook (${playbookGame()}): ${pc.offense_plays} offense / ${pc.defense_plays} defense plays, ${pc.offense_sets} sets + ${pc.defense_fronts} fronts`);
+  void stats;
   console.log('='.repeat(80));
   console.log('');
 });
