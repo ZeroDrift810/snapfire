@@ -3,172 +3,407 @@
     "id": "adj-system",
     "name": "How Custom Adjustments Work",
     "subtitle": "Saved macros you call at play-call or pre-snap",
-    "tags": ["system", "gameplan"],
-    "sections": [
-      { "heading": "The idea", "body": "A Custom Adjustment is a saved macro: bundle any number of menu options into one named adjustment, then call it at play-call or pre-play. The gameplan unit is the saved adjustment, not the individual toggle." },
-      { "heading": "Slots", "body": "Per side (Defense and Offense) you get 10 saved slots plus 10 benched slots. Think of your 10 in-game defensive adjustments plus 10 offensive as your call sheet for that opponent." },
-      { "heading": "How to combine", "body": "Every option group is single-select within the group, but one adjustment can combine groups freely: a shell, a stunt, zone drops, and a coverage check can all live in the same saved macro." },
-      { "heading": "Position labels", "body": "Defense: CB1 CB2 SLCB1 SLCB2 FS SS LEDG REDG DT1 DT2 NT SAM WILL MIKE SLB1 SLB2. Offense: WR1 to WR5, TE1 to TE3, HB1 HB2 FB. SLCB is the slot corner, SLB is an extra sub-package linebacker, LEDG/REDG are the left/right edges." }
+    "tags": [
+      "system",
+      "gameplan"
     ],
-    "related": ["adj-coverage-strategy", "adj-gameplan-recipes"]
+    "sections": [
+      {
+        "heading": "The idea",
+        "body": "A Custom Adjustment is a saved macro: bundle any number of menu options into one named adjustment, then call it at play-call or pre-play. The gameplan unit is the saved adjustment, not the individual toggle."
+      },
+      {
+        "heading": "Slots",
+        "body": "Per side (Defense and Offense) you get 10 saved slots plus 10 benched slots. Think of your 10 in-game defensive adjustments plus 10 offensive as your call sheet for that opponent."
+      },
+      {
+        "heading": "How to combine",
+        "body": "Every option group is single-select within the group, but one adjustment can combine groups freely: a shell, a stunt, zone drops, and a coverage check can all live in the same saved macro."
+      },
+      {
+        "heading": "Position labels",
+        "body": "Defense: CB1 CB2 SLCB1 SLCB2 FS SS LEDG REDG DT1 DT2 NT SAM WILL MIKE SLB1 SLB2. Offense: WR1 to WR5, TE1 to TE3, HB1 HB2 FB. SLCB is the slot corner, SLB is an extra sub-package linebacker, LEDG/REDG are the left/right edges."
+      }
+    ],
+    "related": [
+      "adj-coverage-strategy",
+      "adj-gameplan-recipes"
+    ]
   },
   {
     "id": "adj-general",
     "name": "General (Defense)",
     "subtitle": "Disguise, leverage, and the play-to-play behavior dials",
-    "tags": ["defense", "disguise", "presnap"],
-    "sections": [
-      { "heading": "Options", "body": "Show Blitz: Linebackers / Secondary / Both. Coverage Shading: Overtop / Underneath / Inside / Outside. Route Commit: Default / Inside / Outside. Guess Play: Pass / Run Left / Run Right / Run Up Middle. Auto Flip Play Call: On / Off. Defensive Motion Response: Default / Disabled. Defender Aggression, Gap Integrity, Strip Ball, Tackling: Aggressive / Balanced / Conservative. QB Contain: Left / Right / Both." },
-      { "heading": "Coverage Shading", "body": "The leverage dial. Over vs Under is cushion vs undercut. Inside vs Outside is which shoulder the DB protects. Shade underneath and inside vs a slant-heavy spread, overtop vs a shot offense." },
-      { "heading": "QB Contain", "body": "Left/Right is new granularity (contain used to be both edges only). Spy one edge against a QB who only escapes to his throwing hand, keep the other edge rushing free." },
-      { "heading": "Guess Play", "body": "The classic key-the-play bet: a big win when right, it opens the opposite answer when wrong. Only use it inside a saved adjustment tied to a scouted tendency, like 3rd-and-1: Run Up Middle." }
+    "tags": [
+      "defense",
+      "disguise",
+      "presnap"
     ],
-    "related": ["adj-secondary", "adj-coverage-strategy", "disguised-manual-rush"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Show Blitz: Linebackers / Secondary / Both. Coverage Shading: Overtop / Underneath / Inside / Outside. Route Commit: Default / Inside / Outside. Guess Play: Pass / Run Left / Run Right / Run Up Middle. Auto Flip Play Call: On / Off. Defensive Motion Response: Default / Disabled. Defender Aggression, Gap Integrity, Strip Ball, Tackling: Aggressive / Balanced / Conservative. QB Contain: Left / Right / Both."
+      },
+      {
+        "heading": "Coverage Shading",
+        "body": "The leverage dial. Over vs Under is cushion vs undercut. Inside vs Outside is which shoulder the DB protects. Shade underneath and inside vs a slant-heavy spread, overtop vs a shot offense."
+      },
+      {
+        "heading": "QB Contain",
+        "body": "Left/Right is new granularity (contain used to be both edges only). Spy one edge against a QB who only escapes to his throwing hand, keep the other edge rushing free."
+      },
+      {
+        "heading": "Guess Play",
+        "body": "The classic key-the-play bet: a big win when right, it opens the opposite answer when wrong. Only use it inside a saved adjustment tied to a scouted tendency, like 3rd-and-1: Run Up Middle."
+      }
+    ],
+    "related": [
+      "adj-secondary",
+      "adj-coverage-strategy",
+      "disguised-manual-rush"
+    ]
   },
   {
     "id": "adj-option-keys",
     "name": "Option & RPO Keys",
     "subtitle": "Tuning who the defense sits on vs option and RPO",
-    "tags": ["defense", "option", "rpo"],
-    "sections": [
-      { "heading": "Options", "body": "Option Read Key, Option Pitch Key, RPO Read Key, RPO Pass Key: each Aggressive / Balanced / Conservative." },
-      { "heading": "What they do", "body": "The read key is the unblocked dive/QB defender, the pitch key is the pitch-back defender. Aggressive read key crashes the dive and forces the keep. Conservative sits on the QB and gives the dive." },
-      { "heading": "RPO pair", "body": "Same logic on run-pass options. Aggressive pass key jumps the glance or bubble and concedes the give. This is assignment football made tunable. Exact behaviors are inference until lab-tested." }
+    "tags": [
+      "defense",
+      "option",
+      "rpo"
     ],
-    "related": ["adj-general"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Option Read Key, Option Pitch Key, RPO Read Key, RPO Pass Key: each Aggressive / Balanced / Conservative."
+      },
+      {
+        "heading": "What they do",
+        "body": "The read key is the unblocked dive/QB defender, the pitch key is the pitch-back defender. Aggressive read key crashes the dive and forces the keep. Conservative sits on the QB and gives the dive."
+      },
+      {
+        "heading": "RPO pair",
+        "body": "Same logic on run-pass options. Aggressive pass key jumps the glance or bubble and concedes the give. This is assignment football made tunable. Exact behaviors are inference until lab-tested."
+      }
+    ],
+    "related": [
+      "adj-general"
+    ]
   },
   {
     "id": "adj-dline",
     "name": "Defensive Line",
     "subtitle": "Shifts, point of attack, and named line stunts",
-    "tags": ["defense", "pressure", "stunts"],
-    "sections": [
-      { "heading": "Options", "body": "Technique (shift): Pinch / Right / Left / Spread. Point of Attack: Outside / Left / Right / Inside. Stunts (per side): Exit 2 Man, Tex 2 Man, Tom 2 Man, Pirate 3 Man, Tempe 4 Man, plus El Paso 4 Man / Texas 4 Man full-line games." },
-      { "heading": "The stunt vocabulary", "body": "Tex is a tackle-end twist (T penetrates, E loops). Tom crosses the other way. Exit has the end crash inside first with the tackle looping. Pirate 3 Man is a three-man game. Tempe, El Paso, and Texas 4 Man are full-line games. The direction prefix is which side runs it." },
-      { "heading": "When to use", "body": "Stunts beat man and BOB protections and slide-away sides, but they lose ground vs quick game and draws. Pair a stunt with Zone Drops flats at 0 to 5 to cap the hot throw." }
+    "tags": [
+      "defense",
+      "pressure",
+      "stunts"
     ],
-    "related": ["adj-zone-drops", "adj-individual-def"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Technique (shift): Pinch / Right / Left / Spread. Point of Attack: Outside / Left / Right / Inside. Stunts (per side): Exit 2 Man, Tex 2 Man, Tom 2 Man, Pirate 3 Man, Tempe 4 Man, plus El Paso 4 Man / Texas 4 Man full-line games."
+      },
+      {
+        "heading": "The stunt vocabulary",
+        "body": "Tex is a tackle-end twist (T penetrates, E loops). Tom crosses the other way. Exit has the end crash inside first with the tackle looping. Pirate 3 Man is a three-man game. Tempe, El Paso, and Texas 4 Man are full-line games. The direction prefix is which side runs it."
+      },
+      {
+        "heading": "When to use",
+        "body": "Stunts beat man and BOB protections and slide-away sides, but they lose ground vs quick game and draws. Pair a stunt with Zone Drops flats at 0 to 5 to cap the hot throw."
+      }
+    ],
+    "related": [
+      "adj-zone-drops",
+      "adj-individual-def"
+    ]
   },
   {
     "id": "adj-linebackers",
     "name": "Linebackers",
     "subtitle": "Shifts and quick blitz assignments",
-    "tags": ["defense", "pressure"],
-    "sections": [
-      { "heading": "Options", "body": "Shift LBs: Spread / Left / Right / Pinch. LB Assignments: Zone All / SAM Blitz / WILL Blitz / Blitz All." },
-      { "heading": "Use", "body": "The fast way to add or subtract a rusher without leaving the play-call screen. For designed sim-pressure (drop a rusher, send a coverage player), build it in Individual Defensive Adjustments instead." }
+    "tags": [
+      "defense",
+      "pressure"
     ],
-    "related": ["adj-individual-def", "adj-dline"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Shift LBs: Spread / Left / Right / Pinch. LB Assignments: Zone All / SAM Blitz / WILL Blitz / Blitz All."
+      },
+      {
+        "heading": "Use",
+        "body": "The fast way to add or subtract a rusher without leaving the play-call screen. For designed sim-pressure (drop a rusher, send a coverage player), build it in Individual Defensive Adjustments instead."
+      }
+    ],
+    "related": [
+      "adj-individual-def",
+      "adj-dline"
+    ],
+    "image": "adj-linebackers.png"
   },
   {
     "id": "adj-secondary",
     "name": "Secondary Alignment",
     "subtitle": "Shells, matchups, and yard-exact depth and width",
-    "tags": ["defense", "coverage", "presnap"],
-    "sections": [
-      { "heading": "Options", "body": "Alignment: Give Cushion / Press. Coverage Shell: 2 Man / Cov 0 / Cov 2 / Cov 3 / Cov 4 / Cov 6. Corner Matchup: By OVR / Speed / Height / Route Running / Depth Chart. CB Depth: Default / Press / 3 / 5 / 7 / 9 / 12 / 20. CB Width: Default / Tight / Wide. Safety Depth: Default / 5 / 9 / 12 / 16 / 25 / 32. Safety Width: Default / Pinch / Spread / Wide. Safety Midpoint: Default / Left / Right / Strong / Weak / Field / Boundary. Ballhawk: Aggressive / Conservative." },
-      { "heading": "Coverage Shell", "body": "A disguise and override tool: the shell you show and rotate to, independent of the play call. Combined with Show Blitz, this is the full pre-snap disguise kit." },
-      { "heading": "Corner Matchup", "body": "Your travel rules. By Route Running is the new one: put your technique corner on their route technician even if he is not WR1 by rating." },
-      { "heading": "Depth is in yards", "body": "CB 3 to 20 and S 5 to 32 are real yard depths, not vague back-off toggles. CB 20 with S 32 is a true prevent shell. CB 3 with Give Cushion is a bail look. Safety Midpoint Field/Boundary brings hash-based structure into a dial; Strong/Weak keys the formation instead." }
+    "tags": [
+      "defense",
+      "coverage",
+      "presnap"
     ],
-    "related": ["adj-coverage-strategy", "adj-general"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Alignment: Give Cushion / Press. Coverage Shell: 2 Man / Cov 0 / Cov 2 / Cov 3 / Cov 4 / Cov 6. Corner Matchup: By OVR / Speed / Height / Route Running / Depth Chart. CB Depth: Default / Press / 3 / 5 / 7 / 9 / 12 / 20. CB Width: Default / Tight / Wide. Safety Depth: Default / 5 / 9 / 12 / 16 / 25 / 32. Safety Width: Default / Pinch / Spread / Wide. Safety Midpoint: Default / Left / Right / Strong / Weak / Field / Boundary. Ballhawk: Aggressive / Conservative."
+      },
+      {
+        "heading": "Coverage Shell",
+        "body": "A disguise and override tool: the shell you show and rotate to, independent of the play call. Combined with Show Blitz, this is the full pre-snap disguise kit."
+      },
+      {
+        "heading": "Corner Matchup",
+        "body": "Your travel rules. By Route Running is the new one: put your technique corner on their route technician even if he is not WR1 by rating."
+      },
+      {
+        "heading": "Depth is in yards",
+        "body": "CB 3 to 20 and S 5 to 32 are real yard depths, not vague back-off toggles. CB 20 with S 32 is a true prevent shell. CB 3 with Give Cushion is a bail look. Safety Midpoint Field/Boundary brings hash-based structure into a dial; Strong/Weak keys the formation instead."
+      }
+    ],
+    "related": [
+      "adj-coverage-strategy",
+      "adj-general"
+    ],
+    "image": "adj-secondary.png"
   },
   {
     "id": "adj-zone-drops",
     "name": "Zone Drops",
     "subtitle": "Set flat, curl, and hook depth in yards",
-    "tags": ["defense", "coverage"],
-    "sections": [
-      { "heading": "Options", "body": "Zone Drop Flats, Curls, and Hooks: each Default / 0 / 5 / 10 / 15 / 20 / 25 / 30 (yards)." },
-      { "heading": "Use", "body": "The classic depth dial, now per family. Flats at 0 jumps smoke and arrow screens. Flats at 15+ turns Cover 3 cloud flats into de-facto quarter-halves vs corner routes. Curls and Hooks control the intermediate window." },
-      { "heading": "Reset", "body": "During pre-play, return zone drops to default with the Reset Play audible or the Sticks coverage adjustment." }
+    "tags": [
+      "defense",
+      "coverage"
     ],
-    "related": ["adj-coverage-strategy", "adj-dline"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Zone Drop Flats, Curls, and Hooks: each Default / 0 / 5 / 10 / 15 / 20 / 25 / 30 (yards)."
+      },
+      {
+        "heading": "Use",
+        "body": "The classic depth dial, now per family. Flats at 0 jumps smoke and arrow screens. Flats at 15+ turns Cover 3 cloud flats into de-facto quarter-halves vs corner routes. Curls and Hooks control the intermediate window."
+      },
+      {
+        "heading": "Reset",
+        "body": "During pre-play, return zone drops to default with the Reset Play audible or the Sticks coverage adjustment."
+      }
+    ],
+    "related": [
+      "adj-coverage-strategy",
+      "adj-dline"
+    ],
+    "image": "adj-zone-drops.png"
   },
   {
     "id": "adj-coverage-strategy",
     "name": "Coverage Strategy",
     "subtitle": "Zone Strategy, Plaster, and Roll Coverage",
-    "tags": ["defense", "coverage"],
-    "sections": [
-      { "heading": "Options", "body": "Zone Strategy: Default / Aggressive / Conservative / Ultra Aggressive / Ultra Conservative. Plaster: Off / Conservative (default) / Aggressive. Plaster Trigger: O.O.P & Time (default) / O.O.P / Time. Plaster Time: Aggressive / Default / Conservative. Roll Coverage: Highest OVR (default) / Pass Strength / WR1 / WR2 / WR3 / TE1 / TE2 / Fastest / Field / Boundary." },
-      { "heading": "Zone Strategy", "body": "The aggression dial for your zones: jump underneath vs protect deep. Aggressive cheats shorter and stops quick passes but is vulnerable deep. Conservative gives more cushion, prevents big plays, gives up the short stuff. Ultra pushes each further." },
-      { "heading": "Plaster", "body": "The scramble-drill fix, made tunable. Zone defenders lock on their nearest man when the play breaks down. O.O.P means out of pocket. Trigger on the QB leaving the pocket, on elapsed time, or both. Vs a scramble-first QB: Plaster Aggressive, Trigger O.O.P, plus QB Contain. Vs a pocket QB with long routes: Trigger Time." },
-      { "heading": "Roll Coverage", "body": "Which target the extra safety help rolls to. Pass Strength is the passing-strength side, Fastest is their fastest receiver. This is the take-away-their-best-player bracket saved as a macro." }
+    "tags": [
+      "defense",
+      "coverage"
     ],
-    "related": ["adj-zone-drops", "adj-secondary", "adj-gameplan-recipes"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Zone Strategy: Default / Aggressive / Conservative / Ultra Aggressive / Ultra Conservative. Plaster: Off / Conservative (default) / Aggressive. Plaster Trigger: O.O.P & Time (default) / O.O.P / Time. Plaster Time: Aggressive / Default / Conservative. Roll Coverage: Highest OVR (default) / Pass Strength / WR1 / WR2 / WR3 / TE1 / TE2 / Fastest / Field / Boundary."
+      },
+      {
+        "heading": "Zone Strategy",
+        "body": "The aggression dial for your zones: jump underneath vs protect deep. Aggressive cheats shorter and stops quick passes but is vulnerable deep. Conservative gives more cushion, prevents big plays, gives up the short stuff. Ultra pushes each further."
+      },
+      {
+        "heading": "Plaster",
+        "body": "The scramble-drill fix, made tunable. Zone defenders lock on their nearest man when the play breaks down. O.O.P means out of pocket. Trigger on the QB leaving the pocket, on elapsed time, or both. Vs a scramble-first QB: Plaster Aggressive, Trigger O.O.P, plus QB Contain. Vs a pocket QB with long routes: Trigger Time."
+      },
+      {
+        "heading": "Roll Coverage",
+        "body": "Which target the extra safety help rolls to. Pass Strength is the passing-strength side, Fastest is their fastest receiver. This is the take-away-their-best-player bracket saved as a macro."
+      }
+    ],
+    "related": [
+      "adj-zone-drops",
+      "adj-secondary",
+      "adj-gameplan-recipes"
+    ],
+    "image": "adj-coverage-strategy.png"
   },
   {
     "id": "adj-coverage-checks",
     "name": "Coverage Checks (Match Matrix)",
     "subtitle": "Cover 3 / 4 / 6 and man pattern-match by formation",
-    "tags": ["defense", "coverage", "advanced"],
-    "sections": [
-      { "heading": "How to read it", "body": "Checks are family by formation tag. Tags: Stack, Bunch, Trips, 1 Rec, and 1 Rec Tight (1 Rec is a single-receiver / X-iso side; Tight means that lone receiver is attached or a TE). Zone It drops the match check and spot-drops. Default is the game's auto-check." },
-      { "heading": "Man & Cover 3", "body": "Man Stack/Bunch: Default / Combo (or Point Combo) / Lock. Combo is a banjo in/out exchange, Lock stays man through the wash. Cover 3 Stack: Seam / Zone It. Cover 3 Bunch and Trips: Skate / Skinny / Skinny Meg / Zone It. Skate works the backside safety over the top to trips, Skinny keeps the low hole, Skinny Meg adds the backside corner locking the X." },
-      { "heading": "Cover 4 (Quarters & Palms)", "body": "Quarters and Palms each carry Stack, Bunch, Trips, 1 Rec, and 1 Rec Tight checks. Notables: Bunch runs Box / Bingo, Trips runs Quarters / Stress (quarters) or Stubbie / Stump (palms), 1 Rec runs Solo / Solo Cut. CFB27 ships Stress, Stump, Stubbie, Solo, and Solo Cut as literal menu picks, which last gen could not choose." },
-      { "heading": "Cover 6", "body": "Cover 6 Stack: Palms / Quarters / Zone It. Bunch: Box / Bingo / Zone It. Trips: Stubbie / Stump / Zone It. Cover 6 inherits the quarters-side checks." }
+    "tags": [
+      "defense",
+      "coverage",
+      "advanced"
     ],
-    "related": ["adj-coverage-strategy", "adj-secondary"]
+    "sections": [
+      {
+        "heading": "How to read it",
+        "body": "Checks are family by formation tag. Tags: Stack, Bunch, Trips, 1 Rec, and 1 Rec Tight (1 Rec is a single-receiver / X-iso side; Tight means that lone receiver is attached or a TE). Zone It drops the match check and spot-drops. Default is the game's auto-check."
+      },
+      {
+        "heading": "Man & Cover 3",
+        "body": "Man Stack/Bunch: Default / Combo (or Point Combo) / Lock. Combo is a banjo in/out exchange, Lock stays man through the wash. Cover 3 Stack: Seam / Zone It. Cover 3 Bunch and Trips: Skate / Skinny / Skinny Meg / Zone It. Skate works the backside safety over the top to trips, Skinny keeps the low hole, Skinny Meg adds the backside corner locking the X."
+      },
+      {
+        "heading": "Cover 4 (Quarters & Palms)",
+        "body": "Quarters and Palms each carry Stack, Bunch, Trips, 1 Rec, and 1 Rec Tight checks. Notables: Bunch runs Box / Bingo, Trips runs Quarters / Stress (quarters) or Stubbie / Stump (palms), 1 Rec runs Solo / Solo Cut. CFB27 ships Stress, Stump, Stubbie, Solo, and Solo Cut as literal menu picks, which last gen could not choose."
+      },
+      {
+        "heading": "Cover 6",
+        "body": "Cover 6 Stack: Palms / Quarters / Zone It. Bunch: Box / Bingo / Zone It. Trips: Stubbie / Stump / Zone It. Cover 6 inherits the quarters-side checks."
+      }
+    ],
+    "related": [
+      "adj-coverage-strategy",
+      "adj-secondary"
+    ],
+    "image": "adj-coverage-checks.png"
   },
   {
     "id": "adj-individual-def",
     "name": "Individual Defensive Adjustments",
     "subtitle": "Per-player overrides: build your own sim-pressure",
-    "tags": ["defense", "pressure", "advanced"],
-    "sections": [
-      { "heading": "The surface", "body": "Eight options per player. Any front-seven player can drop to a named zone, any DB can blitz. This is where you build creepers and fire zones: show one thing, run another." },
-      { "heading": "Sample menus", "body": "CB1/CB2: Outside Third / Cloud Flat / Hard Flat / Curl Flat / Deep Half / Blitz / Inside Quarter / Soft Squat. FS/SS: Middle Read / Hook Curl / Inside Third / Curl Flat / Deep Half / Blitz / Outside Third / Inside Quarter. DT/NT: Hook Curl L/R / Curl L/R / Bluff Blitz / Blitz / QB Spy / 3 Rec Hook. LBs and edges carry their own drop sets." },
-      { "heading": "Bluff Blitz", "body": "On an interior lineman, Bluff Blitz shows pressure then peels out to a zone. It is the disguised-rush sike saved as a setting instead of a manual stick move." },
-      { "heading": "Fire zone in one macro", "body": "Example: SLCB1 Blitz, plus the edge drops to a Vertical Hook, plus rotate the safeties via Coverage Shell Cov 3. That is a saved fire zone in a single adjustment." }
+    "tags": [
+      "defense",
+      "pressure",
+      "advanced"
     ],
-    "related": ["disguised-manual-rush", "adj-dline", "fire-zone"]
+    "sections": [
+      {
+        "heading": "The surface",
+        "body": "Eight options per player. Any front-seven player can drop to a named zone, any DB can blitz. This is where you build creepers and fire zones: show one thing, run another."
+      },
+      {
+        "heading": "Sample menus",
+        "body": "CB1/CB2: Outside Third / Cloud Flat / Hard Flat / Curl Flat / Deep Half / Blitz / Inside Quarter / Soft Squat. FS/SS: Middle Read / Hook Curl / Inside Third / Curl Flat / Deep Half / Blitz / Outside Third / Inside Quarter. DT/NT: Hook Curl L/R / Curl L/R / Bluff Blitz / Blitz / QB Spy / 3 Rec Hook. LBs and edges carry their own drop sets."
+      },
+      {
+        "heading": "Bluff Blitz",
+        "body": "On an interior lineman, Bluff Blitz shows pressure then peels out to a zone. It is the disguised-rush sike saved as a setting instead of a manual stick move."
+      },
+      {
+        "heading": "Fire zone in one macro",
+        "body": "Example: SLCB1 Blitz, plus the edge drops to a Vertical Hook, plus rotate the safeties via Coverage Shell Cov 3. That is a saved fire zone in a single adjustment."
+      }
+    ],
+    "related": [
+      "disguised-manual-rush",
+      "adj-dline",
+      "fire-zone"
+    ],
+    "image": "adj-individual-def.png"
   },
   {
     "id": "adj-oline",
     "name": "Offensive Line (Protection)",
     "subtitle": "Slides, doubles, the Mike ID, and who you leave free",
-    "tags": ["offense", "protection"],
-    "sections": [
-      { "heading": "Options", "body": "Technique: Empty / Base / Max Protect / Half Slide L/R / Full Slide L/R. Double Team: Highest OVR / Sam / Will / DT2 / DT1 / REDG / LEDG. ID the Mike: any front-seven defender. Untargeted Defender: User Defender or any front-seven defender. Blocking Style: Aggressive / Balanced / Conservative. Empty in Technique leaves the called protection untouched." },
-      { "heading": "ID the Mike", "body": "Sets the protection's count point. Slide and BOB protections count off the declared Mike. Re-Mike to the actual pressure player to pick up a creeper: if their saved adjustment blitzes the SS, ID the SS." },
-      { "heading": "Untargeted Defender", "body": "Declares who the protection deliberately leaves free (your hot/read defender). User Defender is the counter-usering option: leave the human unblocked and throw where he left. Half/Full Slide plus Double Team gives you the full slide grammar." }
+    "tags": [
+      "offense",
+      "protection"
     ],
-    "related": ["adj-receiver-routes", "adj-offense-general"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Technique: Empty / Base / Max Protect / Half Slide L/R / Full Slide L/R. Double Team: Highest OVR / Sam / Will / DT2 / DT1 / REDG / LEDG. ID the Mike: any front-seven defender. Untargeted Defender: User Defender or any front-seven defender. Blocking Style: Aggressive / Balanced / Conservative. Empty in Technique leaves the called protection untouched."
+      },
+      {
+        "heading": "ID the Mike",
+        "body": "Sets the protection's count point. Slide and BOB protections count off the declared Mike. Re-Mike to the actual pressure player to pick up a creeper: if their saved adjustment blitzes the SS, ID the SS."
+      },
+      {
+        "heading": "Untargeted Defender",
+        "body": "Declares who the protection deliberately leaves free (your hot/read defender). User Defender is the counter-usering option: leave the human unblocked and throw where he left. Half/Full Slide plus Double Team gives you the full slide grammar."
+      }
+    ],
+    "related": [
+      "adj-receiver-routes",
+      "adj-offense-general"
+    ]
   },
   {
     "id": "adj-receiver-routes",
     "name": "Receiver Hot Routes",
     "subtitle": "Per-player route palettes, saved as combos",
-    "tags": ["offense", "routes"],
-    "sections": [
-      { "heading": "WR palette (20)", "body": "Streak, In, Out, Curl, Fade, Post, Corner, Slant, Drag, Deep Over, Sluggo, Post Sit, Return, Comeback, Smoke Screen, Speed Out, Deep Cross, Zig, Short Cross, Flat." },
-      { "heading": "TE & back palettes", "body": "TE (18): adds Wheel, Stick Nod, Pass Block, Chip and Release, Slot Short Cross, Slot Flat, Slot Fade. HB/FB (15): Swing L/R, Flat, Triple Option, Texas, Wheel, Block & Release, Chip and Release, and the base cuts." },
-      { "heading": "Use", "body": "Save whole-play route combos as macros, for example a Dagger check (WR1 Deep Cross, WR2 Streak, WR3 In) callable against any single-high look. Triple Option as an HB/FB route means option assignments are hot-routable, which pairs with the defensive Option keys." }
+    "tags": [
+      "offense",
+      "routes"
     ],
-    "related": ["adj-oline"]
+    "sections": [
+      {
+        "heading": "WR palette (20)",
+        "body": "Streak, In, Out, Curl, Fade, Post, Corner, Slant, Drag, Deep Over, Sluggo, Post Sit, Return, Comeback, Smoke Screen, Speed Out, Deep Cross, Zig, Short Cross, Flat."
+      },
+      {
+        "heading": "TE & back palettes",
+        "body": "TE (18): adds Wheel, Stick Nod, Pass Block, Chip and Release, Slot Short Cross, Slot Flat, Slot Fade. HB/FB (15): Swing L/R, Flat, Triple Option, Texas, Wheel, Block & Release, Chip and Release, and the base cuts."
+      },
+      {
+        "heading": "Use",
+        "body": "Save whole-play route combos as macros, for example a Dagger check (WR1 Deep Cross, WR2 Streak, WR3 In) callable against any single-high look. Triple Option as an HB/FB route means option assignments are hot-routable, which pairs with the defensive Option keys."
+      }
+    ],
+    "related": [
+      "adj-oline"
+    ]
   },
   {
     "id": "adj-offense-general",
     "name": "General (Offense)",
     "subtitle": "Catching and ball-carrier behavior",
-    "tags": ["offense"],
-    "sections": [
-      { "heading": "Options", "body": "Deep Pass Catching, Intermediate Pass Catching, Ball Carrier: each Aggressive / Balanced / Conservative." },
-      { "heading": "Use", "body": "Catching is split by depth band now, not one global toggle. Aggressive deep plus conservative intermediate gives contested shots outside and possession catches in traffic. Flip it in the red zone." }
+    "tags": [
+      "offense"
     ],
-    "related": ["adj-oline"]
+    "sections": [
+      {
+        "heading": "Options",
+        "body": "Deep Pass Catching, Intermediate Pass Catching, Ball Carrier: each Aggressive / Balanced / Conservative."
+      },
+      {
+        "heading": "Use",
+        "body": "Catching is split by depth band now, not one global toggle. Aggressive deep plus conservative intermediate gives contested shots outside and possession catches in traffic. Flip it in the red zone."
+      }
+    ],
+    "related": [
+      "adj-oline"
+    ]
   },
   {
     "id": "adj-gameplan-recipes",
     "name": "Saved-Adjustment Recipes",
     "subtitle": "First-pass macros to build and test",
-    "tags": ["gameplan", "defense", "offense"],
-    "sections": [
-      { "heading": "Defense", "body": "Trips answer: Quarters Trips = Stress (or Palms Trips = Stubbie), Safety Midpoint Strong, Roll Coverage Pass Strength. Scramble-QB killer: Plaster Aggressive, Trigger O.O.P, QB Contain Both. Screen/RPO eraser: Zone Drops Flats 0, Zone Strategy Ultra Aggressive, Route Commit Outside. Fire zone: SLCB Blitz, edge drop, Shell Cov 3, Show Blitz Linebackers. 2-minute prevent: CB Depth 20, Safety Depth 32, Zone Strategy Ultra Conservative, Ballhawk Conservative, Tackling Conservative." },
-      { "heading": "Offense", "body": "Blitz-beater: Half Slide toward the pressure, ID the Mike on the creeper, HB Chip and Release, slot Slot Flat hot. MOFC shot: WR1 Post, WR2 Deep Cross, Deep Pass Catching Aggressive. User-punisher: Untargeted Defender = User Defender plus quick game at his vacated zone. 4-minute closer: Ball Carrier Conservative, Blocking Style Conservative, catching Conservative across bands." },
-      { "heading": "Honesty note", "body": "These are first-pass recipes. Some behavior claims still need an in-game retest before they are gospel: the Stubbie apex alignment, whether a designed rollout trips Plaster O.O.P, Bluff Blitz timing, and exactly which defender each RPO key drives." }
+    "tags": [
+      "gameplan",
+      "defense",
+      "offense"
     ],
-    "related": ["adj-coverage-strategy", "adj-individual-def", "adj-oline"]
+    "sections": [
+      {
+        "heading": "Defense",
+        "body": "Trips answer: Quarters Trips = Stress (or Palms Trips = Stubbie), Safety Midpoint Strong, Roll Coverage Pass Strength. Scramble-QB killer: Plaster Aggressive, Trigger O.O.P, QB Contain Both. Screen/RPO eraser: Zone Drops Flats 0, Zone Strategy Ultra Aggressive, Route Commit Outside. Fire zone: SLCB Blitz, edge drop, Shell Cov 3, Show Blitz Linebackers. 2-minute prevent: CB Depth 20, Safety Depth 32, Zone Strategy Ultra Conservative, Ballhawk Conservative, Tackling Conservative."
+      },
+      {
+        "heading": "Offense",
+        "body": "Blitz-beater: Half Slide toward the pressure, ID the Mike on the creeper, HB Chip and Release, slot Slot Flat hot. MOFC shot: WR1 Post, WR2 Deep Cross, Deep Pass Catching Aggressive. User-punisher: Untargeted Defender = User Defender plus quick game at his vacated zone. 4-minute closer: Ball Carrier Conservative, Blocking Style Conservative, catching Conservative across bands."
+      },
+      {
+        "heading": "Honesty note",
+        "body": "These are first-pass recipes. Some behavior claims still need an in-game retest before they are gospel: the Stubbie apex alignment, whether a designed rollout trips Plaster O.O.P, Bluff Blitz timing, and exactly which defender each RPO key drives."
+      }
+    ],
+    "related": [
+      "adj-coverage-strategy",
+      "adj-individual-def",
+      "adj-oline"
+    ]
   }
 ]

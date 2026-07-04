@@ -949,7 +949,8 @@
       "cover-0",
       "hot-route",
       "stick"
-    ]
+    ],
+    "image": "concept-slant-flat.png"
   },
   {
     "id": "curl-flat",
@@ -981,7 +982,8 @@
       "cover-3",
       "cover-4",
       "stick"
-    ]
+    ],
+    "image": "concept-curl-flat.png"
   },
   {
     "id": "drive-mesh",
@@ -1013,7 +1015,8 @@
       "cover-1",
       "cover-0",
       "conflict-defender"
-    ]
+    ],
+    "image": "concept-drive-mesh.png"
   },
   {
     "id": "mesh-rpo-stick",
@@ -1045,6 +1048,7 @@
       "inside-zone",
       "conflict-defender",
       "stick"
-    ]
+    ],
+    "image": "concept-iz-stick-rpo.png"
   }
 ]

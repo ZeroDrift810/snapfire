@@ -135,7 +135,8 @@
       "cover-1",
       "mofc-mofo",
       "press"
-    ]
+    ],
+    "image": "coverage-cover-1-robber.png"
   },
   {
     "id": "cover-2",
@@ -271,7 +272,8 @@
       "cover-2",
       "dagger",
       "mofc-mofo"
-    ]
+    ],
+    "image": "coverage-tampa-2.png"
   },
   {
     "id": "cover-3",
@@ -363,7 +365,8 @@
       "drive-mesh",
       "motion",
       "mofc-mofo"
-    ]
+    ],
+    "image": "coverage-cover-3-match.png"
   },
   {
     "id": "cover-4",
@@ -455,7 +458,8 @@
       "cover-4",
       "mofc-mofo",
       "drive-mesh"
-    ]
+    ],
+    "image": "coverage-palms.png"
   },
   {
     "id": "cover-6",
@@ -550,6 +554,7 @@
       "cover-2",
       "smash",
       "field-boundary"
-    ]
+    ],
+    "image": "coverage-cover-9.png"
   }
 ]
