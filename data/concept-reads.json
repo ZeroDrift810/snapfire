@@ -1,0 +1,242 @@
+{
+  "four-verticals": {
+    "name": "FOUR VERTICALS",
+    "primary": "seam",
+    "term": "4 VERT > STRETCH THE DEEP THIRDS",
+    "beats": [
+      "cover-3",
+      "cover-1"
+    ],
+    "card": "four-verticals"
+  },
+  "mesh": {
+    "name": "MESH",
+    "primary": "mesh under",
+    "term": "DUAL SHALLOWS > RUB UNDERNEATH",
+    "beats": [
+      "cover-0",
+      "cover-1",
+      "cover-2-man"
+    ],
+    "card": "mesh"
+  },
+  "stick": {
+    "name": "STICK",
+    "primary": "stick",
+    "term": "STICK > FLAT > QUICK TRIANGLE",
+    "beats": [
+      "cover-3",
+      "cover-4"
+    ],
+    "card": "stick"
+  },
+  "smash": {
+    "name": "SMASH",
+    "primary": "corner",
+    "term": "HITCH UNDER > CORNER OVER",
+    "beats": [
+      "cover-2",
+      "cover-6"
+    ],
+    "card": "smash"
+  },
+  "dagger": {
+    "name": "DAGGER",
+    "primary": "dig",
+    "term": "SEAM CLEARS > DIG REPLACES",
+    "beats": [
+      "cover-3",
+      "cover-1"
+    ],
+    "card": "dagger"
+  },
+  "flood": {
+    "name": "FLOOD",
+    "primary": "corner",
+    "term": "3 LEVELS TO ONE SIDE",
+    "beats": [
+      "cover-3",
+      "cover-4"
+    ],
+    "card": "flood"
+  },
+  "curls": {
+    "name": "CURL FLAT",
+    "primary": "curl",
+    "term": "CURLS SETTLE > FLAT WIDENS",
+    "beats": [
+      "cover-3"
+    ],
+    "card": "curls"
+  },
+  "slants": {
+    "name": "SLANTS",
+    "primary": "slant",
+    "term": "QUICK GAME > INSIDE BREAKS",
+    "beats": [
+      "cover-2",
+      "cover-0"
+    ],
+    "card": "slants"
+  },
+  "spacing": {
+    "name": "SPACING",
+    "primary": "spot",
+    "term": "5 UNDER > EVEN DISTRIBUTION",
+    "beats": [
+      "cover-3",
+      "cover-2"
+    ],
+    "card": "spacing"
+  },
+  "snag": {
+    "name": "SNAG",
+    "primary": "snag",
+    "term": "SNAG > CORNER > FLAT TRIANGLE",
+    "beats": [
+      "cover-2",
+      "cover-3"
+    ],
+    "card": "snag"
+  },
+  "levels": {
+    "name": "LEVELS",
+    "primary": "dig",
+    "term": "DOUBLE INS > HIGH-LOW THE HOOK",
+    "beats": [
+      "cover-3",
+      "cover-1"
+    ],
+    "card": "levels"
+  },
+  "drive": {
+    "name": "DRIVE",
+    "primary": "shallow",
+    "term": "SHALLOW > DIG BEHIND",
+    "beats": [
+      "cover-1",
+      "cover-3"
+    ],
+    "card": "drive"
+  },
+  "shallow-cross": {
+    "name": "SHALLOW CROSS",
+    "primary": "dig",
+    "term": "CROSSER > DIG > TWO-WAY STRETCH",
+    "beats": [
+      "cover-1",
+      "cover-3"
+    ],
+    "card": "shallow-cross"
+  },
+  "switch": {
+    "name": "SWITCH VERTS",
+    "primary": "switch seam",
+    "term": "SWITCH RELEASE > VERTICAL STEMS",
+    "beats": [
+      "cover-1",
+      "cover-0"
+    ],
+    "card": "switch"
+  },
+  "post-wheel": {
+    "name": "POST WHEEL",
+    "primary": "post",
+    "term": "POST CLEARS > WHEEL BEHIND",
+    "beats": [
+      "cover-1",
+      "cover-3"
+    ],
+    "card": "post-wheel"
+  },
+  "scissors": {
+    "name": "SCISSORS",
+    "primary": "scissors corner",
+    "term": "POST > CORNER CROSS",
+    "beats": [
+      "cover-1",
+      "cover-4"
+    ],
+    "card": "scissors"
+  },
+  "bench": {
+    "name": "BENCH",
+    "primary": "comeback",
+    "term": "DOUBLE OUTS > SIDELINE STRETCH",
+    "beats": [
+      "cover-3",
+      "cover-1"
+    ],
+    "card": "bench"
+  },
+  "mills": {
+    "name": "MILLS",
+    "primary": "post",
+    "term": "POST OVER DIG > SHOT PLAY",
+    "beats": [
+      "cover-4",
+      "cover-3"
+    ],
+    "card": "mills"
+  },
+  "corner-flat": {
+    "name": "CHINA",
+    "primary": "corner",
+    "term": "CORNER OVER > FLAT UNDER",
+    "beats": [
+      "cover-2",
+      "cover-3"
+    ],
+    "card": "corner-flat"
+  },
+  "fade-out": {
+    "name": "FADE OUT",
+    "primary": "fade",
+    "term": "FADE > OUT > RED ZONE",
+    "beats": [
+      "cover-1",
+      "cover-0"
+    ],
+    "card": "fade-out"
+  },
+  "whips": {
+    "name": "WHIPS",
+    "primary": "whip",
+    "term": "PIVOT ROUTES > MAN BEATER",
+    "beats": [
+      "cover-1",
+      "cover-0"
+    ],
+    "card": "whips"
+  },
+  "wr-screen": {
+    "name": "WR SCREEN",
+    "primary": "wr screen",
+    "term": "CATCH > WALL > GO",
+    "beats": [
+      "cover-3",
+      "cover-4"
+    ],
+    "card": "wr-screen"
+  },
+  "rpo-bubble": {
+    "name": "RPO BUBBLE",
+    "primary": "bubble",
+    "term": "RUN ACTION > BUBBLE ATTACHED",
+    "beats": [
+      "cover-3",
+      "cover-1"
+    ],
+    "card": "rpo-bubble"
+  },
+  "rpo-slant": {
+    "name": "RPO GLANCE",
+    "primary": "slant",
+    "term": "RUN ACTION > SLANT BEHIND IT",
+    "beats": [
+      "cover-3",
+      "cover-1"
+    ],
+    "card": "rpo-slant"
+  }
+}

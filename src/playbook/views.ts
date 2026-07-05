@@ -41,6 +41,7 @@ import {
   Side,
   SIDE_LABEL,
 } from '../knowledge/playbook';
+import { readForPlay, prettyCoverage } from '../knowledge/reads';
 
 const PAGE = 25;
 const OFF_COLOR = 0xe36414; // orange
@@ -288,21 +289,34 @@ export function pbDetail(side: Side, setIdx: number, formIdx: number, playIdx: n
     .setDescription([`**Formation:** ${formLabel}`, tag ? `**${side === 'DEF' ? 'Coverage' : 'Type'}:** ${tag}` : ''].filter(Boolean).join('\n'))
     .setFooter({ text: FOOTER });
 
+  // Canon read: only for pass plays whose name maps to a known concept. No per-play invention.
+  let readCard: string | null = null;
+  if (side === 'OFF' && node.type !== 'RUN') {
+    const rd = readForPlay(node.name);
+    if (rd) {
+      const lines = [`Primary: **${rd.primary}**`];
+      if (rd.term) lines.push(rd.term);
+      if (rd.beats && rd.beats.length) lines.push(`Beats: ${rd.beats.map(prettyCoverage).join(', ')}`);
+      embed.addFields({ name: '📖 Read (canon)', value: lines.join('\n'), inline: false });
+      readCard = rd.card;
+    }
+  }
+
   const files: AttachmentBuilder[] = [];
   const ap = artPath(node);
   if (ap) {
     files.push(new AttachmentBuilder(ap, { name: 'play.png' }));
     embed.setImage('attachment://play.png');
   }
-  return {
-    embeds: [embed],
-    components: [
-      new ActionRowBuilder<ButtonBuilder>().addComponents(
-        backButton(`imc:pb:plays:${sd}:${setIdx}:${formIdx}:0`, 'Back to plays'),
-        homeButton()
-      ),
-    ],
-    files,
-    attachments: [],
-  };
+
+  const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
+    backButton(`imc:pb:plays:${sd}:${setIdx}:${formIdx}:0`, 'Back to plays')
+  );
+  if (readCard) {
+    row.addComponents(
+      new ButtonBuilder().setCustomId(`imc:show:concept:${readCard}`).setLabel('Full read').setEmoji('📖').setStyle(ButtonStyle.Primary)
+    );
+  }
+  row.addComponents(homeButton());
+  return { embeds: [embed], components: [row], files, attachments: [] };
 }

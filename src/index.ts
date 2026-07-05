@@ -13,6 +13,7 @@ import * as path from 'path';
 import { getKnowledgeStats, loadKnowledgeBases, reloadKnowledgeBases } from './knowledge/loader';
 import { cardStats, loadCards, reloadCards } from './content/cards';
 import { loadPlaybook, playbookCounts, playbookGame } from './knowledge/playbook';
+import { loadReads } from './knowledge/reads';
 import { loadSchemeData } from './scheme/data';
 import { handleInteraction } from './router';
 
@@ -29,6 +30,7 @@ if (!DISCORD_BOT_TOKEN) {
 loadKnowledgeBases();
 loadCards();
 loadPlaybook();
+loadReads();
 loadSchemeData();
 
 // Hot-reload: re-read content/ (teaching cards) and data/ (playbook) when their files
