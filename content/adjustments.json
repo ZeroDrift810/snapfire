@@ -409,5 +409,353 @@
       "adj-individual-def",
       "adj-oline"
     ]
+  },
+  {
+    "id": "loadout-01",
+    "name": "Loadout: Cover 2 Cut",
+    "subtitle": "vs four verticals / flood, from a 2x2 spread",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs four verticals / flood, from a 2x2 spread Avoid: four-strong sets (quads, or the RB to the 3-WR side)."
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 6 (nickel/dime with a slot corner)"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 CB (both) \u2192 Soft Squat: reads 2-to-1: carries #2 vertical, jumps #2's out and leaks off #1\n\u2022 Slot CB \u2192 Vertical Hook: the cut technique - takes #2 man on a vertical or inside break\n\u2022 Safety \u2192 Deep Half: caps the verticals over the top"
+      },
+      {
+        "heading": "What it does",
+        "body": "Turns Cover 6 into a full 2-read match (Cover 2 Cut). Matches four verts up the field and traps out routes. (source: 335-17)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-02",
+    "name": "Loadout: Cover 2 Match",
+    "subtitle": "vs empty / balanced spread that runs unstructured routes",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs empty / balanced spread that runs unstructured routes Avoid: bunch / compression (routes complement there)."
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 2 (Match ON), under front"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 CB (both) \u2192 Soft Squat: 2-read: carry verts, trap outs\n\u2022 MIKE (mid-read) \u2192 Deep Zone (or QB Spy): gets him off middle-read so the vert-hooks match #2\n\u2022 (you) \u2192 User the middle player, relate to #3: take #3 vertical/cross man; on #3 flat, sit and find the new #3"
+      },
+      {
+        "heading": "What it does",
+        "body": "Morphs coverage: plays man vs verticals, stays zone vs crossers. Go-to vs empty. (source: cover2zone-01)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-03",
+    "name": "Loadout: Cover 2 Clip",
+    "subtitle": "vs trips (3x1)",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs trips (3x1)"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 2 (Match ON)"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Field CB \u2192 Soft Squat: matches the field verticals\n\u2022 Backside CB \u2192 Man #1: locks the weak-side single receiver\n\u2022 MIKE \u2192 Man the RB: fixes the weakness where a back leaks to the flat\n\u2022 (you) \u2192 User the weak safety, poach #3: steals the free safety to bracket #3 strong"
+      },
+      {
+        "heading": "What it does",
+        "body": "Disguises as Cover 2 every snap; keeps matching principles vs trips. (source: cover2zone-03)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-04",
+    "name": "Loadout: Hot Palms",
+    "subtitle": "vs bunch / empty when you need pressure",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs bunch / empty when you need pressure"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 6 Willie (3-3-5 Mint)"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 WILL LB \u2192 Blitz: the 5th rusher off the overload side\n\u2022 D-line \u2192 Slant inside (D-pad left + right-stick down): changes the blitz angle to the A-gap\n\u2022 Safety \u2192 Man the WR: keeps the boundary sound"
+      },
+      {
+        "heading": "What it does",
+        "body": "5-man overload: Palms front side, Cover 0 boundary. Sound coverage behind the heat. (source: 335-11)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-05",
+    "name": "Loadout: Hot Cut",
+    "subtitle": "vs 2x2 when you need pressure",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs 2x2 when you need pressure Avoid: trips / 3x1 (use Hot Palms)."
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 9 + Mic Fire blitz (3-3-5 Penny)"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Edge rusher \u2192 Vertical Hook: the cut technique on #2\n\u2022 CB \u2192 Soft Squat: traps the out, carries the vert\n\u2022 Safety \u2192 Deep Half (unless usering): caps over the top\n\u2022 MIKE \u2192 Blitz: the hot rusher (the man who'd carry the RB)"
+      },
+      {
+        "heading": "What it does",
+        "body": "Cover 2 Cut behind a 5-man pressure - matches routes while the rush arrives quick. (source: 335-16)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-06",
+    "name": "Loadout: Mint Run Stop",
+    "subtitle": "vs inside-zone teams, staying two-high",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs inside-zone teams, staying two-high"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 2 (3-3-5 Mint tight front)"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 D-line \u2192 Slant inside: nose occupies the center, DTs clog the B-gaps\n\u2022 (you) \u2192 User the safety opposite the RB, fill the alley: the extra run-fit defender safeties don't provide"
+      },
+      {
+        "heading": "What it does",
+        "body": "Removes all four inside-zone reads (bang/bend/bounce/cut) from a 5-man box, no blitz. (source: 335-23)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-07",
+    "name": "Loadout: Sort",
+    "subtitle": "vs four-strong bunch (bunch + RB to that side)",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs four-strong bunch (bunch + RB to that side)"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 9"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Backside #2 \u2192 Soft Squat: matches the backside receiver\n\u2022 (you) \u2192 User the money backer, cut/match the final #3: the game won't match final #3 - you take it"
+      },
+      {
+        "heading": "What it does",
+        "body": "The one call with real matching vs four strong; keeps a 3-on-2 backside. (source: creatingcoverages-03)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-08",
+    "name": "Loadout: Cover 3 Dogs",
+    "subtitle": "4th-and-very-long",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "4th-and-very-long"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 3 Buzz (Hot Blitz 3), 3-3-5 Penny"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Front seven \u2192 Blitz (send 7): max rush before a deep route develops\n\u2022 Slot DB \u2192 Blitz + press: gets into the backfield faster\n\u2022 (you) \u2192 User a LB, rob crossers: frees the slot corner off the edge"
+      },
+      {
+        "heading": "What it does",
+        "body": "Overwhelms the pocket on obvious deep downs. (source: 335-20)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-09",
+    "name": "Loadout: Tampa 2",
+    "subtitle": "base vs underneath / dink-and-dunk offenses",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "base vs underneath / dink-and-dunk offenses Avoid: short-yardage (natural no-cover zone)."
+      },
+      {
+        "heading": "Base play",
+        "body": "Tampa 2"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 CB (both) \u2192 Cloud Flat + jam: jam the WRs at 5 yds, funnel inside, force check-downs\n\u2022 MIKE \u2192 Deep Middle (carries the seam): closes the Cover-2 seam hole\n\u2022 Whole D \u2192 Strip Ball ON + Tackling Aggressive: defenders rally and strip safely on check-downs"
+      },
+      {
+        "heading": "What it does",
+        "body": "Caps the seam, forces underneath throws, rallies to strip. Best all-around 3rd-and-long call. (source: 335-18; cover2-course)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-10",
+    "name": "Loadout: QB Spy",
+    "subtitle": "vs a scrambling / mobile QB",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs a scrambling / mobile QB"
+      },
+      {
+        "heading": "Base play",
+        "body": "any Cover 1/Cover 2 shell"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Edge rusher \u2192 QB Spy (NOT QB Contain): rush 3 + spy; mirrors the QB, attacks him if he crosses the LOS"
+      },
+      {
+        "heading": "What it does",
+        "body": "The #1 answer to scramblers - removes the run/pass two-way threat. (source: 335-18)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-11",
+    "name": "Loadout: Bracket the Stud",
+    "subtitle": "vs a team force-feeding one receiver",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs a team force-feeding one receiver"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 7 / Double Bracket Switch"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Safety Midpoint \u2192 Strong: disguises where the help is (appear strong where weak)\n\u2022 Slot double \u2192 Safety inside-edge + CB outside-edge: in/out bracket - one takes inside routes, one outside\n\u2022 (you) \u2192 User the bracket safety, read the release: take the inside break man, or pass off to the edge safety"
+      },
+      {
+        "heading": "What it does",
+        "body": "True double (in/out bracket) on the danger man while the rest plays man. (source: cover2man-12)"
+      }
+    ]
+  },
+  {
+    "id": "loadout-12",
+    "name": "Loadout: Cover 2 Cut + Spy",
+    "subtitle": "vs four verts from a mobile QB",
+    "tags": [
+      "loadout",
+      "adjustments",
+      "defense",
+      "situational"
+    ],
+    "sections": [
+      {
+        "heading": "When to call",
+        "body": "vs four verts from a mobile QB"
+      },
+      {
+        "heading": "Base play",
+        "body": "Cover 2 Cut (slot 1)"
+      },
+      {
+        "heading": "Build it (settings)",
+        "body": "\u2022 Everything from Cover 2 Cut \u2192 (as slot 1): matches the four verts\n\u2022 Edge rusher \u2192 QB Spy: rush 3 + spy so a scramble can't break the match coverage"
+      },
+      {
+        "heading": "What it does",
+        "body": "Match the verticals AND spy the scramble in one call. (source: 335-18)"
+      }
+    ]
   }
 ]
