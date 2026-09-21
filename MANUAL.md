@@ -33,15 +33,36 @@ sessions, play breakdowns with the matching in-game art.
 - Ship changes with **`deploy imovechainz`** from this PC (fetch + reset + `npm ci` + build +
   PM2 restart). See `~/.deploy/README.md`.
 
+> **`deploy` DOES NOT EXIST ON THE GAMING PC (measured 2026-09-20).** The tool still lives on BotPC at
+> `\\Botpc\c\Users\Himkage\.deploy\` and never came across in the 2026-09-19 migration: it is not on
+> PATH in bash, not a cmdlet in PowerShell, and `C:\Users\bmore\.deploy\` does not exist. Until it is
+> ported, run its four steps by hand (see "Ship a change" below). Do NOT write a deploy script inside
+> this repo: `apps.json` is an ECOSYSTEM registry that also covers Homegrown, and per-repo reinvention
+> is the drift this tool was built to stop. Tracked by the HQ OS session; the port is a 4-file copy plus
+> a PowerShell `$PROFILE` function, and the profile edit is Himkage's call.
+
 ## Use cases (step by step)
 
 ### 1. Ship a change (code or data)
 1. Make the change here. **Always** run `npm run smoke` (validates every route/button + renders
    every card/scheme offline, no Discord needed). Don't ship a red smoke.
 2. `git add <paths>` (never `-A`), commit, `git push`.
-3. `deploy imovechainz` from PowerShell. It resets the t740 to origin, builds, and restarts PM2.
+3. `deploy imovechainz` from PowerShell **if the tool is present**. It is NOT on the Gaming PC yet, so
+   until it is ported, run exactly what it would have run (verified end to end on 2026-09-20):
+   ```
+   ssh exe "cd /home/himkage/imovechainz-bot && git fetch --all -q && git reset --hard origin/main"
+   ssh exe "cd /home/himkage/imovechainz-bot && npm ci && npm run build"
+   ssh exe "pm2 restart imovechainz --update-env"
+   ```
+   That is the recipe from `apps.json` (branch `main`, install `npm ci`, build `npm run build`,
+   restart `pm2 restart imovechainz`), not an invention. Never edit the host directly: deploy is a
+   git reset and it wipes anything local.
 4. Confirm: `ssh exe "pm2 logs imovechainz --lines 30 --nostream"` shows it online with the
-   expected loaded counts.
+   expected loaded counts. If the change touched `engine/`, also verify the LIVE corpus rather
+   than trusting the boot banner, which does not mention it:
+   ```
+   ssh exe "cd /home/himkage/imovechainz-bot && node -e \"const d=require('./engine/play-data.js');console.log(Object.keys(d.coverages).length,'coverages')\""
+   ```
 
 ### 2. Post the hub panel to a channel (one time per channel)
 1. Set `HUB_CHANNEL_ID` in `.env` (right-click the channel → Copy ID).
