@@ -7193,7 +7193,8 @@ const DATA = {
    "desc": "Four receivers stretch the deep coverage vertically. The backside slot bends to the middle when the post is open.",
    "beats": [
     "cover-3",
-    "cover-1"
+    "cover-1",
+    "palms"
    ],
    "beaten_by": [
     "cover-4"
@@ -7273,7 +7274,8 @@ const DATA = {
     "cover-6"
    ],
    "beaten_by": [
-    "cover-4"
+    "cover-4",
+    "palms"
    ]
   },
   "dagger": {
@@ -7634,7 +7636,8 @@ const DATA = {
    "desc": "The dig baits the safety down, the post breaks in behind him for the shot.",
    "beats": [
     "cover-4",
-    "cover-3"
+    "cover-3",
+    "palms"
    ],
    "beaten_by": [
     "cover-2"

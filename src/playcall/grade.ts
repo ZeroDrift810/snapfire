@@ -14,12 +14,14 @@
 
 import { OffenseCall, DefenseCall } from './catalog';
 import {
+  Corpus,
   PlayModel,
   boxCount,
   doubleTeamsAtPOA,
   unblockedAtPOA,
   freeRushers,
   getConcept,
+  getFront,
 } from './engine';
 
 export type OutcomeKind = 'BIG_GAIN' | 'GAIN' | 'NO_GAIN' | 'LOSS' | 'SACK' | 'INT' | 'FUMBLE';
@@ -37,7 +39,46 @@ export interface Outcome {
   why: string;
 }
 
-const QUICK_CONCEPTS = new Set(['slants', 'mesh', 'flood']); // ball comes out vs pressure
+/**
+ * Quick game = the corpus says the concept is thrown off a QUICK drop (concept.drop === 'quick').
+ * This replaced a hand-written set {slants, mesh, flood}, the one piece of authored football in a
+ * grader whose whole claim is that it reads the corpus. The corpus disagreed with it on two of
+ * three: mesh and flood are both 5-step (drop "5"), and flood is a three-level concept with a
+ * corner route over the top, which can never be a hot answer to pressure.
+ */
+function isQuick(conceptKey: string): boolean {
+  return getConcept(conceptKey)?.drop === 'quick';
+}
+
+/**
+ * How deep the DESIGNED throw goes: depth of the concept's primary route (the '*'-marked entry in
+ * the corpus, the same one the engine draws the ball flight to). A measurement, not a label.
+ */
+function primaryDepth(conceptKey: string): number | null {
+  const c = getConcept(conceptKey) as (ReturnType<typeof getConcept> & { ps?: string[]; bs?: string[] }) | undefined;
+  const entry = [...(c?.ps ?? []), ...(c?.bs ?? [])].find((r) => r.startsWith('*'));
+  if (!entry) return null;
+  const route = (Corpus as unknown as { routes: Record<string, { depth_yd?: number }> }).routes[entry.replace(/^[*?]/, '')];
+  return typeof route?.depth_yd === 'number' ? route.depth_yd : null;
+}
+
+/**
+ * PREVENT is not graded as the zone it drops into. Its catalog coverage is cover-3 (the umbrella
+ * it plays), so reading the cover-3 tags scored it backwards: Four Verticals gained 10 a snap
+ * because verticals beat Cover 3, and Mesh was its WORST matchup because Cover 3 takes mesh away.
+ * The canon says the opposite. Textbook Ch 6 (Dime / Prevent): "Maximum coverage. Protect the deep
+ * ball. Give up underneath." The CFB27 two-minute prevent loadout: "give the underneath, keep
+ * everything in front." So against a front whose corpus family is 'prevent', the designed throw's
+ * measured depth decides it: deep shots are taken away, underneath throws are given up, and the
+ * in-between band stays neutral. Thresholds split the corpus cleanly (every primary route is
+ * either 20+ or 9 and under), so they are not tuning the result.
+ */
+const PREVENT_TAKES_DEEP_YDS = 15;
+const PREVENT_GIVES_UNDER_YDS = 10;
+
+function isPreventShell(def: DefenseCall): boolean {
+  return getFront(def.front)?.family === 'prevent';
+}
 
 function clamp(n: number, lo: number, hi: number): number {
   return Math.max(lo, Math.min(hi, n));
@@ -126,9 +167,15 @@ function runText(off: OffenseCall, kind: OutcomeKind, yards: number, rng: () => 
 function gradePass(off: OffenseCall, def: DefenseCall, model: PlayModel, rng: () => number): Outcome {
   const free = freeRushers(model).length;
   const concept = getConcept(off.key);
-  const beats = concept?.beats?.includes(def.coverage) ?? false; // canon: this concept attacks this shell
-  const beaten = concept?.beaten_by?.includes(def.coverage) ?? false; // canon: this shell takes it away
-  const quick = QUICK_CONCEPTS.has(off.key);
+  let beats = concept?.beats?.includes(def.coverage) ?? false; // canon: this concept attacks this shell
+  let beaten = concept?.beaten_by?.includes(def.coverage) ?? false; // canon: this shell takes it away
+  if (isPreventShell(def)) {
+    // Prevent overrides its umbrella's tags (see PREVENT_* above): depth of the designed throw decides.
+    const depth = primaryDepth(off.key);
+    beaten = depth !== null && depth >= PREVENT_TAKES_DEEP_YDS;
+    beats = depth !== null && depth <= PREVENT_GIVES_UNDER_YDS;
+  }
+  const quick = isQuick(off.key);
 
   // Pressure: free rushers the protection did not pick up. Quick game beats it (hot answer).
   let sackChance = clamp(0.04 + 0.17 * free, 0, 0.62);

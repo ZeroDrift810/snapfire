@@ -78,4 +78,13 @@ spot('power', 'prevent'); // run vs soft prevent -> strong
 spot('slants', 'fire1'); // quick vs pressure -> beats the blitz, low sack
 spot('verts', 'fire1'); // shot vs pressure -> sack-prone
 spot('mesh', 'man1'); // mesh rubs man -> good
+// PALMS (canon cover-4-palms, Tier 1): takes Smash away, a #2 vertical beats it.
+spot('smash', 'palms'); // palms beats "smash concept" -> weak
+spot('verts', 'palms'); // "#2 vertical with #3 vertical" palms it away -> strong
+// PREVENT (textbook Ch 6): "Protect the deep ball. Give up underneath."
+spot('verts', 'prevent'); // deep shot into the umbrella -> weak, pick-prone
+spot('mesh', 'prevent'); // shallow crossers underneath -> given up
+spot('slants', 'prevent'); // quick underneath -> given up
+// QUICK GAME is the corpus's drop === 'quick' (slants only). Flood is 5-step with a deep corner.
+spot('flood', 'fire1'); // not a hot answer any more -> pays for the pressure
 console.log('');

@@ -52,6 +52,10 @@ export const DEFENSE: DefenseCall[] = [
   { id: 'base3', label: 'Cover 3 Base', emoji: '🛡️', front: '4-3-over', coverage: 'cover-3', blitz: false, lean: 'any', blurb: 'Four-man rush, three deep, four under. Sound everywhere.' },
   { id: 'nickel2', label: 'Cover 2', emoji: '🛡️', front: 'nickel-over', coverage: 'cover-2', blitz: false, lean: 'any', blurb: 'Two deep halves, corners squat the flats.' },
   { id: 'quarters', label: 'Quarters', emoji: '🛡️', front: 'nickel-over', coverage: 'cover-4', blitz: false, lean: 'pass', blurb: 'Four deep, match the verticals. Kills shots.' },
+  // Quarters' cousin (canon cover-4-palms, Tier 1), so it shares quarters' front. Same two-high
+  // look, but the corners key #2 and jump the quick out: it takes away Smash and the fast flat,
+  // and a #2 vertical (Four Verticals) flips the corner and beats it.
+  { id: 'palms', label: 'Palms', emoji: '🛡️', front: 'nickel-over', coverage: 'palms', blitz: false, lean: 'any', blurb: 'Looks like Quarters. Corners jump the quick out, safeties cap the top.' },
   { id: 'man1', label: 'Cover 1 Robber', emoji: '🥷🏿', front: '4-3-over', coverage: 'cover-1', blitz: false, lean: 'pass', blurb: 'Man across with a free safety. Loaded box.' },
   { id: 'cloud6', label: 'Cover 6', emoji: '🛡️', front: '4-3-over', coverage: 'cover-6', blitz: false, lean: 'any', blurb: 'Quarter-quarter-half, set the strength.' },
   { id: 'fire1', label: 'A-Gap Fire', emoji: '🔥', front: 'nickel-3-3-dbl-mug', coverage: 'cover-1', blitz: true, lean: 'pass', blurb: 'Double mug the A gaps, bring pressure, man behind it.' },
@@ -92,6 +96,9 @@ export function botPickDefense(sit: DriveSituation, rng: () => number = Math.ran
     weights.fire1 += 3;
     weights.quarters += 2;
     weights.man1 += 2;
+    // Canon: palms beats "QBs who pre-diagnose quarters and fire the quick throw", which is
+    // exactly the throw a passing down invites. It is quarters' disguise, so it rides with it.
+    weights.palms += 1.5;
     weights.bear0 -= 0.5;
   }
   if (longYardage && !passingDown) {
@@ -103,6 +110,7 @@ export function botPickDefense(sit: DriveSituation, rng: () => number = Math.ran
     weights.base3 += 2;
     weights.cloud6 += 1.5;
     weights.nickel2 += 1;
+    weights.palms += 1; // a base two-high call on early downs, like its quarters cousin
   }
   // Late, deep: lean prevent only on true long-and-late, otherwise keep it honest.
   if (sit.toGo >= 15) weights.prevent += 2;
