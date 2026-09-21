@@ -177,7 +177,7 @@ Key decisions:
 
 ## 10. Ops
 
-- Ship: commit + push `main`, then `deploy imovechainz` (git reset to origin/main, `npm ci`, build, PM2
+- Ship: commit + push `main`, then `./deploy-exe.sh` (git reset to origin/main, `npm ci`, build, PM2
   restart). No hub re-post needed once the 🎮 Playcall button is on the posted hub.
 - Re-sync the engine after a HimkageVision data change: there run `node build-data.js`, then copy
   `play-engine.core.js` + `play-data.js` into `engine/` (see `engine/README.md`).

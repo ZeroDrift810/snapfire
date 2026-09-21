@@ -30,16 +30,16 @@ sessions, play breakdowns with the matching in-game art.
 
 - Host: the t740, `/home/himkage/imovechainz-bot`, PM2 process **`imovechainz`**.
 - Repo: github `ZeroDrift810/snapfire` (this folder).
-- Ship changes with **`deploy imovechainz`** from this PC (fetch + reset + `npm ci` + build +
-  PM2 restart). See `~/.deploy/README.md`.
+- Ship changes with **`./deploy-exe.sh`** from this repo (fetch + reset + `npm ci` + build +
+  PM2 restart + a boot check scoped to that restart + a live engine-corpus readout).
 
-> **`deploy` DOES NOT EXIST ON THE GAMING PC (measured 2026-09-20).** The tool still lives on BotPC at
-> `\\Botpc\c\Users\Himkage\.deploy\` and never came across in the 2026-09-19 migration: it is not on
-> PATH in bash, not a cmdlet in PowerShell, and `C:\Users\bmore\.deploy\` does not exist. Until it is
-> ported, run its four steps by hand (see "Ship a change" below). Do NOT write a deploy script inside
-> this repo: `apps.json` is an ECOSYSTEM registry that also covers Homegrown, and per-repo reinvention
-> is the drift this tool was built to stop. Tracked by the HQ OS session; the port is a 4-file copy plus
-> a PowerShell `$PROFILE` function, and the profile edit is Himkage's call.
+> **This used to say `deploy imovechainz`, the central `~/.deploy` tool. It is no longer the way.**
+> Ruling 2026-09-20: a per-repo **committed** `deploy-exe.sh` is canonical, matching League Ops Pro,
+> maddojo and Homegrown. The reason is worth keeping: `$HOME` is the one place that does not survive a
+> machine move, and on 2026-09-19 the central tool was left behind on BotPC while every MANUAL here
+> still pointed at it. A committed script cannot be lost, and it also runs from exe-host or a cloud
+> session, where a PowerShell `$PROFILE` function never could. The old tool still exists and still
+> works; it is just not the documented path.
 
 ## Use cases (step by step)
 
@@ -47,19 +47,19 @@ sessions, play breakdowns with the matching in-game art.
 1. Make the change here. **Always** run `npm run smoke` (validates every route/button + renders
    every card/scheme offline, no Discord needed). Don't ship a red smoke.
 2. `git add <paths>` (never `-A`), commit, `git push`.
-3. `deploy imovechainz` from PowerShell **if the tool is present**. It is NOT on the Gaming PC yet, so
-   until it is ported, run exactly what it would have run (verified end to end on 2026-09-20):
-   ```
-   ssh exe "cd /home/himkage/imovechainz-bot && git fetch --all -q && git reset --hard origin/main"
-   ssh exe "cd /home/himkage/imovechainz-bot && npm ci && npm run build"
-   ssh exe "pm2 restart imovechainz --update-env"
-   ```
-   That is the recipe from `apps.json` (branch `main`, install `npm ci`, build `npm run build`,
-   restart `pm2 restart imovechainz`), not an invention. Never edit the host directly: deploy is a
-   git reset and it wipes anything local.
-4. Confirm: `ssh exe "pm2 logs imovechainz --lines 30 --nostream"` shows it online with the
-   expected loaded counts. If the change touched `engine/`, also verify the LIVE corpus rather
-   than trusting the boot banner, which does not mention it:
+3. `./deploy-exe.sh` from this folder. It resets the host to `origin/main`, runs `npm ci` and the
+   build, restarts PM2, and only then verifies. Never edit the host directly: deploy is a git
+   reset and it wipes anything local.
+4. **Read what it prints; do not just watch it exit.** It does the confirming for you, and both
+   checks exist because of real incidents:
+   - **Boot banner, scoped to THIS restart.** It stamps the moment before restarting and only
+     accepts a banner at or after that stamp. pm2 keeps the out log across restarts, so a naive
+     grep matches the PREVIOUS boot and reports success for a restart it never observed.
+   - **Live engine corpus.** The boot banner prints card and playbook counts and says nothing
+     about `engine/`, so a stale vendored corpus boots looking perfectly healthy. That is how
+     `play-data.js` sat two commits behind for over two months. Expect 8 coverages including
+     `palms`, `mesh-under` depth 5, 455 plays.
+   If you want to look yourself anyway:
    ```
    ssh exe "cd /home/himkage/imovechainz-bot && node -e \"const d=require('./engine/play-data.js');console.log(Object.keys(d.coverages).length,'coverages')\""
    ```
@@ -94,6 +94,11 @@ sessions, play breakdowns with the matching in-game art.
 - The play engine + corpus are vendored at **`engine/`** (from `../HimkageVision`). To re-sync after
   a HimkageVision data change: there run `node build-data.js`, then copy `play-engine.core.js` +
   `play-data.js` into `engine/`. Fonts live in `engine/fonts/` (OFL Barlow, shipped in the repo).
+- **A vendored snapshot rots silently, so this is now checked.** Part H of `npm run smoke` compares
+  `engine/` against `../HimkageVision` on every run and fails on drift (line endings normalised;
+  skipped on hosts where the source repo is not checked out). It exists because `play-data.js` sat
+  two commits behind from 2026-07-05 to 2026-09-20 and nothing anywhere would have said so. Full
+  story: `engine/README.md`, "Drift: check it, do not trust it".
 
 ## Troubleshooting
 
@@ -101,7 +106,7 @@ sessions, play breakdowns with the matching in-game art.
 |---|---|
 | "This interaction failed" for a player | Likely a stale registered slash command (the bot is button-only). Deregister via an empty `PUT` to Discord's commands API. (Caused this once; see DEVLOG 2026-06-12.) |
 | A play's reads look wrong / made up | The old scheme text was fabricated and stripped; only the play art + verified entries are trustworthy. See `data/REBUILD-STATUS.md`. |
-| Host is behind after editing | Deploy is git-based: commit + push, then `deploy imovechainz`. Editing the host directly gets wiped by the next deploy. |
+| Host is behind after editing | Deploy is git-based: commit + push, then `./deploy-exe.sh`. Editing the host directly gets wiped by the next deploy (it is a `git reset --hard`). |
 | Data edit not live | Knowledge loads once at boot; a restart is required (`deploy` handles it). |
 | Buttons on an old panel do nothing | Their customIds predate a rewrite; re-post the hub (`npm run post-hub`). |
 
@@ -111,4 +116,5 @@ sessions, play breakdowns with the matching in-game art.
 - Setup + player flow: `README.md`. Agent ops: `OPENCLAW-OPERATING-GUIDE.md`.
 - Data truth + rebuild: `data/REBUILD-STATUS.md`, `../FOOTBALL-KNOWLEDGE-CANON.md`.
 - History: `DEVLOG.md`. Cross-session (for Claude): `imovechainz-bot-data` memory.
-- Deploy tool: `~/.deploy/README.md`.
+- Deploy: `./deploy-exe.sh` in this folder (committed, so it travels with the repo). The central
+  `~/.deploy` tool still exists but is no longer the documented path; see "Where it runs".
