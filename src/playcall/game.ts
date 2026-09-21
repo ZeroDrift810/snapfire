@@ -114,6 +114,9 @@ function applyPlay(g: Game, off: OffenseCall, def: DefenseCall, dir: Dir, rng: (
   const downAtSnap = g.down;
   const toGoAtSnap = g.toGo;
   const before = g.ballOn;
+  // A breakaway (nobody deep behind the box) goes the distance from wherever the ball is. The
+  // grader cannot see the spot, so it is resolved here, and the recorded yards are the TRUE gain.
+  if (outcome.breakaway) outcome.yards = 100 - before;
   let gainTo = before + outcome.yards;
   let note = '';
   const defended = g.mode === 'defense'; // player perspective for the endline copy

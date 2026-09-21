@@ -21,6 +21,7 @@ import {
   unblockedAtPOA,
   freeRushers,
   getConcept,
+  getCoverage,
   getFront,
 } from './engine';
 
@@ -37,7 +38,26 @@ export interface Outcome {
   text: string;
   /** Short "why it happened" tag tying the result to the matchup, for the teaching layer. */
   why: string;
+  /**
+   * A run that got through the box with NOBODY deep behind it: it goes the distance. The grader
+   * cannot see field position (gradePlay's signature is shared with League Ops Pro and stays
+   * fixed), so it flags the breakaway and the caller turns it into the rest of the field.
+   * `yards` carries 78, the longest run the grader ever returns, only as a safe value for a caller
+   * that ignores this flag. game.ts replaces it with the true distance to the goal line.
+   */
+  breakaway?: boolean;
 }
+
+/**
+ * Runs against a coverage with NO deep defender (Cover 0). Textbook Ch 7: "THE COVER 0 RISK: One
+ * missed tackle or one lost 1-on-1 matchup = touchdown. There is nobody behind the CB. No safety
+ * rotating. No zone to rally." Ruled in by Himkage 2026-09-21: "yes, runs against Cover 0 can
+ * break explosive."
+ * "Nobody deep" is the coverage's deep count in the corpus (coverage.deep === 0), not keyed on the
+ * coverage NAME, so any future zero-deep shell gets it too. "Through the box" = a gain past the
+ * linebackers and any safety the shell rolled down into the box: 10 yards, the one missed tackle.
+ */
+const THROUGH_THE_BOX_YDS = 10;
 
 /**
  * Quick game = the corpus says the concept is thrown off a QUICK drop (concept.drop === 'quick').
@@ -132,6 +152,24 @@ function gradeRun(off: OffenseCall, def: DefenseCall, model: PlayModel, rng: () 
   let yards = Math.round(gauss(rng, ev, sd));
   if (stuffPressure && yards > 0 && rng() < 0.5) yards = -gauss(rng, 1, 1.5); // free hat blows it up
   yards = clamp(yards, -7, 78);
+
+  // Through the box with nobody deep behind it: gone (see THROUGH_THE_BOX_YDS).
+  // Deep help is the COVERAGE's deep count from the corpus, NOT the deep ents left in model.C: on a
+  // run the engine drops every BLOCKED defender from C, and WR stalk blocks take corners and even
+  // the free safety, so C routinely shows zero deep defenders against Cover 3 and Cover 1. Reading
+  // C first made those shells give up house calls (Stretch 8.1 vs Cover 3) and was caught in the sim.
+  const deepHelp = model.coverage ? getCoverage(model.coverage)?.deep : undefined;
+  if (deepHelp === 0 && yards >= THROUGH_THE_BOX_YDS) {
+    return {
+      kind: 'BIG_GAIN',
+      yards: 78,
+      explosive: true,
+      turnover: false,
+      breakaway: true,
+      text: pick(rng, [`${off.label} is THROUGH, and there is nobody home. GONE.`, `One missed tackle and it is a footrace nobody wins. House call.`]),
+      why: `No safety over the top vs ${def.label}. Beat the box and it is six.`,
+    };
+  }
 
   const kind = kindFromYards(yards);
   const explosive = yards >= 20;
