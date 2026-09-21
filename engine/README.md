@@ -16,8 +16,40 @@ compiled into `dist/`), the same way `data/` and `content/` are read, so it surv
   diagram text deterministically (`@resvg/resvg-js` with `loadSystemFonts:false`).
 
 ## Re-syncing after a HimkageVision change
-1. In `C:\iMoveChainz\HimkageVision`: edit `data/*.json`, then `node build-data.js`.
+1. In `G:\Dev\iMoveChainz\HimkageVision` (its own git repo, remote ZeroDrift810/HimkageVision):
+   edit `data/*.json`, then `node build-data.js`. It requires only `fs` and `path`, so any machine
+   with the clone can run it: no GPU, no server, no Gaming PC powered on.
 2. Copy `play-engine.core.js` + `play-data.js` here.
 3. Run `npm run smoke` and `npm run sim:playcall` to confirm nothing regressed.
 
-Source of truth: `C:\iMoveChainz\HimkageVision` (`PLAY-ENGINE-SPEC.md`, `DEVLOG.md`).
+Source of truth: `G:\Dev\iMoveChainz\HimkageVision` (`PLAY-ENGINE-SPEC.md`, `DEVLOG.md`).
+The old `C:\iMoveChainz\HimkageVision` path is BotPC and is dead. Corrected 2026-09-20.
+
+## Runtime: this reaches nothing
+
+Playcall requires the two .js files here and draws its own vectors. Grepped 2026-09-20 for http,
+localhost, 8080, fetch, axios, net, child_process, spawn and ssh across `src/playcall/` and both
+engine files: the only hits are an SVG xmlns namespace string and a comment URL in a .d.ts.
+`play-engine.core.js` contains exactly ONE require in the whole file, `./play-data.js`, a sibling.
+
+Do not confuse this with the HimkageVision TELESTRATOR, which DOES serve ~12,700 play-art PNGs
+(~500 MB, gitignored) off the Gaming PC on port 8080. Playcall uses none of that and never contacts
+that server. Nothing here needs any machine powered on at runtime.
+
+## Drift: check it, do not trust it
+
+This directory is a SNAPSHOT. Upstream changes do not arrive on their own and nothing warns you.
+
+Measured 2026-09-20: `play-engine.core.js` still matched source byte for byte, but `play-data.js` had
+drifted for over two months and the LIVE bot was running the stale corpus. Two upstream commits were
+never carried across: a8c9c91 (2026-07-05, `mesh-under` depth 2 -> 5, `shallow` 3 -> 4) and 7a23793
+(2026-07-13, PALMS added as a full coverage, 7 -> 8). So the game was resolving MESH, one of the ten
+offense hands, at a crossing depth the engine's own author had already corrected as wrong, and could
+not call PALMS at all.
+
+To check, compare both files against `../../HimkageVision/`. NORMALISE LINE ENDINGS FIRST or you will
+chase a ghost: a Windows checkout is CRLF and exe-host is LF, so raw hashes differ for identical
+bytes. Use `tr -d '\r' < play-data.js | md5sum` on both sides.
+
+Re-syncing changes live football behaviour in a bot people are playing, so it is Himkage's call, not
+a session's to do quietly.

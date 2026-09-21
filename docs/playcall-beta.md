@@ -139,8 +139,16 @@ Key decisions:
   leaderboard yet.
 - **No roster integration.** Outcomes use scheme/coverage geometry, not real player ratings (the bot has
   no league DB). Diagrams use generic position labels.
-- **Not yet QA'd by tapping in live Discord** by the author. Verified offline (smoke, sim, visual
-  spot-checks) and confirmed a clean live boot. Tester feedback wanted on the real interaction loop.
+- **Played and confirmed working by Himkage** (recorded 2026-09-20). His words: "I've used that version
+  of Play Call and it works fine. I don't know what happened to the documentation of me testing it, but
+  it works. It just hasn't been given out to massive people." It was also verified offline (smoke, sim,
+  visual spot-checks) and booted clean. What is still true is only the LAST part: it has not been put in
+  front of a wide group, so balance feedback at volume is still wanted.
+  CORRECTION, and the reason this is spelled out rather than just edited: this bullet used to read "Not
+  yet QA'd by tapping in live Discord". It was written before he played it and never updated, so for
+  three months the doc was behind reality. On 2026-09-20 that made TWO sessions independently report the
+  feature as unproven while deciding its future. If you test something here, say so in this file. The
+  next reader has no other way to know and will assume the worst.
 
 ---
 
