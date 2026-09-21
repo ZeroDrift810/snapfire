@@ -33,6 +33,8 @@ import { loadSchemeData, allSchemes, allTempos } from '../src/scheme/data';
 import { newBuild, setScheme, setTempo, setGroupConcepts, groupConcepts } from '../src/scheme/builder';
 import { buildSetupView, buildConceptView, buildIdentityView } from '../src/scheme/views';
 import { renderSchemeCardPng } from '../src/scheme/render';
+import { ONE_HIGH, TWO_HIGH, ZERO_HIGH } from '../src/scheme/playsheet';
+import { Corpus } from '../src/playcall/engine';
 
 const errors: string[] = [];
 let routesTested = 0;
@@ -457,6 +459,15 @@ function partScheme() {
 let driftChecked = 0;
 let driftSkipped = false;
 
+/** Every coverage the engine knows is in exactly one playsheet shell family (see playsheet.ts). */
+function partShellFamilies() {
+  const families = [...ONE_HIGH, ...TWO_HIGH, ...ZERO_HIGH];
+  for (const cov of Object.keys((Corpus as unknown as { coverages: Record<string, unknown> }).coverages)) {
+    const n = families.filter((f) => f === cov).length;
+    if (n !== 1) fail(`shell families: coverage "${cov}" is in ${n} playsheet families, must be exactly 1 (src/scheme/playsheet.ts)`);
+  }
+}
+
 function partEngineDrift() {
   const ROOT = path.resolve(__dirname, '..');
   const SOURCE = path.resolve(ROOT, '..', 'HimkageVision');
@@ -530,6 +541,7 @@ partScheme();
 console.log(`   scheme builder: ${sbViewsValidated} views validated, identity card + roadmap built`);
 console.log('Part H: vendored engine drift (engine/ vs HimkageVision)...');
 partEngineDrift();
+partShellFamilies();
 console.log(
   driftSkipped
     ? '   engine drift: SKIPPED, no HimkageVision checkout beside this repo (normal on a deploy host)'

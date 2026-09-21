@@ -12,8 +12,15 @@ import { getConcept as engineConcept } from '../playcall/engine';
 import { Concept } from './data';
 import { conceptsByBucket, SchemeBuild } from './builder';
 
-const ONE_HIGH = ['cover-1', 'cover-3'];
-const TWO_HIGH = ['cover-2', 'cover-4', 'cover-6'];
+// Shell families, matching the engine's own canon line (presnapShell in play-engine.core.js):
+// "Cover 2 / 2-man / 4 / 6 / Palms keep both safeties deep; Cover 3 and 1 roll one; Cover 0 rolls
+// both." TWO_HIGH was missing palms (added to the engine 7a23793) and cover-2-man (never listed),
+// so a concept that beats only those never landed in "2 HIGH BEATERS". Found by cfmos-web, whose
+// playsheet was ported from this file and had the same gap. Every coverage in the corpus must be
+// in exactly one of these; smoke Part H fails otherwise, so the next new coverage cannot slip.
+export const ONE_HIGH = ['cover-1', 'cover-3'];
+export const TWO_HIGH = ['cover-2', 'cover-2-man', 'cover-4', 'cover-6', 'palms'];
+export const ZERO_HIGH = ['cover-0']; // no deep safety: its own call, beaten by neither list
 
 export interface Cell {
   concept: string;
