@@ -120,6 +120,41 @@ function assignDeep(DEF, droppers, centers){
   remC.forEach((o,i)=>{ if(remD[i]) out[o.ci]=remD[i]; });
   return out;
 }
+/* ---------------- Pre-snap shell: the coverage decides who is in the box ----------------
+ * Until this existed the coverage was post-snap movement only, so a coverage call could never
+ * change the run game: 4-3 Over with Cover 3 and with Cover 1 Robber aligned identically, the
+ * strong safety parked ~9 yds deep, and the box counted 7 against every shell. The canon says
+ * the shell sets the box (iMoveChainz V2 textbook, coverage chapter):
+ *   Cover 1 "the other safety can play in the box. 8-man front possible."
+ *   Cover 3 "SS is in the box pre-snap. 8-man front capable."
+ *   Cover 4 "both safeties are deep. Only 3 LBs and 4 DL in the box (7)."
+ *   Cover 0 "the safeties come down at the snap."
+ * So: any SAFETY the coverage does not need deep comes down to run-fit depth. "Needs deep" is not
+ * a new rule, it is the same assignDeep the post-snap layer uses, so the rotation and the drops
+ * can never disagree. Cover 2 / 2-man / 4 / 6 / Palms keep both safeties deep (two-high); Cover 3
+ * and 1 roll one; Cover 0 rolls both.
+ * STRAIGHT DOWN, x unchanged, on purpose: WR stalk pairing is by x distance, so moving him only in
+ * depth leaves every blocking assignment identical (the suite's "coverage never changes the
+ * blocking" invariant). A safety aligned over a slot therefore rolls to an overhang, not the box,
+ * which is the correct football consequence of spreading him out.
+ * A prevent front never rolls: its safeties ARE the umbrella (family 'prevent', 3-deep). */
+const FRONT_FAMILY = {};
+const ROLL_Y = 362; // just behind the LB level (y ~402-408), inside the y>=360 depth consumers count as the box, clear of LB tokens
+function presnapShell(OFF, DEF, spec, frontKey){
+  if(!spec || FRONT_FAMILY[frontKey]==='prevent') return [];
+  const ids = Object.keys(DEF);
+  const rushers = ids.filter(id=>DEF[id].role==='DL' || (DEF[id].role==='LB' && DEF[id].y>=440));
+  const droppers = ids.filter(id=>rushers.indexOf(id)<0);
+  const nDeep = Math.min(spec.deep||0, droppers.length);
+  const centers = (spec.deep_centers && spec.deep_centers.length===nDeep) ? spec.deep_centers
+    : Array.from({length:nDeep},(_,i)=>30+940*(i+.5)/nDeep);
+  const deep = new Set(Object.values(assignDeep(DEF, droppers, centers)));
+  const rolled = [];
+  ids.filter(id=>DEF[id].role==='DB' && DEF[id].y<ROLL_Y && !deep.has(id)).forEach(id=>{
+    DEF[id].y = ROLL_Y; DEF[id].rolled = true; rolled.push(id);
+  });
+  return rolled;
+}
 function resolveCoverage(OFF, DEF, spec){
   const C=[], ids=Object.keys(DEF);
   const rushers = ids.filter(id=>DEF[id].role==='DL' || (DEF[id].role==='LB' && DEF[id].y>=440));
@@ -541,6 +576,7 @@ function resolvePass(formKey, frontKey, conceptKey, dir, covKey){
   dir = dir<0?-1:1;
   const OFF=(FORMATIONS[formKey]||FORMATIONS['i-form-pro'])();
   const DEF=(FRONTS[frontKey]||FRONTS['4-3-over'])();
+  if(covKey && COVERAGES[covKey]) presnapShell(OFF, DEF, COVERAGES[covKey], frontKey);
   const spec=CONCEPTS[conceptKey]||CONCEPTS['four-verticals'];
   const slots=passSlots(OFF);
   const R=[], blockers=[], stalkers=[];
@@ -685,7 +721,7 @@ function classifyRun(name){
   if(!D) return;
   const factory = obj => () => JSON.parse(JSON.stringify(obj));
   if(D.formations) for(const k in D.formations) FORMATIONS[k] = factory(D.formations[k].players);
-  if(D.fronts) for(const k in D.fronts) FRONTS[k] = factory(D.fronts[k].players);
+  if(D.fronts) for(const k in D.fronts){ FRONTS[k] = factory(D.fronts[k].players); FRONT_FAMILY[k] = D.fronts[k].family; }
   if(D.schemes) for(const k in D.schemes){ const s=D.schemes[k]; NAMES[k] = [s.name, s.term, s.desc]; }
   if(D.coverages) for(const k in D.coverages) COVERAGES[k] = D.coverages[k];
   if(D.routes) for(const k in D.routes) ROUTES[k] = D.routes[k];
@@ -713,6 +749,7 @@ function resolvePlay(formKey, frontKey, scheme, dir, covKey, motion){
   dir = dir<0 ? -1 : 1;
   const OFF = (FORMATIONS[formKey]||FORMATIONS['i-form-pro'])();
   const DEF = (FRONTS[frontKey]||FRONTS['4-3-over'])();
+  if(covKey && COVERAGES[covKey]) presnapShell(OFF, DEF, COVERAGES[covKey], frontKey); // shell sets the box BEFORE the fits
   const zone = (scheme==='inside-zone'||scheme==='outside-zone');
   let A = zone ? resolveZone(OFF,DEF,scheme)
         : scheme==='duo'  ? resolveDuo(OFF,DEF)
@@ -770,6 +807,7 @@ function resolveShell(formKey, frontKey, covKey, dir){
   const OFF = (FORMATIONS[formKey]||FORMATIONS['i-form-pro'])();
   const DEF = (FRONTS[frontKey]||FRONTS['4-3-over'])();
   const spec = COVERAGES[covKey]||COVERAGES['cover-3'];
+  presnapShell(OFF, DEF, spec, frontKey);
   let C = resolveCoverage(OFF,DEF,spec);
   let off=OFF, def=DEF;
   if(dir<0){ off=mirror(OFF); def=mirror(DEF); C=C.map(mirrorCov); }

@@ -85,6 +85,13 @@ spot('verts', 'palms'); // "#2 vertical with #3 vertical" palms it away -> stron
 spot('verts', 'prevent'); // deep shot into the umbrella -> weak, pick-prone
 spot('mesh', 'prevent'); // shallow crossers underneath -> given up
 spot('slants', 'prevent'); // quick underneath -> given up
-// QUICK GAME is the corpus's drop === 'quick' (slants only). Flood is 5-step with a deep corner.
-spot('flood', 'fire1'); // not a hot answer any more -> pays for the pressure
+// QUICK GAME is the corpus's drop === 'quick': slants, and mesh by Himkage's ruling 2026-09-21.
+// Flood is 5-step with a deep corner, so it pays for pressure.
+spot('flood', 'fire1'); // not a hot answer -> sack-prone
+spot('mesh', 'fire1'); // quick by ruling -> handles the blitz
+// THE SHELL SETS THE BOX (textbook, coverage chapter). Single-high rolls a safety down (8),
+// nickel two-high leaves the nickel in the alley (6): same run, same front family, different call.
+spot('iz', 'base3'); // Cover 3: "SS is in the box pre-snap. 8-man front" -> run is harder
+spot('iz', 'man1'); // Cover 1: "the other safety can play in the box" -> run is harder
+spot('iz', 'nickel2'); // two-high nickel, 6 in the box -> run is easier
 console.log('');

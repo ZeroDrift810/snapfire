@@ -7204,7 +7204,7 @@ const DATA = {
    "display_name": "MESH",
    "term": "DUAL SHALLOWS · RUB UNDERNEATH",
    "family": "crosser",
-   "drop": "5",
+   "drop": "quick",
    "ps": [
     "?go",
     "corner",

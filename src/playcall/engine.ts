@@ -175,14 +175,44 @@ export function resolvePass(form: string, front: string, concept: string, dir: D
 
 const LOS = 500;
 
-/** Box defenders: DL plus LBs aligned within the tackle box and near the LOS. */
+/**
+ * Box defenders, counted the way a QB counts them pre-snap.
+ *
+ *  - ON THE LINE in a numbered technique (0-9, incl. 2i / 4i): part of the front, so in the box by
+ *    definition. That includes a 9-technique outside the tight end, which is how the 46 Bear's
+ *    walked-up WILL counts and the Bear is the 8-man front it is famous for.
+ *  - OFF THE BALL (LB letters, a $ safety, a safety the coverage rolled down): in the box when
+ *    inside run-fit depth AND between the offense's end men on the line, allowing one gap outside.
+ *  - So a NICKEL / APEX outside the end man is NOT in the box. Textbook (nickel): he "fills the
+ *    alley between the LB and the CB ... Without the nickel in run support, the defense has only
+ *    6 defenders in the box."
+ *
+ * This replaced a fixed window of x 330..670 around the center of the field. That measured the
+ * field, not the formation: the Bear's 9-tech at x678 missed it by 8px (so the 8-man front
+ * counted 7) while a nickel apex at x330 landed exactly on its edge and counted. The end men move
+ * with the formation (an attached TE extends the box), which is the actual definition.
+ * The coverage's part (a single-high shell rolling a safety down) happens in the engine now,
+ * before this ever runs: see presnapShell in play-engine.core.js.
+ */
 export function boxCount(model: PlayModel): number {
+  const OFF = model.OFF as Record<string, { x: number; y: number }>;
+  const line = ['LT', 'LG', 'C', 'RG', 'RT'].filter((id) => OFF[id]).map((id) => OFF[id].x);
+  if (OFF.TE && line.length) {
+    const nearest = Math.min(...line.map((x) => Math.abs(OFF.TE.x - x)));
+    if (nearest <= 60) line.push(OFF.TE.x); // attached TE is an end man; a detached one is a receiver
+  }
+  const L = Math.min(...line);
+  const R = Math.max(...line);
+  const gap = OFF.LT && OFF.RT ? Math.abs(OFF.RT.x - OFF.LT.x) / 4 : 46; // one OL split
+
   let n = 0;
   for (const id of Object.keys(model.DEF)) {
     const d = model.DEF[id];
-    if (d.role === 'DL') n++;
-    else if (d.role === 'LB' && Math.abs(d.x - 500) <= 170 && d.y >= 360) n++;
-    else if (d.role === 'DB' && d.y >= 360 && Math.abs(d.x - 500) <= 150) n++; // walked-down safety (cover-0/1 look)
+    if (d.role === 'DL' || /^\d/.test(String(d.t ?? ''))) {
+      n++; // on the ball in a technique
+      continue;
+    }
+    if (d.y >= 360 && d.x >= L - gap && d.x <= R + gap) n++; // off-ball, inside the end men
   }
   return n;
 }
