@@ -50,8 +50,18 @@ function fieldOverlay(ballOn: number, toGo: number): string {
     const yTop = Math.max(0, yGoal - 10 * PX_PER_YD);
     s += `<rect x="30" y="${yTop.toFixed(1)}" width="940" height="${(yGoal - yTop).toFixed(1)}" fill="#16324f" fill-opacity="0.72"/>`;
     s += `<line x1="30" y1="${yGoal.toFixed(1)}" x2="970" y2="${yGoal.toFixed(1)}" stroke="#ffffff" stroke-width="4"/>`;
+    // Label at BOTH SIDELINES, never centered. The engine draws the play title, its subtitle and
+    // the "vs <coverage>" line centered at the top of the frame (y 48 / 74 / 96), and inside about
+    // the opponent 40 the band covers exactly that strip. A centered label drew straight through
+    // the title (reported by LO Pro 2026-09-20 at ballOn 62). The sides are clear at every spot,
+    // and it is where broadcast end-zone lettering sits anyway. Skipped when the visible band is
+    // too thin to hold the text rather than letting it clip at the frame edge.
     const yc = (yTop + yGoal) / 2;
-    s += `<text x="500" y="${(yc + 11).toFixed(1)}" text-anchor="middle" font-size="34" font-weight="800" fill="#ffffff" fill-opacity="0.85" font-family="Barlow" letter-spacing="6">END ZONE</text>`;
+    if (yGoal - yTop >= 30) {
+      const lbl = (x: number, anchor: string) =>
+        `<text x="${x}" y="${(yc + 9).toFixed(1)}" text-anchor="${anchor}" font-size="26" font-weight="800" fill="#ffffff" fill-opacity="0.85" font-family="Barlow" letter-spacing="5">END ZONE</text>`;
+      s += lbl(52, 'start') + lbl(948, 'end');
+    }
   }
 
   // Aligned yard lines every 5; numbers (10-50-40...) every 10 along both sidelines.
@@ -67,9 +77,13 @@ function fieldOverlay(ballOn: number, toGo: number): string {
     }
   }
 
-  // First-down line (yellow) at ballOn + toGo.
+  // First-down line (yellow) at ballOn + toGo. On goal-to-go there is NO yellow line: the goal
+  // line is the marker, as on a broadcast. This game's own state never puts the marker past the
+  // goal (firstDownDistance caps it), but this file is vendored into League Ops Pro, which drives
+  // it from its own game state, so it must not trust callers to cap toGo. Uncapped, the line
+  // drew inside the end zone.
   const yFD = yOf(ballOn + toGo, ballOn);
-  if (yFD > 8 && yFD < 714) {
+  if (ballOn + toGo < 100 && yFD > 8 && yFD < 714) {
     s += `<line x1="30" y1="${yFD.toFixed(1)}" x2="970" y2="${yFD.toFixed(1)}" stroke="#ffd23b" stroke-width="3.5" stroke-opacity="0.95"/>`;
   }
   return s;

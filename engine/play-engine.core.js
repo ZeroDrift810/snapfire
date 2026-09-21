@@ -874,8 +874,13 @@ function renderSVG(model, g, idn, noVig){
   s+=`<text x="500" y="74" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">${esc(model.term)}</text>`;
   if(model.coverage && model.key!==model.coverage){ const cv=COVERAGES[model.coverage];
     s+=`<text x="500" y="96" text-anchor="middle" font-size="13" font-weight="700" fill="#ffd34d">vs ${esc(cv&&cv.display_name||model.coverage)}</text>`; }
-  s+= dir>0 ? `<text x="720" y="556" font-size="13" fill="#bfe0ff" font-weight="700">PLAYSIDE →</text>`
-            : `<text x="190" y="556" font-size="13" fill="#bfe0ff" font-weight="700" text-anchor="end">← PLAYSIDE</text>`;
+  // The arrow is DRAWN, not typed. A text arrow depends on the rasterizer's fonts: browsers
+  // fall back to a system font that has U+2192, but headless renderers (the iMoveChainz bot's
+  // resvg path, loadSystemFonts:false with Barlow only) have no such glyph and draw an empty box.
+  s+= dir>0 ? `<text x="772" y="556" font-size="13" fill="#bfe0ff" font-weight="700" text-anchor="end">PLAYSIDE</text>`
+              + `<path d="M778 551.5 H791 M786 546.5 L791 551.5 L786 556.5" fill="none" stroke="#bfe0ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`
+            : `<path d="M129 551.5 H116 M121 546.5 L116 551.5 L121 556.5" fill="none" stroke="#bfe0ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`
+              + `<text x="135" y="556" font-size="13" fill="#bfe0ff" font-weight="700">PLAYSIDE</text>`;
   // tokens
   for(const id in model.DEF){ const p=pos.def[id]; s+=tokenStr(p.x,p.y,defLabel(id),'def',model.DEF[id].t); }
   for(const id in model.OFF){ const p=pos.off[id]; s+=tokenStr(p.x,p.y,id,'off'); }
