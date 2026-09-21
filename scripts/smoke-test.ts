@@ -8,6 +8,8 @@
  *         scheme. Every "related" link must resolve (no dead buttons). Every scheme that
  *         names play art must attach a real file.
  * Part C  Structure: assert there is no slash-command surface left in the codebase.
+ * Part H  Engine drift: the vendored engine/ must match the HimkageVision source when that
+ *         repo is checked out beside this one. Skipped on deploy hosts, where it is absent.
  *
  * Exits non-zero on any failure.
  */
@@ -437,6 +439,56 @@ function partScheme() {
 
 // --- run -------------------------------------------------------------------
 
+// --- Part H: vendored engine drift ----------------------------------------
+
+/**
+ * engine/ is a VENDORED SNAPSHOT of HimkageVision. Upstream changes do not arrive on
+ * their own and nothing else warns you: stale corpus data is still perfectly valid data,
+ * so the game keeps working while resolving the wrong football.
+ *
+ * This is why the check exists. It drifted unnoticed from 2026-07-05 to 2026-09-20, and in
+ * that window the live bot resolved MESH, one of the ten offense hands, at a crossing depth
+ * the engine's own author had already corrected, and could not call PALMS at all.
+ *
+ * Normalises line endings before hashing: this repo checks out CRLF on Windows and LF on
+ * exe-host, so raw bytes differ for identical content and you will chase a copy that does
+ * not exist.
+ */
+let driftChecked = 0;
+let driftSkipped = false;
+
+function partEngineDrift() {
+  const ROOT = path.resolve(__dirname, '..');
+  const SOURCE = path.resolve(ROOT, '..', 'HimkageVision');
+  const FILES = ['play-engine.core.js', 'play-data.js'];
+
+  // The source repo is a sibling on a dev machine and is absent on deploy hosts, where the
+  // bot ships with engine/ already committed. Absent is not a failure, it just cannot be checked.
+  if (!fs.existsSync(SOURCE)) {
+    driftSkipped = true;
+    return;
+  }
+
+  const norm = (f: string) => fs.readFileSync(f, 'utf8').replace(/\r/g, '');
+
+  for (const f of FILES) {
+    const vendored = path.join(ROOT, 'engine', f);
+    const source = path.join(SOURCE, f);
+    if (!fs.existsSync(source)) {
+      fail(`engine drift: ${f} is missing from the source repo at ${SOURCE}`);
+      continue;
+    }
+    if (norm(vendored) !== norm(source)) {
+      fail(
+        `engine drift: engine/${f} does not match ${path.join('..', 'HimkageVision', f)}. ` +
+        `The vendored copy is stale, so the game is resolving outdated football. ` +
+        `DO NOT just copy it: re-syncing changes live behaviour in a bot people are playing, ` +
+        `so it is Himkage's call. See engine/README.md "Drift: check it, do not trust it".`,
+      );
+    }
+    driftChecked++;
+  }
+}
 console.log('iMoveChainz smoke test');
 console.log('='.repeat(60));
 loadKnowledgeBases();
@@ -476,6 +528,13 @@ console.log(`   playcall: ${pcDrivesPlayed} drives, ${pcPlaysResolved} plays res
 console.log('Part G: scheme builder (declare + roadmap)...');
 partScheme();
 console.log(`   scheme builder: ${sbViewsValidated} views validated, identity card + roadmap built`);
+console.log('Part H: vendored engine drift (engine/ vs HimkageVision)...');
+partEngineDrift();
+console.log(
+  driftSkipped
+    ? '   engine drift: SKIPPED, no HimkageVision checkout beside this repo (normal on a deploy host)'
+    : `   engine drift: ${driftChecked} file(s) compared against source`,
+);
 
 console.log('');
 console.log('='.repeat(60));

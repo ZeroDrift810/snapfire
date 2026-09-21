@@ -40,13 +40,21 @@ that server. Nothing here needs any machine powered on at runtime.
 
 This directory is a SNAPSHOT. Upstream changes do not arrive on their own and nothing warns you.
 
-Measured 2026-09-20: `play-engine.core.js` still matched source byte for byte, but `play-data.js` had
-drifted for over two months and the LIVE bot was running the stale corpus. Two upstream commits were
-never carried across: a8c9c91 (2026-07-05, `mesh-under` depth 2 -> 5, `shallow` 3 -> 4) and 7a23793
-(2026-07-13, PALMS added as a full coverage, 7 -> 8). So the game was resolving MESH, one of the ten
-offense hands, at a crossing depth the engine's own author had already corrected as wrong, and could
-not call PALMS at all.
+Measured 2026-09-20, and RE-SYNCED the same day: `play-engine.core.js` still matched source byte for
+byte, but `play-data.js` had drifted for over two months and the live bot was running the stale copy.
+Two upstream commits were never carried across: a8c9c91 (2026-07-05, `mesh-under` depth 2 -> 5,
+`shallow` 3 -> 4) and 7a23793 (2026-07-13, PALMS added as a full coverage, 7 -> 8).
 
+WHAT THAT ACTUALLY COST, measured rather than assumed, because the first write-up of this overstated
+it. `npm run sim:playcall` was byte-identical before and after the re-sync. The grader reads box count,
+free rushers and leverage at the point of attack, NOT route depth, so no outcome, explosive rate,
+turnover rate or sack rate moved. What was wrong was the ART: every MESH and every Shallow Cross was
+DRAWN crossing at 2 and 3 yards instead of 5 and 4, in a game whose whole claim is that the picture is
+the real football. PALMS is now in the corpus but is not yet a callable hand in `src/playcall/
+catalog.ts`, so it changes nothing until someone adds it to the defense deck.
+
+The lesson survives the smaller blast radius: nothing warned anyone for two months, and a drift this
+quiet is exactly the kind that is found late and by accident. Part H of `npm run smoke` now fails on it.
 To check, compare both files against `../../HimkageVision/`. NORMALISE LINE ENDINGS FIRST or you will
 chase a ghost: a Windows checkout is CRLF and exe-host is LF, so raw hashes differ for identical
 bytes. Use `tr -d '\r' < play-data.js | md5sum` on both sides.

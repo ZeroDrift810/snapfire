@@ -6662,6 +6662,22 @@ const DATA = {
     "motion that flips the strength late",
     "weak-side isolation in the half"
    ]
+  },
+  "palms": {
+   "display_name": "COVER 4 PALMS",
+   "term": "2-READ · TRAP #2",
+   "family": "zone",
+   "deep": 2,
+   "man": false,
+   "rules": "Two-read quarters cousin. Corners read number 2 and trap the out (pseudo cover-2), carrying the vertical to the safety who caps number 1 over the top; two safeties play the deep halves, underneath stretches curl-flat to hook.",
+   "beats": [
+    "quick out-breakers by number 2 (the corner traps it)",
+    "smash and hitch-flat quick game"
+   ],
+   "beaten_by": [
+    "number 2 vertical that flips the corner back to number 1",
+    "the deep hole behind the trap (rangy safety from number 2 to the sideline)"
+   ]
   }
  },
  "routes": {
@@ -6863,29 +6879,29 @@ const DATA = {
   },
   "shallow": {
    "name": "Shallow Cross",
-   "depth_yd": 3,
+   "depth_yd": 4,
    "pts": [
     {
      "dx": -18,
-     "dy": 16
+     "dy": 26
     },
     {
      "dx": -270,
-     "dy": 34
+     "dy": 47
     }
    ]
   },
   "mesh-under": {
    "name": "Mesh (under)",
-   "depth_yd": 2,
+   "depth_yd": 5,
    "pts": [
     {
-     "dx": -18,
-     "dy": 10
+     "dx": -24,
+     "dy": 31
     },
     {
      "dx": -270,
-     "dy": 22
+     "dy": 57
     }
    ]
   },
